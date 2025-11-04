@@ -174,13 +174,13 @@ def main():
     rag_engine.initialize()
     print()
 
-    # 3. サンプル処理（最初の5問でテスト）
+    # 3. サンプル処理（最初の50問でテスト）
     print("="*80)
-    print("📝 サンプル処理（最初の5問）")
+    print("📝 サンプル処理（最初の50問）")
     print("="*80)
 
     processed_problems = []
-    test_count = min(5, len(problems))
+    test_count = min(50, len(problems))
 
     for i, problem in enumerate(problems[:test_count], 1):
         print(f"\n【問題 {i}/{test_count}】")
@@ -228,7 +228,7 @@ def main():
     print("\n" + "="*80)
     print("💾 結果を出力中...")
 
-    sample_output = REPO_ROOT / "backend/problems_sample_hybrid_rag.json"
+    sample_output = REPO_ROOT / "backend/problems_50_hybrid_rag.json"
     with open(sample_output, 'w', encoding='utf-8') as f:
         json.dump(processed_problems, f, ensure_ascii=False, indent=2)
 

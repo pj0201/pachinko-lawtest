@@ -1,0 +1,569 @@
+{
+  "timestamp": "2025-11-05T07:37:42.682492",
+  "problem_count": 50,
+  "summary": {
+    "average_score": 0.9620000000000001,
+    "target_score": 0.8,
+    "achievement": "✅ 達成",
+    "rag_search_rate": 0.88,
+    "template_exclusion_rate": 0.96,
+    "legal_reference_rate": 1.0,
+    "explanation_length": {
+      "average": 202.0,
+      "min": 152,
+      "max": 247
+    }
+  },
+  "detailed_results": [
+    {
+      "problem_id": 1,
+      "category": "営業許可",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 2,
+      "category": "営業所基準",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 3,
+      "category": "遊技機の設置",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 4,
+      "category": "遊技機の認定",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 0.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 0.65
+    },
+    {
+      "problem_id": 5,
+      "category": "景品規制",
+      "scores": {
+        "rag_search_found": 0.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 0.8
+    },
+    {
+      "problem_id": 6,
+      "category": "営業時間",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 7,
+      "category": "不正防止",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 8,
+      "category": "監督・指導",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 9,
+      "category": "資格要件",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 10,
+      "category": "法改正",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 11,
+      "category": "営業許可",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 12,
+      "category": "営業所基準",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 13,
+      "category": "遊技機の設置",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 14,
+      "category": "遊技機の認定",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 15,
+      "category": "景品規制",
+      "scores": {
+        "rag_search_found": 0.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 0.8
+    },
+    {
+      "problem_id": 16,
+      "category": "営業時間",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 18,
+      "category": "監督・指導",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 19,
+      "category": "資格要件",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 20,
+      "category": "法改正",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 21,
+      "category": "営業許可",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 22,
+      "category": "営業所基準",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 23,
+      "category": "遊技機の設置",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 24,
+      "category": "遊技機の認定",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 27,
+      "category": "不正防止",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 32,
+      "category": "営業所基準",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 33,
+      "category": "遊技機の設置",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 34,
+      "category": "遊技機の認定",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 35,
+      "category": "景品規制",
+      "scores": {
+        "rag_search_found": 0.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 0.8
+    },
+    {
+      "problem_id": 37,
+      "category": "不正防止",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 38,
+      "category": "監督・指導",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 39,
+      "category": "資格要件",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 41,
+      "category": "営業許可",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 43,
+      "category": "遊技機の設置",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 44,
+      "category": "遊技機の認定",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 45,
+      "category": "景品規制",
+      "scores": {
+        "rag_search_found": 0.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 0.8
+    },
+    {
+      "problem_id": 49,
+      "category": "資格要件",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 50,
+      "category": "法改正",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 58,
+      "category": "監督・指導",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 59,
+      "category": "資格要件",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 74,
+      "category": "遊技機の認定",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 76,
+      "category": "営業許可",
+      "scores": {
+        "rag_search_found": 0.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 0.8
+    },
+    {
+      "problem_id": 77,
+      "category": "営業所基準",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 78,
+      "category": "遊技機の設置",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 79,
+      "category": "遊技機の認定",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 80,
+      "category": "景品規制",
+      "scores": {
+        "rag_search_found": 0.0,
+        "explanation_length": 1.0,
+        "no_template": 0.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 0.45
+    },
+    {
+      "problem_id": 81,
+      "category": "営業時間",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 83,
+      "category": "監督・指導",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 84,
+      "category": "資格要件",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 85,
+      "category": "法改正",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    },
+    {
+      "problem_id": 87,
+      "category": "営業所基準",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 1.0,
+        "no_template": 1.0,
+        "legal_reference": 1.0
+      },
+      "overall_score": 1.0
+    }
+  ]
+}
