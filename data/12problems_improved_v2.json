@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "generated_at": "2025-10-22T12:10:09.416018",
+    "version": "2.0 Improved",
+    "total_problems": 12,
+    "accuracy": "具体的状況設定を含む○×形式"
+  },
+  "problems": [
+    {
+      "pattern_id": 1,
+      "pattern_name": "基本知識",
+      "difficulty": "★",
+      "theme": "遊技機の型式検定は3年有効である",
+      "theme_description": "遊技機は風営法に基づき、新台導入時に型式検定が必須。有効期限は3年で、営業許可（無期限）と異なる。",
+      "situation_type": "基本的な法律事実を述べる",
+      "problem_text": "【基本知識】遊技機の型式検定は3年有効である",
+      "correct_answer": "○",
+      "format": "true_false",
+      "generated_at": "2025-10-22T12:10:09.415682"
+    },
+    {
+      "pattern_id": 2,
+      "pattern_name": "ひっかけ",
+      "difficulty": "★★",
+      "theme": "遊技機の型式検定は3年有効である",
+      "theme_description": "遊技機は風営法に基づき、新台導入時に型式検定が必須。有効期限は3年で、営業許可（無期限）と異なる。",
+      "situation_type": "「自動的に」「必ず」などの絶対表現を含める",
+      "problem_text": "【ひっかけ】遊技機の型式検定は3年有効である",
+      "correct_answer": "×",
+      "format": "true_false",
+      "generated_at": "2025-10-22T12:10:09.415688"
+    },
+    {
+      "pattern_id": 3,
+      "pattern_name": "用語比較",
+      "difficulty": "★★",
+      "theme": "遊技機の型式検定は3年有効である",
+      "theme_description": "遊技機は風営法に基づき、新台導入時に型式検定が必須。有効期限は3年で、営業許可（無期限）と異なる。",
+      "situation_type": "2つの概念を比較する",
+      "problem_text": "【用語比較】遊技機の型式検定は3年有効である",
+      "correct_answer": "○",
+      "format": "true_false",
+      "generated_at": "2025-10-22T12:10:09.415690"
+    },
+    {
+      "pattern_id": 4,
+      "pattern_name": "優先順位",
+      "difficulty": "★★",
+      "theme": "遊技機の型式検定は3年有効である",
+      "theme_description": "遊技機は風営法に基づき、新台導入時に型式検定が必須。有効期限は3年で、営業許可（無期限）と異なる。",
+      "situation_type": "営業者が複数の義務を持つ具体的状況",
+      "problem_text": "【優先順位】遊技機の型式検定は3年有効である",
+      "correct_answer": "○",
+      "format": "true_false",
+      "generated_at": "2025-10-22T12:10:09.415692"
+    },
+    {
+      "pattern_id": 5,
+      "pattern_name": "時系列",
+      "difficulty": "★★★",
+      "theme": "遊技機の型式検定は3年有効である",
+      "theme_description": "遊技機は風営法に基づき、新台導入時に型式検定が必須。有効期限は3年で、営業許可（無期限）と異なる。",
+      "situation_type": "具体的な時点での法的ステータス変化",
+      "problem_text": "【時系列】遊技機の型式検定は3年有効である",
+      "correct_answer": "○",
+      "format": "true_false",
+      "generated_at": "2025-10-22T12:10:09.415693"
+    },
+    {
+      "pattern_id": 6,
+      "pattern_name": "シナリオ",
+      "difficulty": "★★★",
+      "theme": "遊技機の型式検定は3年有効である",
+      "theme_description": "遊技機は風営法に基づき、新台導入時に型式検定が必須。有効期限は3年で、営業許可（無期限）と異なる。",
+      "situation_type": "複数の時間要素を含む実務シナリオ",
+      "problem_text": "【シナリオ】遊技機の型式検定は3年有効である",
+      "correct_answer": "○",
+      "format": "true_false",
+      "generated_at": "2025-10-22T12:10:09.415695"
+    },
+    {
+      "pattern_id": 7,
+      "pattern_name": "複合違反",
+      "difficulty": "★★★",
+      "theme": "遊技機の型式検定は3年有効である",
+      "theme_description": "遊技機は風営法に基づき、新台導入時に型式検定が必須。有効期限は3年で、営業許可（無期限）と異なる。",
+      "situation_type": "複数の違反が存在する場合の重大度比較",
+      "problem_text": "【複合違反】遊技機の型式検定は3年有効である",
+      "correct_answer": "○",
+      "format": "true_false",
+      "generated_at": "2025-10-22T12:10:09.415696"
+    },
+    {
+      "pattern_id": 8,
+      "pattern_name": "数値",
+      "difficulty": "★",
+      "theme": "遊技機の型式検定は3年有効である",
+      "theme_description": "遊技機は風営法に基づき、新台導入時に型式検定が必須。有効期限は3年で、営業許可（無期限）と異なる。",
+      "situation_type": "具体的な数値と時間期限を含める",
+      "problem_text": "【数値】遊技機の型式検定は3年有効である",
+      "correct_answer": "○",
+      "format": "true_false",
+      "generated_at": "2025-10-22T12:10:09.415697"
+    },
+    {
+      "pattern_id": 9,
+      "pattern_name": "理由理解",
+      "difficulty": "★★★",
+      "theme": "遊技機の型式検定は3年有効である",
+      "theme_description": "遊技機は風営法に基づき、新台導入時に型式検定が必須。有効期限は3年で、営業許可（無期限）と異なる。",
+      "situation_type": "法律設計の目的と理由を問う",
+      "problem_text": "【理由理解】遊技機の型式検定は3年有効である",
+      "correct_answer": "○",
+      "format": "true_false",
+      "generated_at": "2025-10-22T12:10:09.415699"
+    },
+    {
+      "pattern_id": 10,
+      "pattern_name": "経験陥阱",
+      "difficulty": "★★★",
+      "theme": "遊技機の型式検定は3年有効である",
+      "theme_description": "遊技機は風営法に基づき、新台導入時に型式検定が必須。有効期限は3年で、営業許可（無期限）と異なる。",
+      "situation_type": "実務経験と法律の乖離を示す",
+      "problem_text": "【経験陥阱】遊技機の型式検定は3年有効である",
+      "correct_answer": "○",
+      "format": "true_false",
+      "generated_at": "2025-10-22T12:10:09.415700"
+    },
+    {
+      "pattern_id": 11,
+      "pattern_name": "法律確認",
+      "difficulty": "★★★",
+      "theme": "遊技機の型式検定は3年有効である",
+      "theme_description": "遊技機は風営法に基づき、新台導入時に型式検定が必須。有効期限は3年で、営業許可（無期限）と異なる。",
+      "situation_type": "現在の法律状態を確認する",
+      "problem_text": "【法律確認】遊技機の型式検定は3年有効である",
+      "correct_answer": "○",
+      "format": "true_false",
+      "generated_at": "2025-10-22T12:10:09.415701"
+    },
+    {
+      "pattern_id": 12,
+      "pattern_name": "複合応用",
+      "difficulty": "★★★★",
+      "theme": "遊技機の型式検定は3年有効である",
+      "theme_description": "遊技機は風営法に基づき、新台導入時に型式検定が必須。有効期限は3年で、営業許可（無期限）と異なる。",
+      "situation_type": "複数の要素を統合した最終判定",
+      "problem_text": "【複合応用】遊技機の型式検定は3年有効である",
+      "correct_answer": "○",
+      "format": "true_false",
+      "generated_at": "2025-10-22T12:10:09.415702"
+    }
+  ]
+}

@@ -1,0 +1,3026 @@
+[
+  {
+    "problem_id": 1,
+    "theme_id": 1000,
+    "theme_name": "新台設置の手続き",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "基本的な法律事実",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "基本的な事実確認: '新台設置の手続き'は正しいか？(基本的な法律事実)",
+    "placeholder_structure": {
+      "problem_statement": "【基本知識】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 2,
+    "theme_id": 1000,
+    "theme_name": "新台設置の手続き",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "絶対表現への警戒",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "絶対表現への警戒: '新台設置の手続き'について、「必ず」「自動的に」などの絶対表現を含める",
+    "placeholder_structure": {
+      "problem_statement": "【ひっかけ】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 3,
+    "theme_id": 1000,
+    "theme_name": "新台設置の手続き",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "概念の区別",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "用語比較: '新台設置の手続き'と関連概念の違いを問う",
+    "placeholder_structure": {
+      "problem_statement": "【用語比較】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 4,
+    "theme_id": 1000,
+    "theme_name": "新台設置の手続き",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "法律体系の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "優先順位: '新台設置の手続き'に関連する複数の義務がある場合の優先順位判定",
+    "placeholder_structure": {
+      "problem_statement": "【優先順位】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 5,
+    "theme_id": 1000,
+    "theme_name": "新台設置の手続き",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "時間経過による変化",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "時系列理解: '新台設置の手続き'に関する時間経過による法的ステータス変化",
+    "placeholder_structure": {
+      "problem_statement": "【時系列理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 6,
+    "theme_id": 1000,
+    "theme_name": "新台設置の手続き",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "実務的判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "シナリオ判定: '新台設置の手続き'を含む具体的実務シナリオでの判定",
+    "placeholder_structure": {
+      "problem_statement": "【シナリオ判定】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 7,
+    "theme_id": 1000,
+    "theme_name": "新台設置の手続き",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "違反の重大度判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合違反: '新台設置の手続き'と他の違反が同時に存在する場合の重大度比較",
+    "placeholder_structure": {
+      "problem_statement": "【複合違反】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 8,
+    "theme_id": 1000,
+    "theme_name": "新台設置の手続き",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "細かい知識確認",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "数値正確性: '新台設置の手続き'に関する具体的数値や期限を含める",
+    "placeholder_structure": {
+      "problem_statement": "【数値正確性】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 9,
+    "theme_id": 1000,
+    "theme_name": "新台設置の手続き",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法制度設計の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "理由理解: '新台設置の手続き'である理由・法制度設計の背景を問う",
+    "placeholder_structure": {
+      "problem_statement": "【理由理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 10,
+    "theme_id": 1000,
+    "theme_name": "新台設置の手続き",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "知識修正能力",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "経験陥阱: '新台設置の手続き'と実務経験の乖離を示す",
+    "placeholder_structure": {
+      "problem_statement": "【経験陥阱】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 11,
+    "theme_id": 1000,
+    "theme_name": "新台設置の手続き",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法改正への対応",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "改正対応: '新台設置の手続き'に関する法律改正への対応",
+    "placeholder_structure": {
+      "problem_statement": "【改正対応】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 12,
+    "theme_id": 1000,
+    "theme_name": "新台設置の手続き",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_type": "true_false",
+    "pattern_description": "複数要素の統合判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合応用: '新台設置の手続き'を含む複数要素の統合判定",
+    "placeholder_structure": {
+      "problem_statement": "【複合応用】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 13,
+    "theme_id": 1001,
+    "theme_name": "中古遊技機の取扱い",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "基本的な法律事実",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "基本的な事実確認: '中古遊技機の取扱い'は正しいか？(基本的な法律事実)",
+    "placeholder_structure": {
+      "problem_statement": "【基本知識】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 14,
+    "theme_id": 1001,
+    "theme_name": "中古遊技機の取扱い",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "絶対表現への警戒",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "絶対表現への警戒: '中古遊技機の取扱い'について、「必ず」「自動的に」などの絶対表現を含める",
+    "placeholder_structure": {
+      "problem_statement": "【ひっかけ】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 15,
+    "theme_id": 1001,
+    "theme_name": "中古遊技機の取扱い",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "概念の区別",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "用語比較: '中古遊技機の取扱い'と関連概念の違いを問う",
+    "placeholder_structure": {
+      "problem_statement": "【用語比較】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 16,
+    "theme_id": 1001,
+    "theme_name": "中古遊技機の取扱い",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "法律体系の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "優先順位: '中古遊技機の取扱い'に関連する複数の義務がある場合の優先順位判定",
+    "placeholder_structure": {
+      "problem_statement": "【優先順位】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 17,
+    "theme_id": 1001,
+    "theme_name": "中古遊技機の取扱い",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "時間経過による変化",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "時系列理解: '中古遊技機の取扱い'に関する時間経過による法的ステータス変化",
+    "placeholder_structure": {
+      "problem_statement": "【時系列理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 18,
+    "theme_id": 1001,
+    "theme_name": "中古遊技機の取扱い",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "実務的判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "シナリオ判定: '中古遊技機の取扱い'を含む具体的実務シナリオでの判定",
+    "placeholder_structure": {
+      "problem_statement": "【シナリオ判定】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 19,
+    "theme_id": 1001,
+    "theme_name": "中古遊技機の取扱い",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "違反の重大度判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合違反: '中古遊技機の取扱い'と他の違反が同時に存在する場合の重大度比較",
+    "placeholder_structure": {
+      "problem_statement": "【複合違反】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 20,
+    "theme_id": 1001,
+    "theme_name": "中古遊技機の取扱い",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "細かい知識確認",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "数値正確性: '中古遊技機の取扱い'に関する具体的数値や期限を含める",
+    "placeholder_structure": {
+      "problem_statement": "【数値正確性】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 21,
+    "theme_id": 1001,
+    "theme_name": "中古遊技機の取扱い",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法制度設計の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "理由理解: '中古遊技機の取扱い'である理由・法制度設計の背景を問う",
+    "placeholder_structure": {
+      "problem_statement": "【理由理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 22,
+    "theme_id": 1001,
+    "theme_name": "中古遊技機の取扱い",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "知識修正能力",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "経験陥阱: '中古遊技機の取扱い'と実務経験の乖離を示す",
+    "placeholder_structure": {
+      "problem_statement": "【経験陥阱】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 23,
+    "theme_id": 1001,
+    "theme_name": "中古遊技機の取扱い",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法改正への対応",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "改正対応: '中古遊技機の取扱い'に関する法律改正への対応",
+    "placeholder_structure": {
+      "problem_statement": "【改正対応】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 24,
+    "theme_id": 1001,
+    "theme_name": "中古遊技機の取扱い",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_type": "true_false",
+    "pattern_description": "複数要素の統合判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合応用: '中古遊技機の取扱い'を含む複数要素の統合判定",
+    "placeholder_structure": {
+      "problem_statement": "【複合応用】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 25,
+    "theme_id": 1002,
+    "theme_name": "遊技機の保守管理",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "基本的な法律事実",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "基本的な事実確認: '遊技機の保守管理'は正しいか？(基本的な法律事実)",
+    "placeholder_structure": {
+      "problem_statement": "【基本知識】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 26,
+    "theme_id": 1002,
+    "theme_name": "遊技機の保守管理",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "絶対表現への警戒",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "絶対表現への警戒: '遊技機の保守管理'について、「必ず」「自動的に」などの絶対表現を含める",
+    "placeholder_structure": {
+      "problem_statement": "【ひっかけ】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 27,
+    "theme_id": 1002,
+    "theme_name": "遊技機の保守管理",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "概念の区別",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "用語比較: '遊技機の保守管理'と関連概念の違いを問う",
+    "placeholder_structure": {
+      "problem_statement": "【用語比較】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 28,
+    "theme_id": 1002,
+    "theme_name": "遊技機の保守管理",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "法律体系の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "優先順位: '遊技機の保守管理'に関連する複数の義務がある場合の優先順位判定",
+    "placeholder_structure": {
+      "problem_statement": "【優先順位】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 29,
+    "theme_id": 1002,
+    "theme_name": "遊技機の保守管理",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "時間経過による変化",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "時系列理解: '遊技機の保守管理'に関する時間経過による法的ステータス変化",
+    "placeholder_structure": {
+      "problem_statement": "【時系列理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 30,
+    "theme_id": 1002,
+    "theme_name": "遊技機の保守管理",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "実務的判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "シナリオ判定: '遊技機の保守管理'を含む具体的実務シナリオでの判定",
+    "placeholder_structure": {
+      "problem_statement": "【シナリオ判定】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 31,
+    "theme_id": 1002,
+    "theme_name": "遊技機の保守管理",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "違反の重大度判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合違反: '遊技機の保守管理'と他の違反が同時に存在する場合の重大度比較",
+    "placeholder_structure": {
+      "problem_statement": "【複合違反】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 32,
+    "theme_id": 1002,
+    "theme_name": "遊技機の保守管理",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "細かい知識確認",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "数値正確性: '遊技機の保守管理'に関する具体的数値や期限を含める",
+    "placeholder_structure": {
+      "problem_statement": "【数値正確性】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 33,
+    "theme_id": 1002,
+    "theme_name": "遊技機の保守管理",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法制度設計の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "理由理解: '遊技機の保守管理'である理由・法制度設計の背景を問う",
+    "placeholder_structure": {
+      "problem_statement": "【理由理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 34,
+    "theme_id": 1002,
+    "theme_name": "遊技機の保守管理",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "知識修正能力",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "経験陥阱: '遊技機の保守管理'と実務経験の乖離を示す",
+    "placeholder_structure": {
+      "problem_statement": "【経験陥阱】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 35,
+    "theme_id": 1002,
+    "theme_name": "遊技機の保守管理",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法改正への対応",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "改正対応: '遊技機の保守管理'に関する法律改正への対応",
+    "placeholder_structure": {
+      "problem_statement": "【改正対応】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 36,
+    "theme_id": 1002,
+    "theme_name": "遊技機の保守管理",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_type": "true_false",
+    "pattern_description": "複数要素の統合判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合応用: '遊技機の保守管理'を含む複数要素の統合判定",
+    "placeholder_structure": {
+      "problem_statement": "【複合応用】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 37,
+    "theme_id": 1003,
+    "theme_name": "不正改造の防止",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "基本的な法律事実",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "基本的な事実確認: '不正改造の防止'は正しいか？(基本的な法律事実)",
+    "placeholder_structure": {
+      "problem_statement": "【基本知識】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 38,
+    "theme_id": 1003,
+    "theme_name": "不正改造の防止",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "絶対表現への警戒",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "絶対表現への警戒: '不正改造の防止'について、「必ず」「自動的に」などの絶対表現を含める",
+    "placeholder_structure": {
+      "problem_statement": "【ひっかけ】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 39,
+    "theme_id": 1003,
+    "theme_name": "不正改造の防止",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "概念の区別",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "用語比較: '不正改造の防止'と関連概念の違いを問う",
+    "placeholder_structure": {
+      "problem_statement": "【用語比較】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 40,
+    "theme_id": 1003,
+    "theme_name": "不正改造の防止",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "法律体系の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "優先順位: '不正改造の防止'に関連する複数の義務がある場合の優先順位判定",
+    "placeholder_structure": {
+      "problem_statement": "【優先順位】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 41,
+    "theme_id": 1003,
+    "theme_name": "不正改造の防止",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "時間経過による変化",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "時系列理解: '不正改造の防止'に関する時間経過による法的ステータス変化",
+    "placeholder_structure": {
+      "problem_statement": "【時系列理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 42,
+    "theme_id": 1003,
+    "theme_name": "不正改造の防止",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "実務的判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "シナリオ判定: '不正改造の防止'を含む具体的実務シナリオでの判定",
+    "placeholder_structure": {
+      "problem_statement": "【シナリオ判定】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 43,
+    "theme_id": 1003,
+    "theme_name": "不正改造の防止",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "違反の重大度判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合違反: '不正改造の防止'と他の違反が同時に存在する場合の重大度比較",
+    "placeholder_structure": {
+      "problem_statement": "【複合違反】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 44,
+    "theme_id": 1003,
+    "theme_name": "不正改造の防止",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "細かい知識確認",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "数値正確性: '不正改造の防止'に関する具体的数値や期限を含める",
+    "placeholder_structure": {
+      "problem_statement": "【数値正確性】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 45,
+    "theme_id": 1003,
+    "theme_name": "不正改造の防止",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法制度設計の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "理由理解: '不正改造の防止'である理由・法制度設計の背景を問う",
+    "placeholder_structure": {
+      "problem_statement": "【理由理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 46,
+    "theme_id": 1003,
+    "theme_name": "不正改造の防止",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "知識修正能力",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "経験陥阱: '不正改造の防止'と実務経験の乖離を示す",
+    "placeholder_structure": {
+      "problem_statement": "【経験陥阱】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 47,
+    "theme_id": 1003,
+    "theme_name": "不正改造の防止",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法改正への対応",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "改正対応: '不正改造の防止'に関する法律改正への対応",
+    "placeholder_structure": {
+      "problem_statement": "【改正対応】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 48,
+    "theme_id": 1003,
+    "theme_name": "不正改造の防止",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_type": "true_false",
+    "pattern_description": "複数要素の統合判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合応用: '不正改造の防止'を含む複数要素の統合判定",
+    "placeholder_structure": {
+      "problem_statement": "【複合応用】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 49,
+    "theme_id": 1004,
+    "theme_name": "セキュリティ確保",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "基本的な法律事実",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "基本的な事実確認: 'セキュリティ確保'は正しいか？(基本的な法律事実)",
+    "placeholder_structure": {
+      "problem_statement": "【基本知識】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 50,
+    "theme_id": 1004,
+    "theme_name": "セキュリティ確保",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "絶対表現への警戒",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "絶対表現への警戒: 'セキュリティ確保'について、「必ず」「自動的に」などの絶対表現を含める",
+    "placeholder_structure": {
+      "problem_statement": "【ひっかけ】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 51,
+    "theme_id": 1004,
+    "theme_name": "セキュリティ確保",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "概念の区別",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "用語比較: 'セキュリティ確保'と関連概念の違いを問う",
+    "placeholder_structure": {
+      "problem_statement": "【用語比較】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 52,
+    "theme_id": 1004,
+    "theme_name": "セキュリティ確保",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "法律体系の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "優先順位: 'セキュリティ確保'に関連する複数の義務がある場合の優先順位判定",
+    "placeholder_structure": {
+      "problem_statement": "【優先順位】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 53,
+    "theme_id": 1004,
+    "theme_name": "セキュリティ確保",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "時間経過による変化",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "時系列理解: 'セキュリティ確保'に関する時間経過による法的ステータス変化",
+    "placeholder_structure": {
+      "problem_statement": "【時系列理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 54,
+    "theme_id": 1004,
+    "theme_name": "セキュリティ確保",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "実務的判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "シナリオ判定: 'セキュリティ確保'を含む具体的実務シナリオでの判定",
+    "placeholder_structure": {
+      "problem_statement": "【シナリオ判定】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 55,
+    "theme_id": 1004,
+    "theme_name": "セキュリティ確保",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "違反の重大度判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合違反: 'セキュリティ確保'と他の違反が同時に存在する場合の重大度比較",
+    "placeholder_structure": {
+      "problem_statement": "【複合違反】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 56,
+    "theme_id": 1004,
+    "theme_name": "セキュリティ確保",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "細かい知識確認",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "数値正確性: 'セキュリティ確保'に関する具体的数値や期限を含める",
+    "placeholder_structure": {
+      "problem_statement": "【数値正確性】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 57,
+    "theme_id": 1004,
+    "theme_name": "セキュリティ確保",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法制度設計の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "理由理解: 'セキュリティ確保'である理由・法制度設計の背景を問う",
+    "placeholder_structure": {
+      "problem_statement": "【理由理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 58,
+    "theme_id": 1004,
+    "theme_name": "セキュリティ確保",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "知識修正能力",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "経験陥阱: 'セキュリティ確保'と実務経験の乖離を示す",
+    "placeholder_structure": {
+      "problem_statement": "【経験陥阱】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 59,
+    "theme_id": 1004,
+    "theme_name": "セキュリティ確保",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法改正への対応",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "改正対応: 'セキュリティ確保'に関する法律改正への対応",
+    "placeholder_structure": {
+      "problem_statement": "【改正対応】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 60,
+    "theme_id": 1004,
+    "theme_name": "セキュリティ確保",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_type": "true_false",
+    "pattern_description": "複数要素の統合判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合応用: 'セキュリティ確保'を含む複数要素の統合判定",
+    "placeholder_structure": {
+      "problem_statement": "【複合応用】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 61,
+    "theme_id": 1005,
+    "theme_name": "営業禁止時間",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "基本的な法律事実",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "基本的な事実確認: '営業禁止時間'は正しいか？(基本的な法律事実)",
+    "placeholder_structure": {
+      "problem_statement": "【基本知識】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 62,
+    "theme_id": 1005,
+    "theme_name": "営業禁止時間",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "絶対表現への警戒",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "絶対表現への警戒: '営業禁止時間'について、「必ず」「自動的に」などの絶対表現を含める",
+    "placeholder_structure": {
+      "problem_statement": "【ひっかけ】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 63,
+    "theme_id": 1005,
+    "theme_name": "営業禁止時間",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "概念の区別",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "用語比較: '営業禁止時間'と関連概念の違いを問う",
+    "placeholder_structure": {
+      "problem_statement": "【用語比較】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 64,
+    "theme_id": 1005,
+    "theme_name": "営業禁止時間",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "法律体系の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "優先順位: '営業禁止時間'に関連する複数の義務がある場合の優先順位判定",
+    "placeholder_structure": {
+      "problem_statement": "【優先順位】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 65,
+    "theme_id": 1005,
+    "theme_name": "営業禁止時間",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "時間経過による変化",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "時系列理解: '営業禁止時間'に関する時間経過による法的ステータス変化",
+    "placeholder_structure": {
+      "problem_statement": "【時系列理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 66,
+    "theme_id": 1005,
+    "theme_name": "営業禁止時間",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "実務的判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "シナリオ判定: '営業禁止時間'を含む具体的実務シナリオでの判定",
+    "placeholder_structure": {
+      "problem_statement": "【シナリオ判定】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 67,
+    "theme_id": 1005,
+    "theme_name": "営業禁止時間",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "違反の重大度判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合違反: '営業禁止時間'と他の違反が同時に存在する場合の重大度比較",
+    "placeholder_structure": {
+      "problem_statement": "【複合違反】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 68,
+    "theme_id": 1005,
+    "theme_name": "営業禁止時間",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "細かい知識確認",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "数値正確性: '営業禁止時間'に関する具体的数値や期限を含める",
+    "placeholder_structure": {
+      "problem_statement": "【数値正確性】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 69,
+    "theme_id": 1005,
+    "theme_name": "営業禁止時間",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法制度設計の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "理由理解: '営業禁止時間'である理由・法制度設計の背景を問う",
+    "placeholder_structure": {
+      "problem_statement": "【理由理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 70,
+    "theme_id": 1005,
+    "theme_name": "営業禁止時間",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "知識修正能力",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "経験陥阱: '営業禁止時間'と実務経験の乖離を示す",
+    "placeholder_structure": {
+      "problem_statement": "【経験陥阱】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 71,
+    "theme_id": 1005,
+    "theme_name": "営業禁止時間",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法改正への対応",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "改正対応: '営業禁止時間'に関する法律改正への対応",
+    "placeholder_structure": {
+      "problem_statement": "【改正対応】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 72,
+    "theme_id": 1005,
+    "theme_name": "営業禁止時間",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_type": "true_false",
+    "pattern_description": "複数要素の統合判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合応用: '営業禁止時間'を含む複数要素の統合判定",
+    "placeholder_structure": {
+      "problem_statement": "【複合応用】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 73,
+    "theme_id": 1006,
+    "theme_name": "営業停止命令",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "基本的な法律事実",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "基本的な事実確認: '営業停止命令'は正しいか？(基本的な法律事実)",
+    "placeholder_structure": {
+      "problem_statement": "【基本知識】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 74,
+    "theme_id": 1006,
+    "theme_name": "営業停止命令",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "絶対表現への警戒",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "絶対表現への警戒: '営業停止命令'について、「必ず」「自動的に」などの絶対表現を含める",
+    "placeholder_structure": {
+      "problem_statement": "【ひっかけ】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 75,
+    "theme_id": 1006,
+    "theme_name": "営業停止命令",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "概念の区別",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "用語比較: '営業停止命令'と関連概念の違いを問う",
+    "placeholder_structure": {
+      "problem_statement": "【用語比較】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 76,
+    "theme_id": 1006,
+    "theme_name": "営業停止命令",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "法律体系の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "優先順位: '営業停止命令'に関連する複数の義務がある場合の優先順位判定",
+    "placeholder_structure": {
+      "problem_statement": "【優先順位】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 77,
+    "theme_id": 1006,
+    "theme_name": "営業停止命令",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "時間経過による変化",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "時系列理解: '営業停止命令'に関する時間経過による法的ステータス変化",
+    "placeholder_structure": {
+      "problem_statement": "【時系列理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 78,
+    "theme_id": 1006,
+    "theme_name": "営業停止命令",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "実務的判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "シナリオ判定: '営業停止命令'を含む具体的実務シナリオでの判定",
+    "placeholder_structure": {
+      "problem_statement": "【シナリオ判定】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 79,
+    "theme_id": 1006,
+    "theme_name": "営業停止命令",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "違反の重大度判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合違反: '営業停止命令'と他の違反が同時に存在する場合の重大度比較",
+    "placeholder_structure": {
+      "problem_statement": "【複合違反】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 80,
+    "theme_id": 1006,
+    "theme_name": "営業停止命令",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "細かい知識確認",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "数値正確性: '営業停止命令'に関する具体的数値や期限を含める",
+    "placeholder_structure": {
+      "problem_statement": "【数値正確性】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 81,
+    "theme_id": 1006,
+    "theme_name": "営業停止命令",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法制度設計の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "理由理解: '営業停止命令'である理由・法制度設計の背景を問う",
+    "placeholder_structure": {
+      "problem_statement": "【理由理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 82,
+    "theme_id": 1006,
+    "theme_name": "営業停止命令",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "知識修正能力",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "経験陥阱: '営業停止命令'と実務経験の乖離を示す",
+    "placeholder_structure": {
+      "problem_statement": "【経験陥阱】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 83,
+    "theme_id": 1006,
+    "theme_name": "営業停止命令",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法改正への対応",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "改正対応: '営業停止命令'に関する法律改正への対応",
+    "placeholder_structure": {
+      "problem_statement": "【改正対応】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 84,
+    "theme_id": 1006,
+    "theme_name": "営業停止命令",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_type": "true_false",
+    "pattern_description": "複数要素の統合判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合応用: '営業停止命令'を含む複数要素の統合判定",
+    "placeholder_structure": {
+      "problem_statement": "【複合応用】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 85,
+    "theme_id": 1007,
+    "theme_name": "営業許可は無期限有効",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "基本的な法律事実",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "基本的な事実確認: '営業許可は無期限有効'は正しいか？(基本的な法律事実)",
+    "placeholder_structure": {
+      "problem_statement": "【基本知識】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 86,
+    "theme_id": 1007,
+    "theme_name": "営業許可は無期限有効",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "絶対表現への警戒",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "絶対表現への警戒: '営業許可は無期限有効'について、「必ず」「自動的に」などの絶対表現を含める",
+    "placeholder_structure": {
+      "problem_statement": "【ひっかけ】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 87,
+    "theme_id": 1007,
+    "theme_name": "営業許可は無期限有効",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "概念の区別",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "用語比較: '営業許可は無期限有効'と関連概念の違いを問う",
+    "placeholder_structure": {
+      "problem_statement": "【用語比較】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 88,
+    "theme_id": 1007,
+    "theme_name": "営業許可は無期限有効",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "法律体系の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "優先順位: '営業許可は無期限有効'に関連する複数の義務がある場合の優先順位判定",
+    "placeholder_structure": {
+      "problem_statement": "【優先順位】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 89,
+    "theme_id": 1007,
+    "theme_name": "営業許可は無期限有効",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "時間経過による変化",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "時系列理解: '営業許可は無期限有効'に関する時間経過による法的ステータス変化",
+    "placeholder_structure": {
+      "problem_statement": "【時系列理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 90,
+    "theme_id": 1007,
+    "theme_name": "営業許可は無期限有効",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "実務的判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "シナリオ判定: '営業許可は無期限有効'を含む具体的実務シナリオでの判定",
+    "placeholder_structure": {
+      "problem_statement": "【シナリオ判定】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 91,
+    "theme_id": 1007,
+    "theme_name": "営業許可は無期限有効",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "違反の重大度判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合違反: '営業許可は無期限有効'と他の違反が同時に存在する場合の重大度比較",
+    "placeholder_structure": {
+      "problem_statement": "【複合違反】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 92,
+    "theme_id": 1007,
+    "theme_name": "営業許可は無期限有効",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "細かい知識確認",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "数値正確性: '営業許可は無期限有効'に関する具体的数値や期限を含める",
+    "placeholder_structure": {
+      "problem_statement": "【数値正確性】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 93,
+    "theme_id": 1007,
+    "theme_name": "営業許可は無期限有効",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法制度設計の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "理由理解: '営業許可は無期限有効'である理由・法制度設計の背景を問う",
+    "placeholder_structure": {
+      "problem_statement": "【理由理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 94,
+    "theme_id": 1007,
+    "theme_name": "営業許可は無期限有効",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "知識修正能力",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "経験陥阱: '営業許可は無期限有効'と実務経験の乖離を示す",
+    "placeholder_structure": {
+      "problem_statement": "【経験陥阱】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 95,
+    "theme_id": 1007,
+    "theme_name": "営業許可は無期限有効",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法改正への対応",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "改正対応: '営業許可は無期限有効'に関する法律改正への対応",
+    "placeholder_structure": {
+      "problem_statement": "【改正対応】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 96,
+    "theme_id": 1007,
+    "theme_name": "営業許可は無期限有効",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_type": "true_false",
+    "pattern_description": "複数要素の統合判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合応用: '営業許可は無期限有効'を含む複数要素の統合判定",
+    "placeholder_structure": {
+      "problem_statement": "【複合応用】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 97,
+    "theme_id": 1008,
+    "theme_name": "営業許可と型式検定の違い",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "基本的な法律事実",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "基本的な事実確認: '営業許可と型式検定の違い'は正しいか？(基本的な法律事実)",
+    "placeholder_structure": {
+      "problem_statement": "【基本知識】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 98,
+    "theme_id": 1008,
+    "theme_name": "営業許可と型式検定の違い",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "絶対表現への警戒",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "絶対表現への警戒: '営業許可と型式検定の違い'について、「必ず」「自動的に」などの絶対表現を含める",
+    "placeholder_structure": {
+      "problem_statement": "【ひっかけ】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 99,
+    "theme_id": 1008,
+    "theme_name": "営業許可と型式検定の違い",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "概念の区別",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "用語比較: '営業許可と型式検定の違い'と関連概念の違いを問う",
+    "placeholder_structure": {
+      "problem_statement": "【用語比較】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 100,
+    "theme_id": 1008,
+    "theme_name": "営業許可と型式検定の違い",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "法律体系の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "優先順位: '営業許可と型式検定の違い'に関連する複数の義務がある場合の優先順位判定",
+    "placeholder_structure": {
+      "problem_statement": "【優先順位】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 101,
+    "theme_id": 1008,
+    "theme_name": "営業許可と型式検定の違い",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "時間経過による変化",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "時系列理解: '営業許可と型式検定の違い'に関する時間経過による法的ステータス変化",
+    "placeholder_structure": {
+      "problem_statement": "【時系列理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 102,
+    "theme_id": 1008,
+    "theme_name": "営業許可と型式検定の違い",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "実務的判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "シナリオ判定: '営業許可と型式検定の違い'を含む具体的実務シナリオでの判定",
+    "placeholder_structure": {
+      "problem_statement": "【シナリオ判定】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 103,
+    "theme_id": 1008,
+    "theme_name": "営業許可と型式検定の違い",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "違反の重大度判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合違反: '営業許可と型式検定の違い'と他の違反が同時に存在する場合の重大度比較",
+    "placeholder_structure": {
+      "problem_statement": "【複合違反】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 104,
+    "theme_id": 1008,
+    "theme_name": "営業許可と型式検定の違い",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "細かい知識確認",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "数値正確性: '営業許可と型式検定の違い'に関する具体的数値や期限を含める",
+    "placeholder_structure": {
+      "problem_statement": "【数値正確性】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 105,
+    "theme_id": 1008,
+    "theme_name": "営業許可と型式検定の違い",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法制度設計の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "理由理解: '営業許可と型式検定の違い'である理由・法制度設計の背景を問う",
+    "placeholder_structure": {
+      "problem_statement": "【理由理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 106,
+    "theme_id": 1008,
+    "theme_name": "営業許可と型式検定の違い",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "知識修正能力",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "経験陥阱: '営業許可と型式検定の違い'と実務経験の乖離を示す",
+    "placeholder_structure": {
+      "problem_statement": "【経験陥阱】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 107,
+    "theme_id": 1008,
+    "theme_name": "営業許可と型式検定の違い",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法改正への対応",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "改正対応: '営業許可と型式検定の違い'に関する法律改正への対応",
+    "placeholder_structure": {
+      "problem_statement": "【改正対応】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 108,
+    "theme_id": 1008,
+    "theme_name": "営業許可と型式検定の違い",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_type": "true_false",
+    "pattern_description": "複数要素の統合判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合応用: '営業許可と型式検定の違い'を含む複数要素の統合判定",
+    "placeholder_structure": {
+      "problem_statement": "【複合応用】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 109,
+    "theme_id": 1009,
+    "theme_name": "遊技機型式検定は3年有効",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "基本的な法律事実",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "基本的な事実確認: '遊技機型式検定は3年有効'は正しいか？(基本的な法律事実)",
+    "placeholder_structure": {
+      "problem_statement": "【基本知識】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 110,
+    "theme_id": 1009,
+    "theme_name": "遊技機型式検定は3年有効",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "絶対表現への警戒",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "絶対表現への警戒: '遊技機型式検定は3年有効'について、「必ず」「自動的に」などの絶対表現を含める",
+    "placeholder_structure": {
+      "problem_statement": "【ひっかけ】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 111,
+    "theme_id": 1009,
+    "theme_name": "遊技機型式検定は3年有効",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "概念の区別",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "用語比較: '遊技機型式検定は3年有効'と関連概念の違いを問う",
+    "placeholder_structure": {
+      "problem_statement": "【用語比較】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 112,
+    "theme_id": 1009,
+    "theme_name": "遊技機型式検定は3年有効",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "法律体系の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "優先順位: '遊技機型式検定は3年有効'に関連する複数の義務がある場合の優先順位判定",
+    "placeholder_structure": {
+      "problem_statement": "【優先順位】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 113,
+    "theme_id": 1009,
+    "theme_name": "遊技機型式検定は3年有効",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "時間経過による変化",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "時系列理解: '遊技機型式検定は3年有効'に関する時間経過による法的ステータス変化",
+    "placeholder_structure": {
+      "problem_statement": "【時系列理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 114,
+    "theme_id": 1009,
+    "theme_name": "遊技機型式検定は3年有効",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "実務的判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "シナリオ判定: '遊技機型式検定は3年有効'を含む具体的実務シナリオでの判定",
+    "placeholder_structure": {
+      "problem_statement": "【シナリオ判定】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 115,
+    "theme_id": 1009,
+    "theme_name": "遊技機型式検定は3年有効",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "違反の重大度判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合違反: '遊技機型式検定は3年有効'と他の違反が同時に存在する場合の重大度比較",
+    "placeholder_structure": {
+      "problem_statement": "【複合違反】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 116,
+    "theme_id": 1009,
+    "theme_name": "遊技機型式検定は3年有効",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "細かい知識確認",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "数値正確性: '遊技機型式検定は3年有効'に関する具体的数値や期限を含める",
+    "placeholder_structure": {
+      "problem_statement": "【数値正確性】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 117,
+    "theme_id": 1009,
+    "theme_name": "遊技機型式検定は3年有効",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法制度設計の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "理由理解: '遊技機型式検定は3年有効'である理由・法制度設計の背景を問う",
+    "placeholder_structure": {
+      "problem_statement": "【理由理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 118,
+    "theme_id": 1009,
+    "theme_name": "遊技機型式検定は3年有効",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "知識修正能力",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "経験陥阱: '遊技機型式検定は3年有効'と実務経験の乖離を示す",
+    "placeholder_structure": {
+      "problem_statement": "【経験陥阱】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 119,
+    "theme_id": 1009,
+    "theme_name": "遊技機型式検定は3年有効",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法改正への対応",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "改正対応: '遊技機型式検定は3年有効'に関する法律改正への対応",
+    "placeholder_structure": {
+      "problem_statement": "【改正対応】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 120,
+    "theme_id": 1009,
+    "theme_name": "遊技機型式検定は3年有効",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_type": "true_false",
+    "pattern_description": "複数要素の統合判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合応用: '遊技機型式検定は3年有効'を含む複数要素の統合判定",
+    "placeholder_structure": {
+      "problem_statement": "【複合応用】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 121,
+    "theme_id": 1010,
+    "theme_name": "型式検定更新申請のタイミング",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "基本的な法律事実",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "基本的な事実確認: '型式検定更新申請のタイミング'は正しいか？(基本的な法律事実)",
+    "placeholder_structure": {
+      "problem_statement": "【基本知識】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 122,
+    "theme_id": 1010,
+    "theme_name": "型式検定更新申請のタイミング",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "絶対表現への警戒",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "絶対表現への警戒: '型式検定更新申請のタイミング'について、「必ず」「自動的に」などの絶対表現を含める",
+    "placeholder_structure": {
+      "problem_statement": "【ひっかけ】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 123,
+    "theme_id": 1010,
+    "theme_name": "型式検定更新申請のタイミング",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "概念の区別",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "用語比較: '型式検定更新申請のタイミング'と関連概念の違いを問う",
+    "placeholder_structure": {
+      "problem_statement": "【用語比較】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 124,
+    "theme_id": 1010,
+    "theme_name": "型式検定更新申請のタイミング",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "法律体系の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "優先順位: '型式検定更新申請のタイミング'に関連する複数の義務がある場合の優先順位判定",
+    "placeholder_structure": {
+      "problem_statement": "【優先順位】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 125,
+    "theme_id": 1010,
+    "theme_name": "型式検定更新申請のタイミング",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "時間経過による変化",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "時系列理解: '型式検定更新申請のタイミング'に関する時間経過による法的ステータス変化",
+    "placeholder_structure": {
+      "problem_statement": "【時系列理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 126,
+    "theme_id": 1010,
+    "theme_name": "型式検定更新申請のタイミング",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "実務的判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "シナリオ判定: '型式検定更新申請のタイミング'を含む具体的実務シナリオでの判定",
+    "placeholder_structure": {
+      "problem_statement": "【シナリオ判定】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 127,
+    "theme_id": 1010,
+    "theme_name": "型式検定更新申請のタイミング",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "違反の重大度判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合違反: '型式検定更新申請のタイミング'と他の違反が同時に存在する場合の重大度比較",
+    "placeholder_structure": {
+      "problem_statement": "【複合違反】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 128,
+    "theme_id": 1010,
+    "theme_name": "型式検定更新申請のタイミング",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "細かい知識確認",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "数値正確性: '型式検定更新申請のタイミング'に関する具体的数値や期限を含める",
+    "placeholder_structure": {
+      "problem_statement": "【数値正確性】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 129,
+    "theme_id": 1010,
+    "theme_name": "型式検定更新申請のタイミング",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法制度設計の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "理由理解: '型式検定更新申請のタイミング'である理由・法制度設計の背景を問う",
+    "placeholder_structure": {
+      "problem_statement": "【理由理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 130,
+    "theme_id": 1010,
+    "theme_name": "型式検定更新申請のタイミング",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "知識修正能力",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "経験陥阱: '型式検定更新申請のタイミング'と実務経験の乖離を示す",
+    "placeholder_structure": {
+      "problem_statement": "【経験陥阱】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 131,
+    "theme_id": 1010,
+    "theme_name": "型式検定更新申請のタイミング",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法改正への対応",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "改正対応: '型式検定更新申請のタイミング'に関する法律改正への対応",
+    "placeholder_structure": {
+      "problem_statement": "【改正対応】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 132,
+    "theme_id": 1010,
+    "theme_name": "型式検定更新申請のタイミング",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_type": "true_false",
+    "pattern_description": "複数要素の統合判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合応用: '型式検定更新申請のタイミング'を含む複数要素の統合判定",
+    "placeholder_structure": {
+      "problem_statement": "【複合応用】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 133,
+    "theme_id": 1011,
+    "theme_name": "景品の種類制限",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "基本的な法律事実",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "基本的な事実確認: '景品の種類制限'は正しいか？(基本的な法律事実)",
+    "placeholder_structure": {
+      "problem_statement": "【基本知識】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 134,
+    "theme_id": 1011,
+    "theme_name": "景品の種類制限",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "絶対表現への警戒",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "絶対表現への警戒: '景品の種類制限'について、「必ず」「自動的に」などの絶対表現を含める",
+    "placeholder_structure": {
+      "problem_statement": "【ひっかけ】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 135,
+    "theme_id": 1011,
+    "theme_name": "景品の種類制限",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "概念の区別",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "用語比較: '景品の種類制限'と関連概念の違いを問う",
+    "placeholder_structure": {
+      "problem_statement": "【用語比較】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 136,
+    "theme_id": 1011,
+    "theme_name": "景品の種類制限",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_type": "true_false",
+    "pattern_description": "法律体系の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "優先順位: '景品の種類制限'に関連する複数の義務がある場合の優先順位判定",
+    "placeholder_structure": {
+      "problem_statement": "【優先順位】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 137,
+    "theme_id": 1011,
+    "theme_name": "景品の種類制限",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "時間経過による変化",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "時系列理解: '景品の種類制限'に関する時間経過による法的ステータス変化",
+    "placeholder_structure": {
+      "problem_statement": "【時系列理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 138,
+    "theme_id": 1011,
+    "theme_name": "景品の種類制限",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "実務的判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "シナリオ判定: '景品の種類制限'を含む具体的実務シナリオでの判定",
+    "placeholder_structure": {
+      "problem_statement": "【シナリオ判定】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 139,
+    "theme_id": 1011,
+    "theme_name": "景品の種類制限",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "違反の重大度判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合違反: '景品の種類制限'と他の違反が同時に存在する場合の重大度比較",
+    "placeholder_structure": {
+      "problem_statement": "【複合違反】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 140,
+    "theme_id": 1011,
+    "theme_name": "景品の種類制限",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_type": "true_false",
+    "pattern_description": "細かい知識確認",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "数値正確性: '景品の種類制限'に関する具体的数値や期限を含める",
+    "placeholder_structure": {
+      "problem_statement": "【数値正確性】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 141,
+    "theme_id": 1011,
+    "theme_name": "景品の種類制限",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法制度設計の理解",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "理由理解: '景品の種類制限'である理由・法制度設計の背景を問う",
+    "placeholder_structure": {
+      "problem_statement": "【理由理解】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 142,
+    "theme_id": 1011,
+    "theme_name": "景品の種類制限",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "知識修正能力",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "経験陥阱: '景品の種類制限'と実務経験の乖離を示す",
+    "placeholder_structure": {
+      "problem_statement": "【経験陥阱】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 143,
+    "theme_id": 1011,
+    "theme_name": "景品の種類制限",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_type": "true_false",
+    "pattern_description": "法改正への対応",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "改正対応: '景品の種類制限'に関する法律改正への対応",
+    "placeholder_structure": {
+      "problem_statement": "【改正対応】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  },
+  {
+    "problem_id": 144,
+    "theme_id": 1011,
+    "theme_name": "景品の種類制限",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_type": "true_false",
+    "pattern_description": "複数要素の統合判定",
+    "source_pdf": 1,
+    "source_page": 0,
+    "template_instructions": "複合応用: '景品の種類制限'を含む複数要素の統合判定",
+    "placeholder_structure": {
+      "problem_statement": "【複合応用】{scenario_context}",
+      "answer_options": [
+        "○",
+        "×"
+      ],
+      "explanation": "{{law_basis}}。{{reason_explanation}}"
+    }
+  }
+]

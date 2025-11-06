@@ -1,0 +1,503 @@
+【Batch 8 - 品質レビューリクエスト】
+
+対象: 主任者講習試験問題 141～160
+問題数: 20問
+
+【評価基準】
+1. 法的根拠の具体性 - 「風営法第X条の Y」のように条文が具体的であること
+2. 抽象的表現の有無 - 「一定の」「適切な」「所定の」などの表現がないこと  
+3. 問題文の長さ - 最低20文字以上であること
+4. 複数の解釈の可能性がないこと
+
+【指示】
+以下の20問について、一問ずつ以下の形式で評価してください：
+
+【問題ID X】
+- 評価: [✅ OK / ⚠️ 要改善 / ❌ 不合格]
+- 指摘事項: [該当する場合のみ記入]
+
+【問題データ】
+[
+  {
+    "problem_id": 150,
+    "theme_id": 2067,
+    "theme_name": "型式検定不合格時の手続き",
+    "category": "型式検定関連",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.755887",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_text": "型式検定不合格時の30日前までに手続きについて、営業経験が長い者でも。",
+    "correct_answer": "○",
+    "explanation": "型式検定不合格時の手続きのような法律知識は、実務経験だけでは不十分で、正確な学習が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第15条",
+      "section": "（型式検定）",
+      "detail": "型式検定不合格の遊技機は設置できない。"
+    }
+  },
+  {
+    "problem_id": 151,
+    "theme_id": 9000,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:10.617513",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "は、災害時の場合、申請する必要がある。",
+    "correct_answer": "×",
+    "explanation": "基板ケースのかしめと管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（基板ケースのかしめと管理）",
+      "detail": "基板ケースのかしめと管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 152,
+    "theme_id": 9001,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:10.636077",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★★",
+    "problem_text": "基板ケースのかしめと管理の不正発見時において、を怠ったした場合、罰金が科される。",
+    "correct_answer": "○",
+    "explanation": "基板ケースのかしめと管理に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（基板ケースのかしめと管理）",
+      "detail": "基板ケースのかしめと管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 153,
+    "theme_id": 9002,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:10.659257",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★★★",
+    "problem_text": "と遊技機の移動では、承認機関の新台設置時において異なる。",
+    "correct_answer": "×",
+    "explanation": "基板ケースのかしめと管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（基板ケースのかしめと管理）",
+      "detail": "基板ケースのかしめと管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 154,
+    "theme_id": 9003,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:10.682761",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★",
+    "problem_text": "については、条件付き許可は認められている。",
+    "correct_answer": "○",
+    "explanation": "基板ケースのかしめと管理に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（基板ケースのかしめと管理）",
+      "detail": "基板ケースのかしめと管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 155,
+    "theme_id": 9004,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:10.706795",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★",
+    "problem_text": "については、製造者の証明が求められる。",
+    "correct_answer": "×",
+    "explanation": "基板ケースのかしめと管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（基板ケースのかしめと管理）",
+      "detail": "基板ケースのかしめと管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 156,
+    "theme_id": 9007,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:10.877836",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★★",
+    "problem_text": "と遊技機の撤去では、届出期限の記録保管時において異なる。",
+    "correct_answer": "×",
+    "explanation": "基板ケースのかしめと管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（基板ケースのかしめと管理）",
+      "detail": "基板ケースのかしめと管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 157,
+    "theme_id": 9009,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:10.932987",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★",
+    "problem_text": "については、公安委員会の承認が義務付けられている。",
+    "correct_answer": "○",
+    "explanation": "基板ケースのかしめと管理に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（基板ケースのかしめと管理）",
+      "detail": "基板ケースのかしめと管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 158,
+    "theme_id": 9000,
+    "theme_name": "遊技機の点検・保守計画",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:11.043113",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "は、公安委員会の特別許可がある場合の場合、報告する必要がある。",
+    "correct_answer": "○",
+    "explanation": "遊技機の点検・保守計画に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の点検・保守計画）",
+      "detail": "遊技機の点検・保守計画に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 159,
+    "theme_id": 9003,
+    "theme_name": "遊技機の点検・保守計画",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:11.127814",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★",
+    "problem_text": "については、検査報告書の提出が届出が必要であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "遊技機の点検・保守計画に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の点検・保守計画）",
+      "detail": "遊技機の点検・保守計画に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 160,
+    "theme_id": 9004,
+    "theme_name": "遊技機の点検・保守計画",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:11.153105",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★",
+    "problem_text": "は、法令で定める場合30日前までの場合、申請する必要がある。",
+    "correct_answer": "○",
+    "explanation": "遊技機の点検・保守計画に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の点検・保守計画）",
+      "detail": "遊技機の点検・保守計画に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 161,
+    "theme_id": 9005,
+    "theme_name": "遊技機の点検・保守計画",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:11.198587",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★★★",
+    "problem_text": "遊技機の点検・保守計画の新台設置時において、を記録を残さなかったした場合、許可取消しが科される。",
+    "correct_answer": "○",
+    "explanation": "遊技機の点検・保守計画に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の点検・保守計画）",
+      "detail": "遊技機の点検・保守計画に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 162,
+    "theme_id": 9012,
+    "theme_name": "遊技機の点検・保守計画",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:11.593400",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★★",
+    "problem_text": "と遊技機の撤去では、30日前までに手続きの複雑さの中古遊技機設置時において異なる。",
+    "correct_answer": "○",
+    "explanation": "遊技機の点検・保守計画に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の点検・保守計画）",
+      "detail": "遊技機の点検・保守計画に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 163,
+    "theme_id": 9013,
+    "theme_name": "遊技機の点検・保守計画",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:11.702979",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_text": "遊技機の点検・保守計画の記録保管時において、を怠ったした場合、行政処分が科される。",
+    "correct_answer": "×",
+    "explanation": "遊技機の点検・保守計画に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の点検・保守計画）",
+      "detail": "遊技機の点検・保守計画に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 164,
+    "theme_id": 9014,
+    "theme_name": "遊技機の点検・保守計画",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:11.808829",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★",
+    "problem_text": "については、製造者の証明が不要であり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "遊技機の点検・保守計画に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の点検・保守計画）",
+      "detail": "遊技機の点検・保守計画に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 165,
+    "theme_id": 9015,
+    "theme_name": "遊技機の点検・保守計画",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:11.882017",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★★",
+    "problem_text": "と遊技機の修理では、対象範囲の記録保管時において異なる。",
+    "correct_answer": "○",
+    "explanation": "遊技機の点検・保守計画に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の点検・保守計画）",
+      "detail": "遊技機の点検・保守計画に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 166,
+    "theme_id": 9020,
+    "theme_name": "遊技機の点検・保守計画",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:12.170363",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★",
+    "problem_text": "については、公安委員会の承認が報告が必要であり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "遊技機の点検・保守計画に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の点検・保守計画）",
+      "detail": "遊技機の点検・保守計画に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 167,
+    "theme_id": 9023,
+    "theme_name": "遊技機の点検・保守計画",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:12.290475",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★",
+    "problem_text": "については、検査報告書の提出が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "遊技機の点検・保守計画に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の点検・保守計画）",
+      "detail": "遊技機の点検・保守計画に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 168,
+    "theme_id": 9001,
+    "theme_name": "外部端子板の管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:12.338628",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★★",
+    "problem_text": "外部端子板の管理の記録保管時において、を実施しなかったした場合、許可取消しが科される。",
+    "correct_answer": "○",
+    "explanation": "外部端子板の管理に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（外部端子板の管理）",
+      "detail": "外部端子板の管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 169,
+    "theme_id": 9004,
+    "theme_name": "外部端子板の管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:12.425546",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★",
+    "problem_text": "は、緊急24時間の場合、申請する必要がある。",
+    "correct_answer": "○",
+    "explanation": "外部端子板の管理に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（外部端子板の管理）",
+      "detail": "外部端子板の管理に関する規定を遵守する必要がある。"
+    }
+  }
+]
+
+よろしくお願いします。

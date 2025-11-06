@@ -1,0 +1,503 @@
+【Batch 6 - 品質レビューリクエスト】
+
+対象: 主任者講習試験問題 101～120
+問題数: 20問
+
+【評価基準】
+1. 法的根拠の具体性 - 「風営法第X条の Y」のように条文が具体的であること
+2. 抽象的表現の有無 - 「一定の」「適切な」「所定の」などの表現がないこと  
+3. 問題文の長さ - 最低20文字以上であること
+4. 複数の解釈の可能性がないこと
+
+【指示】
+以下の20問について、一問ずつ以下の形式で評価してください：
+
+【問題ID X】
+- 評価: [✅ OK / ⚠️ 要改善 / ❌ 不合格]
+- 指摘事項: [該当する場合のみ記入]
+
+【問題データ】
+[
+  {
+    "problem_id": 110,
+    "theme_id": 2076,
+    "theme_name": "リサイクル推進法との関係",
+    "category": "景品規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.756499",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_text": "リサイクル推進法との関係の手続きから3年が経過した場合、有効期限が切れる必要である。",
+    "correct_answer": "○",
+    "explanation": "型式検定など時間制限がある規制では、定期的な更新手続きが必要です。",
+    "legal_reference": {
+      "law": "法律全般",
+      "article": "リサイクル推進法等",
+      "section": "（景品関連法）",
+      "detail": "景品の廃棄処理はリサイクル法に対応。"
+    }
+  },
+  {
+    "problem_id": 111,
+    "theme_id": 2076,
+    "theme_name": "リサイクル推進法との関係",
+    "category": "景品規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.756504",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_text": "リサイクル推進法との関係の新台設置時において、営業者がリサイクル推進法との関係を含む状況で営業を継続保管する場合、風営法に定められた法令で定められた措置により継続可能である。",
+    "correct_answer": "○",
+    "explanation": "リサイクル推進法との関係に関する状況でも、適切な対応と手続きにより営業継続が可能です。",
+    "legal_reference": {
+      "law": "法律全般",
+      "article": "リサイクル推進法等",
+      "section": "（景品関連法）",
+      "detail": "景品の廃棄処理はリサイクル法に対応。"
+    }
+  },
+  {
+    "problem_id": 112,
+    "theme_id": 2076,
+    "theme_name": "リサイクル推進法との関係",
+    "category": "景品規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.756516",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_text": "リサイクル推進法との関係に関する型式検定の有効期限は3年である。",
+    "correct_answer": "○",
+    "explanation": "型式検定は3年ごとに更新申請が必要です。これは重要な数値です。",
+    "legal_reference": {
+      "law": "法律全般",
+      "article": "リサイクル推進法等",
+      "section": "（景品関連法）",
+      "detail": "景品の廃棄処理はリサイクル法に対応。"
+    }
+  },
+  {
+    "problem_id": 113,
+    "theme_id": 2076,
+    "theme_name": "リサイクル推進法との関係",
+    "category": "景品規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.756526",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_text": "リサイクル推進法との関係について、営業経験が長い者でも。",
+    "correct_answer": "○",
+    "explanation": "リサイクル推進法との関係のような法律知識は、実務経験だけでは不十分で、正確な学習が必要です。",
+    "legal_reference": {
+      "law": "法律全般",
+      "article": "リサイクル推進法等",
+      "section": "（景品関連法）",
+      "detail": "景品の廃棄処理はリサイクル法に対応。"
+    }
+  },
+  {
+    "problem_id": 114,
+    "theme_id": 2000,
+    "theme_name": "新台導入時の確認事項",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.749436",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_text": "新台導入時の確認事項は、法律で定められている重要な知識であり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "新台導入時の確認事項について正確に理解することは、営業管理の基本です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条の2",
+      "section": "（遊技機の設置）",
+      "detail": "新台導入時に型式検定の確認が必須。"
+    }
+  },
+  {
+    "problem_id": 115,
+    "theme_id": 2000,
+    "theme_name": "新台導入時の確認事項",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.749462",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_text": "新台導入時の確認事項に関記録する対応が法律で定められた場合、営業の継続可能性を判断基準に行動すると都道府県条例で定められている。",
+    "correct_answer": "○",
+    "explanation": "新台導入時の確認事項は営業継続に関わるため、最優先で対応が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条の2",
+      "section": "（遊技機の設置）",
+      "detail": "新台導入時に型式検定の確認が必須。"
+    }
+  },
+  {
+    "problem_id": 116,
+    "theme_id": 2000,
+    "theme_name": "新台導入時の確認事項",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.749478",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_text": "新台導入時の確認事項の遊技機撤去時において、営業者が新台導入時の確認事項を含む状況で営業を継続保管する場合、風営法に定められた法令で定められた措置により継続可能である。",
+    "correct_answer": "○",
+    "explanation": "新台導入時の確認事項に関する状況でも、適切な対応と手続きにより営業継続が可能です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条の2",
+      "section": "（遊技機の設置）",
+      "detail": "新台導入時に型式検定の確認が必須。"
+    }
+  },
+  {
+    "problem_id": 117,
+    "theme_id": 2005,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.749969",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_text": "基板ケースのかしめと管理は、法律で定められている重要な知識であり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "基板ケースのかしめと管理について正確に理解することは、営業管理の基本です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "基板ケースのかしめは遊技機の完全性を確保する。"
+    }
+  },
+  {
+    "problem_id": 118,
+    "theme_id": 2005,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.749978",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "基板ケースのかしめと管理については、必ず毎年の届出が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "「必ず毎年」という表現は誤り。基板ケースのかしめと管理の手続きは状況に応じて異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "基板ケースのかしめは遊技機の完全性を確保する。"
+    }
+  },
+  {
+    "problem_id": 119,
+    "theme_id": 2005,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.749986",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "基板ケースのかしめと管理は、営業許可と同じく無期限有効であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "基板ケースのかしめと管理と営業許可は異なる制度で、有効期限等も異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "基板ケースのかしめは遊技機の完全性を確保する。"
+    }
+  },
+  {
+    "problem_id": 120,
+    "theme_id": 2005,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.750010",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_text": "基板ケースのかしめと管理の記録保管時において、営業者が基板ケースのかしめと管理を含む状況で営業を継続する場合、風営法に定められた法令で定められた措置により継続可能である。",
+    "correct_answer": "○",
+    "explanation": "基板ケースのかしめと管理に関する状況でも、適切な対応と手続きにより営業継続が可能です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "基板ケースのかしめは遊技機の完全性を確保する。"
+    }
+  },
+  {
+    "problem_id": 121,
+    "theme_id": 2005,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.750025",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_text": "基板ケースのかしめと管理に関する型式検定の有効期限は3年である。",
+    "correct_answer": "○",
+    "explanation": "型式検定は3年ごとに更新申請が必要です。これは重要な数値です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "基板ケースのかしめは遊技機の完全性を確保する。"
+    }
+  },
+  {
+    "problem_id": 122,
+    "theme_id": 2005,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.750033",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_text": "基板ケースのかしめと管理という規制が存在記録するのは、遊技業の健全性確保と消費者保護のためであり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "すべての風営法の規制は、業界の健全性と消費者保護を目的としています。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "基板ケースのかしめは遊技機の完全性を確保する。"
+    }
+  },
+  {
+    "problem_id": 123,
+    "theme_id": 2005,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.750043",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_text": "基板ケースのかしめと管理について、営業経験が長い者でも。",
+    "correct_answer": "○",
+    "explanation": "基板ケースのかしめと管理のような法律知識は、実務経験だけでは不十分で、正確な学習が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "基板ケースのかしめは遊技機の完全性を確保する。"
+    }
+  },
+  {
+    "problem_id": 124,
+    "theme_id": 2005,
+    "theme_name": "基板ケースのかしめと管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.750059",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_text": "基板ケースのかしめと管理を含む複雑なシナリオでは、複数の法的要件を総合的に判断保管する必要があり、単一の要素だけでは判定できない。",
+    "correct_answer": "○",
+    "explanation": "実務では基板ケースのかしめと管理を含めた複数の規制を同時に考慮する必要があります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "基板ケースのかしめは遊技機の完全性を確保する。"
+    }
+  },
+  {
+    "problem_id": 125,
+    "theme_id": 2006,
+    "theme_name": "チップのセキュリティ",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.750124",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_text": "チップのセキュリティに関する型式検定の有効期限は3年である。",
+    "correct_answer": "○",
+    "explanation": "型式検定は3年ごとに更新申請が必要です。これは重要な数値です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "遊技機のチップは改造防止の対象。"
+    }
+  },
+  {
+    "problem_id": 126,
+    "theme_id": 2007,
+    "theme_name": "外部端子板の管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.750270",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_text": "外部端子板の管理の中古遊技機設置時において、営業者が外部端子板の管理を含む状況で営業を継続記録する場合、風営法に定められた法令で定められた措置により継続可能である。",
+    "correct_answer": "○",
+    "explanation": "外部端子板の管理に関する状況でも、適切な対応と手続きにより営業継続が可能です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "外部端子板の不正接続は禁止。"
+    }
+  },
+  {
+    "problem_id": 127,
+    "theme_id": 2008,
+    "theme_name": "旧機械の回収と廃棄",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.750334",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "旧機械の回収と廃棄については、必ず毎年の届出が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "「必ず毎年」という表現は誤り。旧機械の回収と廃棄の手続きは状況に応じて異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第9条",
+      "section": "（営業の廃止等）",
+      "detail": "遊技機の廃棄は適正に処理される必要がある。"
+    }
+  },
+  {
+    "problem_id": 128,
+    "theme_id": 2008,
+    "theme_name": "旧機械の回収と廃棄",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.750342",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "旧機械の回収と廃棄は、営業許可と同じく無期限有効であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "旧機械の回収と廃棄と営業許可は異なる制度で、有効期限等も異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第9条",
+      "section": "（営業の廃止等）",
+      "detail": "遊技機の廃棄は適正に処理される必要がある。"
+    }
+  },
+  {
+    "problem_id": 129,
+    "theme_id": 2008,
+    "theme_name": "旧機械の回収と廃棄",
+    "category": "遊技機管理",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.750368",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_text": "旧機械の回収と廃棄の遊技機撤去時において、営業者が旧機械の回収と廃棄を含む状況で営業を継続する場合、風営法に定められた法令で定められた措置により継続可能である。",
+    "correct_answer": "○",
+    "explanation": "旧機械の回収と廃棄に関する状況でも、適切な対応と手続きにより営業継続が可能です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第9条",
+      "section": "（営業の廃止等）",
+      "detail": "遊技機の廃棄は適正に処理される必要がある。"
+    }
+  }
+]
+
+よろしくお願いします。

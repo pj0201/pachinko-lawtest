@@ -1,0 +1,93 @@
+{
+  "batch": 1,
+  "total_problems": 20,
+  "reviewed": 20,
+  "timestamp": "2025-10-24T11:11:04.863427",
+  "review_results": {
+    "1": {
+      "symbol": "⚠️",
+      "status": "要改善"
+    },
+    "2": {
+      "symbol": "⚠️",
+      "status": "要改善"
+    },
+    "3": {
+      "symbol": "⚠️",
+      "status": "要改善"
+    },
+    "4": {
+      "symbol": "❌",
+      "status": "不合格"
+    },
+    "5": {
+      "symbol": "⚠️",
+      "status": "要改善"
+    },
+    "6": {
+      "symbol": "❌",
+      "status": "不合格"
+    },
+    "7": {
+      "symbol": "✅",
+      "status": "OK"
+    },
+    "8": {
+      "symbol": "✅",
+      "status": "OK"
+    },
+    "9": {
+      "symbol": "✅",
+      "status": "OK"
+    },
+    "10": {
+      "symbol": "❌",
+      "status": "不合格"
+    },
+    "11": {
+      "symbol": "✅",
+      "status": "OK"
+    },
+    "12": {
+      "symbol": "⚠️",
+      "status": "要改善"
+    },
+    "13": {
+      "symbol": "❌",
+      "status": "不合格"
+    },
+    "14": {
+      "symbol": "⚠️",
+      "status": "要改善"
+    },
+    "15": {
+      "symbol": "❌",
+      "status": "不合格"
+    },
+    "16": {
+      "symbol": "⚠️",
+      "status": "要改善"
+    },
+    "17": {
+      "symbol": "⚠️",
+      "status": "要改善"
+    },
+    "18": {
+      "symbol": "✅",
+      "status": "OK"
+    },
+    "19": {
+      "symbol": "❌",
+      "status": "不合格"
+    },
+    "20": {
+      "symbol": "✅",
+      "status": "OK"
+    }
+  },
+  "statistics": {
+    "ok": 6,
+    "needs_improvement": 8,
+    "fail": 6
+  }
+}

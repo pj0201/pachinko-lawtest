@@ -1,0 +1,188 @@
+.test-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.test-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 24px;
+}
+
+.progress-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #f093fb 0%, #f5576c 100%);
+  transition: width 0.3s ease;
+}
+
+.test-content {
+  flex: 1;
+  padding: 40px 30px;
+}
+
+.category-badge {
+  display: inline-block;
+  background-color: #e0e7ff;
+  color: #667eea;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.question-text {
+  margin-bottom: 30px;
+}
+
+.question-text p {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  line-height: 1.6;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 30px;
+}
+
+.option-btn {
+  background-color: #f0f4ff;
+  border: 2px solid #e0e7ff;
+  padding: 20px;
+  text-align: left;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.option-btn:hover {
+  background-color: #e0e7ff;
+  border-color: #667eea;
+  transform: translateX(4px);
+}
+
+.option-btn.selected {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: #667eea;
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.option-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 32px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(102, 126, 234, 0.1);
+  border: 2px solid #667eea;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.option-btn.selected .option-circle {
+  background-color: rgba(255, 255, 255, 0.3);
+  border-color: white;
+  color: white;
+}
+
+.option-text {
+  flex: 1;
+}
+
+.test-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 24px;
+  background-color: #f0f4ff;
+  border-top: 2px solid #e0e7ff;
+}
+
+/* ローディング・エラー表示 */
+.loading,
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.loading p,
+.error p {
+  font-size: 18px;
+  font-weight: 500;
+  color: #666;
+}
+
+.loading {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.error {
+  background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 100%);
+}
+
+.error p {
+  color: #d63031;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .test-content {
+    padding: 24px;
+  }
+
+  .question-text p {
+    font-size: 16px;
+  }
+
+  .option-btn {
+    padding: 16px;
+  }
+
+  .test-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .nav-btn {
+    width: 100%;
+  }
+
+  .loading p,
+  .error p {
+    font-size: 16px;
+  }
+}

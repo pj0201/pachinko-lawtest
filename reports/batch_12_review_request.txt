@@ -1,0 +1,503 @@
+【Batch 12 - 品質レビューリクエスト】
+
+対象: 主任者講習試験問題 221～240
+問題数: 20問
+
+【評価基準】
+1. 法的根拠の具体性 - 「風営法第X条の Y」のように条文が具体的であること
+2. 抽象的表現の有無 - 「一定の」「適切な」「所定の」などの表現がないこと  
+3. 問題文の長さ - 最低20文字以上であること
+4. 複数の解釈の可能性がないこと
+
+【指示】
+以下の20問について、一問ずつ以下の形式で評価してください：
+
+【問題ID X】
+- 評価: [✅ OK / ⚠️ 要改善 / ❌ 不合格]
+- 指摘事項: [該当する場合のみ記入]
+
+【問題データ】
+[
+  {
+    "problem_id": 230,
+    "theme_id": 9001,
+    "theme_name": "型式検定更新申請のタイミング",
+    "category": "型式検定関連",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:52.380372",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★★",
+    "problem_text": "型式検定更新申請のタイミングの遊技機撤去時において、更新申請を実施しなかったした場合、許可取消しが科される。",
+    "correct_answer": "○",
+    "explanation": "型式検定更新申請のタイミングに関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（型式検定更新申請のタイミング）",
+      "detail": "型式検定更新申請のタイミングに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 231,
+    "theme_id": 9002,
+    "theme_name": "型式検定更新申請のタイミング",
+    "category": "型式検定関連",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:52.410275",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_text": "型式検定更新申請のタイミングにおいて、型式検定の有効期限は無期限であり、更新は設置後7日以内に行う。",
+    "correct_answer": "○",
+    "explanation": "型式検定更新申請のタイミングに関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（型式検定更新申請のタイミング）",
+      "detail": "型式検定更新申請のタイミングに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 232,
+    "theme_id": 9004,
+    "theme_name": "型式検定更新申請のタイミング",
+    "category": "型式検定関連",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:52.472959",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★",
+    "problem_text": "型式検定の更新申請は、設置と同時にに提出する必要がある。",
+    "correct_answer": "○",
+    "explanation": "型式検定更新申請のタイミングに関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（型式検定更新申請のタイミング）",
+      "detail": "型式検定更新申請のタイミングに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 233,
+    "theme_id": 9005,
+    "theme_name": "型式検定更新申請のタイミング",
+    "category": "型式検定関連",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:52.506035",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★",
+    "problem_text": "型式検定更新申請のタイミングの営業許可更新時において、法令で定める場合7日以内の場合、更新申請が認められる。",
+    "correct_answer": "○",
+    "explanation": "型式検定更新申請のタイミングに関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（型式検定更新申請のタイミング）",
+      "detail": "型式検定更新申請のタイミングに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 234,
+    "theme_id": 9000,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:59.857485",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "景品の種類制限の記録保管時において、災害時48時間の場合、景品の条件付き許可が認められる。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 235,
+    "theme_id": 9001,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:59.883434",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★★",
+    "problem_text": "景品の種類制限の記録保管時において、制限された景品を怠ったした場合、許可取消しが科される。",
+    "correct_answer": "○",
+    "explanation": "景品の種類制限に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 236,
+    "theme_id": 9002,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:59.917748",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_text": "景品のセキュリティチェックについて、過去の違反歴が定められている。",
+    "correct_answer": "○",
+    "explanation": "景品の種類制限に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 237,
+    "theme_id": 9003,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:59.951076",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★★",
+    "problem_text": "景品の種類制限と遊技機の移動では、30日前までに手続きの複雑さの営業許可更新時において異なる。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 238,
+    "theme_id": 9004,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:59.983459",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★",
+    "problem_text": "景品として提供できるものは、指定された品目に制限されている。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 239,
+    "theme_id": 9005,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:05:00.015860",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★",
+    "problem_text": "景品の種類制限の遊技機撤去時において、公安委員会の特別許可がある場合3年間の場合、景品の条件付き許可が認められる。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 240,
+    "theme_id": 9008,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:05:00.126634",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★★",
+    "problem_text": "景品の種類制限と遊技機の撤去では、対象範囲の不正発見時において異なる。",
+    "correct_answer": "○",
+    "explanation": "景品の種類制限に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 241,
+    "theme_id": 9011,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:05:00.261377",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "景品の動作確認について、違反の重大性が定められている。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 242,
+    "theme_id": 9013,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:05:00.324820",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★",
+    "problem_text": "景品として提供できるものは、法令で定めるものに制限されている。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 243,
+    "theme_id": 9016,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:05:00.477092",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★",
+    "problem_text": "景品として提供できるものは、現金以外のものに制限されている。",
+    "correct_answer": "○",
+    "explanation": "景品の種類制限に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 244,
+    "theme_id": 9000,
+    "theme_name": "中古遊技機の取扱い",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:26:59.755894",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★★",
+    "problem_text": "新台は、公安委員会の特別許可がある場合であれば特別な措置の対象となる。",
+    "correct_answer": "×",
+    "explanation": "中古遊技機の取扱いに関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（中古遊技機の取扱い）",
+      "detail": "中古遊技機の取扱いに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 245,
+    "theme_id": 9001,
+    "theme_name": "中古遊技機の取扱い",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:26:59.806981",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "遊技機の報告は、事前にまでに確認記録することが義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "中古遊技機の取扱いに関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（中古遊技機の取扱い）",
+      "detail": "中古遊技機の取扱いに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 246,
+    "theme_id": 9002,
+    "theme_name": "中古遊技機の取扱い",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:26:59.839861",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_text": "中古遊技機について、3ヶ月ごとの封印の確認が必要である。",
+    "correct_answer": "×",
+    "explanation": "中古遊技機の取扱いに関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（中古遊技機の取扱い）",
+      "detail": "中古遊技機の取扱いに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 247,
+    "theme_id": 9003,
+    "theme_name": "中古遊技機の取扱い",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:26:59.911774",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★",
+    "problem_text": "設置済み遊技機の確認は、営業者への届け出るが不要であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "中古遊技機の取扱いに関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（中古遊技機の取扱い）",
+      "detail": "中古遊技機の取扱いに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 248,
+    "theme_id": 9005,
+    "theme_name": "中古遊技機の取扱い",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:26:59.993088",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★★★★",
+    "problem_text": "故障機の申請と遊技機の修理の許可申請は、14日前までに手続きの複雑さが異なる。",
+    "correct_answer": "×",
+    "explanation": "中古遊技機の取扱いに関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（中古遊技機の取扱い）",
+      "detail": "中古遊技機の取扱いに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 249,
+    "theme_id": 9006,
+    "theme_name": "中古遊技機の取扱い",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:00.032170",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★",
+    "problem_text": "中古遊技機の基板について、型式検定の有効性が求められる。",
+    "correct_answer": "×",
+    "explanation": "中古遊技機の取扱いに関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（中古遊技機の取扱い）",
+      "detail": "中古遊技機の取扱いに関する規定を遵守する必要がある。"
+    }
+  }
+]
+
+よろしくお願いします。

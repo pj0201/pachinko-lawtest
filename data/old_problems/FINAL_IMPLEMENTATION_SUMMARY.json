@@ -1,0 +1,110 @@
+{
+  "implementation_timestamp": "2025-10-25 08:00:00",
+  "total_problems": 638,
+  "batches_processed": [
+    {
+      "name": "batch1_part1",
+      "stages": {}
+    },
+    {
+      "name": "batch1_part2",
+      "stages": {
+        "review": {
+          "pass": 0,
+          "improve": 5,
+          "fail": 58
+        },
+        "correction": {
+          "pass": 0,
+          "improve": 0,
+          "fail": 0
+        }
+      }
+    },
+    {
+      "name": "batch2",
+      "stages": {
+        "review": {
+          "pass": 0,
+          "improve": 0,
+          "fail": 140
+        },
+        "correction": {
+          "pass": 0,
+          "improve": 0,
+          "fail": 0
+        },
+        "rereview": {
+          "pass": 0,
+          "improve": 0,
+          "fail": 141
+        }
+      }
+    },
+    {
+      "name": "batch3",
+      "stages": {
+        "review": {
+          "pass": 24,
+          "improve": 57,
+          "fail": 62
+        },
+        "correction": {
+          "pass": 0,
+          "improve": 0,
+          "fail": 0
+        },
+        "rereview": {
+          "pass": 11,
+          "improve": 1,
+          "fail": 2
+        }
+      }
+    },
+    {
+      "name": "batch4",
+      "stages": {
+        "review": {
+          "pass": 22,
+          "improve": 25,
+          "fail": 93
+        },
+        "correction": {
+          "pass": 0,
+          "improve": 0,
+          "fail": 0
+        },
+        "rereview": {
+          "pass": 8,
+          "improve": 103,
+          "fail": 32
+        }
+      }
+    },
+    {
+      "name": "batch5",
+      "stages": {
+        "review": {
+          "pass": 5,
+          "improve": 16,
+          "fail": 57
+        },
+        "correction": {
+          "pass": 0,
+          "improve": 0,
+          "fail": 0
+        },
+        "rereview": {
+          "pass": 6,
+          "improve": 32,
+          "fail": 43
+        }
+      }
+    }
+  ],
+  "statistics": {
+    "total_pass": 76,
+    "total_improve": 239,
+    "total_fail": 628
+  }
+}

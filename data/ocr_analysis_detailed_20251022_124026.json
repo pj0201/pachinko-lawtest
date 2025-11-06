@@ -1,0 +1,280 @@
+{
+  "timestamp": "2025-10-22T12:40:26.592393",
+  "total_pages": 220,
+  "summary": {
+    "total_pages": 220
+  },
+  "quality_metrics": {
+    "total_characters": 358051,
+    "average_chars_per_page": 1628,
+    "pdf_distribution": {
+      "1": 0,
+      "2": 0,
+      "3": 0
+    },
+    "pages_by_pdf": {
+      "1": 71,
+      "2": 72,
+      "3": 77
+    }
+  },
+  "content_analysis": {
+    "chapters": [
+      {
+        "pdf": 1,
+        "page": 47,
+        "preview": "第3章 遊技和取扱主任者の実務 85\n\n日工組 証紙・製造番号村等 (屈員式遊技繁用)\n日工組証紙\n\n廷来機                                    スマートパチスロ\n\n"
+      }
+    ],
+    "sections": [],
+    "tables": [],
+    "lists": [
+      {
+        "pdf": 1,
+        "page": 4
+      },
+      {
+        "pdf": 1,
+        "page": 7
+      },
+      {
+        "pdf": 1,
+        "page": 9
+      },
+      {
+        "pdf": 1,
+        "page": 10
+      },
+      {
+        "pdf": 1,
+        "page": 11
+      },
+      {
+        "pdf": 1,
+        "page": 13
+      },
+      {
+        "pdf": 1,
+        "page": 14
+      },
+      {
+        "pdf": 1,
+        "page": 15
+      },
+      {
+        "pdf": 1,
+        "page": 18
+      },
+      {
+        "pdf": 1,
+        "page": 19
+      },
+      {
+        "pdf": 1,
+        "page": 20
+      },
+      {
+        "pdf": 1,
+        "page": 21
+      },
+      {
+        "pdf": 1,
+        "page": 23
+      },
+      {
+        "pdf": 1,
+        "page": 24
+      },
+      {
+        "pdf": 1,
+        "page": 25
+      },
+      {
+        "pdf": 1,
+        "page": 27
+      },
+      {
+        "pdf": 1,
+        "page": 29
+      },
+      {
+        "pdf": 1,
+        "page": 30
+      },
+      {
+        "pdf": 1,
+        "page": 32
+      },
+      {
+        "pdf": 1,
+        "page": 33
+      },
+      {
+        "pdf": 1,
+        "page": 34
+      },
+      {
+        "pdf": 1,
+        "page": 40
+      },
+      {
+        "pdf": 1,
+        "page": 41
+      },
+      {
+        "pdf": 1,
+        "page": 60
+      },
+      {
+        "pdf": 1,
+        "page": 66
+      },
+      {
+        "pdf": 1,
+        "page": 67
+      },
+      {
+        "pdf": 1,
+        "page": 68
+      },
+      {
+        "pdf": 2,
+        "page": 5
+      },
+      {
+        "pdf": 2,
+        "page": 7
+      },
+      {
+        "pdf": 2,
+        "page": 9
+      },
+      {
+        "pdf": 2,
+        "page": 10
+      },
+      {
+        "pdf": 2,
+        "page": 12
+      },
+      {
+        "pdf": 2,
+        "page": 13
+      },
+      {
+        "pdf": 2,
+        "page": 15
+      },
+      {
+        "pdf": 2,
+        "page": 31
+      },
+      {
+        "pdf": 2,
+        "page": 34
+      },
+      {
+        "pdf": 2,
+        "page": 35
+      },
+      {
+        "pdf": 2,
+        "page": 36
+      },
+      {
+        "pdf": 2,
+        "page": 37
+      },
+      {
+        "pdf": 2,
+        "page": 43
+      },
+      {
+        "pdf": 2,
+        "page": 44
+      },
+      {
+        "pdf": 2,
+        "page": 47
+      },
+      {
+        "pdf": 2,
+        "page": 48
+      },
+      {
+        "pdf": 2,
+        "page": 49
+      },
+      {
+        "pdf": 2,
+        "page": 52
+      },
+      {
+        "pdf": 2,
+        "page": 57
+      },
+      {
+        "pdf": 2,
+        "page": 68
+      },
+      {
+        "pdf": 2,
+        "page": 72
+      },
+      {
+        "pdf": 3,
+        "page": 4
+      },
+      {
+        "pdf": 3,
+        "page": 7
+      },
+      {
+        "pdf": 3,
+        "page": 11
+      },
+      {
+        "pdf": 3,
+        "page": 21
+      },
+      {
+        "pdf": 3,
+        "page": 28
+      },
+      {
+        "pdf": 3,
+        "page": 41
+      },
+      {
+        "pdf": 3,
+        "page": 42
+      },
+      {
+        "pdf": 3,
+        "page": 49
+      },
+      {
+        "pdf": 3,
+        "page": 50
+      },
+      {
+        "pdf": 3,
+        "page": 51
+      },
+      {
+        "pdf": 3,
+        "page": 62
+      },
+      {
+        "pdf": 3,
+        "page": 76
+      }
+    ],
+    "special_sections": []
+  },
+  "quality_flags": {
+    "empty_pages": [],
+    "suspicious_content": [],
+    "possible_errors": []
+  }
+}

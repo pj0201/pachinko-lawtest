@@ -1,0 +1,12 @@
+修正済み問題集の保存場所一覧
+================================================================================
+保存日時: 2025-10-24T15:45:33.234170
+問題数: 638問
+
+保存先:
+1. ✅ /home/planj/patshinko-exam-app/data/PROBLEMS_FINAL_1491.json
+2. ✅ /home/planj/patshinko-exam-app/data/PROBLEMS_MODIFIED_20251024_154445.json
+3. ✅ /home/planj/patshinko-exam-app/backups/problems_latest.json
+4. ✅ /home/planj/patshinko-exam-app/backups/problems_20251024_full.json
+5. ✅ /home/planj/problems_modified_latest.json
+6. ✅ /home/planj/patshinko-exam-app_BACKUP_PROBLEMS.json

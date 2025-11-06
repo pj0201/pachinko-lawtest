@@ -1,0 +1,1419 @@
+{
+  "total_corrections": 197,
+  "corrections": [
+    {
+      "problem_id": 51,
+      "theme_name": "営業停止命令",
+      "before_article": "第24条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 127,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第9条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「旧機械の回収と廃棄」から自動マッピング"
+    },
+    {
+      "problem_id": 128,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第9条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「旧機械の回収と廃棄」から自動マッピング"
+    },
+    {
+      "problem_id": 129,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第9条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「旧機械の回収と廃棄」から自動マッピング"
+    },
+    {
+      "problem_id": 130,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第9条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「旧機械の回収と廃棄」から自動マッピング"
+    },
+    {
+      "problem_id": 171,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「旧機械の回収と廃棄」から自動マッピング"
+    },
+    {
+      "problem_id": 172,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「旧機械の回収と廃棄」から自動マッピング"
+    },
+    {
+      "problem_id": 174,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 175,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 176,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 177,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 178,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 179,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 180,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 181,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 182,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 183,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 184,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 185,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 186,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 187,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 188,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 189,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 190,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 191,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 192,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 193,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 194,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 195,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 196,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 197,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 198,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 199,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 200,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 201,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 202,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 203,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 204,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 205,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 206,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 207,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 208,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 209,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 210,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 211,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 212,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 213,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 214,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 215,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 216,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 217,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 218,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 219,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 220,
+      "theme_name": "営業禁止時間",
+      "before_article": "第6条",
+      "after_article": "第8条",
+      "reason": "テーマ「営業禁止時間」から自動マッピング"
+    },
+    {
+      "problem_id": 221,
+      "theme_name": "営業禁止時間",
+      "before_article": "第6条",
+      "after_article": "第8条",
+      "reason": "テーマ「営業禁止時間」から自動マッピング"
+    },
+    {
+      "problem_id": 222,
+      "theme_name": "営業禁止時間",
+      "before_article": "第6条",
+      "after_article": "第8条",
+      "reason": "テーマ「営業禁止時間」から自動マッピング"
+    },
+    {
+      "problem_id": 223,
+      "theme_name": "営業禁止時間",
+      "before_article": "第6条",
+      "after_article": "第8条",
+      "reason": "テーマ「営業禁止時間」から自動マッピング"
+    },
+    {
+      "problem_id": 224,
+      "theme_name": "営業禁止時間",
+      "before_article": "第6条",
+      "after_article": "第8条",
+      "reason": "テーマ「営業禁止時間」から自動マッピング"
+    },
+    {
+      "problem_id": 225,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 226,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 227,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 228,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 229,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 230,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 231,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 232,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 233,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 234,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 235,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 236,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 237,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 238,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 239,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 240,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 241,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 242,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 243,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 244,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 245,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 246,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 247,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 248,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 249,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 250,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 251,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 252,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 253,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 254,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 255,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 256,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 257,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 258,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 259,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 266,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 267,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 268,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 269,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 270,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 271,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 272,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 273,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 310,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 311,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 312,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 313,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 314,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 315,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 316,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 317,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 318,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「旧機械の回収と廃棄」から自動マッピング"
+    },
+    {
+      "problem_id": 319,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「旧機械の回収と廃棄」から自動マッピング"
+    },
+    {
+      "problem_id": 320,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「旧機械の回収と廃棄」から自動マッピング"
+    },
+    {
+      "problem_id": 321,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「旧機械の回収と廃棄」から自動マッピング"
+    },
+    {
+      "problem_id": 338,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 339,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 340,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 341,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 342,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 343,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 344,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 345,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 356,
+      "theme_name": "営業禁止時間",
+      "before_article": "第6条",
+      "after_article": "第8条",
+      "reason": "テーマ「営業禁止時間」から自動マッピング"
+    },
+    {
+      "problem_id": 357,
+      "theme_name": "営業禁止時間",
+      "before_article": "第6条",
+      "after_article": "第8条",
+      "reason": "テーマ「営業禁止時間」から自動マッピング"
+    },
+    {
+      "problem_id": 358,
+      "theme_name": "営業禁止時間",
+      "before_article": "第6条",
+      "after_article": "第8条",
+      "reason": "テーマ「営業禁止時間」から自動マッピング"
+    },
+    {
+      "problem_id": 374,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 375,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 376,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 377,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 391,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 392,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 393,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 422,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 423,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 424,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 425,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 426,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 427,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 428,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 429,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 430,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 483,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 484,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 485,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 486,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 487,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 488,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 489,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 490,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 491,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 492,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 493,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 494,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 495,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 496,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 497,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 498,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 499,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 500,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 501,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「中古遊技機の取扱い」から自動マッピング"
+    },
+    {
+      "problem_id": 503,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 504,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 505,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 506,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 507,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "after_article": "第9条",
+      "reason": "テーマ「遊技機の保守管理」から自動マッピング"
+    },
+    {
+      "problem_id": 526,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 527,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 528,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 529,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 530,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 531,
+      "theme_name": "新台設置の手続き",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「新台設置の手続き」から自動マッピング"
+    },
+    {
+      "problem_id": 532,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「旧機械の回収と廃棄」から自動マッピング"
+    },
+    {
+      "problem_id": 533,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「旧機械の回収と廃棄」から自動マッピング"
+    },
+    {
+      "problem_id": 534,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第6条",
+      "after_article": "第6条の2",
+      "reason": "テーマ「旧機械の回収と廃棄」から自動マッピング"
+    },
+    {
+      "problem_id": 550,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 551,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 552,
+      "theme_name": "営業停止命令",
+      "before_article": "第6条",
+      "after_article": "第31条",
+      "reason": "テーマ「営業停止命令」から自動マッピング"
+    },
+    {
+      "problem_id": 556,
+      "theme_name": "営業禁止時間",
+      "before_article": "第6条",
+      "after_article": "第8条",
+      "reason": "テーマ「営業禁止時間」から自動マッピング"
+    },
+    {
+      "problem_id": 563,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 564,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 565,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第6条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 569,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 570,
+      "theme_name": "型式検定更新申請のタイミング",
+      "before_article": "第6条",
+      "after_article": "第15条",
+      "reason": "テーマ「型式検定更新申請のタイミング」から自動マッピング"
+    },
+    {
+      "problem_id": 584,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 585,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 586,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 587,
+      "theme_name": "景品の種類制限",
+      "before_article": "第6条",
+      "after_article": "第22条",
+      "reason": "テーマ「景品の種類制限」から自動マッピング"
+    },
+    {
+      "problem_id": 648,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第3条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 649,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第3条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 650,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第3条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 651,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第3条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 652,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第3条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 653,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第3条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 654,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第3条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 655,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第3条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 656,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第3条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 657,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第3条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    },
+    {
+      "problem_id": 658,
+      "theme_name": "営業許可取得の要件",
+      "before_article": "第3条",
+      "after_article": "第4条",
+      "reason": "テーマ「営業許可取得の要件」から自動マッピング"
+    }
+  ],
+  "unmapped_themes": [
+    "型式検定の申請方法",
+    "セキュリティアップデート",
+    "営業許可と型式検定の違い",
+    "チップのセキュリティ",
+    "不正防止対策要綱",
+    "違反時の行政処分",
+    "遊技機型式検定は3年有効",
+    "型式検定と中古機の関係",
+    "リサイクル推進法との関係",
+    "型式検定と製造者の責任",
+    "不正改造の防止",
+    "リサイクルプロセス",
+    "営業許可の行政手続き",
+    "景品の種類制限詳細",
+    "型式検定不合格時の手続き",
+    "営業停止期間の計算",
+    "不正防止チェックリスト",
+    "遊技機の製造番号管理",
+    "新台導入時の確認事項",
+    "故障遊技機の対応",
+    "設置済み遊技機の交換手続き",
+    "時間帯別営業制限",
+    "営業禁止日",
+    "不正改造の具体的パターン",
+    "営業許可の取消し要件",
+    "営業許可と営業実績の関係",
+    "不正検出技術",
+    "景品交換の規制",
+    "営業許可は無期限有効",
+    "中古遊技機の流通管理",
+    "営業許可の失効事由",
+    "営業停止命令の内容",
+    "不正行為の罰則"
+  ]
+}

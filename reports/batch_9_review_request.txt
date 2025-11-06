@@ -1,0 +1,503 @@
+【Batch 9 - 品質レビューリクエスト】
+
+対象: 主任者講習試験問題 161～180
+問題数: 20問
+
+【評価基準】
+1. 法的根拠の具体性 - 「風営法第X条の Y」のように条文が具体的であること
+2. 抽象的表現の有無 - 「一定の」「適切な」「所定の」などの表現がないこと  
+3. 問題文の長さ - 最低20文字以上であること
+4. 複数の解釈の可能性がないこと
+
+【指示】
+以下の20問について、一問ずつ以下の形式で評価してください：
+
+【問題ID X】
+- 評価: [✅ OK / ⚠️ 要改善 / ❌ 不合格]
+- 指摘事項: [該当する場合のみ記入]
+
+【問題データ】
+[
+  {
+    "problem_id": 170,
+    "theme_id": 9009,
+    "theme_name": "外部端子板の管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:12.898732",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_text": "外部端子板の管理の不正発見時において、を怠ったした場合、営業停止命令が科される。",
+    "correct_answer": "×",
+    "explanation": "外部端子板の管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（外部端子板の管理）",
+      "detail": "外部端子板の管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 171,
+    "theme_id": 9005,
+    "theme_name": "旧機械の回収と廃棄",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:13.752996",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_text": "旧機械の回収と廃棄の記録保管時において、を怠ったした場合、許可取消しが科される。",
+    "correct_answer": "×",
+    "explanation": "旧機械の回収と廃棄に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（旧機械の回収と廃棄）",
+      "detail": "旧機械の回収と廃棄に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 172,
+    "theme_id": 9009,
+    "theme_name": "旧機械の回収と廃棄",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:14.832230",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★★",
+    "problem_text": "旧機械の回収と廃棄の記録保管時において、を実施しなかったした場合、営業停止命令が科される。",
+    "correct_answer": "○",
+    "explanation": "旧機械の回収と廃棄に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（旧機械の回収と廃棄）",
+      "detail": "旧機械の回収と廃棄に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 173,
+    "theme_id": 9000,
+    "theme_name": "新台導入時の確認事項",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:17.124801",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★★",
+    "problem_text": "と中古遊技機設置では、承認が必要書類の故障発生時において異なる。",
+    "correct_answer": "○",
+    "explanation": "新台導入時の確認事項に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（新台導入時の確認事項）",
+      "detail": "新台導入時の確認事項に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 174,
+    "theme_id": 9000,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:19.885858",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "遊技機の点検は、毎月に提出する必要がある。",
+    "correct_answer": "×",
+    "explanation": "遊技機の保守管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 175,
+    "theme_id": 9001,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:19.912817",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★★",
+    "problem_text": "遊技機の保守管理の記録保管時において、不正改造を発見した場合、即座に公安委員会へ報告を提出する必要がある。",
+    "correct_answer": "○",
+    "explanation": "遊技機の保守管理に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 176,
+    "theme_id": 9002,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:19.941246",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★★",
+    "problem_text": "遊技機の保守管理の検査実施時において、保守管理を実施しなかったした場合、営業停止命令が科される必要である。",
+    "correct_answer": "○",
+    "explanation": "遊技機の保守管理に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 177,
+    "theme_id": 9003,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:19.968919",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★★",
+    "problem_text": "遊技機の保守管理と遊技機の移動では、対象範囲の検査実施時において異なる。",
+    "correct_answer": "×",
+    "explanation": "遊技機の保守管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 178,
+    "theme_id": 9004,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:19.996615",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★",
+    "problem_text": "遊技機の保守管理では、定期点検の許可申請が届出が必要であり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "遊技機の保守管理に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 179,
+    "theme_id": 9006,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:20.039850",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★★★",
+    "problem_text": "遊技機の保守管理の中古遊技機設置時において、故障を発見した場合、交換を届出する必要がある。",
+    "correct_answer": "×",
+    "explanation": "遊技機の保守管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 180,
+    "theme_id": 9009,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:20.132370",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★",
+    "problem_text": "遊技機の保守管理では、動作確認の報告が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "遊技機の保守管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 181,
+    "theme_id": 9014,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:20.275369",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★",
+    "problem_text": "遊技機の保守管理では、セキュリティチェックの報告が不要であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "遊技機の保守管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 182,
+    "theme_id": 9015,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:20.328987",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_text": "遊技機の保守管理の営業許可更新時において、セキュリティ侵害を発見した場合、使用停止を申請する必要がある。",
+    "correct_answer": "×",
+    "explanation": "遊技機の保守管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 183,
+    "theme_id": 9017,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:20.384446",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★★★★",
+    "problem_text": "遊技機の保守管理と中古遊技機設置では、届出期限の新台設置時において異なる。",
+    "correct_answer": "×",
+    "explanation": "遊技機の保守管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 184,
+    "theme_id": 9018,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:20.411004",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★",
+    "problem_text": "遊技機の保守管理では、動作確認の承認申請が不要であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "遊技機の保守管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 185,
+    "theme_id": 9021,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:20.536617",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★",
+    "problem_text": "遊技機の保守管理では、動作確認の事前通知が求められる。",
+    "correct_answer": "×",
+    "explanation": "遊技機の保守管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 186,
+    "theme_id": 9027,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:21.054472",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★",
+    "problem_text": "遊技機の保守管理では、定期点検の申請が求められる。",
+    "correct_answer": "×",
+    "explanation": "遊技機の保守管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 187,
+    "theme_id": 9032,
+    "theme_name": "遊技機の保守管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:21.219076",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★",
+    "problem_text": "遊技機の保守管理では、セキュリティチェックの届出が求められる。",
+    "correct_answer": "○",
+    "explanation": "遊技機の保守管理に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（遊技機の保守管理）",
+      "detail": "遊技機の保守管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 188,
+    "theme_id": 9000,
+    "theme_name": "中古遊技機の取扱い",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:32.742017",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "中古遊技機は、緊急の場合を満たす場合のみ報告することができる。",
+    "correct_answer": "×",
+    "explanation": "中古遊技機の取扱いに関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（中古遊技機の取扱い）",
+      "detail": "中古遊技機の取扱いに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 189,
+    "theme_id": 9002,
+    "theme_name": "中古遊技機の取扱い",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:32.950938",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★★",
+    "problem_text": "中古遊技機の取扱いの営業許可更新時において、中古遊技機を無届けで設置した場合、行政処分の対象となる。",
+    "correct_answer": "○",
+    "explanation": "中古遊技機の取扱いに関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（中古遊技機の取扱い）",
+      "detail": "中古遊技機の取扱いに関する規定を遵守する必要がある。"
+    }
+  }
+]
+
+よろしくお願いします。

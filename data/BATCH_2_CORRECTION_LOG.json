@@ -1,0 +1,227 @@
+{
+  "batch": 2,
+  "total_problems": 20,
+  "corrections_made": 20,
+  "corrections": [
+    {
+      "problem_id": 171,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第6条",
+      "before_section": "（旧機械の回収と廃棄）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628005"
+    },
+    {
+      "problem_id": 172,
+      "theme_name": "旧機械の回収と廃棄",
+      "before_article": "第6条",
+      "before_section": "（旧機械の回収と廃棄）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628029"
+    },
+    {
+      "problem_id": 173,
+      "theme_name": "新台導入時の確認事項",
+      "before_article": "第6条",
+      "before_section": "（新台導入時の確認事項）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628032"
+    },
+    {
+      "problem_id": 174,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628033"
+    },
+    {
+      "problem_id": 175,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628034"
+    },
+    {
+      "problem_id": 176,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628036"
+    },
+    {
+      "problem_id": 177,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628038"
+    },
+    {
+      "problem_id": 178,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628039"
+    },
+    {
+      "problem_id": 179,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628040"
+    },
+    {
+      "problem_id": 180,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628041"
+    },
+    {
+      "problem_id": 181,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628042"
+    },
+    {
+      "problem_id": 182,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628044"
+    },
+    {
+      "problem_id": 183,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628045"
+    },
+    {
+      "problem_id": 184,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628046"
+    },
+    {
+      "problem_id": 185,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628047"
+    },
+    {
+      "problem_id": 186,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628048"
+    },
+    {
+      "problem_id": 187,
+      "theme_name": "遊技機の保守管理",
+      "before_article": "第6条",
+      "before_section": "（遊技機の保守管理）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628049"
+    },
+    {
+      "problem_id": 188,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "before_section": "（中古遊技機の取扱い）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628050"
+    },
+    {
+      "problem_id": 189,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "before_section": "（中古遊技機の取扱い）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628051"
+    },
+    {
+      "problem_id": 190,
+      "theme_name": "中古遊技機の取扱い",
+      "before_article": "第6条",
+      "before_section": "（中古遊技機の取扱い）",
+      "after_article": "第6条の2",
+      "after_section": "（遊技機の設置）",
+      "reason": "遊技機管理テーマ → 第6条の2へ統一修正",
+      "batch": 2,
+      "timestamp": "2025-10-26T10:44:30.628052"
+    }
+  ]
+}

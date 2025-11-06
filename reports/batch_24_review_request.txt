@@ -1,0 +1,503 @@
+【Batch 24 - 品質レビューリクエスト】
+
+対象: 主任者講習試験問題 461～480
+問題数: 20問
+
+【評価基準】
+1. 法的根拠の具体性 - 「風営法第X条の Y」のように条文が具体的であること
+2. 抽象的表現の有無 - 「一定の」「適切な」「所定の」などの表現がないこと  
+3. 問題文の長さ - 最低20文字以上であること
+4. 複数の解釈の可能性がないこと
+
+【指示】
+以下の20問について、一問ずつ以下の形式で評価してください：
+
+【問題ID X】
+- 評価: [✅ OK / ⚠️ 要改善 / ❌ 不合格]
+- 指摘事項: [該当する場合のみ記入]
+
+【問題データ】
+[
+  {
+    "problem_id": 473,
+    "theme_id": 2068,
+    "theme_name": "型式検定と中古機の関係",
+    "category": "型式検定関連",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.755906",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_text": "型式検定と中古機の関係は、法律で定められている重要な知識であり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "型式検定と中古機の関係について正確に理解することは、営業管理の基本です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条の2",
+      "section": "（遊技機の設置）",
+      "detail": "中古遊技機でも型式検定が必須。"
+    }
+  },
+  {
+    "problem_id": 474,
+    "theme_id": 2068,
+    "theme_name": "型式検定と中古機の関係",
+    "category": "型式検定関連",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.755912",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "型式検定と中古機の関係については、必ず毎年の届出が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "「必ず毎年」という表現は誤り。型式検定と中古機の関係の手続きは状況に応じて異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条の2",
+      "section": "（遊技機の設置）",
+      "detail": "中古遊技機でも型式検定が必須。"
+    }
+  },
+  {
+    "problem_id": 475,
+    "theme_id": 2068,
+    "theme_name": "型式検定と中古機の関係",
+    "category": "型式検定関連",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.755918",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "型式検定と中古機の関係は、営業許可と同じく無期限有効であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "型式検定と中古機の関係と営業許可は異なる制度で、有効期限等も異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条の2",
+      "section": "（遊技機の設置）",
+      "detail": "中古遊技機でも型式検定が必須。"
+    }
+  },
+  {
+    "problem_id": 476,
+    "theme_id": 2068,
+    "theme_name": "型式検定と中古機の関係",
+    "category": "型式検定関連",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.755926",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_text": "型式検定と中古機の関係に関する対応が必要な場合、営業の継続可能性を判断基準に行動する。",
+    "correct_answer": "○",
+    "explanation": "型式検定と中古機の関係は営業継続に関わるため、最優先で対応が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条の2",
+      "section": "（遊技機の設置）",
+      "detail": "中古遊技機でも型式検定が必須。"
+    }
+  },
+  {
+    "problem_id": 477,
+    "theme_id": 2068,
+    "theme_name": "型式検定と中古機の関係",
+    "category": "型式検定関連",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.755932",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_text": "型式検定と中古機の関係の手続きから3年が経過した場合、有効期限が切れる必要である。",
+    "correct_answer": "○",
+    "explanation": "型式検定など時間制限がある規制では、定期的な更新手続きが必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条の2",
+      "section": "（遊技機の設置）",
+      "detail": "中古遊技機でも型式検定が必須。"
+    }
+  },
+  {
+    "problem_id": 478,
+    "theme_id": 2068,
+    "theme_name": "型式検定と中古機の関係",
+    "category": "型式検定関連",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.755937",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_text": "営業者が型式検定と中古機の関係を含む状況で営業を継続する場合、風営法に定められた適切な措置により継続可能である。",
+    "correct_answer": "○",
+    "explanation": "型式検定と中古機の関係に関する状況でも、適切な対応と手続きにより営業継続が可能です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条の2",
+      "section": "（遊技機の設置）",
+      "detail": "中古遊技機でも型式検定が必須。"
+    }
+  },
+  {
+    "problem_id": 479,
+    "theme_id": 2068,
+    "theme_name": "型式検定と中古機の関係",
+    "category": "型式検定関連",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.755949",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_text": "型式検定と中古機の関係に関する型式検定の有効期限は3年である。",
+    "correct_answer": "○",
+    "explanation": "型式検定は3年ごとに更新申請が必要です。これは重要な数値です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条の2",
+      "section": "（遊技機の設置）",
+      "detail": "中古遊技機でも型式検定が必須。"
+    }
+  },
+  {
+    "problem_id": 480,
+    "theme_id": 2068,
+    "theme_name": "型式検定と中古機の関係",
+    "category": "型式検定関連",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.755954",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_text": "型式検定と中古機の関係という規制が存在するのは、遊技業の健全性確保と消費者保護のためであり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "すべての風営法の規制は、業界の健全性と消費者保護を目的としています。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条の2",
+      "section": "（遊技機の設置）",
+      "detail": "中古遊技機でも型式検定が必須。"
+    }
+  },
+  {
+    "problem_id": 481,
+    "theme_id": 2068,
+    "theme_name": "型式検定と中古機の関係",
+    "category": "型式検定関連",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.755960",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_text": "型式検定と中古機の関係について、営業経験が長い者でも誤解しやすい領域がある。",
+    "correct_answer": "○",
+    "explanation": "型式検定と中古機の関係のような法律知識は、実務経験だけでは不十分で、正確な学習が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条の2",
+      "section": "（遊技機の設置）",
+      "detail": "中古遊技機でも型式検定が必須。"
+    }
+  },
+  {
+    "problem_id": 482,
+    "theme_id": 9000,
+    "theme_name": "型式検定と中古機の関係",
+    "category": "型式検定関連",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:10.126893",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "遊技機は、速やかにに申請を提出する必要がある。",
+    "correct_answer": "×",
+    "explanation": "型式検定と中古機の関係に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（型式検定と中古機の関係）",
+      "detail": "型式検定と中古機の関係に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 483,
+    "theme_id": 9000,
+    "theme_name": "営業許可取得の要件",
+    "category": "営業許可関連",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:49.813643",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "営業許可取得の要件において、災害時の場合、営業許可の特例が適用される。",
+    "correct_answer": "×",
+    "explanation": "営業許可取得の要件に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（営業許可取得の要件）",
+      "detail": "営業許可取得の要件に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 484,
+    "theme_id": 9001,
+    "theme_name": "営業許可取得の要件",
+    "category": "営業許可関連",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:49.852433",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★★",
+    "problem_text": "営業許可取得の要件において、営業許可の要件に実施しなかったしている場合、許可取消しの対象となる。",
+    "correct_answer": "○",
+    "explanation": "営業許可取得の要件に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（営業許可取得の要件）",
+      "detail": "営業許可取得の要件に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 485,
+    "theme_id": 9005,
+    "theme_name": "営業許可取得の要件",
+    "category": "営業許可関連",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:49.976418",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★",
+    "problem_text": "営業許可取得の要件において、緊急の場合、営業許可の一時的な許可が適用される。",
+    "correct_answer": "○",
+    "explanation": "営業許可取得の要件に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（営業許可取得の要件）",
+      "detail": "営業許可取得の要件に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 486,
+    "theme_id": 9000,
+    "theme_name": "型式検定更新申請のタイミング",
+    "category": "型式検定関連",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:52.354089",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "型式検定更新申請のタイミングにおいて、緊急の場合、更新申請が認められる。",
+    "correct_answer": "○",
+    "explanation": "型式検定更新申請のタイミングに関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（型式検定更新申請のタイミング）",
+      "detail": "型式検定更新申請のタイミングに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 487,
+    "theme_id": 9001,
+    "theme_name": "型式検定更新申請のタイミング",
+    "category": "型式検定関連",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:52.380372",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★★",
+    "problem_text": "型式検定更新申請のタイミングにおいて、更新申請を実施しなかったした場合、許可取消しが科される。",
+    "correct_answer": "○",
+    "explanation": "型式検定更新申請のタイミングに関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（型式検定更新申請のタイミング）",
+      "detail": "型式検定更新申請のタイミングに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 488,
+    "theme_id": 9005,
+    "theme_name": "型式検定更新申請のタイミング",
+    "category": "型式検定関連",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:52.506035",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★",
+    "problem_text": "新台の手続きは、法定期間内に完了する必要がある。",
+    "correct_answer": "○",
+    "explanation": "型式検定更新申請のタイミングに関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（型式検定更新申請のタイミング）",
+      "detail": "型式検定更新申請のタイミングに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 489,
+    "theme_id": 9007,
+    "theme_name": "型式検定更新申請のタイミング",
+    "category": "型式検定関連",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:52.560154",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★",
+    "problem_text": "型式検定更新申請のタイミングにおいて、型式検定の有効期限は3年間であり、更新は事前にに行う。",
+    "correct_answer": "○",
+    "explanation": "型式検定更新申請のタイミングに関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（型式検定更新申請のタイミング）",
+      "detail": "型式検定更新申請のタイミングに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 490,
+    "theme_id": 9000,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:59.857485",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "景品の種類制限において、災害時の場合、景品の条件付き許可が認められる。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 491,
+    "theme_id": 9001,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:59.883434",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★★",
+    "problem_text": "景品の種類制限において、制限された景品を怠ったした場合、許可取消しが科される。",
+    "correct_answer": "○",
+    "explanation": "景品の種類制限に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 492,
+    "theme_id": 9003,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:04:59.951076",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★★",
+    "problem_text": "景品の種類制限と遊技機の移動では、手続きの複雑さにおいて異なる。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  }
+]
+
+よろしくお願いします。

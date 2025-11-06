@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主任者試験アプリ - メニュー</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+        }
+        .menu {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            text-align: center;
+            max-width: 500px;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        .menu-item {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .menu-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+        .new {
+            background: linear-gradient(135deg, #22c55e 0%, #16a34a 100%);
+        }
+        .badge {
+            background: #ef4444;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 12px;
+            font-size: 0.8em;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <h1>🎯 遊技機取扱主任者試験アプリ</h1>
+
+        <a href="problem_viewer.html" class="menu-item new">
+            OPUS高品質問題ビューア
+            <span class="badge">NEW!</span>
+        </a>
+
+        <a href="data/viewer.html" class="menu-item">
+            OCR校正チェックリスト
+        </a>
+
+        <a href="public/mock_problems_opus_final.json" class="menu-item" download>
+            問題データダウンロード (JSON)
+        </a>
+
+        <div style="margin-top: 30px; color: #666;">
+            <p>📊 OPUS生成問題: 900問</p>
+            <p>✅ 高品質保証済み</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+/* ===========================
+   App.css - グローバルレイアウト
+   =========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* ページコンテナ */
+.home-page,
+.test-page,
+.result-page {
+  width: 100%;
+  max-width: 900px;
+  background-color: var(--bg-secondary);
+  border-radius: 16px;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  animation: pageEnter 0.3s ease-in-out;
+}
+
+@keyframes pageEnter {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ボタンスタイル */
+
+/* プライマリボタン（ゴールド） */
+.primary-btn {
+  background-color: var(--primary-gold);
+  color: var(--bg-primary);
+  padding: 16px 32px;
+  font-size: 16px;
+  width: 100%;
+  margin: 16px 0;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+}
+
+.primary-btn:hover:not(:disabled) {
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.5);
+  transform: translateY(-2px);
+  background-color: #E5C158;
+}
+
+/* セカンダリボタン */
+.secondary-btn {
+  background-color: var(--bg-tertiary);
+  color: var(--primary-gold);
+  padding: 12px 24px;
+  margin-top: 12px;
+  border: 2px solid var(--primary-gold);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.secondary-btn:hover:not(:disabled) {
+  background-color: var(--primary-gold);
+  color: var(--bg-primary);
+}
+
+/* メニューボタン */
+.menu-btn {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  padding: 12px 16px;
+  border: 2px solid var(--border-color);
+  width: 100%;
+  margin: 8px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.menu-btn:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--primary-gold);
+  color: var(--primary-gold);
+}
+
+/* ナビゲーションボタン */
+.nav-btn {
+  background-color: var(--bg-tertiary);
+  color: var(--text-primary);
+  padding: 12px 24px;
+  border: 2px solid var(--border-color);
+  min-width: 120px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.nav-btn:hover:not(:disabled) {
+  background-color: var(--border-color);
+  border-color: var(--primary-gold);
+  color: var(--primary-gold);
+}
+
+.nav-btn.next-btn {
+  background-color: var(--primary-gold);
+  color: var(--bg-primary);
+  border-color: var(--primary-gold);
+}
+
+.nav-btn.next-btn:hover:not(:disabled) {
+  background-color: #E5C158;
+  border-color: #E5C158;
+}
+
+/* 送信ボタン */
+.submit-btn {
+  background-color: var(--primary-gold);
+  color: var(--bg-primary);
+  padding: 12px 24px;
+  border: 2px solid var(--primary-gold);
+  border-radius: 8px;
+  cursor: pointer;
+  min-width: 120px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #E5C158;
+  border-color: #E5C158;
+}
+
+/* レスポンシブ */
+@media (max-width: 768px) {
+  .app {
+    padding: 10px;
+  }
+
+  .home-page,
+  .test-page,
+  .result-page {
+    border-radius: 12px;
+    max-width: 100%;
+  }
+
+  button {
+    font-size: 15px;
+  }
+
+  .primary-btn {
+    padding: 14px 24px;
+    font-size: 16px;
+    margin: 12px 0;
+  }
+}

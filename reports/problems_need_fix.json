@@ -1,0 +1,60 @@
+[
+  {
+    "problem_id": 601,
+    "problem_text": "所定の手続きにより、構造設備変更には事前承認が必要。",
+    "score": 50,
+    "issues_count": 3,
+    "issues": [
+      {
+        "type": "demonstrative",
+        "severity": "high",
+        "pattern": "これ",
+        "message": "解説に指示語「これ」が使用されています。",
+        "location": "explanation"
+      },
+      {
+        "type": "demonstrative",
+        "severity": "high",
+        "pattern": "その",
+        "message": "解説に指示語「その」が使用されています。",
+        "location": "explanation"
+      },
+      {
+        "type": "vague_term",
+        "severity": "medium",
+        "pattern": "所定の",
+        "message": "抽象的表現「所定の」が使用されています。具体的な数値や基準に置き換えてください。",
+        "location": "problem_text"
+      }
+    ],
+    "needs_improvement": true
+  },
+  {
+    "problem_id": 610,
+    "problem_text": "遊技機の構造は、著しく射幸心をそそるおそれのある遊技機として国家公安委員会規則で定める基準に該当しないものでなければならない。",
+    "score": 60,
+    "issues_count": 3,
+    "issues": [
+      {
+        "type": "demonstrative",
+        "severity": "high",
+        "pattern": "それ",
+        "message": "指示語「それ」が使用されています。具体的な名詞に置き換えてください。",
+        "location": "problem_text"
+      },
+      {
+        "type": "double_negative",
+        "severity": "medium",
+        "message": "二重否定が使用されています。肯定表現に書き換えてください。",
+        "location": "problem_text"
+      },
+      {
+        "type": "double_negative",
+        "severity": "medium",
+        "message": "二重否定が使用されています。肯定表現に書き換えてください。",
+        "location": "problem_text"
+      }
+    ],
+    "needs_improvement": true
+  }
+]

@@ -1,0 +1,1033 @@
+{
+  "review_type": "Legal AI Logic Review",
+  "timestamp": "2025-10-26T13:26:29.551770",
+  "summary": {
+    "total_problems": 638,
+    "problems_with_issues": 437,
+    "issue_percentage": "68.5%",
+    "fixes_applied": 72
+  },
+  "issues_by_pattern": {
+    "duplicate_particles": 604,
+    "redundant_frequency": 52,
+    "vague_time_prohibition": 4,
+    "redundant_condition": 5
+  },
+  "problems_with_issues": [
+    {
+      "problem_id": 1,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "新台設置は風営法第6条の2に基づき、7日前までの手続きが",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "新台設置には事前届出が必須であり、無許可での設置は",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 2,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "新台設置の手続きについては、ケースごとに必須の届出が",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "「必ず毎年」という表現は誤り。新台設置の手続きの手続きは",
+          "hint": "",
+          "severity": "medium"
+        },
+        {
+          "pattern": "redundant_frequency",
+          "location": "explanation",
+          "matched_text": "必ず毎年",
+          "hint": "「毎年実施」で十分（「必ず」は冗長）",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 3
+    },
+    {
+      "problem_id": 3,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "新台設置の手続きは営業許可と異なり、風営法第6条の2に基づき異なる有効期限が",
+          "hint": "",
+          "severity": "high"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 4,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "新台設置の手続きは営業継続に関わるため、最優先で対応が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 5,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "新台設置の手続きから3年が経過した場合、風営法第6条の2に基づき更新手続きが",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "型式検定など時間制限がある規制では、定期的な更新手続きが",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 6,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "新台設置の手続きの検査実施時においても、営業者は風営法第6条の2に基づく規定に基づいた措置を講じることで営業を継続することが",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "新台設置には事前届出が必須であり、無許可での設置は",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 7,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "新台設置の手続き違反と営業許可違反が同時に存在する場合、営業許可違反の方が営業全体に与える影響が",
+          "hint": "",
+          "severity": "high"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 8,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "型式検定は3年ごとに更新申請が必要です。これは",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 9,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "新台設置の7日前に手続きという規制が存在するのは",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "新台設置には事前届出が必須であり、無許可での設置は",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 10,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "新台設置の14日前に手続きが必要であり、営業経験が長い者でも風営法第6条の2で定められた知識と手続きを正確に理解することが",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "新台設置の手続きのような法律知識は、実務経験だけでは不十分で、正確な学習が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 11,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "新台設置の手続きに関する法改正があった場合、既存の営業許可については",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "法改正時には通常、既得権保護を目的とした経過措置が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 12,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "新台設置の手続きを含む複雑なシナリオでは、複数の法的要件を風営法第6条の2に基づき総合的に判断することが必要であり、単一の要素だけでは",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "実務では新台設置の手続きを含めた複数の規制を同時に考慮する必要が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 13,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "中古遊技機の取扱いについて、営業者が正確に理解することは",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "中古遊技機の流通には厳格な手続きが定められており、適切な管理が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 14,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "中古遊技機の取扱いについては、ケースごとに必須の届出が",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "「必ず毎年」という表現は誤り。中古遊技機の取扱いの手続きは",
+          "hint": "",
+          "severity": "medium"
+        },
+        {
+          "pattern": "redundant_frequency",
+          "location": "explanation",
+          "matched_text": "必ず毎年",
+          "hint": "「毎年実施」で十分（「必ず」は冗長）",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 3
+    },
+    {
+      "problem_id": 15,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "中古遊技機の取扱いと営業許可は異なる制度であり、それぞれ異なる有効期限が",
+          "hint": "",
+          "severity": "high"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 16,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "中古遊技機の取扱いに関する対応は、流通登録から30日以内に行う必要が",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "中古遊技機の取扱いは営業継続に関わるため、最優先で対応が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 17,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "中古遊技機の取扱いの検査実施時においても、営業者は風営法第6条の2に定められた規定に基づいた措置を講じることで営業を継続することが",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "中古遊技機の流通には厳格な手続きが定められており、適切な管理が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 18,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "型式検定は3年ごとに更新申請が必要です。これは",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 19,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "中古遊技機の取扱いについて、営業経験が長い者でも風営法第6条の2で定められた正確な知識と手続きを理解することが",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "中古遊技機の取扱いのような法律知識は、実務経験だけでは不十分で、正確な学習が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 20,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "中古遊技機の取扱いを含む複雑なシナリオでは、複数の法的要件を総合的に判断する流通登録30日以内に必要があり、単一の要素だけでは",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "実務では中古遊技機の取扱いを含めた複数の規制を同時に考慮する必要が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 22,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "遊技機の保守管理は営業継続に関わるため、最優先で対応が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 24,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "不正改造の防止については、必ず毎年の届出が",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "「必ず毎年」という表現は誤り。不正改造の防止の手続きは",
+          "hint": "",
+          "severity": "medium"
+        },
+        {
+          "pattern": "redundant_frequency",
+          "location": "problem_text",
+          "matched_text": "必ず毎年",
+          "hint": "「毎年実施」で十分（「必ず」は冗長）",
+          "severity": "high"
+        },
+        {
+          "pattern": "redundant_frequency",
+          "location": "explanation",
+          "matched_text": "必ず毎年",
+          "hint": "「毎年実施」で十分（「必ず」は冗長）",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 4
+    },
+    {
+      "problem_id": 26,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "不正改造の防止は営業継続に関わるため、最優先で対応が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 27,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "不正改造の防止の手続きから3年が経過した場合、有効期限が",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "型式検定など時間制限がある規制では、定期的な更新手続きが",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 29,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "不正改造の防止違反と営業許可違反が同時に存在する場合、営業許可違反の方が営業全体に与える影響が",
+          "hint": "",
+          "severity": "high"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 30,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "型式検定は3年ごとに更新申請が必要です。これは",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 31,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "不正改造の防止という規制が存在するのは",
+          "hint": "",
+          "severity": "high"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 32,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "不正改造の防止のような法律知識は、実務経験だけでは不十分で、正確な学習が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 33,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "不正改造の防止に関する法改正があった場合、既存の営業許可については",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "法改正時には通常、既得権保護を目的とした経過措置が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 34,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "不正改造の防止を含む複雑なシナリオでは、複数の法的要件を総合的に判断実施する必要があり、単一の要素だけでは",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "実務では不正改造の防止を含めた複数の規制を同時に考慮する必要が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 36,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "セキュリティ確保については、必ず毎年の届出が",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "「必ず毎年」という表現は誤り。セキュリティ確保の手続きは",
+          "hint": "",
+          "severity": "medium"
+        },
+        {
+          "pattern": "redundant_frequency",
+          "location": "problem_text",
+          "matched_text": "必ず毎年",
+          "hint": "「毎年実施」で十分（「必ず」は冗長）",
+          "severity": "high"
+        },
+        {
+          "pattern": "redundant_frequency",
+          "location": "explanation",
+          "matched_text": "必ず毎年",
+          "hint": "「毎年実施」で十分（「必ず」は冗長）",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 4
+    },
+    {
+      "problem_id": 38,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "セキュリティ確保は営業継続に関わるため、最優先で対応が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 40,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "型式検定は3年ごとに更新申請が必要です。これは",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 41,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "セキュリティ確保のような法律知識は、実務経験だけでは不十分で、正確な学習が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 42,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "営業禁止時間は、午後11時から午前9時までと法律で定められています。この時間帯は営業を行うことは",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 43,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "vague_time_prohibition",
+          "location": "problem_text",
+          "matched_text": "営業禁止48時間",
+          "hint": "具体的な時間帯（例：午前6時～午後11時）に修正",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業禁止48時間については、必ず毎年の届出が",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "「必ず毎年」という表現は誤り。営業禁止時間の手続きは",
+          "hint": "",
+          "severity": "medium"
+        },
+        {
+          "pattern": "redundant_frequency",
+          "location": "problem_text",
+          "matched_text": "必ず毎年",
+          "hint": "「毎年実施」で十分（「必ず」は冗長）",
+          "severity": "high"
+        },
+        {
+          "pattern": "redundant_frequency",
+          "location": "explanation",
+          "matched_text": "必ず毎年",
+          "hint": "「毎年実施」で十分（「必ず」は冗長）",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 5
+    },
+    {
+      "problem_id": 44,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業禁止時間は、営業許可と異なり有効期限が",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "営業禁止時間は法律で定められた時間帯であり、営業許可の有効期限とは",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 45,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業禁止時間中は、営業を行うことは禁止されており、例外は",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "営業禁止時間（午後11時から午前9時）は法律で厳格に定められており、営業を行うことは",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 46,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "vague_time_prohibition",
+          "location": "problem_text",
+          "matched_text": "営業禁止7248時間",
+          "hint": "具体的な時間帯（例：午前6時～午後11時）に修正",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業禁止7248時間の手続きから3年が経過した場合、有効期限が",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "型式検定など時間制限がある規制では、定期的な更新手続きが",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 3
+    },
+    {
+      "problem_id": 48,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "vague_time_prohibition",
+          "location": "problem_text",
+          "matched_text": "営業禁止2424時間",
+          "hint": "具体的な時間帯（例：午前6時～午後11時）に修正",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業禁止2424時間違反と営業許可違反が同時に存在する場合、営業許可違反の方が営業全体に与える影響が",
+          "hint": "",
+          "severity": "high"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 49,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業禁止時間は市区町村の条例により異なる時間帯が設定される場合が",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "営業禁止時間は基本的には午後11時から午前9時ですが、地域によって異なる時間が定められる場合が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 50,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "vague_time_prohibition",
+          "location": "problem_text",
+          "matched_text": "営業禁止24時間",
+          "hint": "具体的な時間帯（例：午前6時～午後11時）に修正",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "営業禁止時間のような法律知識は、実務経験だけでは不十分で、正確な学習が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 52,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業許可は無期限有効は",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "営業許可は無期限有効について正確に理解することは",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 53,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業許可は無期限有効については、必ず毎年の届出が",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "「必ず毎年」という表現は誤り。営業許可は無期限有効の手続きは",
+          "hint": "",
+          "severity": "medium"
+        },
+        {
+          "pattern": "redundant_frequency",
+          "location": "problem_text",
+          "matched_text": "必ず毎年",
+          "hint": "「毎年実施」で十分（「必ず」は冗長）",
+          "severity": "high"
+        },
+        {
+          "pattern": "redundant_frequency",
+          "location": "explanation",
+          "matched_text": "必ず毎年",
+          "hint": "「毎年実施」で十分（「必ず」は冗長）",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 4
+    },
+    {
+      "problem_id": 54,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業許可は無期限有効は",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "営業許可は無期限有効と営業許可は",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 55,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業許可は無期限有効に関する対応が",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "営業許可は無期限有効は営業継続に関わるため、最優先で対応が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 56,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業許可は無期限有効の手続きから3年が経過した場合、有効期限が",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "型式検定など時間制限がある規制では、定期的な更新手続きが",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 57,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業許可は無期限有効の検査実施時において、営業者が営業許可は",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "営業許可は無期限有効に関する状況でも、適切な対応と手続きにより営業継続が",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    },
+    {
+      "problem_id": 58,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業許可は無期限有効違反と営業許可違反が同時に存在する場合、営業許可違反の方が営業全体に与える影響が",
+          "hint": "",
+          "severity": "high"
+        }
+      ],
+      "issue_count": 1
+    },
+    {
+      "problem_id": 59,
+      "has_issues": true,
+      "issues": [
+        {
+          "pattern": "duplicate_particles",
+          "location": "problem_text",
+          "matched_text": "営業許可は無期限有効に関する型式検定の有効期限は",
+          "hint": "",
+          "severity": "high"
+        },
+        {
+          "pattern": "duplicate_particles",
+          "location": "explanation",
+          "matched_text": "型式検定は3年ごとに更新申請が必要です。これは",
+          "hint": "",
+          "severity": "medium"
+        }
+      ],
+      "issue_count": 2
+    }
+  ]
+}

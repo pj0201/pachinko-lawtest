@@ -1,0 +1,112 @@
+{
+  "test_time": "2025-11-04T23:17:15.917125",
+  "search_quality": [
+    {
+      "problem_id": 1,
+      "category": "営業許可",
+      "old_results_count": 0,
+      "new_results_count": 0,
+      "old_time_ms": 9.416818618774414,
+      "new_time_ms": 0.13947486877441406,
+      "improvement": "✅"
+    },
+    {
+      "problem_id": 2,
+      "category": "営業所基準",
+      "old_results_count": 0,
+      "new_results_count": 2,
+      "old_time_ms": 3.2029151916503906,
+      "new_time_ms": 0.44345855712890625,
+      "improvement": "✅"
+    },
+    {
+      "problem_id": 3,
+      "category": "遊技機の設置",
+      "old_results_count": 0,
+      "new_results_count": 2,
+      "old_time_ms": 21.88277244567871,
+      "new_time_ms": 0.20384788513183594,
+      "improvement": "✅"
+    },
+    {
+      "problem_id": 4,
+      "category": "遊技機の認定",
+      "old_results_count": 0,
+      "new_results_count": 2,
+      "old_time_ms": 19.55103874206543,
+      "new_time_ms": 0.3752708435058594,
+      "improvement": "✅"
+    },
+    {
+      "problem_id": 5,
+      "category": "景品規制",
+      "old_results_count": 0,
+      "new_results_count": 0,
+      "old_time_ms": 1.3761520385742188,
+      "new_time_ms": 0.2789497375488281,
+      "improvement": "✅"
+    }
+  ],
+  "problem_quality": [
+    {
+      "problem_id": 1,
+      "category": "営業許可",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 0.3,
+        "no_template": 1.0,
+        "legal_reference": 0.5
+      },
+      "overall_score": 0.72
+    },
+    {
+      "problem_id": 2,
+      "category": "営業所基準",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 0.3,
+        "no_template": 1.0,
+        "legal_reference": 0.5
+      },
+      "overall_score": 0.72
+    },
+    {
+      "problem_id": 3,
+      "category": "遊技機の設置",
+      "scores": {
+        "rag_search_found": 0.0,
+        "explanation_length": 0.3,
+        "no_template": 1.0,
+        "legal_reference": 0.5
+      },
+      "overall_score": 0.53
+    },
+    {
+      "problem_id": 4,
+      "category": "遊技機の認定",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 0.3,
+        "no_template": 1.0,
+        "legal_reference": 0.5
+      },
+      "overall_score": 0.72
+    },
+    {
+      "problem_id": 5,
+      "category": "景品規制",
+      "scores": {
+        "rag_search_found": 1.0,
+        "explanation_length": 0.3,
+        "no_template": 1.0,
+        "legal_reference": 0.5
+      },
+      "overall_score": 0.72
+    }
+  ],
+  "summary": {
+    "total_tests": 10,
+    "search_improvement_avg": 1.2,
+    "quality_score_avg": 0.682
+  }
+}

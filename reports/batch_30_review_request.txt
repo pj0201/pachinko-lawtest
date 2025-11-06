@@ -1,0 +1,503 @@
+【Batch 30 - 品質レビューリクエスト】
+
+対象: 主任者講習試験問題 581～600
+問題数: 20問
+
+【評価基準】
+1. 法的根拠の具体性 - 「風営法第X条の Y」のように条文が具体的であること
+2. 抽象的表現の有無 - 「一定の」「適切な」「所定の」などの表現がないこと  
+3. 問題文の長さ - 最低20文字以上であること
+4. 複数の解釈の可能性がないこと
+
+【指示】
+以下の20問について、一問ずつ以下の形式で評価してください：
+
+【問題ID X】
+- 評価: [✅ OK / ⚠️ 要改善 / ❌ 不合格]
+- 指摘事項: [該当する場合のみ記入]
+
+【問題データ】
+[
+  {
+    "problem_id": 609,
+    "theme_id": 2076,
+    "theme_name": "リサイクル推進法との関係",
+    "category": "景品規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.756509",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_text": "リサイクル推進法との関係違反と営業許可違反が同時に存在する場合、営業許可違反の方が営業全体に与える影響が大きい。",
+    "correct_answer": "○",
+    "explanation": "営業許可違反は営業全体の合法性に関わるため、最も重大な違反です。",
+    "legal_reference": {
+      "law": "法律全般",
+      "article": "リサイクル推進法等",
+      "section": "（景品関連法）",
+      "detail": "景品の廃棄処理はリサイクル法に対応。"
+    }
+  },
+  {
+    "problem_id": 611,
+    "theme_id": 2076,
+    "theme_name": "リサイクル推進法との関係",
+    "category": "景品規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.756521",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_text": "リサイクル推進法との関係という規制が存在するのは、遊技業の健全性確保と消費者保護のためであり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "すべての風営法の規制は、業界の健全性と消費者保護を目的としています。",
+    "legal_reference": {
+      "law": "法律全般",
+      "article": "リサイクル推進法等",
+      "section": "（景品関連法）",
+      "detail": "景品の廃棄処理はリサイクル法に対応。"
+    }
+  },
+  {
+    "problem_id": 612,
+    "theme_id": 2076,
+    "theme_name": "リサイクル推進法との関係",
+    "category": "景品規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.756526",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_text": "リサイクル推進法との関係について、営業経験が長い者でも誤解しやすい領域がある。",
+    "correct_answer": "○",
+    "explanation": "リサイクル推進法との関係のような法律知識は、実務経験だけでは不十分で、正確な学習が必要です。",
+    "legal_reference": {
+      "law": "法律全般",
+      "article": "リサイクル推進法等",
+      "section": "（景品関連法）",
+      "detail": "景品の廃棄処理はリサイクル法に対応。"
+    }
+  },
+  {
+    "problem_id": 613,
+    "theme_id": 2076,
+    "theme_name": "リサイクル推進法との関係",
+    "category": "景品規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.756532",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_text": "リサイクル推進法との関係に関する法改正があった場合、既存の営業許可については経過措置により保護される必要である。",
+    "correct_answer": "○",
+    "explanation": "法改正時には通常、既得権保護を目的とした経過措置が設けられます。",
+    "legal_reference": {
+      "law": "法律全般",
+      "article": "リサイクル推進法等",
+      "section": "（景品関連法）",
+      "detail": "景品の廃棄処理はリサイクル法に対応。"
+    }
+  },
+  {
+    "problem_id": 614,
+    "theme_id": 2076,
+    "theme_name": "リサイクル推進法との関係",
+    "category": "景品規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.756538",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_text": "リサイクル推進法との関係を含む複雑なシナリオでは、複数の法的要件を総合的に判断する必要があり、単一の要素だけでは判定できない。",
+    "correct_answer": "○",
+    "explanation": "実務ではリサイクル推進法との関係を含めた複数の規制を同時に考慮する必要があります。",
+    "legal_reference": {
+      "law": "法律全般",
+      "article": "リサイクル推進法等",
+      "section": "（景品関連法）",
+      "detail": "景品の廃棄処理はリサイクル法に対応。"
+    }
+  },
+  {
+    "problem_id": 615,
+    "theme_id": 2045,
+    "theme_name": "時間帯別営業制限",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754034",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_text": "時間帯別営業制限は、法律で定められている重要な知識であり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "時間帯別営業制限について正確に理解することは、営業管理の基本です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第8条",
+      "section": "（営業時間）",
+      "detail": "営業時間は時間帯別に制限されている。"
+    }
+  },
+  {
+    "problem_id": 616,
+    "theme_id": 2045,
+    "theme_name": "時間帯別営業制限",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754041",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "時間帯別営業制限については、必ず毎年の届出が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "「必ず毎年」という表現は誤り。時間帯別営業制限の手続きは状況に応じて異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第8条",
+      "section": "（営業時間）",
+      "detail": "営業時間は時間帯別に制限されている。"
+    }
+  },
+  {
+    "problem_id": 617,
+    "theme_id": 2045,
+    "theme_name": "時間帯別営業制限",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754047",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "時間帯別営業制限は、営業許可と同じく無期限有効であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "時間帯別営業制限と営業許可は異なる制度で、有効期限等も異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第8条",
+      "section": "（営業時間）",
+      "detail": "営業時間は時間帯別に制限されている。"
+    }
+  },
+  {
+    "problem_id": 618,
+    "theme_id": 2045,
+    "theme_name": "時間帯別営業制限",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754053",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_text": "時間帯別営業制限に関する対応が必要な場合、営業の継続可能性を判断基準に行動する。",
+    "correct_answer": "○",
+    "explanation": "時間帯別営業制限は営業継続に関わるため、最優先で対応が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第8条",
+      "section": "（営業時間）",
+      "detail": "営業時間は時間帯別に制限されている。"
+    }
+  },
+  {
+    "problem_id": 619,
+    "theme_id": 2045,
+    "theme_name": "時間帯別営業制限",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754059",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_text": "時間帯別営業制限の手続きから3年が経過した場合、有効期限が切れる必要である。",
+    "correct_answer": "○",
+    "explanation": "型式検定など時間制限がある規制では、定期的な更新手続きが必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第8条",
+      "section": "（営業時間）",
+      "detail": "営業時間は時間帯別に制限されている。"
+    }
+  },
+  {
+    "problem_id": 620,
+    "theme_id": 2045,
+    "theme_name": "時間帯別営業制限",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754065",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_text": "営業者が時間帯別営業制限を含む状況で営業を継続する場合、風営法に定められた適切な措置により継続可能である。",
+    "correct_answer": "○",
+    "explanation": "時間帯別営業制限に関する状況でも、適切な対応と手続きにより営業継続が可能です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第8条",
+      "section": "（営業時間）",
+      "detail": "営業時間は時間帯別に制限されている。"
+    }
+  },
+  {
+    "problem_id": 621,
+    "theme_id": 2045,
+    "theme_name": "時間帯別営業制限",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754077",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_text": "時間帯別営業制限に関する型式検定の有効期限は3年である。",
+    "correct_answer": "○",
+    "explanation": "型式検定は3年ごとに更新申請が必要です。これは重要な数値です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第8条",
+      "section": "（営業時間）",
+      "detail": "営業時間は時間帯別に制限されている。"
+    }
+  },
+  {
+    "problem_id": 622,
+    "theme_id": 2045,
+    "theme_name": "時間帯別営業制限",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754084",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_text": "時間帯別営業制限という規制が存在するのは、遊技業の健全性確保と消費者保護のためであり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "すべての風営法の規制は、業界の健全性と消費者保護を目的としています。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第8条",
+      "section": "（営業時間）",
+      "detail": "営業時間は時間帯別に制限されている。"
+    }
+  },
+  {
+    "problem_id": 623,
+    "theme_id": 2045,
+    "theme_name": "時間帯別営業制限",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754091",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_text": "時間帯別営業制限について、営業経験が長い者でも誤解しやすい領域がある。",
+    "correct_answer": "○",
+    "explanation": "時間帯別営業制限のような法律知識は、実務経験だけでは不十分で、正確な学習が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第8条",
+      "section": "（営業時間）",
+      "detail": "営業時間は時間帯別に制限されている。"
+    }
+  },
+  {
+    "problem_id": 624,
+    "theme_id": 2047,
+    "theme_name": "営業停止命令の内容",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754248",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "営業停止命令の内容については、必ず毎年の報告が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "「必ず毎年」という表現は誤り。営業停止命令の内容の手続きは状況に応じて異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第24条",
+      "section": "（営業の停止等）",
+      "detail": "営業停止命令には期間と理由が明示される。"
+    }
+  },
+  {
+    "problem_id": 625,
+    "theme_id": 2047,
+    "theme_name": "営業停止命令の内容",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754261",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_text": "営業停止命令の内容に関する対応が必要な場合、営業の継続可能性を判断基準に行動する。",
+    "correct_answer": "○",
+    "explanation": "営業停止命令の内容は営業継続に関わるため、最優先で対応が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第24条",
+      "section": "（営業の停止等）",
+      "detail": "営業停止命令には期間と理由が明示される。"
+    }
+  },
+  {
+    "problem_id": 626,
+    "theme_id": 2047,
+    "theme_name": "営業停止命令の内容",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754267",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_text": "営業停止命令の内容の手続きから3年が経過した場合、有効期限が切れる必要である。",
+    "correct_answer": "○",
+    "explanation": "型式検定など時間制限がある規制では、定期的な更新手続きが必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第24条",
+      "section": "（営業の停止等）",
+      "detail": "営業停止命令には期間と理由が明示される。"
+    }
+  },
+  {
+    "problem_id": 627,
+    "theme_id": 2047,
+    "theme_name": "営業停止命令の内容",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754274",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_text": "営業者が営業停止命令の内容を含む状況で営業を継続する場合、風営法に定められた適切な措置により継続可能である。",
+    "correct_answer": "○",
+    "explanation": "営業停止命令の内容に関する状況でも、適切な対応と手続きにより営業継続が可能です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第24条",
+      "section": "（営業の停止等）",
+      "detail": "営業停止命令には期間と理由が明示される。"
+    }
+  },
+  {
+    "problem_id": 629,
+    "theme_id": 2047,
+    "theme_name": "営業停止命令の内容",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754298",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_text": "営業停止命令の内容について、営業経験が長い者でも誤解しやすい領域がある。",
+    "correct_answer": "○",
+    "explanation": "営業停止命令の内容のような法律知識は、実務経験だけでは不十分で、正確な学習が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第24条",
+      "section": "（営業の停止等）",
+      "detail": "営業停止命令には期間と理由が明示される。"
+    }
+  },
+  {
+    "problem_id": 630,
+    "theme_id": 2047,
+    "theme_name": "営業停止命令の内容",
+    "category": "営業時間・規制",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.754311",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★★",
+    "problem_text": "営業停止命令の内容を含む複雑なシナリオでは、複数の法的要件を総合的に判断する必要があり、単一の要素だけでは判定できない。",
+    "correct_answer": "○",
+    "explanation": "実務では営業停止命令の内容を含めた複数の規制を同時に考慮する必要があります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第24条",
+      "section": "（営業の停止等）",
+      "detail": "営業停止命令には期間と理由が明示される。"
+    }
+  }
+]
+
+よろしくお願いします。

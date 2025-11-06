@@ -1,0 +1,503 @@
+【Batch 22 - 品質レビューリクエスト】
+
+対象: 主任者講習試験問題 421～440
+問題数: 20問
+
+【評価基準】
+1. 法的根拠の具体性 - 「風営法第X条の Y」のように条文が具体的であること
+2. 抽象的表現の有無 - 「一定の」「適切な」「所定の」などの表現がないこと  
+3. 問題文の長さ - 最低20文字以上であること
+4. 複数の解釈の可能性がないこと
+
+【指示】
+以下の20問について、一問ずつ以下の形式で評価してください：
+
+【問題ID X】
+- 評価: [✅ OK / ⚠️ 要改善 / ❌ 不合格]
+- 指摘事項: [該当する場合のみ記入]
+
+【問題データ】
+[
+  {
+    "problem_id": 433,
+    "theme_id": 2033,
+    "theme_name": "不正改造の具体的パターン",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.752886",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "不正改造の具体的パターンは、営業許可と同じく無期限有効であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "不正改造の具体的パターンと営業許可は異なる制度で、有効期限等も異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "改造パターンの認識は防止に不可欠。"
+    }
+  },
+  {
+    "problem_id": 434,
+    "theme_id": 2033,
+    "theme_name": "不正改造の具体的パターン",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.752894",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_text": "不正改造の具体的パターンに関する対応が必要な場合、営業の継続可能性を判断基準に行動する。",
+    "correct_answer": "○",
+    "explanation": "不正改造の具体的パターンは営業継続に関わるため、最優先で対応が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "改造パターンの認識は防止に不可欠。"
+    }
+  },
+  {
+    "problem_id": 435,
+    "theme_id": 2033,
+    "theme_name": "不正改造の具体的パターン",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.752902",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_text": "不正改造の具体的パターンの手続きから3年が経過した場合、有効期限が切れる必要である。",
+    "correct_answer": "○",
+    "explanation": "型式検定など時間制限がある規制では、定期的な更新手続きが必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "改造パターンの認識は防止に不可欠。"
+    }
+  },
+  {
+    "problem_id": 436,
+    "theme_id": 2033,
+    "theme_name": "不正改造の具体的パターン",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.752924",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_text": "不正改造の具体的パターンに関する型式検定の有効期限は3年である。",
+    "correct_answer": "○",
+    "explanation": "型式検定は3年ごとに更新申請が必要です。これは重要な数値です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "改造パターンの認識は防止に不可欠。"
+    }
+  },
+  {
+    "problem_id": 437,
+    "theme_id": 2033,
+    "theme_name": "不正改造の具体的パターン",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.752931",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_text": "不正改造の具体的パターンという規制が存在するのは、遊技業の健全性確保と消費者保護のためであり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "すべての風営法の規制は、業界の健全性と消費者保護を目的としています。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "改造パターンの認識は防止に不可欠。"
+    }
+  },
+  {
+    "problem_id": 438,
+    "theme_id": 2033,
+    "theme_name": "不正改造の具体的パターン",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.752938",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_text": "不正改造の具体的パターンについて、営業経験が長い者でも誤解しやすい領域がある。",
+    "correct_answer": "○",
+    "explanation": "不正改造の具体的パターンのような法律知識は、実務経験だけでは不十分で、正確な学習が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "改造パターンの認識は防止に不可欠。"
+    }
+  },
+  {
+    "problem_id": 439,
+    "theme_id": 2034,
+    "theme_name": "不正検出技術",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.752968",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_text": "不正検出技術は、法律で定められている重要な知識であり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "不正検出技術について正確に理解することは、営業管理の基本です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正の早期発見が改造防止の鍵。"
+    }
+  },
+  {
+    "problem_id": 440,
+    "theme_id": 2034,
+    "theme_name": "不正検出技術",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.752977",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "不正検出技術については、必ず毎年の届出が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "「必ず毎年」という表現は誤り。不正検出技術の手続きは状況に応じて異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正の早期発見が改造防止の鍵。"
+    }
+  },
+  {
+    "problem_id": 441,
+    "theme_id": 2034,
+    "theme_name": "不正検出技術",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.752984",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "不正検出技術は、営業許可と同じく無期限有効であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "不正検出技術と営業許可は異なる制度で、有効期限等も異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正の早期発見が改造防止の鍵。"
+    }
+  },
+  {
+    "problem_id": 442,
+    "theme_id": 2034,
+    "theme_name": "不正検出技術",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.752991",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_text": "不正検出技術に関する対応が必要な場合、営業の継続可能性を判断基準に行動する。",
+    "correct_answer": "○",
+    "explanation": "不正検出技術は営業継続に関わるため、最優先で対応が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正の早期発見が改造防止の鍵。"
+    }
+  },
+  {
+    "problem_id": 443,
+    "theme_id": 2034,
+    "theme_name": "不正検出技術",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.752997",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_text": "不正検出技術の手続きから2年が経過した場合、有効期限が切れる必要である。",
+    "correct_answer": "○",
+    "explanation": "型式検定など時間制限がある規制では、定期的な更新手続きが必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正の早期発見が改造防止の鍵。"
+    }
+  },
+  {
+    "problem_id": 444,
+    "theme_id": 2034,
+    "theme_name": "不正検出技術",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753004",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_text": "営業者が不正検出技術を含む状況で営業を継続する場合、風営法に定められた適切な措置により継続可能である。",
+    "correct_answer": "○",
+    "explanation": "不正検出技術に関する状況でも、適切な対応と手続きにより営業継続が可能です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正の早期発見が改造防止の鍵。"
+    }
+  },
+  {
+    "problem_id": 445,
+    "theme_id": 2034,
+    "theme_name": "不正検出技術",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753017",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_text": "不正検出技術に関する型式検定の有効期限は3年である。",
+    "correct_answer": "○",
+    "explanation": "型式検定は3年ごとに更新申請が必要です。これは重要な数値です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正の早期発見が改造防止の鍵。"
+    }
+  },
+  {
+    "problem_id": 446,
+    "theme_id": 2034,
+    "theme_name": "不正検出技術",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753024",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_text": "不正検出技術という規制が存在するのは、遊技業の健全性確保と消費者保護のためであり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "すべての風営法の規制は、業界の健全性と消費者保護を目的としています。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正の早期発見が改造防止の鍵。"
+    }
+  },
+  {
+    "problem_id": 447,
+    "theme_id": 2034,
+    "theme_name": "不正検出技術",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753031",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_text": "不正検出技術について、営業経験が長い者でも誤解しやすい領域がある。",
+    "correct_answer": "○",
+    "explanation": "不正検出技術のような法律知識は、実務経験だけでは不十分で、正確な学習が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正の早期発見が改造防止の鍵。"
+    }
+  },
+  {
+    "problem_id": 448,
+    "theme_id": 2035,
+    "theme_name": "不正防止チェックリスト",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753053",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_text": "不正防止チェックリストは、法律で定められている重要な知識であり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "不正防止チェックリストについて正確に理解することは、営業管理の基本です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "定期的なチェックリストの実施が必須。"
+    }
+  },
+  {
+    "problem_id": 449,
+    "theme_id": 2035,
+    "theme_name": "不正防止チェックリスト",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753060",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "不正防止チェックリストについては、必ず毎年の報告が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "「必ず毎年」という表現は誤り。不正防止チェックリストの手続きは状況に応じて異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "定期的なチェックリストの実施が必須。"
+    }
+  },
+  {
+    "problem_id": 450,
+    "theme_id": 2035,
+    "theme_name": "不正防止チェックリスト",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753067",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "不正防止チェックリストは、営業許可と同じく無期限有効であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "不正防止チェックリストと営業許可は異なる制度で、有効期限等も異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "定期的なチェックリストの実施が必須。"
+    }
+  },
+  {
+    "problem_id": 451,
+    "theme_id": 2035,
+    "theme_name": "不正防止チェックリスト",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753074",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_text": "不正防止チェックリストに関する対応が必要な場合、営業の継続可能性を判断基準に行動する。",
+    "correct_answer": "○",
+    "explanation": "不正防止チェックリストは営業継続に関わるため、最優先で対応が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "定期的なチェックリストの実施が必須。"
+    }
+  },
+  {
+    "problem_id": 452,
+    "theme_id": 2035,
+    "theme_name": "不正防止チェックリスト",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753080",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_text": "不正防止チェックリストの手続きから3年が経過した場合、有効期限が切れる必要である。",
+    "correct_answer": "○",
+    "explanation": "型式検定など時間制限がある規制では、定期的な更新手続きが必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "定期的なチェックリストの実施が必須。"
+    }
+  }
+]
+
+よろしくお願いします。

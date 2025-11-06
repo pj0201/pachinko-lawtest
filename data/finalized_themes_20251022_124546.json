@@ -1,0 +1,182 @@
+[
+  {
+    "theme_id": 1000,
+    "category": "遊技機管理",
+    "name": "新台設置の手続き",
+    "description": "新台導入時の必要な手続きと確認事項",
+    "pdf_index": 1,
+    "page_number": 0,
+    "source_preview": "はじめに\n\nばちんこ営業は、それが適正に営まれれば、「適度」に射幸心を\n満たす、国民に身近で手軽で健全な大衆娯楽を提供する営業です。\nパチンコ営業が、このように健金な大抄事楽を提供する産業として\n社会",
+    "granularity_check": {
+      "is_single_concept": true,
+      "description_complete_in_2_sentences": true,
+      "allows_12_pattern_expansion": true,
+      "includes_practical_judgment": true
+    }
+  },
+  {
+    "theme_id": 1001,
+    "category": "遊技機管理",
+    "name": "中古遊技機の取扱い",
+    "description": "中古機設置時の型式検定と認定要件",
+    "pdf_index": 1,
+    "page_number": 0,
+    "source_preview": "はじめに\n\nばちんこ営業は、それが適正に営まれれば、「適度」に射幸心を\n満たす、国民に身近で手軽で健全な大衆娯楽を提供する営業です。\nパチンコ営業が、このように健金な大抄事楽を提供する産業として\n社会",
+    "granularity_check": {
+      "is_single_concept": true,
+      "description_complete_in_2_sentences": true,
+      "allows_12_pattern_expansion": true,
+      "includes_practical_judgment": true
+    }
+  },
+  {
+    "theme_id": 1002,
+    "category": "遊技機管理",
+    "name": "遊技機の保守管理",
+    "description": "設置後の定期点検と部品交換の手続き",
+    "pdf_index": 1,
+    "page_number": 0,
+    "source_preview": "はじめに\n\nばちんこ営業は、それが適正に営まれれば、「適度」に射幸心を\n満たす、国民に身近で手軽で健全な大衆娯楽を提供する営業です。\nパチンコ営業が、このように健金な大抄事楽を提供する産業として\n社会",
+    "granularity_check": {
+      "is_single_concept": true,
+      "description_complete_in_2_sentences": true,
+      "allows_12_pattern_expansion": true,
+      "includes_practical_judgment": true
+    }
+  },
+  {
+    "theme_id": 1003,
+    "category": "不正対策",
+    "name": "不正改造の防止",
+    "description": "遊技機の不正改造検出と防止対策",
+    "pdf_index": 1,
+    "page_number": 0,
+    "source_preview": "5 遊技機の設置、増設、交療をの他の変下\n(1) 叙機の設置\n(2) 作技機の増設、交状その他の変更-……………………\n\n第3章 遊技機取扱主任者の実務 (実務編)\n1 遊技機の取扱い\n\n中古人遊技機",
+    "granularity_check": {
+      "is_single_concept": true,
+      "description_complete_in_2_sentences": true,
+      "allows_12_pattern_expansion": true,
+      "includes_practical_judgment": true
+    }
+  },
+  {
+    "theme_id": 1004,
+    "category": "不正対策",
+    "name": "セキュリティ確保",
+    "description": "製造番号・基板ケース・チップのセキュリティ",
+    "pdf_index": 1,
+    "page_number": 0,
+    "source_preview": "5 遊技機の設置、増設、交療をの他の変下\n(1) 叙機の設置\n(2) 作技機の増設、交状その他の変更-……………………\n\n第3章 遊技機取扱主任者の実務 (実務編)\n1 遊技機の取扱い\n\n中古人遊技機",
+    "granularity_check": {
+      "is_single_concept": true,
+      "description_complete_in_2_sentences": true,
+      "allows_12_pattern_expansion": true,
+      "includes_practical_judgment": true
+    }
+  },
+  {
+    "theme_id": 1005,
+    "category": "営業時間・規制",
+    "name": "営業禁止時間",
+    "description": "営業禁止時間帯と営業可能時間帯",
+    "pdf_index": 1,
+    "page_number": 0,
+    "source_preview": "20 法令 久\n\nまた、中央独語等改革基本法の成立によって、各省庁の再編が行われ\n\nました。これに伴い、風営法に関連するものとして、理府令が内閣府\n令に改正きれました。\n\n(5) 平成17年の改正の概",
+    "granularity_check": {
+      "is_single_concept": true,
+      "description_complete_in_2_sentences": true,
+      "allows_12_pattern_expansion": true,
+      "includes_practical_judgment": true
+    }
+  },
+  {
+    "theme_id": 1006,
+    "category": "営業時間・規制",
+    "name": "営業停止命令",
+    "description": "違反時の営業停止命令と条件",
+    "pdf_index": 1,
+    "page_number": 0,
+    "source_preview": "20 法令 久\n\nまた、中央独語等改革基本法の成立によって、各省庁の再編が行われ\n\nました。これに伴い、風営法に関連するものとして、理府令が内閣府\n令に改正きれました。\n\n(5) 平成17年の改正の概",
+    "granularity_check": {
+      "is_single_concept": true,
+      "description_complete_in_2_sentences": true,
+      "allows_12_pattern_expansion": true,
+      "includes_practical_judgment": true
+    }
+  },
+  {
+    "theme_id": 1007,
+    "category": "営業許可関連",
+    "name": "営業許可は無期限有効",
+    "description": "営業許可は一度取得するとその後の更新申請が不要",
+    "pdf_index": 1,
+    "page_number": 0,
+    "source_preview": "20 法令 久\n\nまた、中央独語等改革基本法の成立によって、各省庁の再編が行われ\n\nました。これに伴い、風営法に関連するものとして、理府令が内閣府\n令に改正きれました。\n\n(5) 平成17年の改正の概",
+    "granularity_check": {
+      "is_single_concept": true,
+      "description_complete_in_2_sentences": true,
+      "allows_12_pattern_expansion": true,
+      "includes_practical_judgment": true
+    }
+  },
+  {
+    "theme_id": 1008,
+    "category": "営業許可関連",
+    "name": "営業許可と型式検定の違い",
+    "description": "営業許可と遊技機型式検定は異なる有効期限",
+    "pdf_index": 1,
+    "page_number": 0,
+    "source_preview": "20 法令 久\n\nまた、中央独語等改革基本法の成立によって、各省庁の再編が行われ\n\nました。これに伴い、風営法に関連するものとして、理府令が内閣府\n令に改正きれました。\n\n(5) 平成17年の改正の概",
+    "granularity_check": {
+      "is_single_concept": true,
+      "description_complete_in_2_sentences": true,
+      "allows_12_pattern_expansion": true,
+      "includes_practical_judgment": true
+    }
+  },
+  {
+    "theme_id": 1009,
+    "category": "型式検定関連",
+    "name": "遊技機型式検定は3年有効",
+    "description": "遊技機の型式検定有効期限は3年であり更新申請が必要",
+    "pdf_index": 1,
+    "page_number": 0,
+    "source_preview": "4\n\nO風稚営業等の規制及び業務の適正化等に関する法律施行久\n(秒) …\nC出人営業等の規制及び業務の適正化等に関する法律に基づ\nく話可申請書の添付書類等に関する内閣府令 (抄) …………ひ 158\n",
+    "granularity_check": {
+      "is_single_concept": true,
+      "description_complete_in_2_sentences": true,
+      "allows_12_pattern_expansion": true,
+      "includes_practical_judgment": true
+    }
+  },
+  {
+    "theme_id": 1010,
+    "category": "型式検定関連",
+    "name": "型式検定更新申請のタイミング",
+    "description": "型式検定更新は有効期限の30日前から申請可能",
+    "pdf_index": 1,
+    "page_number": 0,
+    "source_preview": "4\n\nO風稚営業等の規制及び業務の適正化等に関する法律施行久\n(秒) …\nC出人営業等の規制及び業務の適正化等に関する法律に基づ\nく話可申請書の添付書類等に関する内閣府令 (抄) …………ひ 158\n",
+    "granularity_check": {
+      "is_single_concept": true,
+      "description_complete_in_2_sentences": true,
+      "allows_12_pattern_expansion": true,
+      "includes_practical_judgment": true
+    }
+  },
+  {
+    "theme_id": 1011,
+    "category": "景品規制",
+    "name": "景品の種類制限",
+    "description": "遊技機からの景品は種類が限定されている",
+    "pdf_index": 1,
+    "page_number": 0,
+    "source_preview": "30 令 抽\n\nさらに、 広告又は宣伝の親抽対象となる表示の例が以下の七つに示 !\n\nされています。\n① 入党を容易にした洪撤委の設置をうかがわせる実示\n②⑨ 大当たり確率の設定変更が可能な遊技機につ",
+    "granularity_check": {
+      "is_single_concept": true,
+      "description_complete_in_2_sentences": true,
+      "allows_12_pattern_expansion": true,
+      "includes_practical_judgment": true
+    }
+  }
+]

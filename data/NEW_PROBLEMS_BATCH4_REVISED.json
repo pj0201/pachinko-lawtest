@@ -1,0 +1,218 @@
+{
+  "batch": 4,
+  "articles": "第10条-第14条",
+  "total_problems": 10,
+  "problems": [
+    {
+      "problem_id": 1019,
+      "theme_id": 5010,
+      "theme_name": "遊技機の型式検定（基準）",
+      "problem_text": "遊技機の型式検定の目的として最も正確なのはどれか。",
+      "options": [
+        "遊技機の製造コストを削減すること",
+        "遊技機が風営法の基準を満たしていることを確認すること",
+        "遊技機の販売価格を統一すること",
+        "遊技機製造業者を保護すること"
+      ],
+      "correct_answer": 1,
+      "explanation": "型式検定は遊技機が法律で定められた基準を満たしていることを確認するための制度である",
+      "difficulty": "★★",
+      "legal_reference": {
+        "law": "風営法",
+        "article": "第10条",
+        "section": "（遊技機の型式検定）",
+        "detail": "型式検定の目的"
+      }
+    },
+    {
+      "problem_id": 1020,
+      "theme_id": 5010,
+      "theme_name": "遊技機の型式検定（基準）",
+      "problem_text": "型式検定に合格する遊技機の基準として含まれないのはどれか。",
+      "options": [
+        "不正な操作がされない構造",
+        "偽造防止措置がされている",
+        "盗難防止装置がついている",
+        "美しいデザインであること"
+      ],
+      "correct_answer": 3,
+      "explanation": "型式検定の基準は技術的・法的要件に関するもので、デザインの美しさは含まれない",
+      "difficulty": "★",
+      "legal_reference": {
+        "law": "風営法",
+        "article": "第10条",
+        "section": "（遊技機の型式検定）",
+        "detail": "検定基準"
+      }
+    },
+    {
+      "problem_id": 1021,
+      "theme_id": 5011,
+      "theme_name": "型式検定の有効期間",
+      "problem_text": "型式検定の有効期間は一般的にどのくらいか。",
+      "options": [
+        "1年間",
+        "2年間",
+        "3年間",
+        "5年間"
+      ],
+      "correct_answer": 2,
+      "explanation": "型式検定の有効期間は風営法で3年と定められている。更新が必要な場合は再度検定を受ける",
+      "difficulty": "★★",
+      "legal_reference": {
+        "law": "風営法",
+        "article": "第11条",
+        "section": "（型式検定の有効期間）",
+        "detail": "有効期間の期限"
+      }
+    },
+    {
+      "problem_id": 1022,
+      "theme_id": 5011,
+      "theme_name": "型式検定の有効期間",
+      "problem_text": "型式検定の有効期間が終了した場合、どのような措置が必要か。",
+      "options": [
+        "そのまま使用を続けることができる",
+        "新しい型式検定を受ける必要がある",
+        "簡易的な再確認をすれば良い",
+        "製造者に連絡すれば良い"
+      ],
+      "correct_answer": 1,
+      "explanation": "型式検定の有効期間が終了した遊技機を使用する場合は、再度型式検定を受ける必要がある",
+      "difficulty": "★★",
+      "legal_reference": {
+        "law": "風営法",
+        "article": "第11条",
+        "section": "（型式検定の有効期間）",
+        "detail": "期間終了後の対応"
+      }
+    },
+    {
+      "problem_id": 1023,
+      "theme_id": 5012,
+      "theme_name": "型式検定の更新",
+      "problem_text": "型式検定の更新申請はいつ行うべきか。",
+      "options": [
+        "有効期間終了後に申請する",
+        "有効期間終了の3ヶ月前に申請する",
+        "有効期間終了の6ヶ月前に申請する",
+        "終了日を過ぎてから申請する"
+      ],
+      "correct_answer": 1,
+      "explanation": "型式検定の更新申請は有効期間終了の3ヶ月前以降、終了日までに行うことが推奨されている。有効期間終了後の申請は避けるべきである",
+      "difficulty": "★★",
+      "legal_reference": {
+        "law": "風営法",
+        "article": "第12条",
+        "section": "（型式検定の更新）",
+        "detail": "更新申請のタイミング"
+      }
+    },
+    {
+      "problem_id": 1024,
+      "theme_id": 5012,
+      "theme_name": "型式検定の更新",
+      "problem_text": "型式検定の更新手続きの申請先はどこか。",
+      "options": [
+        "市町村教育委員会",
+        "警察庁の指定検査機関",
+        "営業者の住所地の警察署",
+        "遊技機製造業者の本社"
+      ],
+      "correct_answer": 1,
+      "explanation": "型式検定の更新申請は警察庁の指定する検査機関に対して行われる",
+      "difficulty": "★★",
+      "legal_reference": {
+        "law": "風営法",
+        "article": "第12条",
+        "section": "（型式検定の更新）",
+        "detail": "申請先"
+      }
+    },
+    {
+      "problem_id": 1025,
+      "theme_id": 5013,
+      "theme_name": "遊技機の回収",
+      "problem_text": "型式検定が無効になった遊技機の回収義務を負うのは誰か。",
+      "options": [
+        "営業所の経営者",
+        "遊技機の製造者",
+        "警察",
+        "市町村"
+      ],
+      "correct_answer": 1,
+      "explanation": "型式検定が無効になった遊技機の回収責任は営業者（営業所の経営者）にある",
+      "difficulty": "★★",
+      "legal_reference": {
+        "law": "風営法",
+        "article": "第13条",
+        "section": "（遊技機の回収）",
+        "detail": "回収責任者"
+      }
+    },
+    {
+      "problem_id": 1026,
+      "theme_id": 5013,
+      "theme_name": "遊技機の回収",
+      "problem_text": "回収した遊技機の処分方法として適切なのはどれか。",
+      "options": [
+        "営業所の倉庫に保管し続ける",
+        "無断で他の営業所に提供する",
+        "適切な方法で破棄するか、製造業者に返却する",
+        "市場で販売する"
+      ],
+      "correct_answer": 2,
+      "explanation": "回収した遊技機は適切に破棄するか製造業者に返却されなければならない。転売や保管は違反",
+      "difficulty": "★★",
+      "legal_reference": {
+        "law": "風営法",
+        "article": "第13条",
+        "section": "（遊技機の回収）",
+        "detail": "回収後の処分"
+      }
+    },
+    {
+      "problem_id": 1027,
+      "theme_id": 5014,
+      "theme_name": "新規遊技機の設置",
+      "problem_text": "新規遊技機を営業所に設置する場合、事前に必要な手続きは何か。",
+      "options": [
+        "特に手続きは不要、設置すれば良い",
+        "型式検定済みであることの確認",
+        "近隣住民への告知",
+        "その遊技機の販売者から許可を得る"
+      ],
+      "correct_answer": 1,
+      "explanation": "新規遊技機の設置には、その遊技機が型式検定に合格していること、かつ有効期間内であることが必要",
+      "difficulty": "★★",
+      "legal_reference": {
+        "law": "風営法",
+        "article": "第14条",
+        "section": "（新規遊技機の設置）",
+        "detail": "設置要件"
+      }
+    },
+    {
+      "problem_id": 1028,
+      "theme_id": 5014,
+      "theme_name": "新規遊技機の設置",
+      "problem_text": "新規遊技機の設置数に制限はあるか。",
+      "options": [
+        "1年間に1台まで",
+        "営業許可で定められた台数内での設置が可能",
+        "無制限に設置できる",
+        "遊技機の種類ごとに最大3台まで"
+      ],
+      "correct_answer": 1,
+      "explanation": "遊技機の設置数は営業許可で定められた台数以内に制限される。無限の設置はできない",
+      "difficulty": "★★",
+      "legal_reference": {
+        "law": "風営法",
+        "article": "第14条",
+        "section": "（新規遊技機の設置）",
+        "detail": "設置台数制限"
+      }
+    }
+  ],
+  "status": "生成完了・レビュー待ち"
+}

@@ -1,0 +1,5806 @@
+{
+  "total_duplicates": 483,
+  "by_method": {
+    "keyword": 0,
+    "edit_distance": 420,
+    "opposite_answer": 63
+  },
+  "details": [
+    {
+      "pair": [
+        1,
+        255
+      ],
+      "similarity_score": 0.8571428571428571,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の移設手続きは、国家公安委員会が行う。",
+      "problem2_text": "遊技機の移設手続きは、公安委員会が行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        2,
+        89
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の設置基準には期限が定められている。",
+      "problem2_text": "遊技機の設置基準には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        2,
+        343
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の設置基準には期限が定められている。",
+      "problem2_text": "遊技機の設置基準には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        3,
+        105
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "中古機流通には流通制御端末が必要。",
+      "problem2_text": "中古機流通には流通制御端末が必要。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        5,
+        28
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "すべての遊技機には固有の製造番号が付与される。",
+      "problem2_text": "すべての遊技機には固有の製造番号が付与される。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        5,
+        359
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "すべての遊技機には固有の製造番号が付与される。",
+      "problem2_text": "すべての遊技機には固有の製造番号が付与される。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        7,
+        32
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の設置には一定の間隔が必要。",
+      "problem2_text": "遊技機の設置には一定の間隔が必要。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        9,
+        216
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機メーカーとの契約には、適切な手続きが必要である。",
+      "problem2_text": "遊技機メーカーとの契約には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        10,
+        204
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機メーカーとの契約は、営業者が行う。",
+      "problem2_text": "遊技機メーカーとの契約は、営業者が行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        12,
+        15
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技球等の管理とは、遊技球は適正な規格品を使用することである。",
+      "problem2_text": "遊技球等の管理とは、遊技球は適正な規格品を使用することである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        12,
+        287
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技球等の管理とは、遊技球は適正な規格品を使用することである。",
+      "problem2_text": "遊技球等の管理とは、遊技球は適正な規格品を使用することでない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        12,
+        292
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技球等の管理とは、遊技球は適正な規格品を使用することである。",
+      "problem2_text": "遊技球等の管理とは、遊技球は適正な規格品を使用することでない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        14,
+        332
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "リサイクル機の取扱いは、一部の遊技機のみに適用される。",
+      "problem2_text": "リサイクル機の取扱いは、一部の遊技機のみに適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        15,
+        287
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技球等の管理とは、遊技球は適正な規格品を使用することである。",
+      "problem2_text": "遊技球等の管理とは、遊技球は適正な規格品を使用することでない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        15,
+        292
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技球等の管理とは、遊技球は適正な規格品を使用することである。",
+      "problem2_text": "遊技球等の管理とは、遊技球は適正な規格品を使用することでない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        17,
+        212
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板ケースの封印管理には、適切な手続きが必要である。",
+      "problem2_text": "基板ケースの封印管理には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        20,
+        117
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "中古機の流通管理には期限が定められている。",
+      "problem2_text": "中古機の流通管理には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        21,
+        33
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "故障機の取扱いには例外規定がない。",
+      "problem2_text": "故障機の取扱いには例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        21,
+        301
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "故障機の取扱いには例外規定がない。",
+      "problem2_text": "故障機の取扱いには例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        23,
+        307
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の保守点検頻度は、すべての遊技機に適用される。",
+      "problem2_text": "遊技機の保守点検頻度は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        26,
+        71
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定有効期限の管理は禁止されている。",
+      "problem2_text": "検定有効期限の管理は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        27,
+        124
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "部品交換後は取扱主任者による点検確認が必要。",
+      "problem2_text": "部品交換後は取扱主任者による点検確認が必要。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        27,
+        262
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "部品交換後は取扱主任者による点検確認が必要。",
+      "problem2_text": "部品交換後は取扱主任者による点検確認が必要。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        28,
+        359
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "すべての遊技機には固有の製造番号が付与される。",
+      "problem2_text": "すべての遊技機には固有の製造番号が付与される。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        33,
+        301
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "故障機の取扱いには例外規定がない。",
+      "problem2_text": "故障機の取扱いには例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        38,
+        85
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定有効期限の管理には、適切な手続きが必要である。",
+      "problem2_text": "検定有効期限の管理には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        38,
+        309
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定有効期限の管理には、適切な手続きが必要である。",
+      "problem2_text": "検定有効期限の管理には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        39,
+        237
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の部品交換手続きには期限が定められている。",
+      "problem2_text": "遊技機の部品交換手続きには期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        40,
+        315
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "新台設置には事前の届出が必要。",
+      "problem2_text": "新台設置には事前の届出が必要。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        43,
+        238
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "リサイクル機も型式適合が不要。",
+      "problem2_text": "リサイクル機も型式適合が不要。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        44,
+        119
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "リサイクル機も型式適合が必要。",
+      "problem2_text": "リサイクル機も型式適合が必要。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        44,
+        133
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "リサイクル機も型式適合が必要。",
+      "problem2_text": "リサイクル機も型式適合が必要。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        44,
+        170
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "リサイクル機も型式適合が必要。",
+      "problem2_text": "リサイクル機も型式適合が必要。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        47,
+        329
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の部品交換手続きは禁止されている。",
+      "problem2_text": "遊技機の部品交換手続きは禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        48,
+        103
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業所において、中古機の流通管理には期限が定められている。",
+      "problem2_text": "営業所において、中古機の流通管理には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        49,
+        354
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の認定申請には例外がある。",
+      "problem2_text": "遊技機の認定申請には例外がある。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        56,
+        90
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "故障機の取扱いは必須である。",
+      "problem2_text": "故障機の取扱いは必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        59,
+        64
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機は定期的な保守点検が義務付けられている。",
+      "problem2_text": "遊技機は定期的な保守点検が義務付けられている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        59,
+        246
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機は定期的な保守点検が義務付けられている。",
+      "problem2_text": "遊技機は定期的な保守点検が義務付けられている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        63,
+        208
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の性能確認とは、遊技機の性能は技術規格に適合することである。",
+      "problem2_text": "遊技機の性能確認とは、遊技機の性能は技術規格に適合することである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        64,
+        246
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機は定期的な保守点検が義務付けられている。",
+      "problem2_text": "遊技機は定期的な保守点検が義務付けられている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        67,
+        293
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部端子板の管理は、すべての遊技機に適用される。",
+      "problem2_text": "外部端子板の管理は、すべての遊技機に適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        70,
+        81
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機メーカーとの契約には期限が定められている。",
+      "problem2_text": "遊技機メーカーとの契約には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        70,
+        177
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機メーカーとの契約には期限が定められている。",
+      "problem2_text": "遊技機メーカーとの契約には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        70,
+        338
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機メーカーとの契約には期限が定められている。",
+      "problem2_text": "遊技機メーカーとの契約には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        74,
+        79
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の認定申請とは、認定は任意の制度であることである。",
+      "problem2_text": "遊技機の認定申請とは、認定は任意の制度であることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        76,
+        122
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "製造番号の管理は禁止されている。",
+      "problem2_text": "製造番号の管理は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        81,
+        177
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機メーカーとの契約には期限が定められている。",
+      "problem2_text": "遊技機メーカーとの契約には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        81,
+        338
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機メーカーとの契約には期限が定められている。",
+      "problem2_text": "遊技機メーカーとの契約には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        84,
+        106
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機購入には正規の契約が不要。",
+      "problem2_text": "遊技機購入には正規の契約が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        84,
+        304
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機購入には正規の契約が不要。",
+      "problem2_text": "遊技機購入には正規の契約が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        85,
+        309
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定有効期限の管理には、適切な手続きが必要である。",
+      "problem2_text": "検定有効期限の管理には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        88,
+        158
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機台帳の記載事項には例外規定がない。",
+      "problem2_text": "遊技機台帳の記載事項には例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        89,
+        343
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の設置基準には期限が定められている。",
+      "problem2_text": "遊技機の設置基準には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        91,
+        155
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "故障機の取扱いは、営業者が行う。",
+      "problem2_text": "故障機の取扱いは、営業者が行う。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        95,
+        223
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機購入には正規の契約が任意。",
+      "problem2_text": "遊技機購入には正規の契約が任意。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        97,
+        295
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の性能は技術規格に適合する。",
+      "problem2_text": "遊技機の性能は技術規格に適合する。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        100,
+        258
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の認定申請には期限が定められている。",
+      "problem2_text": "遊技機の認定申請には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        100,
+        321
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の認定申請には期限が定められている。",
+      "problem2_text": "遊技機の認定申請には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        101,
+        241
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "新台設置の届出手続きとは、新台設置には事前の届出が必要ことである。",
+      "problem2_text": "新台設置の届出手続きとは、新台設置には事前の届出が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        104,
+        224
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "中古遊技機の型式確認は禁止されている。",
+      "problem2_text": "中古遊技機の型式確認は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        104,
+        275
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "中古遊技機の型式確認は禁止されている。",
+      "problem2_text": "中古遊技機の型式確認は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        106,
+        304
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機購入には正規の契約が不要。",
+      "problem2_text": "遊技機購入には正規の契約が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        107,
+        273
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の認定申請は、一部の遊技機のみに適用される。",
+      "problem2_text": "遊技機の認定申請は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        107,
+        330
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の認定申請は、一部の遊技機のみに適用される。",
+      "problem2_text": "遊技機の認定申請は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        108,
+        136
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は1年である。",
+      "problem2_text": "型式検定の有効期限は3年である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        108,
+        190
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は1年である。",
+      "problem2_text": "型式検定の有効期限は3年である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        108,
+        308
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は1年である。",
+      "problem2_text": "型式検定の有効期限は5年である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        108,
+        360
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は1年である。",
+      "problem2_text": "型式検定の有効期限は5年である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        108,
+        788
+      ],
+      "similarity_score": 0.8,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は1年である。",
+      "problem2_text": "型式検定の有効期限は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        108,
+        810
+      ],
+      "similarity_score": 0.8,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は1年である。",
+      "problem2_text": "型式検定の有効期限は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        110,
+        192
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機廃棄時は適正な処理が不要。",
+      "problem2_text": "遊技機廃棄時は適正な処理が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        110,
+        225
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機廃棄時は適正な処理が不要。",
+      "problem2_text": "遊技機廃棄時は適正な処理が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        119,
+        133
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "リサイクル機も型式適合が必要。",
+      "problem2_text": "リサイクル機も型式適合が必要。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        119,
+        170
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "リサイクル機も型式適合が必要。",
+      "problem2_text": "リサイクル機も型式適合が必要。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        124,
+        262
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "部品交換後は取扱主任者による点検確認が必要。",
+      "problem2_text": "部品交換後は取扱主任者による点検確認が必要。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        126,
+        138
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の認定申請には、適切な手続きが必要である。",
+      "problem2_text": "遊技機の認定申請には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        127,
+        135
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の廃棄手続きには期限が定められている。",
+      "problem2_text": "遊技機の廃棄手続きには期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        133,
+        170
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "リサイクル機も型式適合が必要。",
+      "problem2_text": "リサイクル機も型式適合が必要。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        136,
+        190
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は3年である。",
+      "problem2_text": "型式検定の有効期限は3年である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        136,
+        288
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は3年である。",
+      "problem2_text": "型式検定の有効期限は30日である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        136,
+        308
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は3年である。",
+      "problem2_text": "型式検定の有効期限は5年である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        136,
+        360
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は3年である。",
+      "problem2_text": "型式検定の有効期限は5年である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        136,
+        788
+      ],
+      "similarity_score": 0.8,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は3年である。",
+      "problem2_text": "型式検定の有効期限は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        136,
+        810
+      ],
+      "similarity_score": 0.8,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は3年である。",
+      "problem2_text": "型式検定の有効期限は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        139,
+        148
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板ケースの封印管理は禁止されている。",
+      "problem2_text": "基板ケースの封印管理は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        139,
+        245
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板ケースの封印管理は禁止されている。",
+      "problem2_text": "基板ケースの封印管理は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        148,
+        245
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板ケースの封印管理は禁止されている。",
+      "problem2_text": "基板ケースの封印管理は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        157,
+        336
+      ],
+      "similarity_score": 0.8571428571428571,
+      "method": "edit_distance",
+      "problem1_text": "新台設置の届出手続きは、一部の新台のみに適用される。",
+      "problem2_text": "新台設置の届出手続きは、一部の遊技機のみに適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        164,
+        176
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技球等の管理には期限が定められている。",
+      "problem2_text": "遊技球等の管理には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        164,
+        303
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技球等の管理には期限が定められている。",
+      "problem2_text": "遊技球等の管理には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        167,
+        187
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定有効期限の管理は、一部の遊技機のみに適用される。",
+      "problem2_text": "検定有効期限の管理は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        167,
+        272
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定有効期限の管理は、一部の遊技機のみに適用される。",
+      "problem2_text": "検定有効期限の管理は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        167,
+        325
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定有効期限の管理は、一部の遊技機のみに適用される。",
+      "problem2_text": "検定有効期限の管理は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        174,
+        311
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板ケースの封印管理は、すべての遊技機に適用される。",
+      "problem2_text": "基板ケースの封印管理は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        176,
+        303
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技球等の管理には期限が定められている。",
+      "problem2_text": "遊技球等の管理には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        177,
+        338
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機メーカーとの契約には期限が定められている。",
+      "problem2_text": "遊技機メーカーとの契約には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        178,
+        182
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機台帳の記載事項には、適切な手続きが必要である。",
+      "problem2_text": "遊技機台帳の記載事項には、適切な手続きが必要ではない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        179,
+        349
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "新台設置の届出手続きは、公安委員会が行う。",
+      "problem2_text": "新台設置の届出手続きは、公安委員会が行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        180,
+        205
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板ケースは封印により保護される。",
+      "problem2_text": "基板ケースは封印により保護される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        180,
+        232
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板ケースは封印により保護される。",
+      "problem2_text": "基板ケースは封印により保護される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        180,
+        347
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板ケースは封印により保護される。",
+      "problem2_text": "基板ケースは封印により保護される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        181,
+        196
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定有効期限の管理は必須である。",
+      "problem2_text": "検定有効期限の管理は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        181,
+        250
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定有効期限の管理は必須である。",
+      "problem2_text": "検定有効期限の管理は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        183,
+        215
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技球等の管理には例外規定がない。",
+      "problem2_text": "遊技球等の管理には例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        187,
+        272
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定有効期限の管理は、一部の遊技機のみに適用される。",
+      "problem2_text": "検定有効期限の管理は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        187,
+        325
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定有効期限の管理は、一部の遊技機のみに適用される。",
+      "problem2_text": "検定有効期限の管理は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        190,
+        288
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は3年である。",
+      "problem2_text": "型式検定の有効期限は30日である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        190,
+        308
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は3年である。",
+      "problem2_text": "型式検定の有効期限は5年である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        190,
+        360
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は3年である。",
+      "problem2_text": "型式検定の有効期限は5年である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        190,
+        788
+      ],
+      "similarity_score": 0.8,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は3年である。",
+      "problem2_text": "型式検定の有効期限は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        190,
+        810
+      ],
+      "similarity_score": 0.8,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は3年である。",
+      "problem2_text": "型式検定の有効期限は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        192,
+        225
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機廃棄時は適正な処理が不要。",
+      "problem2_text": "遊技機廃棄時は適正な処理が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        194,
+        284
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部端子板の管理には期限が定められている。",
+      "problem2_text": "外部端子板の管理には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        196,
+        250
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定有効期限の管理は必須である。",
+      "problem2_text": "検定有効期限の管理は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        202,
+        318
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "新台設置の届出手続きには例外規定がない。",
+      "problem2_text": "新台設置の届出手続きには例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        205,
+        232
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板ケースは封印により保護される。",
+      "problem2_text": "基板ケースは封印により保護される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        205,
+        347
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板ケースは封印により保護される。",
+      "problem2_text": "基板ケースは封印により保護される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        206,
+        316
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業所内での遊技機移設は届出不要。",
+      "problem2_text": "営業所内での遊技機移設は届出不要。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        224,
+        275
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "中古遊技機の型式確認は禁止されている。",
+      "problem2_text": "中古遊技機の型式確認は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        229,
+        252
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "製造番号の管理には、適切な手続きが必要である。",
+      "problem2_text": "製造番号の管理には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        232,
+        347
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板ケースは封印により保護される。",
+      "problem2_text": "基板ケースは封印により保護される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        235,
+        274
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の増設手続きとは、遊技機増設には変更承認申請が必要ことである。",
+      "problem2_text": "遊技機の増設手続きとは、遊技機増設には変更承認申請が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        254,
+        358
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機台帳の記載事項とは、遊技機台帳には製造番号等を記載することである。",
+      "problem2_text": "遊技機台帳の記載事項とは、遊技機台帳には製造番号等を記載することである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        258,
+        321
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の認定申請には期限が定められている。",
+      "problem2_text": "遊技機の認定申請には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        267,
+        305
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機台帳の記載事項には期限が定められている。",
+      "problem2_text": "遊技機台帳の記載事項には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        272,
+        325
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定有効期限の管理は、一部の遊技機のみに適用される。",
+      "problem2_text": "検定有効期限の管理は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        273,
+        330
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技機の認定申請は、一部の遊技機のみに適用される。",
+      "problem2_text": "遊技機の認定申請は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        281,
+        319
+      ],
+      "similarity_score": 0.8333333333333334,
+      "method": "edit_distance",
+      "problem1_text": "故障機の取扱いは、公安委員会が行う。",
+      "problem2_text": "故障機の取扱いは、国家公安委員会が行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        287,
+        292
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "遊技球等の管理とは、遊技球は適正な規格品を使用することでない。",
+      "problem2_text": "遊技球等の管理とは、遊技球は適正な規格品を使用することでない。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        290,
+        333
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部端子板の管理とは、外部端子板の不正改造は禁止されていることである。",
+      "problem2_text": "外部端子板の管理とは、外部端子板の不正改造は禁止されていることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        308,
+        360
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は5年である。",
+      "problem2_text": "型式検定の有効期限は5年である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        308,
+        788
+      ],
+      "similarity_score": 0.8,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は5年である。",
+      "problem2_text": "型式検定の有効期限は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        308,
+        810
+      ],
+      "similarity_score": 0.8,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は5年である。",
+      "problem2_text": "型式検定の有効期限は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        313,
+        345
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "中古遊技機の型式確認には期限が定められている。",
+      "problem2_text": "中古遊技機の型式確認には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        314,
+        337
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "故障機の取扱いとは、故障した遊技機は速やかに使用を停止することでない。",
+      "problem2_text": "故障機の取扱いとは、故障した遊技機は速やかに使用を停止することである。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        360,
+        788
+      ],
+      "similarity_score": 0.8,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は5年である。",
+      "problem2_text": "型式検定の有効期限は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        360,
+        810
+      ],
+      "similarity_score": 0.8,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は5年である。",
+      "problem2_text": "型式検定の有効期限は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        363,
+        448
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "セキュリティチップ管理は、営業者が行う。",
+      "problem2_text": "セキュリティチップ管理は、営業者が行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        363,
+        472
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "セキュリティチップ管理は、営業者が行う。",
+      "problem2_text": "セキュリティチップ管理は、営業者が行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        364,
+        430
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理には期限が定められている。",
+      "problem2_text": "外部業者の管理には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        364,
+        461
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理には期限が定められている。",
+      "problem2_text": "外部業者の管理には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        364,
+        540
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理には期限が定められている。",
+      "problem2_text": "外部業者の管理には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        365,
+        366
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者による作業は監督が不要。",
+      "problem2_text": "外部業者による作業は監督が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        365,
+        374
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者による作業は監督が不要。",
+      "problem2_text": "外部業者による作業は監督が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        365,
+        447
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者による作業は監督が不要。",
+      "problem2_text": "外部業者による作業は監督が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        365,
+        485
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者による作業は監督が不要。",
+      "problem2_text": "外部業者による作業は監督が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        366,
+        374
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者による作業は監督が不要。",
+      "problem2_text": "外部業者による作業は監督が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        366,
+        447
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者による作業は監督が不要。",
+      "problem2_text": "外部業者による作業は監督が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        366,
+        485
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者による作業は監督が不要。",
+      "problem2_text": "外部業者による作業は監督が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        367,
+        392
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることでない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        367,
+        483
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        367,
+        489
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        367,
+        505
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        367,
+        528
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることでない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        368,
+        465
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正機器の発見時対応は、公安委員会が行う。",
+      "problem2_text": "不正機器の発見時対応は、公安委員会が行う。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        369,
+        427
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "毎日の営業開始前に不正確認を行う。",
+      "problem2_text": "毎日の営業開始前に不正確認を行う。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        369,
+        459
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "毎日の営業開始前に不正確認を行う。",
+      "problem2_text": "毎日の営業開始前に不正確認を行う。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        372,
+        429
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "ROM交換の禁止事項には、適切な手続きが必要である。",
+      "problem2_text": "ROM交換の禁止事項には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        373,
+        470
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正防止の日常点検には、適切な手続きが必要ではない。",
+      "problem2_text": "不正防止の日常点検には、適切な手続きが必要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        373,
+        500
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正防止の日常点検には、適切な手続きが必要ではない。",
+      "problem2_text": "不正防止の日常点検には、適切な手続きが必要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        374,
+        447
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者による作業は監督が不要。",
+      "problem2_text": "外部業者による作業は監督が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        374,
+        485
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者による作業は監督が不要。",
+      "problem2_text": "外部業者による作業は監督が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        376,
+        418
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できない。",
+      "problem2_text": "基板の不正は封印破損で判別できる。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        376,
+        476
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できない。",
+      "problem2_text": "基板の不正は封印破損で判別できない。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        376,
+        499
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できない。",
+      "problem2_text": "基板の不正は封印破損で判別できる。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        376,
+        508
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できない。",
+      "problem2_text": "基板の不正は封印破損で判別できる。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        376,
+        512
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できない。",
+      "problem2_text": "基板の不正は封印破損で判別できる。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        377,
+        413
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "ROM交換の禁止事項は、すべての遊技機に適用される。",
+      "problem2_text": "ROM交換の禁止事項は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        378,
+        444
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正通報の義務とは、不正発見時は公安委員会への通報義務があることである。",
+      "problem2_text": "不正通報の義務とは、不正発見時は公安委員会への通報義務があることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        378,
+        477
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正通報の義務とは、不正発見時は公安委員会への通報義務があることである。",
+      "problem2_text": "不正通報の義務とは、不正発見時は公安委員会への通報義務があることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        384,
+        535
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正防止の日常点検とは、毎日の営業開始前に不正確認を行うことである。",
+      "problem2_text": "不正防止の日常点検とは、毎日の営業開始前に不正確認を行うことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        387,
+        506
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則には例外規定がない。",
+      "problem2_text": "不正改造の罰則には例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        387,
+        532
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則には例外規定がない。",
+      "problem2_text": "不正改造の罰則には例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        389,
+        468
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理は、営業者が行う。",
+      "problem2_text": "外部業者の管理は、営業者が行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        389,
+        474
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理は、営業者が行う。",
+      "problem2_text": "外部業者の管理は、営業者が行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        391,
+        411
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理は、すべての遊技機に適用される。",
+      "problem2_text": "外部業者の管理は、すべての遊技機に適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        392,
+        483
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることでない。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        392,
+        489
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることでない。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        392,
+        505
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることでない。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        392,
+        528
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることでない。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることでない。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        395,
+        438
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "セキュリティチップ管理は、すべての遊技機に適用される。",
+      "problem2_text": "セキュリティチップ管理は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        401,
+        408
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "ROMの無断交換は禁止されている。",
+      "problem2_text": "ROMの無断交換は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        405,
+        407
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正機器の発見時対応は必須である。",
+      "problem2_text": "不正機器の発見時対応は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        405,
+        478
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正機器の発見時対応は必須である。",
+      "problem2_text": "不正機器の発見時対応は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        405,
+        484
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正機器の発見時対応は必須である。",
+      "problem2_text": "不正機器の発見時対応は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        406,
+        439
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "従業員による不正防止は必須である。",
+      "problem2_text": "従業員による不正防止は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        407,
+        478
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正機器の発見時対応は必須である。",
+      "problem2_text": "不正機器の発見時対応は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        407,
+        484
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正機器の発見時対応は必須である。",
+      "problem2_text": "不正機器の発見時対応は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        409,
+        518
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "従業員による不正防止とは、従業員への不正防止教育が義務ことである。",
+      "problem2_text": "従業員による不正防止とは、従業員への不正防止教育が義務ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        418,
+        476
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できる。",
+      "problem2_text": "基板の不正は封印破損で判別できない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        418,
+        499
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できる。",
+      "problem2_text": "基板の不正は封印破損で判別できる。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        418,
+        508
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できる。",
+      "problem2_text": "基板の不正は封印破損で判別できる。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        418,
+        512
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できる。",
+      "problem2_text": "基板の不正は封印破損で判別できる。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        421,
+        424
+      ],
+      "similarity_score": 0.8333333333333334,
+      "method": "edit_distance",
+      "problem1_text": "セキュリティチップ管理は、国家公安委員会が行う。",
+      "problem2_text": "セキュリティチップ管理は、公安委員会が行う。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        422,
+        471
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "従業員への不正防止教育が義務。",
+      "problem2_text": "従業員への不正防止教育が義務。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        422,
+        504
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "従業員への不正防止教育が義務。",
+      "problem2_text": "従業員への不正防止教育が義務。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        422,
+        533
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "従業員への不正防止教育が義務。",
+      "problem2_text": "従業員への不正防止教育が義務。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        427,
+        459
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "毎日の営業開始前に不正確認を行う。",
+      "problem2_text": "毎日の営業開始前に不正確認を行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        430,
+        461
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理には期限が定められている。",
+      "problem2_text": "外部業者の管理には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        430,
+        540
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理には期限が定められている。",
+      "problem2_text": "外部業者の管理には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        435,
+        441
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理とは、外部業者による作業は監督が必要ことである。",
+      "problem2_text": "外部業者の管理とは、外部業者による作業は監督が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        435,
+        479
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理とは、外部業者による作業は監督が必要ことである。",
+      "problem2_text": "外部業者の管理とは、外部業者による作業は監督が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        436,
+        538
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理には例外規定がない。",
+      "problem2_text": "外部業者の管理には例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        441,
+        479
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理とは、外部業者による作業は監督が必要ことである。",
+      "problem2_text": "外部業者の管理とは、外部業者による作業は監督が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        444,
+        477
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正通報の義務とは、不正発見時は公安委員会への通報義務があることである。",
+      "problem2_text": "不正通報の義務とは、不正発見時は公安委員会への通報義務があることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        447,
+        485
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者による作業は監督が不要。",
+      "problem2_text": "外部業者による作業は監督が不要。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        448,
+        472
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "セキュリティチップ管理は、営業者が行う。",
+      "problem2_text": "セキュリティチップ管理は、営業者が行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        450,
+        530
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理には、適切な手続きが必要である。",
+      "problem2_text": "外部業者の管理には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        451,
+        452
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正確認とは、基板の不正は封印破損で判別できることである。",
+      "problem2_text": "基板の不正確認とは、基板の不正は封印破損で判別できることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        455,
+        501
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造は目視と動作確認で検出する。",
+      "problem2_text": "不正改造は目視と動作確認で検出する。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        456,
+        480
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正機器の発見時対応には例外規定がない。",
+      "problem2_text": "不正機器の発見時対応には例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        461,
+        540
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理には期限が定められている。",
+      "problem2_text": "外部業者の管理には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        468,
+        474
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "外部業者の管理は、営業者が行う。",
+      "problem2_text": "外部業者の管理は、営業者が行う。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        470,
+        500
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正防止の日常点検には、適切な手続きが必要である。",
+      "problem2_text": "不正防止の日常点検には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        471,
+        504
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "従業員への不正防止教育が義務。",
+      "problem2_text": "従業員への不正防止教育が義務。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        471,
+        533
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "従業員への不正防止教育が義務。",
+      "problem2_text": "従業員への不正防止教育が義務。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        476,
+        499
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できない。",
+      "problem2_text": "基板の不正は封印破損で判別できる。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        476,
+        508
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できない。",
+      "problem2_text": "基板の不正は封印破損で判別できる。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        476,
+        512
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できない。",
+      "problem2_text": "基板の不正は封印破損で判別できる。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        478,
+        484
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正機器の発見時対応は必須である。",
+      "problem2_text": "不正機器の発見時対応は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        483,
+        489
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        483,
+        505
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        483,
+        528
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることでない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        487,
+        511
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の検出方法とは、不正改造は目視と動作確認で検出することである。",
+      "problem2_text": "不正改造の検出方法とは、不正改造は目視と動作確認で検出することである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        489,
+        505
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        489,
+        528
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることでない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        490,
+        498
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "従業員による不正防止は、すべての遊技機に適用される。",
+      "problem2_text": "従業員による不正防止は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        492,
+        510
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "セキュリティチップの改変は禁止。",
+      "problem2_text": "セキュリティチップの改変は禁止。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        492,
+        520
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "セキュリティチップの改変は禁止。",
+      "problem2_text": "セキュリティチップの改変は禁止。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        493,
+        507
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正通報の義務には、適切な手続きが必要である。",
+      "problem2_text": "不正通報の義務には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        495,
+        497
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正通報の義務には期限が定められている。",
+      "problem2_text": "不正通報の義務には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        499,
+        508
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できる。",
+      "problem2_text": "基板の不正は封印破損で判別できる。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        499,
+        512
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できる。",
+      "problem2_text": "基板の不正は封印破損で判別できる。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        504,
+        533
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "従業員への不正防止教育が義務。",
+      "problem2_text": "従業員への不正防止教育が義務。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        505,
+        528
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則とは、不正改造には罰金刑が科されることである。",
+      "problem2_text": "不正改造の罰則とは、不正改造には罰金刑が科されることでない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        506,
+        532
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正改造の罰則には例外規定がない。",
+      "problem2_text": "不正改造の罰則には例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        508,
+        512
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "基板の不正は封印破損で判別できる。",
+      "problem2_text": "基板の不正は封印破損で判別できる。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        510,
+        520
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "セキュリティチップの改変は禁止。",
+      "problem2_text": "セキュリティチップの改変は禁止。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        526,
+        539
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "不正通報の義務は、すべての遊技機に適用される。",
+      "problem2_text": "不正通報の義務は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        541,
+        567
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限には期限が定められている。",
+      "problem2_text": "営業許可の有効期限には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        541,
+        588
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限には期限が定められている。",
+      "problem2_text": "営業許可の有効期限には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        541,
+        616
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限には期限が定められている。",
+      "problem2_text": "営業許可の有効期限には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        541,
+        642
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限には期限が定められている。",
+      "problem2_text": "営業許可の有効期限には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        542,
+        605
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限は禁止されている。",
+      "problem2_text": "営業許可の有効期限は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        542,
+        613
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限は禁止されている。",
+      "problem2_text": "営業許可の有効期限は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        543,
+        556
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継には期限が定められている。",
+      "problem2_text": "営業許可の承継には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        543,
+        619
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継には期限が定められている。",
+      "problem2_text": "営業許可の承継には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        544,
+        648
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継とは、営業許可は相続により承継できることである。",
+      "problem2_text": "営業許可の承継とは、営業許可は相続により承継できることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        544,
+        655
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継とは、営業許可は相続により承継できることである。",
+      "problem2_text": "営業許可の承継とは、営業許可は相続により承継できることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        545,
+        629
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "許可証は見やすい場所に掲示する。",
+      "problem2_text": "許可証は見やすい場所に掲示する。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        545,
+        665
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "許可証は見やすい場所に掲示する。",
+      "problem2_text": "許可証は見やすい場所に掲示する。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        546,
+        553
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "許可証の掲示義務には期限が定められている。",
+      "problem2_text": "許可証の掲示義務には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        546,
+        573
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "許可証の掲示義務には期限が定められている。",
+      "problem2_text": "許可証の掲示義務には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        547,
+        579
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の取消事由は必須である。",
+      "problem2_text": "営業許可の取消事由は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        547,
+        617
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の取消事由は必須である。",
+      "problem2_text": "営業許可の取消事由は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        548,
+        615
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "重大な違反は許可取消事由となる。",
+      "problem2_text": "重大な違反は許可取消事由となる。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        548,
+        627
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "重大な違反は許可取消事由となる。",
+      "problem2_text": "重大な違反は許可取消事由となる。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        548,
+        645
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "重大な違反は許可取消事由となる。",
+      "problem2_text": "重大な違反は許可取消事由となる。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        548,
+        674
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "重大な違反は許可取消事由となる。",
+      "problem2_text": "重大な違反は許可取消事由となる。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        549,
+        554
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届には例外規定がない。",
+      "problem2_text": "構造設備の変更届には例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        549,
+        649
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届には例外規定がない。",
+      "problem2_text": "構造設備の変更届には例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        552,
+        562
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の取消事由には、適切な手続きが必要である。",
+      "problem2_text": "営業許可の取消事由には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        552,
+        610
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の取消事由には、適切な手続きが必要である。",
+      "problem2_text": "営業許可の取消事由には、適切な手続きが必要ではない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        552,
+        661
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の取消事由には、適切な手続きが必要である。",
+      "problem2_text": "営業許可の取消事由には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        553,
+        573
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "許可証の掲示義務には期限が定められている。",
+      "problem2_text": "許可証の掲示義務には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        554,
+        649
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届には例外規定がない。",
+      "problem2_text": "構造設備の変更届には例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        555,
+        586
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限は、すべての遊技機に適用される。",
+      "problem2_text": "営業許可の有効期限は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        556,
+        619
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継には期限が定められている。",
+      "problem2_text": "営業許可の承継には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        557,
+        561
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届は禁止されている。",
+      "problem2_text": "構造設備の変更届は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        557,
+        611
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届は禁止されている。",
+      "problem2_text": "構造設備の変更届は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        560,
+        656
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備変更には事前承認が任意。",
+      "problem2_text": "構造設備変更には事前承認が任意。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        561,
+        611
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届は禁止されている。",
+      "problem2_text": "構造設備の変更届は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        562,
+        610
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の取消事由には、適切な手続きが必要である。",
+      "problem2_text": "営業許可の取消事由には、適切な手続きが必要ではない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        562,
+        661
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の取消事由には、適切な手続きが必要である。",
+      "problem2_text": "営業許可の取消事由には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        563,
+        620
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可は相続により承継できる。",
+      "problem2_text": "営業許可は相続により承継できない。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        564,
+        614
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継には例外規定がない。",
+      "problem2_text": "営業許可の承継には例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        565,
+        640
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限には、適切な手続きが必要である。",
+      "problem2_text": "営業許可の有効期限には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        566,
+        581
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        566,
+        647
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        566,
+        659
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        566,
+        672
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        567,
+        588
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限には期限が定められている。",
+      "problem2_text": "営業許可の有効期限には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        567,
+        616
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限には期限が定められている。",
+      "problem2_text": "営業許可の有効期限には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        567,
+        642
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限には期限が定められている。",
+      "problem2_text": "営業許可の有効期限には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        570,
+        646
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の取消事由は、一部の遊技機のみに適用される。",
+      "problem2_text": "営業許可の取消事由は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        570,
+        660
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の取消事由は、一部の遊技機のみに適用される。",
+      "problem2_text": "営業許可の取消事由は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        571,
+        651
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限は、一部の遊技機のみに適用される。",
+      "problem2_text": "営業許可の有効期限は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        571,
+        666
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限は、一部の遊技機のみに適用される。",
+      "problem2_text": "営業許可の有効期限は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        572,
+        657
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の取消事由には期限が定められている。",
+      "problem2_text": "営業許可の取消事由には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        575,
+        612
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "許可証の掲示義務には、適切な手続きが必要である。",
+      "problem2_text": "許可証の掲示義務には、適切な手続きが必要ではない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        578,
+        582
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継には例外規定がないことはない。",
+      "problem2_text": "営業許可の承継には例外規定がないことはない。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        579,
+        617
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の取消事由は必須である。",
+      "problem2_text": "営業許可の取消事由は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        581,
+        647
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        581,
+        659
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        581,
+        672
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        584,
+        609
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限は必須である。",
+      "problem2_text": "営業許可の有効期限は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        584,
+        670
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限は必須である。",
+      "problem2_text": "営業許可の有効期限は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        588,
+        616
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限には期限が定められている。",
+      "problem2_text": "営業許可の有効期限には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        588,
+        642
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限には期限が定められている。",
+      "problem2_text": "営業許可の有効期限には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        590,
+        621
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届には期限が定められている。",
+      "problem2_text": "構造設備の変更届には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        591,
+        592
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "許可証の掲示義務には例外規定がない。",
+      "problem2_text": "許可証の掲示義務には例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        598,
+        607
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可は無期限有効でない。",
+      "problem2_text": "営業許可は無期限有効である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        598,
+        658
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可は無期限有効でない。",
+      "problem2_text": "営業許可は無期限有効である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        598,
+        662
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可は無期限有効でない。",
+      "problem2_text": "営業許可は無期限有効でない。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        600,
+        625
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "許可証の掲示義務は禁止されている。",
+      "problem2_text": "許可証の掲示義務は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        603,
+        633
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限とは、営業許可は無期限有効でないことでない。",
+      "problem2_text": "営業許可の有効期限とは、営業許可は無期限有効でないことでない。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        604,
+        639
+      ],
+      "similarity_score": 0.8571428571428571,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継は、公安委員会が行う。",
+      "problem2_text": "営業許可の承継は、国家公安委員会が行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        604,
+        668
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継は、公安委員会が行う。",
+      "problem2_text": "営業許可の承継は、公安委員会が行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        605,
+        613
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限は禁止されている。",
+      "problem2_text": "営業許可の有効期限は禁止されている。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        607,
+        658
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可は無期限有効である。",
+      "problem2_text": "営業許可は無期限有効である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        607,
+        662
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可は無期限有効である。",
+      "problem2_text": "営業許可は無期限有効でない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        609,
+        670
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限は必須である。",
+      "problem2_text": "営業許可の有効期限は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        610,
+        661
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の取消事由には、適切な手続きが必要ではない。",
+      "problem2_text": "営業許可の取消事由には、適切な手続きが必要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        615,
+        627
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "重大な違反は許可取消事由となる。",
+      "problem2_text": "重大な違反は許可取消事由となる。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        615,
+        645
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "重大な違反は許可取消事由となる。",
+      "problem2_text": "重大な違反は許可取消事由となる。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        615,
+        674
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "重大な違反は許可取消事由となる。",
+      "problem2_text": "重大な違反は許可取消事由となる。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        616,
+        642
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限には期限が定められている。",
+      "problem2_text": "営業許可の有効期限には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        624,
+        638
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "許可証の掲示義務は必須である。",
+      "problem2_text": "許可証の掲示義務は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        624,
+        644
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "許可証の掲示義務は必須である。",
+      "problem2_text": "許可証の掲示義務は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        627,
+        645
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "重大な違反は許可取消事由となる。",
+      "problem2_text": "重大な違反は許可取消事由となる。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        627,
+        674
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "重大な違反は許可取消事由となる。",
+      "problem2_text": "重大な違反は許可取消事由となる。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        628,
+        664
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届は、すべての遊技機に適用される。",
+      "problem2_text": "構造設備の変更届は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        629,
+        665
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "許可証は見やすい場所に掲示する。",
+      "problem2_text": "許可証は見やすい場所に掲示する。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        630,
+        667
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継には、適切な手続きが必要ではない。",
+      "problem2_text": "営業許可の承継には、適切な手続きが必要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        631,
+        641
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備変更には事前承認が必要。",
+      "problem2_text": "構造設備変更には事前承認が必要。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        631,
+        653
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備変更には事前承認が必要。",
+      "problem2_text": "構造設備変更には事前承認が必要。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        634,
+        673
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継は必須である。",
+      "problem2_text": "営業許可の承継は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        638,
+        644
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "許可証の掲示義務は必須である。",
+      "problem2_text": "許可証の掲示義務は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        639,
+        668
+      ],
+      "similarity_score": 0.8571428571428571,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継は、国家公安委員会が行う。",
+      "problem2_text": "営業許可の承継は、公安委員会が行う。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        641,
+        653
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備変更には事前承認が必要。",
+      "problem2_text": "構造設備変更には事前承認が必要。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        643,
+        652
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継は、一部の遊技機のみに適用される。",
+      "problem2_text": "営業許可の承継は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        645,
+        674
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "重大な違反は許可取消事由となる。",
+      "problem2_text": "重大な違反は許可取消事由となる。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        646,
+        660
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の取消事由は、一部の遊技機のみに適用される。",
+      "problem2_text": "営業許可の取消事由は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        647,
+        659
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        647,
+        672
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        648,
+        655
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継とは、営業許可は相続により承継できることである。",
+      "problem2_text": "営業許可の承継とは、営業許可は相続により承継できることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        650,
+        669
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の承継は、取扱主任者が行う。",
+      "problem2_text": "営業許可の承継は、取扱主任者が行う。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        651,
+        666
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可の有効期限は、一部の遊技機のみに適用される。",
+      "problem2_text": "営業許可の有効期限は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        658,
+        662
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業許可は無期限有効である。",
+      "problem2_text": "営業許可は無期限有効でない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        659,
+        672
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        678,
+        698
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "年少者立入制限には例外規定がない。",
+      "problem2_text": "年少者立入制限には例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        679,
+        728
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "年少者立入制限には期限が定められている。",
+      "problem2_text": "年少者立入制限には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        680,
+        745
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業停止命令は最大6ヶ月。",
+      "problem2_text": "営業停止命令は最大6ヶ月。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        681,
+        726
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業停止命令の期間は、一部の遊技機のみに適用される。",
+      "problem2_text": "営業停止命令の期間は、一部の遊技機のみに適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        684,
+        694
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "照度規制基準は、すべての遊技機に適用される。",
+      "problem2_text": "照度規制基準は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        684,
+        743
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "照度規制基準は、すべての遊技機に適用される。",
+      "problem2_text": "照度規制基準は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        684,
+        758
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "照度規制基準は、すべての遊技機に適用される。",
+      "problem2_text": "照度規制基準は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        685,
+        731
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "照度規制基準とは、営業所内の照度は10ルクス以上ことである。",
+      "problem2_text": "照度規制基準とは、営業所内の照度は10ルクス以上ことでない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        691,
+        759
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業停止命令の期間とは、営業停止命令は最大6ヶ月ことでない。",
+      "problem2_text": "営業停止命令の期間とは、営業停止命令は最大6ヶ月ことである。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        691,
+        762
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業停止命令の期間とは、営業停止命令は最大6ヶ月ことでない。",
+      "problem2_text": "営業停止命令の期間とは、営業停止命令は最大6ヶ月ことである。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        691,
+        763
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業停止命令の期間とは、営業停止命令は最大6ヶ月ことでない。",
+      "problem2_text": "営業停止命令の期間とは、営業停止命令は最大6ヶ月ことである。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        693,
+        702
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "騒音規制基準は必須である。",
+      "problem2_text": "騒音規制基準は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        693,
+        747
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "騒音規制基準は必須である。",
+      "problem2_text": "騒音規制基準は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        694,
+        743
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "照度規制基準は、すべての遊技機に適用される。",
+      "problem2_text": "照度規制基準は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        694,
+        758
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "照度規制基準は、すべての遊技機に適用される。",
+      "problem2_text": "照度規制基準は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        697,
+        724
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "年少者立入制限とは、18歳未満の者の立入りは制限されることでない。",
+      "problem2_text": "年少者立入制限とは、18歳未満の者の立入りは制限されることである。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        699,
+        750
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "照度規制基準は禁止されている。",
+      "problem2_text": "照度規制基準は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        702,
+        747
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "騒音規制基準は必須である。",
+      "problem2_text": "騒音規制基準は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        706,
+        739
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "照度規制基準には、適切な手続きが不要である。",
+      "problem2_text": "照度規制基準には、適切な手続きが不要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        708,
+        749
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業停止命令は最大6ヶ月ことはない。",
+      "problem2_text": "営業停止命令は最大6ヶ月ことはない。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        709,
+        736
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業停止命令の期間は必須である。",
+      "problem2_text": "営業停止命令の期間は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        710,
+        760
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "年少者立入制限は必須である。",
+      "problem2_text": "年少者立入制限は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        718,
+        732
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業停止命令の期間には例外規定がないことはない。",
+      "problem2_text": "営業停止命令の期間には例外規定がないことはない。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        719,
+        740
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業所の騒音は条例で定める基準以下。",
+      "problem2_text": "営業所の騒音は条例で定める基準以下。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        729,
+        756
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "騒音規制基準とは、営業所の騒音は条例で定める基準以下ことでない。",
+      "problem2_text": "騒音規制基準とは、営業所の騒音は条例で定める基準以下ことである。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        730,
+        737
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "18歳未満の者の立入りは制限される。",
+      "problem2_text": "18歳未満の者の立入りは制限される。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        735,
+        764
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "照度規制基準は必須である。",
+      "problem2_text": "照度規制基準は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        742,
+        755
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業禁止時間帯とは、午前0時から午前6時まで営業禁止ことである。",
+      "problem2_text": "営業禁止時間帯とは、午前0時から午前6時まで営業禁止ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        743,
+        758
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "照度規制基準は、すべての遊技機に適用される。",
+      "problem2_text": "照度規制基準は、すべての遊技機に適用される。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        744,
+        754
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業禁止時間帯には期限が定められている。",
+      "problem2_text": "営業禁止時間帯には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        748,
+        761
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業所内の照度は10ルクス以上。",
+      "problem2_text": "営業所内の照度は10ルクス以上。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        759,
+        762
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業停止命令の期間とは、営業停止命令は最大6ヶ月ことである。",
+      "problem2_text": "営業停止命令の期間とは、営業停止命令は最大6ヶ月ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        759,
+        763
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業停止命令の期間とは、営業停止命令は最大6ヶ月ことである。",
+      "problem2_text": "営業停止命令の期間とは、営業停止命令は最大6ヶ月ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        762,
+        763
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "営業停止命令の期間とは、営業停止命令は最大6ヶ月ことである。",
+      "problem2_text": "営業停止命令の期間とは、営業停止命令は最大6ヶ月ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        766,
+        784
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "更新申請は期限の30日前から可能。",
+      "problem2_text": "更新申請は期限の30日前から可能。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        766,
+        792
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "更新申請は期限の30日前から可能。",
+      "problem2_text": "更新申請は期限の30日前から可能。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        766,
+        812
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "更新申請は期限の30日前から可能。",
+      "problem2_text": "更新申請は期限の60日前から可能。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        768,
+        831
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定と認定の違いは、すべての遊技機に適用される。",
+      "problem2_text": "検定と認定の違いは、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        769,
+        774
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は5年。",
+      "problem2_text": "型式検定の有効期限は3年。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        769,
+        827
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は5年。",
+      "problem2_text": "型式検定の有効期限は5年。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        773,
+        799
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の更新時期とは、更新申請は期限の30日前から可能ことである。",
+      "problem2_text": "型式検定の更新時期とは、更新申請は期限の30日前から可能ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        774,
+        827
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は3年。",
+      "problem2_text": "型式検定の有効期限は5年。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        775,
+        808
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は禁止されている。",
+      "problem2_text": "型式検定の有効期限は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        776,
+        794
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定申請は国家公安委員会に行う。",
+      "problem2_text": "検定申請は国家公安委員会に行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        776,
+        796
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定申請は国家公安委員会に行う。",
+      "problem2_text": "検定申請は国家公安委員会に行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        776,
+        832
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定申請は国家公安委員会に行う。",
+      "problem2_text": "検定申請は国家公安委員会に行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        781,
+        803
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の更新時期は必須である。",
+      "problem2_text": "型式検定の更新時期は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        784,
+        792
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "更新申請は期限の30日前から可能。",
+      "problem2_text": "更新申請は期限の30日前から可能。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        784,
+        812
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "更新申請は期限の30日前から可能。",
+      "problem2_text": "更新申請は期限の60日前から可能。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        785,
+        816
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定と認定の違いには例外があることはない。",
+      "problem2_text": "検定と認定の違いには例外があることはない。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        786,
+        795
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定と認定の違いは禁止されている。",
+      "problem2_text": "検定と認定の違いは禁止されている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        786,
+        809
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定と認定の違いは禁止されている。",
+      "problem2_text": "検定と認定の違いは禁止されている。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        788,
+        810
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "型式検定の有効期限は必須である。",
+      "problem2_text": "型式検定の有効期限は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        790,
+        800
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定申請の手続きには例外規定がない。",
+      "problem2_text": "検定申請の手続きには例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        790,
+        811
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定申請の手続きには例外規定がない。",
+      "problem2_text": "検定申請の手続きには例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        792,
+        812
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "更新申請は期限の30日前から可能。",
+      "problem2_text": "更新申請は期限の60日前から可能。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        793,
+        807
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定申請の手続きは禁止されている。",
+      "problem2_text": "検定申請の手続きは禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        794,
+        796
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定申請は国家公安委員会に行う。",
+      "problem2_text": "検定申請は国家公安委員会に行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        794,
+        832
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定申請は国家公安委員会に行う。",
+      "problem2_text": "検定申請は国家公安委員会に行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        795,
+        809
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定と認定の違いは禁止されている。",
+      "problem2_text": "検定と認定の違いは禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        796,
+        832
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定申請は国家公安委員会に行う。",
+      "problem2_text": "検定申請は国家公安委員会に行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        800,
+        811
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定申請の手続きには例外規定がない。",
+      "problem2_text": "検定申請の手続きには例外規定がない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        801,
+        806
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "風営法に基づき、型式検定の有効期限は、公安委員会が行う。",
+      "problem2_text": "風営法に基づき、型式検定の有効期限は、公安委員会が行う。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        804,
+        822
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定は義務、認定は任意。",
+      "problem2_text": "検定は義務、認定は任意。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        805,
+        824
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "検定機関の種類は禁止されている。",
+      "problem2_text": "検定機関の種類は禁止されている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        813,
+        834
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "指定試験機関が検定を実施。",
+      "problem2_text": "指定試験機関が検定を実施。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        839,
+        855
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "特殊景品は組合が指定する。",
+      "problem2_text": "特殊景品は組合が指定する。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        845,
+        860
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "景品交換記録の保存義務がある。",
+      "problem2_text": "景品交換記録の保存義務がある。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        846,
+        849
+      ],
+      "similarity_score": 0.8571428571428571,
+      "method": "edit_distance",
+      "problem1_text": "特殊景品の種類は、公安委員会が行う。",
+      "problem2_text": "特殊景品の種類は、国家公安委員会が行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        848,
+        866
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "景品交換の記録には期限が定められている。",
+      "problem2_text": "景品交換の記録には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        862,
+        876
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "景品交換の記録には例外規定がないことはない。",
+      "problem2_text": "景品交換の記録には例外規定がないことはない。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        863,
+        865
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "買取所との関係とは、買取所との直接的関係は禁止ことでない。",
+      "problem2_text": "買取所との関係とは、買取所との直接的関係は禁止ことでない。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        864,
+        871
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "買取所との関係は必須である。",
+      "problem2_text": "買取所との関係は必須である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        868,
+        898
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "買取所との直接的関係は禁止。",
+      "problem2_text": "買取所との直接的関係は禁止。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        870,
+        881
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "景品の上限額は禁止されている。",
+      "problem2_text": "景品の上限額は禁止されている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        872,
+        900
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "景品の上限額には例外規定がないことはない。",
+      "problem2_text": "景品の上限額には例外規定がないことはない。",
+      "problem1_answer": "×",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        884,
+        894
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "景品の上限額とは、景品の価格は営業者が定めることである。",
+      "problem2_text": "景品の上限額とは、景品の価格は営業者が定めることである。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        889,
+        896
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "景品の上限額は必須である。",
+      "problem2_text": "景品の上限額は必須である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        891,
+        895
+      ],
+      "similarity_score": 1,
+      "method": "edit_distance",
+      "problem1_text": "買取所との関係には、適切な手続きが必要である。",
+      "problem2_text": "買取所との関係には、適切な手続きが必要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        6,
+        36
+      ],
+      "similarity_score": 0.875,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機の移設手続きには例外規定がない。",
+      "problem2_text": "遊技機の廃棄手続きには例外規定がない。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        27,
+        131
+      ],
+      "similarity_score": 0.9047619047619048,
+      "method": "opposite_answer",
+      "problem1_text": "部品交換後は取扱主任者による点検確認が必要。",
+      "problem2_text": "部品交換後は取扱主任者による点検確認が任意。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        38,
+        52
+      ],
+      "similarity_score": 0.9130434782608696,
+      "method": "opposite_answer",
+      "problem1_text": "検定有効期限の管理には、適切な手続きが必要である。",
+      "problem2_text": "検定有効期限の管理には、適切な手続きが不要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        44,
+        238
+      ],
+      "similarity_score": 0.8571428571428572,
+      "method": "opposite_answer",
+      "problem1_text": "リサイクル機も型式適合が必要。",
+      "problem2_text": "リサイクル機も型式適合が不要。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        52,
+        85
+      ],
+      "similarity_score": 0.9130434782608696,
+      "method": "opposite_answer",
+      "problem1_text": "検定有効期限の管理には、適切な手続きが不要である。",
+      "problem2_text": "検定有効期限の管理には、適切な手続きが必要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        52,
+        309
+      ],
+      "similarity_score": 0.9130434782608696,
+      "method": "opposite_answer",
+      "problem1_text": "検定有効期限の管理には、適切な手続きが不要である。",
+      "problem2_text": "検定有効期限の管理には、適切な手続きが必要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        53,
+        127
+      ],
+      "similarity_score": 0.9047619047619048,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機の移設手続きには期限が定められている。",
+      "problem2_text": "遊技機の廃棄手続きには期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        64,
+        260
+      ],
+      "similarity_score": 0.9090909090909091,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機は定期的な保守点検が義務付けられている。",
+      "problem2_text": "中古機は定期的な保守点検が義務付けられている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        84,
+        109
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機購入には正規の契約が不要。",
+      "problem2_text": "遊技機購入には正規の契約が必要。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        89,
+        234
+      ],
+      "similarity_score": 0.9,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機の設置基準には期限が定められている。",
+      "problem2_text": "中古機の設置基準には期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        95,
+        109
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機購入には正規の契約が任意。",
+      "problem2_text": "遊技機購入には正規の契約が必要。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        96,
+        240
+      ],
+      "similarity_score": 0.875,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機増設には変更承認申請が必要。",
+      "problem2_text": "遊技機増設には変更承認申請が不要。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        106,
+        109
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機購入には正規の契約が不要。",
+      "problem2_text": "遊技機購入には正規の契約が必要。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        109,
+        223
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機購入には正規の契約が必要。",
+      "problem2_text": "遊技機購入には正規の契約が任意。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        109,
+        304
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機購入には正規の契約が必要。",
+      "problem2_text": "遊技機購入には正規の契約が不要。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        116,
+        188
+      ],
+      "similarity_score": 0.8571428571428572,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機メーカーとの契約には例外規定がないことはない。",
+      "problem2_text": "遊技機メーカーとの契約には例外規定がない。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        119,
+        238
+      ],
+      "similarity_score": 0.8571428571428572,
+      "method": "opposite_answer",
+      "problem1_text": "リサイクル機も型式適合が必要。",
+      "problem2_text": "リサイクル機も型式適合が不要。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        124,
+        131
+      ],
+      "similarity_score": 0.9047619047619048,
+      "method": "opposite_answer",
+      "problem1_text": "部品交換後は取扱主任者による点検確認が必要。",
+      "problem2_text": "部品交換後は取扱主任者による点検確認が任意。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        126,
+        130
+      ],
+      "similarity_score": 0.9090909090909091,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機の認定申請には、適切な手続きが必要である。",
+      "problem2_text": "遊技機の認定申請には、適切な手続きが不要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        127,
+        160
+      ],
+      "similarity_score": 0.8571428571428572,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機の廃棄手続きには期限が定められている。",
+      "problem2_text": "新台の廃棄手続きには期限が定められている。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        130,
+        138
+      ],
+      "similarity_score": 0.9090909090909091,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機の認定申請には、適切な手続きが不要である。",
+      "problem2_text": "遊技機の認定申請には、適切な手続きが必要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        131,
+        262
+      ],
+      "similarity_score": 0.9047619047619048,
+      "method": "opposite_answer",
+      "problem1_text": "部品交換後は取扱主任者による点検確認が任意。",
+      "problem2_text": "部品交換後は取扱主任者による点検確認が必要。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        133,
+        238
+      ],
+      "similarity_score": 0.8571428571428572,
+      "method": "opposite_answer",
+      "problem1_text": "リサイクル機も型式適合が必要。",
+      "problem2_text": "リサイクル機も型式適合が不要。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        170,
+        238
+      ],
+      "similarity_score": 0.8571428571428572,
+      "method": "opposite_answer",
+      "problem1_text": "リサイクル機も型式適合が必要。",
+      "problem2_text": "リサイクル機も型式適合が不要。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        185,
+        222
+      ],
+      "similarity_score": 0.9130434782608696,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機の廃棄手続きには、適切な手続きが不要である。",
+      "problem2_text": "遊技機の廃棄手続きには、適切な手続きが必要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        189,
+        204
+      ],
+      "similarity_score": 0.8888888888888888,
+      "method": "opposite_answer",
+      "problem1_text": "中古機メーカーとの契約は、営業者が行う。",
+      "problem2_text": "遊技機メーカーとの契約は、営業者が行う。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        194,
+        430
+      ],
+      "similarity_score": 0.85,
+      "method": "opposite_answer",
+      "problem1_text": "外部端子板の管理には期限が定められている。",
+      "problem2_text": "外部業者の管理には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        274,
+        327
+      ],
+      "similarity_score": 0.875,
+      "method": "opposite_answer",
+      "problem1_text": "遊技機の増設手続きとは、遊技機増設には変更承認申請が必要ことである。",
+      "problem2_text": "中古機の増設手続きとは、中古機増設には変更承認申請が必要ことである。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        284,
+        430
+      ],
+      "similarity_score": 0.85,
+      "method": "opposite_answer",
+      "problem1_text": "外部端子板の管理には期限が定められている。",
+      "problem2_text": "外部業者の管理には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        293,
+        391
+      ],
+      "similarity_score": 0.8636363636363636,
+      "method": "opposite_answer",
+      "problem1_text": "外部端子板の管理は、すべての遊技機に適用される。",
+      "problem2_text": "外部業者の管理は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        293,
+        411
+      ],
+      "similarity_score": 0.8636363636363636,
+      "method": "opposite_answer",
+      "problem1_text": "外部端子板の管理は、すべての遊技機に適用される。",
+      "problem2_text": "外部業者の管理は、すべての遊技機に適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        365,
+        381
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "外部業者による作業は監督が不要。",
+      "problem2_text": "外部業者による作業は監督が必要。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        366,
+        381
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "外部業者による作業は監督が不要。",
+      "problem2_text": "外部業者による作業は監督が必要。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        374,
+        381
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "外部業者による作業は監督が不要。",
+      "problem2_text": "外部業者による作業は監督が必要。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        381,
+        447
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "外部業者による作業は監督が必要。",
+      "problem2_text": "外部業者による作業は監督が不要。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        381,
+        485
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "外部業者による作業は監督が必要。",
+      "problem2_text": "外部業者による作業は監督が不要。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        410,
+        450
+      ],
+      "similarity_score": 0.9047619047619048,
+      "method": "opposite_answer",
+      "problem1_text": "外部業者の管理には、適切な手続きが不要である。",
+      "problem2_text": "外部業者の管理には、適切な手続きが必要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        410,
+        530
+      ],
+      "similarity_score": 0.9047619047619048,
+      "method": "opposite_answer",
+      "problem1_text": "外部業者の管理には、適切な手続きが不要である。",
+      "problem2_text": "外部業者の管理には、適切な手続きが必要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        420,
+        510
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "セキュリティチップの改変は許可。",
+      "problem2_text": "セキュリティチップの改変は禁止。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        433,
+        501
+      ],
+      "similarity_score": 0.85,
+      "method": "opposite_answer",
+      "problem1_text": "不正改造は目視と動作確認で検出することはない。",
+      "problem2_text": "不正改造は目視と動作確認で検出する。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        541,
+        576
+      ],
+      "similarity_score": 0.875,
+      "method": "opposite_answer",
+      "problem1_text": "営業許可の有効期限には期限が定められている。",
+      "problem2_text": "営業許可の有効期限には期限が定められていることはない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        551,
+        641
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "構造設備変更には事前承認が不要。",
+      "problem2_text": "構造設備変更には事前承認が必要。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        551,
+        653
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "構造設備変更には事前承認が不要。",
+      "problem2_text": "構造設備変更には事前承認が必要。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        560,
+        641
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "構造設備変更には事前承認が任意。",
+      "problem2_text": "構造設備変更には事前承認が必要。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        560,
+        653
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "構造設備変更には事前承認が任意。",
+      "problem2_text": "構造設備変更には事前承認が必要。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        566,
+        635
+      ],
+      "similarity_score": 0.9333333333333333,
+      "method": "opposite_answer",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が不要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        567,
+        576
+      ],
+      "similarity_score": 0.875,
+      "method": "opposite_answer",
+      "problem1_text": "営業許可の有効期限には期限が定められている。",
+      "problem2_text": "営業許可の有効期限には期限が定められていることはない。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        575,
+        593
+      ],
+      "similarity_score": 0.9090909090909091,
+      "method": "opposite_answer",
+      "problem1_text": "許可証の掲示義務には、適切な手続きが必要である。",
+      "problem2_text": "許可証の掲示義務には、適切な手続きが不要である。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        576,
+        588
+      ],
+      "similarity_score": 0.875,
+      "method": "opposite_answer",
+      "problem1_text": "営業許可の有効期限には期限が定められていることはない。",
+      "problem2_text": "営業許可の有効期限には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        576,
+        642
+      ],
+      "similarity_score": 0.875,
+      "method": "opposite_answer",
+      "problem1_text": "営業許可の有効期限には期限が定められていることはない。",
+      "problem2_text": "営業許可の有効期限には期限が定められている。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        581,
+        635
+      ],
+      "similarity_score": 0.9333333333333333,
+      "method": "opposite_answer",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が不要ことである。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        618,
+        643
+      ],
+      "similarity_score": 0.88,
+      "method": "opposite_answer",
+      "problem1_text": "営業許可の承継は、一部の遊技機のみに適用されることはない。",
+      "problem2_text": "営業許可の承継は、一部の遊技機のみに適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        618,
+        652
+      ],
+      "similarity_score": 0.88,
+      "method": "opposite_answer",
+      "problem1_text": "営業許可の承継は、一部の遊技機のみに適用されることはない。",
+      "problem2_text": "営業許可の承継は、一部の遊技機のみに適用される。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        635,
+        647
+      ],
+      "similarity_score": 0.9333333333333333,
+      "method": "opposite_answer",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が不要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        635,
+        659
+      ],
+      "similarity_score": 0.9333333333333333,
+      "method": "opposite_answer",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が不要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        635,
+        672
+      ],
+      "similarity_score": 0.9333333333333333,
+      "method": "opposite_answer",
+      "problem1_text": "構造設備の変更届とは、構造設備変更には事前承認が不要ことである。",
+      "problem2_text": "構造設備の変更届とは、構造設備変更には事前承認が必要ことである。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        641,
+        656
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "構造設備変更には事前承認が必要。",
+      "problem2_text": "構造設備変更には事前承認が任意。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        653,
+        656
+      ],
+      "similarity_score": 0.8666666666666667,
+      "method": "opposite_answer",
+      "problem1_text": "構造設備変更には事前承認が必要。",
+      "problem2_text": "構造設備変更には事前承認が任意。",
+      "problem1_answer": "○",
+      "problem2_answer": "×"
+    },
+    {
+      "pair": [
+        705,
+        719
+      ],
+      "similarity_score": 0.85,
+      "method": "opposite_answer",
+      "problem1_text": "営業所の騒音は条例で定める基準以下ことはない。",
+      "problem2_text": "営業所の騒音は条例で定める基準以下。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        705,
+        740
+      ],
+      "similarity_score": 0.85,
+      "method": "opposite_answer",
+      "problem1_text": "営業所の騒音は条例で定める基準以下ことはない。",
+      "problem2_text": "営業所の騒音は条例で定める基準以下。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        879,
+        891
+      ],
+      "similarity_score": 0.9047619047619048,
+      "method": "opposite_answer",
+      "problem1_text": "買取所との関係には、適切な手続きが不要である。",
+      "problem2_text": "買取所との関係には、適切な手続きが必要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        879,
+        895
+      ],
+      "similarity_score": 0.9047619047619048,
+      "method": "opposite_answer",
+      "problem1_text": "買取所との関係には、適切な手続きが不要である。",
+      "problem2_text": "買取所との関係には、適切な手続きが必要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    },
+    {
+      "pair": [
+        893,
+        899
+      ],
+      "similarity_score": 0.9047619047619048,
+      "method": "opposite_answer",
+      "problem1_text": "景品交換の記録には、適切な手続きが不要である。",
+      "problem2_text": "景品交換の記録には、適切な手続きが必要である。",
+      "problem1_answer": "×",
+      "problem2_answer": "○"
+    }
+  ]
+}

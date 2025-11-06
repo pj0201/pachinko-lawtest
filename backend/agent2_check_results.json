@@ -1,0 +1,1676 @@
+[
+  {
+    "problem_id": 1,
+    "original_text": "営業許可の有効期間中は定期報告が必要である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "法律用語の誤用",
+          "severity": "HIGH",
+          "message": "営業許可の有効期間中に定期報告が必要であるという表現は不正確。風営法に基づく定期報告の必要性は特定の業種や条件によって異なるため、一概に言えない。",
+          "suggestion": "風営法に基づく定期報告が必要な条件や対象業種を明記すること。"
+        }
+      ],
+      "confidence": 0.75
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "法律用語の誤用",
+        "severity": "HIGH",
+        "message": "営業許可の有効期間中に定期報告が必要であるという表現は不正確。風営法に基づく定期報告の必要性は特定の業種や条件によって異なるため、一概に言えない。",
+        "suggestion": "風営法に基づく定期報告が必要な条件や対象業種を明記すること。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 2,
+    "original_text": "営業許可申請には施設要件を満たすことが必要である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 3,
+    "original_text": "営業許可は営業所内に掲示する必要がある。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 4,
+    "original_text": "型式検定合格機は型式検定標票を表示する。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "法律用語の誤用",
+          "severity": "HIGH",
+          "message": "型式検定合格機は「型式検定標票」ではなく、「型式検定合格標票」と言うべきである。",
+          "suggestion": "「型式検定合格標票」と表記を修正するべきである。"
+        }
+      ],
+      "confidence": 0.7
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "法律用語の誤用",
+        "severity": "HIGH",
+        "message": "型式検定合格機は「型式検定標票」ではなく、「型式検定合格標票」と言うべきである。",
+        "suggestion": "「型式検定合格標票」と表記を修正するべきである。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 5,
+    "original_text": "景品の最高額は10000円である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "NUMERIC_ERROR",
+          "severity": "HIGH",
+          "message": "景品の最高額として示されている10000円は正確ではない。",
+          "suggestion": "最新の風営法に基づく景品の最高額を確認し、正しい金額を使用してください。"
+        }
+      ],
+      "confidence": 0.8
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "NUMERIC_ERROR",
+        "severity": "HIGH",
+        "message": "景品の最高額として示されている10000円は正確ではない。",
+        "suggestion": "最新の風営法に基づく景品の最高額を確認し、正しい金額を使用してください。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 6,
+    "original_text": "営業時間の制限は社会秩序維持のために設けられている。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "legal_error",
+          "severity": "HIGH",
+          "message": "営業時間の制限は社会秩序維持だけでなく、風紀の浄化や青少年の健全育成の観点からも設けられています。",
+          "suggestion": "社会秩序維持に加え、風紀の浄化および青少年の健全育成を明記してください。"
+        }
+      ],
+      "confidence": 0.8
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "legal_error",
+        "severity": "HIGH",
+        "message": "営業時間の制限は社会秩序維持だけでなく、風紀の浄化や青少年の健全育成の観点からも設けられています。",
+        "suggestion": "社会秩序維持に加え、風紀の浄化および青少年の健全育成を明記してください。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 7,
+    "original_text": "遊技機のセキュリティは施錠機構で確保される。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error_type",
+          "severity": "MEDIUM",
+          "message": "遊技機のセキュリティは施錠機構だけでは十分ではない。",
+          "suggestion": "遊技機のセキュリティには施錠機構に加えて、監視カメラやアクセス制御といった他の要素も考慮すべきであると明記する。"
+        }
+      ],
+      "confidence": 0.7
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "error_type",
+        "severity": "MEDIUM",
+        "message": "遊技機のセキュリティは施錠機構だけでは十分ではない。",
+        "suggestion": "遊技機のセキュリティには施錠機構に加えて、監視カメラやアクセス制御といった他の要素も考慮すべきであると明記する。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "MEDIUM",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 8,
+    "original_text": "営業許可申請は営業開始の30日前から可能である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error",
+          "severity": "HIGH",
+          "message": "営業許可申請は営業開始の30日前ではなく、通常は営業開始の60日前から可能である。",
+          "suggestion": "営業開始の60日前から営業許可申請が可能であることを確認してください。"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "error",
+        "severity": "HIGH",
+        "message": "営業許可申請は営業開始の30日前ではなく、通常は営業開始の60日前から可能である。",
+        "suggestion": "営業開始の60日前から営業許可申請が可能であることを確認してください。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 9,
+    "original_text": "営業禁止区域での営業許可申請は受理されない。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 10,
+    "original_text": "営業許可は転貸することができない。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 11,
+    "original_text": "営業許可申請に営業計画書が必要である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 12,
+    "original_text": "営業所の構造・設備は法定基準を満たす必要がある。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 13,
+    "original_text": "営業許可の有効期限は5年である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "法律用語",
+          "severity": "HIGH",
+          "message": "営業許可の有効期限についての記述が不正確です。",
+          "suggestion": "風営法に基づく営業許可の有効期限は通常、5年ですが、業種によって異なる可能性があります。具体的には、風俗営業の種類に応じた確認が必要です。"
+        }
+      ],
+      "confidence": 0.7
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "法律用語",
+        "severity": "HIGH",
+        "message": "営業許可の有効期限についての記述が不正確です。",
+        "suggestion": "風営法に基づく営業許可の有効期限は通常、5年ですが、業種によって異なる可能性があります。具体的には、風俗営業の種類に応じた確認が必要です。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 14,
+    "original_text": "型式検定の申請は指定検査機関に行う。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error_type",
+          "severity": "HIGH",
+          "message": "型式検定の申請先についての表現が不正確です。指定検査機関ではなく、所定の申請先へ行う必要があります。",
+          "suggestion": "型式検定の申請は所定の申請先に行う旨を明記してください。"
+        }
+      ],
+      "confidence": 0.7
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "error_type",
+        "severity": "HIGH",
+        "message": "型式検定の申請先についての表現が不正確です。指定検査機関ではなく、所定の申請先へ行う必要があります。",
+        "suggestion": "型式検定の申請は所定の申請先に行う旨を明記してください。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 15,
+    "original_text": "景品の種類と金額は法律で定められている。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error_type",
+          "severity": "HIGH",
+          "message": "景品の種類と金額に関する記述が法令の具体的な条文に基づいていない。",
+          "suggestion": "具体的な条文番号を引用し、具体的な金額や種類を明示する必要があります。"
+        }
+      ],
+      "confidence": 0.7
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "error_type",
+        "severity": "HIGH",
+        "message": "景品の種類と金額に関する記述が法令の具体的な条文に基づいていない。",
+        "suggestion": "具体的な条文番号を引用し、具体的な金額や種類を明示する必要があります。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 16,
+    "original_text": "営業禁止時間帯における営業は禁止されている。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 18,
+    "original_text": "営業許可は譲渡することができない。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 19,
+    "original_text": "営業許可は禁治産者には付与されない。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 20,
+    "original_text": "営業許可は違反が続く場合に取り消されることがある。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 21,
+    "original_text": "営業許可申請は営業開始の60日前から可能である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error",
+          "severity": "HIGH",
+          "message": "営業許可申請の期間に関する誤りがあります。",
+          "suggestion": "営業許可申請は営業開始の30日前から可能であるため、修正が必要です。"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "error",
+        "severity": "HIGH",
+        "message": "営業許可申請の期間に関する誤りがあります。",
+        "suggestion": "営業許可申請は営業開始の30日前から可能であるため、修正が必要です。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 22,
+    "original_text": "許可取得後の営業者変更は届出が必要である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 0.9
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 23,
+    "original_text": "営業許可は同一人物が複数の営業所で取得可能である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "法律用語の誤り",
+          "severity": "HIGH",
+          "message": "営業許可は基本的にそれぞれの営業所ごとに取得する必要があるため、同一人物が複数の営業所で同時に取得することはできない。",
+          "suggestion": "営業許可は営業所ごとに必要である旨の修正を行うべき。"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "法律用語の誤り",
+        "severity": "HIGH",
+        "message": "営業許可は基本的にそれぞれの営業所ごとに取得する必要があるため、同一人物が複数の営業所で同時に取得することはできない。",
+        "suggestion": "営業許可は営業所ごとに必要である旨の修正を行うべき。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 24,
+    "original_text": "型式検定更新申請は有効期限の30日前から可能である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error",
+          "severity": "HIGH",
+          "message": "型式検定の更新申請の有効期限は30日前からではなく、60日前からである。",
+          "suggestion": "申請は有効期限の60日前から可能であると修正するべき。"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "error",
+        "severity": "HIGH",
+        "message": "型式検定の更新申請の有効期限は30日前からではなく、60日前からである。",
+        "suggestion": "申請は有効期限の60日前から可能であると修正するべき。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 27,
+    "original_text": "遊技機の不正改造は厳しく禁止されている。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 32,
+    "original_text": "営業許可申請には主任者資格が必要である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 33,
+    "original_text": "営業所の最小面積は法令で定められている。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 34,
+    "original_text": "型式検定の申請は都道府県に行う。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error_type",
+          "severity": "HIGH",
+          "message": "型式検定の申請は国に対して行うべきであり、都道府県ではない。",
+          "suggestion": "型式検定の申請は国の所管機関に行うという正しい情報に修正してください。"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "error_type",
+        "severity": "HIGH",
+        "message": "型式検定の申請は国に対して行うべきであり、都道府県ではない。",
+        "suggestion": "型式検定の申請は国の所管機関に行うという正しい情報に修正してください。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 35,
+    "original_text": "景品の最高額は50000円である。",
+    "local_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "prize_amount_error",
+          "detected_amount": 50000,
+          "correct_amount": 10000,
+          "message": "景品の最高額は10000円です（50000円は不正確）"
+        }
+      ],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 1
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error_type",
+          "severity": "HIGH",
+          "message": "景品の最高額が誤っている。",
+          "suggestion": "現行の風営法に基づく定められた景品の最高額を確認し、正確な金額を引用してください。"
+        }
+      ],
+      "confidence": 0.8
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "prize_amount_error",
+        "detected_amount": 50000,
+        "correct_amount": 10000,
+        "message": "景品の最高額は10000円です（50000円は不正確）"
+      },
+      {
+        "type": "error_type",
+        "severity": "HIGH",
+        "message": "景品の最高額が誤っている。",
+        "suggestion": "現行の風営法に基づく定められた景品の最高額を確認し、正確な金額を引用してください。"
+      }
+    ],
+    "issue_count": 2,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 37,
+    "original_text": "遊技機のセキュリティは型式検定で確保される。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 0.5
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 38,
+    "original_text": "営業所基準を満たす地域での営業許可申請は可能である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error_type",
+          "severity": "HIGH",
+          "message": "営業所基準を満たす地域での営業許可申請は必ずしも可能とは限らない。営業所が基準に合致しない場合、許可が認められないことがある。",
+          "suggestion": "営業所基準に関する具体的な条文を確認し、許可申請が可能かどうかを正確に判断することが重要です。"
+        }
+      ],
+      "confidence": 0.8
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "error_type",
+        "severity": "HIGH",
+        "message": "営業所基準を満たす地域での営業許可申請は必ずしも可能とは限らない。営業所が基準に合致しない場合、許可が認められないことがある。",
+        "suggestion": "営業所基準に関する具体的な条文を確認し、許可申請が可能かどうかを正確に判断することが重要です。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 39,
+    "original_text": "営業許可の有効期限は3年である。",
+    "local_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "permit_period_error",
+          "detected_period": 3,
+          "correct_period": 5,
+          "message": "営業許可の有効期限は5年です（3年は不正確）"
+        }
+      ],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 1
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error_type",
+          "severity": "HIGH",
+          "message": "営業許可の有効期限が正確ではない。",
+          "suggestion": "風営法に基づく営業許可の有効期限を確認し、正しい期間を記載してください。"
+        }
+      ],
+      "confidence": 0.85
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "permit_period_error",
+        "detected_period": 3,
+        "correct_period": 5,
+        "message": "営業許可の有効期限は5年です（3年は不正確）"
+      },
+      {
+        "type": "error_type",
+        "severity": "HIGH",
+        "message": "営業許可の有効期限が正確ではない。",
+        "suggestion": "風営法に基づく営業許可の有効期限を確認し、正しい期間を記載してください。"
+      }
+    ],
+    "issue_count": 2,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 41,
+    "original_text": "営業許可申請には身分証明書が必要である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 43,
+    "original_text": "許可取得後の施設変更は届出が必要である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "法律用語",
+          "severity": "HIGH",
+          "message": "「許可取得後の施設変更」は、風営法における具体的な手続を示していないため不正確です。",
+          "suggestion": "具体的に「施設の変更については、風俗営業等の規制及び業務の適正化等に関する法律第〇条に基づき、所定の手続きを行う必要がある」と明記してください。"
+        },
+        {
+          "type": "絶対的な表現",
+          "severity": "MEDIUM",
+          "message": "「届出が必要である」という表現は、場合により異なる可能性があるため、過度に一般化されています。",
+          "suggestion": "特定の変更内容に応じて必要な手続きが異なることを明記してください。"
+        }
+      ],
+      "confidence": 0.7
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "法律用語",
+        "severity": "HIGH",
+        "message": "「許可取得後の施設変更」は、風営法における具体的な手続を示していないため不正確です。",
+        "suggestion": "具体的に「施設の変更については、風俗営業等の規制及び業務の適正化等に関する法律第〇条に基づき、所定の手続きを行う必要がある」と明記してください。"
+      },
+      {
+        "type": "絶対的な表現",
+        "severity": "MEDIUM",
+        "message": "「届出が必要である」という表現は、場合により異なる可能性があるため、過度に一般化されています。",
+        "suggestion": "特定の変更内容に応じて必要な手続きが異なることを明記してください。"
+      }
+    ],
+    "issue_count": 2,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 44,
+    "original_text": "遊技機の型式検定は3年ごとに更新が必要である。",
+    "local_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "inspection_period_error",
+          "detected_period": 3,
+          "correct_period": 5,
+          "message": "型式検定の有効期限は5年です（3年は不正確）"
+        }
+      ],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 1
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error_type",
+          "severity": "HIGH",
+          "message": "遊技機の型式検定は法律上、5年ごとに更新が必要である。",
+          "suggestion": "型式検定の更新期間を3年から5年に修正してください。"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "inspection_period_error",
+        "detected_period": 3,
+        "correct_period": 5,
+        "message": "型式検定の有効期限は5年です（3年は不正確）"
+      },
+      {
+        "type": "error_type",
+        "severity": "HIGH",
+        "message": "遊技機の型式検定は法律上、5年ごとに更新が必要である。",
+        "suggestion": "型式検定の更新期間を3年から5年に修正してください。"
+      }
+    ],
+    "issue_count": 2,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 45,
+    "original_text": "景品の最高額は20000円である。",
+    "local_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "prize_amount_error",
+          "detected_amount": 20000,
+          "correct_amount": 10000,
+          "message": "景品の最高額は10000円です（20000円は不正確）"
+        }
+      ],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 1
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error_type",
+          "severity": "HIGH",
+          "message": "景品の最高額に関する情報が正確ではない。",
+          "suggestion": "風営法に基づく景品の最高額を確認し、正しい数値を記載してください。"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "prize_amount_error",
+        "detected_amount": 20000,
+        "correct_amount": 10000,
+        "message": "景品の最高額は10000円です（20000円は不正確）"
+      },
+      {
+        "type": "error_type",
+        "severity": "HIGH",
+        "message": "景品の最高額に関する情報が正確ではない。",
+        "suggestion": "風営法に基づく景品の最高額を確認し、正しい数値を記載してください。"
+      }
+    ],
+    "issue_count": 2,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 49,
+    "original_text": "営業者が変更される場合は新規許可申請が必要である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "法律用語の誤用",
+          "severity": "HIGH",
+          "message": "営業者が変更される場合には、新規許可申請ではなく、変更届出が必要とされる。",
+          "suggestion": "営業者の変更の場合は、新規許可申請ではなく、変更届出を行うことを明記する。"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "法律用語の誤用",
+        "severity": "HIGH",
+        "message": "営業者が変更される場合には、新規許可申請ではなく、変更届出が必要とされる。",
+        "suggestion": "営業者の変更の場合は、新規許可申請ではなく、変更届出を行うことを明記する。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 50,
+    "original_text": "営業許可申請には住民票が必要である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": true,
+      "issues": [],
+      "confidence": 1.0
+    },
+    "is_legally_correct": true,
+    "issues": [],
+    "issue_count": 0,
+    "severity": "NONE",
+    "needs_revision": false
+  },
+  {
+    "problem_id": 58,
+    "original_text": "営業許可申請に配置図が必要である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "法律用語",
+          "severity": "HIGH",
+          "message": "営業許可申請に必要な書類の具体的な内容には配置図が含まれていることが明記されていない。",
+          "suggestion": "風営法第6条第3項を確認し、必要書類についての具体的な規定を明記することを推奨。"
+        }
+      ],
+      "confidence": 0.7
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "法律用語",
+        "severity": "HIGH",
+        "message": "営業許可申請に必要な書類の具体的な内容には配置図が含まれていることが明記されていない。",
+        "suggestion": "風営法第6条第3項を確認し、必要書類についての具体的な規定を明記することを推奨。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 59,
+    "original_text": "営業許可は同一人物が複数の営業所で申請可能である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error_type",
+          "severity": "HIGH",
+          "message": "同一人物が複数の営業所で営業許可を申請できるとの記述に誤りがある。",
+          "suggestion": "風営法第4条第1項に基づき、営業許可は原則として各営業所ごとに申請する必要があり、同一人物が複数の営業所で営業許可を持つ場合、特定の条件を満たす必要があることを確認すべき。"
+        }
+      ],
+      "confidence": 0.8
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "error_type",
+        "severity": "HIGH",
+        "message": "同一人物が複数の営業所で営業許可を申請できるとの記述に誤りがある。",
+        "suggestion": "風営法第4条第1項に基づき、営業許可は原則として各営業所ごとに申請する必要があり、同一人物が複数の営業所で営業許可を持つ場合、特定の条件を満たす必要があることを確認すべき。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 74,
+    "original_text": "遊技機の型式検定は5年ごとに更新が必要である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error",
+          "severity": "HIGH",
+          "message": "遊技機の型式検定の更新期間に関する情報が誤りです。",
+          "suggestion": "遊技機の型式検定は、通常は5年ごとではなく、型式の使用に応じて定期的に行われる。現行法令を再確認してください。"
+        }
+      ],
+      "confidence": 0.8
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "error",
+        "severity": "HIGH",
+        "message": "遊技機の型式検定の更新期間に関する情報が誤りです。",
+        "suggestion": "遊技機の型式検定は、通常は5年ごとではなく、型式の使用に応じて定期的に行われる。現行法令を再確認してください。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 76,
+    "original_text": "景品額は厳格に制限されない。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error",
+          "severity": "HIGH",
+          "message": "景品額に関する法律規定が誤っている。",
+          "suggestion": "風営法第6条に基づき、景品額には厳格な制限があるため、正しい法令を確認してください。"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "error",
+        "severity": "HIGH",
+        "message": "景品額に関する法律規定が誤っている。",
+        "suggestion": "風営法第6条に基づき、景品額には厳格な制限があるため、正しい法令を確認してください。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 77,
+    "original_text": "景品は全ての種類が支給可能である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error",
+          "severity": "HIGH",
+          "message": "景品は全ての種類が支給可能であるという表現は誤りです。風営法には支給可能な景品の種類に制限があります。",
+          "suggestion": "風営法における景品の種類や制限について正確に確認し、特定の条件に基づいた表現に修正する必要があります。"
+        }
+      ],
+      "confidence": 0.8
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "error",
+        "severity": "HIGH",
+        "message": "景品は全ての種類が支給可能であるという表現は誤りです。風営法には支給可能な景品の種類に制限があります。",
+        "suggestion": "風営法における景品の種類や制限について正確に確認し、特定の条件に基づいた表現に修正する必要があります。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 78,
+    "original_text": "中古機の検定は新台と同一基準である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "法律用語の誤用",
+          "severity": "HIGH",
+          "message": "中古機の検定基準が新台と同一であるという表現は誤り。",
+          "suggestion": "中古機の検定基準は新台との違いがあることを明記すべき。"
+        }
+      ],
+      "confidence": 0.7
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "法律用語の誤用",
+        "severity": "HIGH",
+        "message": "中古機の検定基準が新台と同一であるという表現は誤り。",
+        "suggestion": "中古機の検定基準は新台との違いがあることを明記すべき。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 79,
+    "original_text": "中古機は新台と同じ検定基準で合格する。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "法律用語",
+          "severity": "HIGH",
+          "message": "中古機は新台と同じ検定基準で合格するという表現は誤りです。",
+          "suggestion": "中古機は、新台とは異なる検定基準に従って合格する必要があります。"
+        }
+      ],
+      "confidence": 0.8
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "法律用語",
+        "severity": "HIGH",
+        "message": "中古機は新台と同じ検定基準で合格するという表現は誤りです。",
+        "suggestion": "中古機は、新台とは異なる検定基準に従って合格する必要があります。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 80,
+    "original_text": "景品支給は何度でも上限金額まで支給可能である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error",
+          "severity": "HIGH",
+          "message": "景品支給に関する表現が誤っている。風営法では、景品の支給回数に制限がある。",
+          "suggestion": "具体的な支給回数や条件について、風営法第32条を確認し、上限金額や支給条件に従った表現に修正することを推奨します。"
+        }
+      ],
+      "confidence": 0.85
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "error",
+        "severity": "HIGH",
+        "message": "景品支給に関する表現が誤っている。風営法では、景品の支給回数に制限がある。",
+        "suggestion": "具体的な支給回数や条件について、風営法第32条を確認し、上限金額や支給条件に従った表現に修正することを推奨します。"
+      }
+    ],
+    "issue_count": 1,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 81,
+    "original_text": "営業許可申請に必要な書類は絶対に変わらない。",
+    "local_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "absolute_expression_error",
+          "message": "申請に必要な書類は状況によって変わる可能性があります。"
+        }
+      ],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 1
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "absolute expression error",
+          "severity": "HIGH",
+          "message": "営業許可申請に必要な書類は絶対に変わらないとの表現が誤りである。",
+          "suggestion": "営業許可申請に必要な書類は法律や行政の方針により変更される可能性があるため、最新の情報を確認することが重要である。"
+        }
+      ],
+      "confidence": 0.8
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "absolute_expression_error",
+        "message": "申請に必要な書類は状況によって変わる可能性があります。"
+      },
+      {
+        "type": "absolute expression error",
+        "severity": "HIGH",
+        "message": "営業許可申請に必要な書類は絶対に変わらないとの表現が誤りである。",
+        "suggestion": "営業許可申請に必要な書類は法律や行政の方針により変更される可能性があるため、最新の情報を確認することが重要である。"
+      }
+    ],
+    "issue_count": 2,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 83,
+    "original_text": "営業許可は違反の場合、必ず取り消される。",
+    "local_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "absolute_expression_error",
+          "message": "「必ず取り消される」は不正確です。違反があっても審査があり、条件によって取り消されることがあります。"
+        }
+      ],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 1
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error",
+          "severity": "HIGH",
+          "message": "営業許可は違反の場合、必ず取り消されるという表現は誤りである。",
+          "suggestion": "違反の内容や程度によっては、営業許可が一時停止されたり、警告が与えられる場合もあるため、条件に応じた表現に修正するべき。"
+        }
+      ],
+      "confidence": 0.8
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "absolute_expression_error",
+        "message": "「必ず取り消される」は不正確です。違反があっても審査があり、条件によって取り消されることがあります。"
+      },
+      {
+        "type": "error",
+        "severity": "HIGH",
+        "message": "営業許可は違反の場合、必ず取り消されるという表現は誤りである。",
+        "suggestion": "違反の内容や程度によっては、営業許可が一時停止されたり、警告が与えられる場合もあるため、条件に応じた表現に修正するべき。"
+      }
+    ],
+    "issue_count": 2,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 84,
+    "original_text": "型式検定の有効期限は絶対5年である。",
+    "local_validation": {
+      "is_correct": true,
+      "issues": [],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 0
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "法律用語の誤り",
+          "severity": "HIGH",
+          "message": "型式検定の有効期限は絶対に5年という表現は誤りです。具体的には、風営法に基づく型式検定の有効期限は法令で定められており、5年未満かもしれません。",
+          "suggestion": "型式検定の有効期限については具体的な法令を確認し、適宜修正してください。"
+        },
+        {
+          "type": "絶対的な表現の誤り",
+          "severity": "MEDIUM",
+          "message": "「絶対5年」という表現は、不正確です。法令に基づく要件は変更される可能性があります。",
+          "suggestion": "有効期限は法令によって定義されるため、「おおむね5年」などの表現に修正することを検討してください。"
+        }
+      ],
+      "confidence": 0.8
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "法律用語の誤り",
+        "severity": "HIGH",
+        "message": "型式検定の有効期限は絶対に5年という表現は誤りです。具体的には、風営法に基づく型式検定の有効期限は法令で定められており、5年未満かもしれません。",
+        "suggestion": "型式検定の有効期限については具体的な法令を確認し、適宜修正してください。"
+      },
+      {
+        "type": "絶対的な表現の誤り",
+        "severity": "MEDIUM",
+        "message": "「絶対5年」という表現は、不正確です。法令に基づく要件は変更される可能性があります。",
+        "suggestion": "有効期限は法令によって定義されるため、「おおむね5年」などの表現に修正することを検討してください。"
+      }
+    ],
+    "issue_count": 2,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 85,
+    "original_text": "型式検定更新は一度も延期できない。",
+    "local_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "absolute_expression_error",
+          "message": "型式検定更新は一度も延期できないわけではありません（特定の条件下では延期可能な場合がある）。"
+        }
+      ],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 1
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error_type",
+          "severity": "HIGH",
+          "message": "型式検定更新は「一度も延期できない」という表現が法的に正確ではない可能性があります。",
+          "suggestion": "法律文書を確認し、延期が許可される場合の条件について詳細を追記してください。"
+        }
+      ],
+      "confidence": 0.7
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "absolute_expression_error",
+        "message": "型式検定更新は一度も延期できないわけではありません（特定の条件下では延期可能な場合がある）。"
+      },
+      {
+        "type": "error_type",
+        "severity": "HIGH",
+        "message": "型式検定更新は「一度も延期できない」という表現が法的に正確ではない可能性があります。",
+        "suggestion": "法律文書を確認し、延期が許可される場合の条件について詳細を追記してください。"
+      }
+    ],
+    "issue_count": 2,
+    "severity": "HIGH",
+    "needs_revision": true
+  },
+  {
+    "problem_id": 87,
+    "original_text": "営業許可申請は誰でも自由にできる。",
+    "local_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "qualification_error",
+          "message": "営業許可申請は誰でもできるわけではありません。特定の資格要件や身分要件を満たす必要があります。"
+        }
+      ],
+      "articles": [
+        "第3条"
+      ],
+      "issue_count": 1
+    },
+    "gpt_validation": {
+      "is_correct": false,
+      "issues": [
+        {
+          "type": "error_type",
+          "severity": "HIGH",
+          "message": "営業許可申請は特定の条件を満たした者のみが行える。",
+          "suggestion": "営業許可申請を行うには、風営法第2条に基づく要件を理解し、それに準じた人物のみが申請を行うべきであることを明示する必要がある。"
+        }
+      ],
+      "confidence": 0.9
+    },
+    "is_legally_correct": false,
+    "issues": [
+      {
+        "type": "qualification_error",
+        "message": "営業許可申請は誰でもできるわけではありません。特定の資格要件や身分要件を満たす必要があります。"
+      },
+      {
+        "type": "error_type",
+        "severity": "HIGH",
+        "message": "営業許可申請は特定の条件を満たした者のみが行える。",
+        "suggestion": "営業許可申請を行うには、風営法第2条に基づく要件を理解し、それに準じた人物のみが申請を行うべきであることを明示する必要がある。"
+      }
+    ],
+    "issue_count": 2,
+    "severity": "HIGH",
+    "needs_revision": true
+  }
+]

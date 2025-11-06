@@ -1,0 +1,389 @@
+/* ===========================
+   ホーム画面 - ダークテーマ
+   =========================== */
+
+.home-container {
+  min-height: 100vh;
+  background-color: var(--bg-primary);
+  font-family: 'Noto Sans JP', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== ヘッダー ===== */
+.home-header {
+  background: linear-gradient(180deg, #1A1A1A 0%, #0A0A0A 100%);
+  color: var(--text-primary);
+  padding: 48px 24px 32px;
+  text-align: center;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.home-header h1 {
+  margin: 0 0 8px;
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+}
+
+.home-header .header-description {
+  margin: 16px 0 8px;
+  font-size: 14px;
+  color: var(--text-secondary);
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.home-header .user-info {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-tertiary);
+  font-weight: 500;
+}
+
+/* ===== メインコンテンツ ===== */
+.home-content {
+  flex: 1;
+  padding: 32px 24px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ===== 法律参照 ===== */
+.legal-reference {
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 24px;
+}
+
+.legal-reference h3 {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.legal-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--primary-gold);
+  border-radius: 8px;
+  color: var(--primary-gold);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+}
+
+.legal-link:hover {
+  background-color: var(--primary-gold);
+  color: var(--bg-primary);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.legal-link:active {
+  transform: translateY(0);
+}
+
+/* ===== 試験日程 ===== */
+.exam-schedule {
+  padding-top: 24px;
+  border-top: 1px solid var(--border-color);
+  margin-bottom: 24px;
+}
+
+.exam-schedule h3 {
+  margin: 0 0 12px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.schedule-info {
+  margin: 0 0 16px;
+  font-size: 13px;
+  color: var(--text-tertiary);
+  line-height: 1.8;
+}
+
+.official-link {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: var(--primary-gold);
+  color: var(--bg-primary);
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: 2px solid var(--primary-gold);
+  letter-spacing: 0.5px;
+}
+
+.official-link:hover {
+  background-color: #E5C158;
+  border-color: #E5C158;
+  transform: translateY(-2px);
+}
+
+.official-link:active {
+  transform: scale(0.98);
+}
+
+/* ===== 模擬試験セクション ===== */
+.mock-exam-section {
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 28px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.mock-exam-section h2 {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.5px;
+}
+
+.section-subtitle {
+  margin: 0 0 24px;
+  font-size: 13px;
+  color: var(--text-tertiary);
+  font-weight: 500;
+  text-align: center;
+}
+
+.exam-options {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.exam-option {
+  padding: 20px;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  background-color: var(--bg-tertiary);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exam-option:hover {
+  border-color: var(--primary-gold);
+  background-color: rgba(212, 175, 55, 0.05);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.2);
+}
+
+.exam-option:active {
+  transform: scale(0.98);
+}
+
+.exam-option.small {
+  border-left: 4px solid #4CAF50;
+}
+
+.exam-option.medium {
+  border-left: 4px solid #FF9800;
+}
+
+.exam-option.large {
+  border-left: 4px solid #F44336;
+}
+
+.option-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.option-header .label {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.option-header .badge {
+  font-size: 11px;
+  font-weight: 700;
+  padding: 6px 12px;
+  background-color: var(--primary-gold);
+  color: var(--bg-primary);
+  border-radius: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.option-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.option-content .num-questions {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--primary-gold);
+  margin: 0;
+}
+
+.option-content .description {
+  font-size: 12px;
+  color: var(--text-tertiary);
+  margin: 0;
+}
+
+/* ===== 成績履歴 ===== */
+.history-section {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.history-link {
+  display: inline-block;
+  padding: 14px 32px;
+  background-color: var(--primary-gold);
+  border: 2px solid var(--primary-gold);
+  color: var(--bg-primary);
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(212, 175, 55, 0.3);
+}
+
+.history-link:hover {
+  background-color: #E5C158;
+  border-color: #E5C158;
+  box-shadow: 0 6px 16px rgba(212, 175, 55, 0.4);
+  transform: translateY(-2px);
+}
+
+.history-link:active {
+  transform: scale(0.98);
+}
+
+/* ===== フッター ===== */
+.home-footer {
+  padding: 20px;
+  text-align: center;
+  color: var(--text-tertiary);
+  font-size: 12px;
+  border-top: 1px solid var(--border-color);
+  background-color: var(--bg-secondary);
+}
+
+.home-footer p {
+  margin: 0;
+}
+
+/* ===== レスポンシブ ===== */
+@media (min-width: 768px) {
+  .home-header {
+    padding: 48px 40px;
+  }
+
+  .home-header h1 {
+    font-size: 32px;
+  }
+
+  .home-content {
+    padding: 40px 60px;
+  }
+
+  .mock-exam-section {
+    padding: 32px;
+  }
+
+  .exam-options {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .exam-option {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 160px;
+  }
+
+  .option-header {
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 16px;
+    width: 100%;
+  }
+
+  .option-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .home-header {
+    padding: 32px 16px;
+  }
+
+  .home-header h1 {
+    font-size: 22px;
+  }
+
+  .home-content {
+    padding: 16px;
+  }
+
+  .mock-exam-section {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .mock-exam-section h2 {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .exam-option {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .option-content {
+    flex-direction: column;
+    gap: 4px;
+    align-items: flex-start;
+  }
+
+  .option-header {
+    margin-bottom: 0;
+  }
+}

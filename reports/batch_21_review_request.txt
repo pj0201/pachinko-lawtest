@@ -1,0 +1,503 @@
+【Batch 21 - 品質レビューリクエスト】
+
+対象: 主任者講習試験問題 401～420
+問題数: 20問
+
+【評価基準】
+1. 法的根拠の具体性 - 「風営法第X条の Y」のように条文が具体的であること
+2. 抽象的表現の有無 - 「一定の」「適切な」「所定の」などの表現がないこと  
+3. 問題文の長さ - 最低20文字以上であること
+4. 複数の解釈の可能性がないこと
+
+【指示】
+以下の20問について、一問ずつ以下の形式で評価してください：
+
+【問題ID X】
+- 評価: [✅ OK / ⚠️ 要改善 / ❌ 不合格]
+- 指摘事項: [該当する場合のみ記入]
+
+【問題データ】
+[
+  {
+    "problem_id": 413,
+    "theme_id": 9003,
+    "theme_name": "景品交換の規制",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:11.643014",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★",
+    "problem_text": "設置済み遊技機について、公安委員会の特別許可がある場合のときは点検が報告が必要である。",
+    "correct_answer": "×",
+    "explanation": "景品交換の規制に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品交換の規制）",
+      "detail": "景品交換の規制に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 414,
+    "theme_id": 9006,
+    "theme_name": "景品交換の規制",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:11.761453",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★★",
+    "problem_text": "中古遊技機は、設置完了後に報告を確認記録する必要がある。",
+    "correct_answer": "×",
+    "explanation": "景品交換の規制に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品交換の規制）",
+      "detail": "景品交換の規制に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 415,
+    "theme_id": 9007,
+    "theme_name": "景品交換の規制",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:11.835397",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★★",
+    "problem_text": "遊技機の申請と遊技機の移動の確認は、罰則の程度が異なる。",
+    "correct_answer": "○",
+    "explanation": "景品交換の規制に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品交換の規制）",
+      "detail": "景品交換の規制に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 416,
+    "theme_id": 9008,
+    "theme_name": "景品交換の規制",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:11.883668",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★",
+    "problem_text": "中古遊技機については申請が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "景品交換の規制に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品交換の規制）",
+      "detail": "景品交換の規制に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 417,
+    "theme_id": 9009,
+    "theme_name": "景品交換の規制",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:11.914256",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★",
+    "problem_text": "景品交換の規制の検査実施時において、新台に関記録する製造番号の確認は求められる。",
+    "correct_answer": "○",
+    "explanation": "景品交換の規制に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品交換の規制）",
+      "detail": "景品交換の規制に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 418,
+    "theme_id": 9010,
+    "theme_name": "景品交換の規制",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:11.995503",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★★",
+    "problem_text": "景品交換の規制の故障発生時において、災害時10台以上の場合、設置済み遊技機の簡略化された手続きが認められる。",
+    "correct_answer": "○",
+    "explanation": "景品交換の規制に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品交換の規制）",
+      "detail": "景品交換の規制に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 419,
+    "theme_id": 9011,
+    "theme_name": "景品交換の規制",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:12.031105",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★",
+    "problem_text": "新台の事前通知は、製造者への届け出るが任意であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "景品交換の規制に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品交換の規制）",
+      "detail": "景品交換の規制に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 420,
+    "theme_id": 9012,
+    "theme_name": "景品交換の規制",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:12.065305",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★★",
+    "problem_text": "景品交換の規制の新台設置時において、特別な事情がある場合3台の場合、遊技機の特別な措置が認められる。",
+    "correct_answer": "×",
+    "explanation": "景品交換の規制に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品交換の規制）",
+      "detail": "景品交換の規制に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 421,
+    "theme_id": 9013,
+    "theme_name": "景品交換の規制",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:12.107524",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★★",
+    "problem_text": "設置済み遊技機の許可申請と中古遊技機設置の申請は、届出が必要書類が異なる。",
+    "correct_answer": "○",
+    "explanation": "景品交換の規制に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品交換の規制）",
+      "detail": "景品交換の規制に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 422,
+    "theme_id": 9000,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:12.293552",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★★",
+    "problem_text": "故障機は、特別な事情がある場合であれば簡略化された手続きの対象となる。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 423,
+    "theme_id": 9001,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:12.331101",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "遊技機は、速やかにに事前通知を届け出る承認が必要がある。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 424,
+    "theme_id": 9002,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:12.370084",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★★",
+    "problem_text": "故障機の修理時には、公安委員会への報告が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 425,
+    "theme_id": 9004,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:12.437819",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★",
+    "problem_text": "遊技機の確認は、都道府県知事への確認記録するが求められる。",
+    "correct_answer": "○",
+    "explanation": "景品の種類制限に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 426,
+    "theme_id": 9005,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:12.509882",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★★★",
+    "problem_text": "中古遊技機の許可申請を記録を残さなかったしたときは、営業停止命令が適用される。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 427,
+    "theme_id": 9009,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:12.718365",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★★★",
+    "problem_text": "景品の種類制限の検査実施時において、故障機を無届けで実施したした場合、過料が科される。",
+    "correct_answer": "○",
+    "explanation": "景品の種類制限に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 428,
+    "theme_id": 9010,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:12.752329",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★",
+    "problem_text": "景品の種類制限の故障発生時において、遊技機に関する動作確認の確認は義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 429,
+    "theme_id": 9011,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:12.795628",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "中古遊技機は、特別な事情がある場合を満たす場合のみ提出することができる。",
+    "correct_answer": "×",
+    "explanation": "景品の種類制限に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 430,
+    "theme_id": 9012,
+    "theme_name": "景品の種類制限",
+    "category": "景品規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:12.873666",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★",
+    "problem_text": "景品の種類制限の故障発生時において、設置済み遊技機に関記録する改造の有無の確認は任意である。",
+    "correct_answer": "○",
+    "explanation": "景品の種類制限に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（景品の種類制限）",
+      "detail": "景品の種類制限に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 431,
+    "theme_id": 2033,
+    "theme_name": "不正改造の具体的パターン",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.752873",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_text": "不正改造の具体的パターンは、法律で定められている重要な知識であり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "不正改造の具体的パターンについて正確に理解することは、営業管理の基本です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "改造パターンの認識は防止に不可欠。"
+    }
+  },
+  {
+    "problem_id": 432,
+    "theme_id": 2033,
+    "theme_name": "不正改造の具体的パターン",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.752880",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "不正改造の具体的パターンについては、必ず毎年の届出が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "「必ず毎年」という表現は誤り。不正改造の具体的パターンの手続きは状況に応じて異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "改造パターンの認識は防止に不可欠。"
+    }
+  }
+]
+
+よろしくお願いします。

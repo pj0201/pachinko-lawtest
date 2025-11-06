@@ -1,0 +1,503 @@
+【Batch 17 - 品質レビューリクエスト】
+
+対象: 主任者講習試験問題 321～340
+問題数: 20問
+
+【評価基準】
+1. 法的根拠の具体性 - 「風営法第X条の Y」のように条文が具体的であること
+2. 抽象的表現の有無 - 「一定の」「適切な」「所定の」などの表現がないこと  
+3. 問題文の長さ - 最低20文字以上であること
+4. 複数の解釈の可能性がないこと
+
+【指示】
+以下の20問について、一問ずつ以下の形式で評価してください：
+
+【問題ID X】
+- 評価: [✅ OK / ⚠️ 要改善 / ❌ 不合格]
+- 指摘事項: [該当する場合のみ記入]
+
+【問題データ】
+[
+  {
+    "problem_id": 330,
+    "theme_id": 9006,
+    "theme_name": "外部端子板の管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:05.690378",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_text": "外部端子板の管理の中古遊技機設置時において、特別な事情がある場合5年間の場合、新台の手続きの猶予が認められる。",
+    "correct_answer": "×",
+    "explanation": "外部端子板の管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（外部端子板の管理）",
+      "detail": "外部端子板の管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 331,
+    "theme_id": 9007,
+    "theme_name": "外部端子板の管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:05.718626",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★",
+    "problem_text": "設置済み遊技機については、許可申請が求められる。",
+    "correct_answer": "×",
+    "explanation": "外部端子板の管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（外部端子板の管理）",
+      "detail": "外部端子板の管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 332,
+    "theme_id": 9008,
+    "theme_name": "外部端子板の管理",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:05.749145",
+    "pattern_id": 11,
+    "pattern_name": "改正対応",
+    "difficulty": "★★★★",
+    "problem_text": "新台と定期点検では、対象範囲の新台設置時において異なる。",
+    "correct_answer": "×",
+    "explanation": "外部端子板の管理に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（外部端子板の管理）",
+      "detail": "外部端子板の管理に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 333,
+    "theme_id": 9003,
+    "theme_name": "設置済み遊技機の交換手続き",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:05.935551",
+    "pattern_id": 5,
+    "pattern_name": "時系列理解",
+    "difficulty": "★★★",
+    "problem_text": "設置済み遊技機の交換手続きの新台設置時において、新台を無届けで実施したした場合、罰金が科される。",
+    "correct_answer": "×",
+    "explanation": "設置済み遊技機の交換手続きに関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（設置済み遊技機の交換手続き）",
+      "detail": "設置済み遊技機の交換手続きに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 334,
+    "theme_id": 9004,
+    "theme_name": "設置済み遊技機の交換手続き",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:05.995191",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_text": "設置済み遊技機の承認申請を怠ったしたときは、許可取消しが適用される。",
+    "correct_answer": "×",
+    "explanation": "設置済み遊技機の交換手続きに関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（設置済み遊技機の交換手続き）",
+      "detail": "設置済み遊技機の交換手続きに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 335,
+    "theme_id": 9005,
+    "theme_name": "設置済み遊技機の交換手続き",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.033885",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_text": "設置済み遊技機の交換手続きの故障発生時において、故障を発見した場合、使用停止を届出する必要がある。",
+    "correct_answer": "×",
+    "explanation": "設置済み遊技機の交換手続きに関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（設置済み遊技機の交換手続き）",
+      "detail": "設置済み遊技機の交換手続きに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 336,
+    "theme_id": 9006,
+    "theme_name": "設置済み遊技機の交換手続き",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.063816",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★★★",
+    "problem_text": "設置済み遊技機の交換手続きの遊技機撤去時において、設置済み遊技機を怠ったした場合、行政処分が科される。",
+    "correct_answer": "○",
+    "explanation": "設置済み遊技機の交換手続きに関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（設置済み遊技機の交換手続き）",
+      "detail": "設置済み遊技機の交換手続きに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 337,
+    "theme_id": 9007,
+    "theme_name": "設置済み遊技機の交換手続き",
+    "category": "遊技機管理",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.101516",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_text": "新台の設置記録は、設置完了後から3年間保管することが義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "設置済み遊技機の交換手続きに関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（設置済み遊技機の交換手続き）",
+      "detail": "設置済み遊技機の交換手続きに関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 338,
+    "theme_id": 9000,
+    "theme_name": "営業停止命令",
+    "category": "営業時間・規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.188010",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "新台の制御装置について、製造番号が停止期間30日以内に必要である。",
+    "correct_answer": "×",
+    "explanation": "営業停止命令に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（営業停止命令）",
+      "detail": "営業停止命令に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 339,
+    "theme_id": 9002,
+    "theme_name": "営業停止命令",
+    "category": "営業時間・規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.272940",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_text": "中古遊技機の報告は、設置完了後までに届け出ることが義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "営業停止命令に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（営業停止命令）",
+      "detail": "営業停止命令に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 340,
+    "theme_id": 9003,
+    "theme_name": "営業停止命令",
+    "category": "営業時間・規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.368241",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★★",
+    "problem_text": "故障機の報告と中古遊技機設置の許可申請は、停止期間30日以内に必要書類が異なる。",
+    "correct_answer": "×",
+    "explanation": "営業停止命令に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（営業停止命令）",
+      "detail": "営業停止命令に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 341,
+    "theme_id": 9004,
+    "theme_name": "営業停止命令",
+    "category": "営業時間・規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.401221",
+    "pattern_id": 7,
+    "pattern_name": "複合違反",
+    "difficulty": "★★★",
+    "problem_text": "中古遊技機を設置する場合、14日前までに届出が必要である。",
+    "correct_answer": "×",
+    "explanation": "営業停止命令に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（営業停止命令）",
+      "detail": "営業停止命令に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 342,
+    "theme_id": 9005,
+    "theme_name": "営業停止命令",
+    "category": "営業時間・規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.442769",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★★",
+    "problem_text": "設置済み遊技機の事前通知は、設置完了後までに確認記録することが義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "営業停止命令に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（営業停止命令）",
+      "detail": "営業停止命令に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 343,
+    "theme_id": 9006,
+    "theme_name": "営業停止命令",
+    "category": "営業時間・規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.473405",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★",
+    "problem_text": "故障機の外部端子板について、動作確認が任意である。",
+    "correct_answer": "×",
+    "explanation": "営業停止命令に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（営業停止命令）",
+      "detail": "営業停止命令に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 344,
+    "theme_id": 9009,
+    "theme_name": "営業停止命令",
+    "category": "営業時間・規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.588960",
+    "pattern_id": 12,
+    "pattern_name": "複合応用",
+    "difficulty": "★★★",
+    "problem_text": "営業停止命令の不正発見時において、未検査のまま使用を行った場合、警告の対象となる。",
+    "correct_answer": "○",
+    "explanation": "営業停止命令に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（営業停止命令）",
+      "detail": "営業停止命令に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 345,
+    "theme_id": 9010,
+    "theme_name": "営業停止命令",
+    "category": "営業時間・規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.614510",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★★★",
+    "problem_text": "営業停止命令の記録保管時において、不正改造を行った場合、過料の対象となる。",
+    "correct_answer": "×",
+    "explanation": "営業停止命令に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（営業停止命令）",
+      "detail": "営業停止命令に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 346,
+    "theme_id": 9000,
+    "theme_name": "営業停止期間の計算",
+    "category": "営業時間・規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.646556",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "中古遊技機は、事前にに申請を提出する必要がある。",
+    "correct_answer": "×",
+    "explanation": "営業停止期間の計算に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（営業停止期間の計算）",
+      "detail": "営業停止期間の計算に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 347,
+    "theme_id": 9001,
+    "theme_name": "営業停止期間の計算",
+    "category": "営業時間・規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.696393",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★★★",
+    "problem_text": "遊技機の報告と遊技機の修理の許可申請は、承認が必要書類が異なる。",
+    "correct_answer": "○",
+    "explanation": "営業停止期間の計算に関する正しい記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（営業停止期間の計算）",
+      "detail": "営業停止期間の計算に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 348,
+    "theme_id": 9000,
+    "theme_name": "違反時の行政処分",
+    "category": "営業時間・規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.749316",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★",
+    "problem_text": "遊技機の事前通知は、製造者への申請するが任意であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "違反時の行政処分に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（違反時の行政処分）",
+      "detail": "違反時の行政処分に関する規定を遵守する必要がある。"
+    }
+  },
+  {
+    "problem_id": 349,
+    "theme_id": 9002,
+    "theme_name": "違反時の行政処分",
+    "category": "営業時間・規制",
+    "is_subtheme_based": false,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T16:27:06.816019",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_text": "故障機について、3ヶ月ごとの製造番号が任意である。",
+    "correct_answer": "×",
+    "explanation": "違反時の行政処分に関する誤った記述です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第6条",
+      "section": "（違反時の行政処分）",
+      "detail": "違反時の行政処分に関する規定を遵守する必要がある。"
+    }
+  }
+]
+
+よろしくお願いします。

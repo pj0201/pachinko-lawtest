@@ -1,0 +1,57 @@
+{
+  "project": "B案実施 - 28問新規作成と統合",
+  "status": "統合前準備",
+  "batches": {
+    "batch_1": {
+      "file": "data/NEW_PROBLEMS_SAMPLE_BATCH1_REVISED.json",
+      "count": 6,
+      "articles": [
+        "第1条",
+        "第2条"
+      ],
+      "status": "承認済み"
+    },
+    "batch_2": {
+      "file": "data/NEW_PROBLEMS_BATCH2_REVISED.json",
+      "count": 3,
+      "articles": [
+        "第3条"
+      ],
+      "status": "修正完了・待機"
+    },
+    "batch_3": {
+      "file": "data/NEW_PROBLEMS_BATCH3.json",
+      "count": 9,
+      "articles": [
+        "第5条",
+        "第6条",
+        "第7条"
+      ],
+      "status": "レビュー待機"
+    },
+    "batch_4": {
+      "file": "data/NEW_PROBLEMS_BATCH4.json",
+      "count": 10,
+      "articles": [
+        "第10条",
+        "第11条",
+        "第12条",
+        "第13条",
+        "第14条"
+      ],
+      "status": "レビュー待機"
+    }
+  },
+  "total_problems_to_create": 28,
+  "expected_final_count": 598,
+  "integration_steps": [
+    "1. 全Batch（1-4）の修正完了確認",
+    "2. すべてのJSONファイルを読み込む",
+    "3. problem_idを1001-1028で統一確認",
+    "4. 既存の570問に追加（統合）",
+    "5. メタデータ更新（total_problems: 598）",
+    "6. 最終ファイル保存: PROBLEMS_FINAL_598.json",
+    "7. バックアップ作成",
+    "8. 新しいファイルを本番ファイル（PROBLEMS_FINAL_1491.json）に置き換え"
+  ]
+}

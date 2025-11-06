@@ -1,0 +1,3798 @@
+{
+  "metadata": {
+    "version": "2.0",
+    "build_date": "2025-11-06",
+    "total_problems": 500,
+    "verified_mapping": true,
+    "theme_count": 17,
+    "source_types": [
+      "legal_references",
+      "lecture_text"
+    ],
+    "search_modes": [
+      "bm25",
+      "semantic",
+      "hybrid"
+    ]
+  },
+  "themes": {
+    "セキュリティ確保": {
+      "category": "不正対策",
+      "problem_count": 57,
+      "legal_sections": [],
+      "lecture_files": [
+        "theme_002_セキュリティ確保"
+      ],
+      "top_keywords": [
+        "防犯",
+        "不正対策",
+        "詩印",
+        "確保",
+        "関連度",
+        "実務",
+        "通協",
+        "日以降一般財団法人保安通信協会",
+        "日本電動式遊技機工業協同組合",
+        "保安"
+      ],
+      "search_keywords": []
+    },
+    "不正改造の防止": {
+      "category": "不正対策",
+      "problem_count": 4,
+      "legal_sections": [
+        {
+          "section": "第1〜10条",
+          "filename": "風営法_第1〜10条",
+          "size": 808843
+        }
+      ],
+      "lecture_files": [
+        "theme_006_不正改造の防止"
+      ],
+      "top_keywords": [
+        "防止",
+        "改造防止",
+        "不正対策",
+        "出人営業等",
+        "関連度",
+        "不正防止",
+        "風稚営業等",
+        "法律施行久",
+        "業務",
+        "不正改造"
+      ],
+      "search_keywords": [
+        "不正改造"
+      ]
+    },
+    "不正行為の罰則": {
+      "category": "不正対策",
+      "problem_count": 9,
+      "legal_sections": [
+        {
+          "section": "第101〜110条",
+          "filename": "風営法_第101〜110条",
+          "size": 34076
+        },
+        {
+          "section": "第111〜120条",
+          "filename": "風営法_第111〜120条",
+          "size": 27568
+        },
+        {
+          "section": "第121〜130条",
+          "filename": "風営法_第121〜130条",
+          "size": 4452
+        },
+        {
+          "section": "第131〜140条",
+          "filename": "風営法_第131〜140条",
+          "size": 4880
+        },
+        {
+          "section": "第141〜150条",
+          "filename": "風営法_第141〜150条",
+          "size": 12388
+        },
+        {
+          "section": "第151〜160条",
+          "filename": "風営法_第151〜160条",
+          "size": 25692
+        },
+        {
+          "section": "第171〜180条",
+          "filename": "風営法_第171〜180条",
+          "size": 16154
+        },
+        {
+          "section": "第181〜190条",
+          "filename": "風営法_第181〜190条",
+          "size": 11562
+        },
+        {
+          "section": "第191〜200条",
+          "filename": "風営法_第191〜200条",
+          "size": 19559
+        },
+        {
+          "section": "第201〜210条",
+          "filename": "風営法_第201〜210条",
+          "size": 25709
+        },
+        {
+          "section": "第211〜220条",
+          "filename": "風営法_第211〜220条",
+          "size": 5325
+        },
+        {
+          "section": "第221〜230条",
+          "filename": "風営法_第221〜230条",
+          "size": 85477
+        },
+        {
+          "section": "第231〜240条",
+          "filename": "風営法_第231〜240条",
+          "size": 39701
+        },
+        {
+          "section": "第241〜250条",
+          "filename": "風営法_第241〜250条",
+          "size": 27987
+        },
+        {
+          "section": "第251〜260条",
+          "filename": "風営法_第251〜260条",
+          "size": 2948
+        },
+        {
+          "section": "第261〜270条",
+          "filename": "風営法_第261〜270条",
+          "size": 2948
+        },
+        {
+          "section": "第271〜280条",
+          "filename": "風営法_第271〜280条",
+          "size": 2413
+        },
+        {
+          "section": "第281〜290条",
+          "filename": "風営法_第281〜290条",
+          "size": 2413
+        },
+        {
+          "section": "第291〜300条",
+          "filename": "風営法_第291〜300条",
+          "size": 2413
+        },
+        {
+          "section": "第301〜310条",
+          "filename": "風営法_第301〜310条",
+          "size": 2413
+        },
+        {
+          "section": "第311〜320条",
+          "filename": "風営法_第311〜320条",
+          "size": 11921
+        },
+        {
+          "section": "第941〜950条",
+          "filename": "風営法_第941〜950条",
+          "size": 2948
+        },
+        {
+          "section": "第961〜970条",
+          "filename": "風営法_第961〜970条",
+          "size": 2520
+        },
+        {
+          "section": "第991〜1000条",
+          "filename": "風営法_第991〜1000条",
+          "size": 2414
+        }
+      ],
+      "lecture_files": [
+        "theme_008_不正行為の罰則"
+      ],
+      "top_keywords": [
+        "不正対策",
+        "家金",
+        "併科",
+        "打第",
+        "不正行為",
+        "関連度",
+        "以下",
+        "進用",
+        "罰金",
+        "条第"
+      ],
+      "search_keywords": [
+        "不正行為",
+        "罰則"
+      ]
+    },
+    "不正防止対策要綱": {
+      "category": "不正対策",
+      "problem_count": 1,
+      "legal_sections": [],
+      "lecture_files": [
+        "theme_010_不正防止対策要綱"
+      ],
+      "top_keywords": [
+        "対策要綱",
+        "不正対策",
+        "交療",
+        "関連度",
+        "設置",
+        "交状",
+        "増設",
+        "叙機",
+        "不正防止対策要綱",
+        "作技機"
+      ],
+      "search_keywords": [
+        "遊技機"
+      ]
+    },
+    "営業停止命令": {
+      "category": "営業時間・規制",
+      "problem_count": 3,
+      "legal_sections": [],
+      "lecture_files": [
+        "theme_013_営業停止命令"
+      ],
+      "top_keywords": [
+        "出人営業等",
+        "営業時間",
+        "営業停止",
+        "関連度",
+        "風稚営業等",
+        "法律施行久",
+        "業務",
+        "停止命令",
+        "業務停止",
+        "適正化等"
+      ],
+      "search_keywords": [
+        "営業時間",
+        "営業停止"
+      ]
+    },
+    "営業停止命令の内容": {
+      "category": "営業時間・規制",
+      "problem_count": 21,
+      "legal_sections": [],
+      "lecture_files": [
+        "theme_014_営業停止命令の内容"
+      ],
+      "top_keywords": [
+        "内容",
+        "営業時間",
+        "関連度",
+        "中古放技機通俸全化",
+        "取消",
+        "処分内容",
+        "登録",
+        "中古遊技機流通事薬",
+        "停止内容",
+        "全国作技村南業協同組合連合会規約"
+      ],
+      "search_keywords": [
+        "営業時間",
+        "取消"
+      ]
+    },
+    "営業禁止時間": {
+      "category": "営業時間・規制",
+      "problem_count": 12,
+      "legal_sections": [
+        {
+          "section": "第1〜10条",
+          "filename": "風営法_第1〜10条",
+          "size": 808843
+        }
+      ],
+      "lecture_files": [
+        "theme_016_営業禁止時間"
+      ],
+      "top_keywords": [
+        "午前",
+        "営業時間",
+        "指示",
+        "処分",
+        "関連度",
+        "年以内",
+        "過打",
+        "法筆",
+        "営業禁止時間",
+        "事由"
+      ],
+      "search_keywords": [
+        "営業時間"
+      ]
+    },
+    "営業許可と型式検定の違い": {
+      "category": "営業許可関連",
+      "problem_count": 157,
+      "legal_sections": [
+        {
+          "section": "第11〜20条",
+          "filename": "風営法_第11〜20条",
+          "size": 693448
+        },
+        {
+          "section": "第21〜30条",
+          "filename": "風営法_第21〜30条",
+          "size": 304426
+        },
+        {
+          "section": "第31〜40条",
+          "filename": "風営法_第31〜40条",
+          "size": 335130
+        }
+      ],
+      "lecture_files": [
+        "theme_018_営業許可と型式検定の違い"
+      ],
+      "top_keywords": [
+        "検定",
+        "出人営業等",
+        "関連度",
+        "営業許可",
+        "型式検定",
+        "営業許可関連",
+        "風稚営業等",
+        "法律施行久",
+        "業務",
+        "適正化等"
+      ],
+      "search_keywords": [
+        "検定",
+        "営業許可",
+        "型式検定"
+      ]
+    },
+    "営業許可の取消し要件": {
+      "category": "営業許可関連",
+      "problem_count": 2,
+      "legal_sections": [
+        {
+          "section": "第1〜10条",
+          "filename": "風営法_第1〜10条",
+          "size": 808843
+        }
+      ],
+      "lecture_files": [
+        "theme_019_営業許可の取消し要件"
+      ],
+      "top_keywords": [
+        "点検確認",
+        "指定営業所",
+        "規程",
+        "関連度",
+        "営業許可",
+        "要件",
+        "取消",
+        "撤回",
+        "営業許可関連",
+        "制定"
+      ],
+      "search_keywords": [
+        "営業許可",
+        "取消"
+      ]
+    },
+    "営業許可の行政手続き": {
+      "category": "営業許可関連",
+      "problem_count": 20,
+      "legal_sections": [
+        {
+          "section": "第1〜10条",
+          "filename": "風営法_第1〜10条",
+          "size": 808843
+        }
+      ],
+      "lecture_files": [
+        "theme_021_営業許可の行政手続き"
+      ],
+      "top_keywords": [
+        "許可手続",
+        "適約",
+        "認定若準",
+        "関連度",
+        "営業許可",
+        "営業許可関連",
+        "館力",
+        "遊技機取扱主任者",
+        "必要",
+        "法令"
+      ],
+      "search_keywords": [
+        "営業許可"
+      ]
+    },
+    "営業許可は無期限有効": {
+      "category": "営業許可関連",
+      "problem_count": 31,
+      "legal_sections": [
+        {
+          "section": "第11〜20条",
+          "filename": "風営法_第11〜20条",
+          "size": 693448
+        },
+        {
+          "section": "第21〜30条",
+          "filename": "風営法_第21〜30条",
+          "size": 304426
+        },
+        {
+          "section": "第31〜40条",
+          "filename": "風営法_第31〜40条",
+          "size": 335130
+        }
+      ],
+      "lecture_files": [
+        "theme_022_営業許可は無期限有効"
+      ],
+      "top_keywords": [
+        "無期限有効",
+        "有効期間",
+        "許可期限",
+        "条一",
+        "関連度",
+        "無期限",
+        "営業許可",
+        "販売薬者",
+        "営業許可関連",
+        "登録制度"
+      ],
+      "search_keywords": [
+        "営業許可"
+      ]
+    },
+    "型式検定と中古機の関係": {
+      "category": "型式検定関連",
+      "problem_count": 20,
+      "legal_sections": [],
+      "lecture_files": [
+        "theme_023_型式検定と中古機の関係"
+      ],
+      "top_keywords": [
+        "型式検定関連",
+        "遊技場",
+        "実務",
+        "関連度",
+        "設置",
+        "型式検定",
+        "中古遊技機",
+        "管理",
+        "中古機",
+        "使用"
+      ],
+      "search_keywords": [
+        "型式検定",
+        "中古遊技機",
+        "中古機"
+      ]
+    },
+    "型式検定の申請方法": {
+      "category": "型式検定関連",
+      "problem_count": 26,
+      "legal_sections": [
+        {
+          "section": "第41〜50条",
+          "filename": "風営法_第41〜50条",
+          "size": 93331
+        },
+        {
+          "section": "第51〜60条",
+          "filename": "風営法_第51〜60条",
+          "size": 91453
+        },
+        {
+          "section": "第61〜70条",
+          "filename": "風営法_第61〜70条",
+          "size": 154481
+        },
+        {
+          "section": "第71〜80条",
+          "filename": "風営法_第71〜80条",
+          "size": 39890
+        },
+        {
+          "section": "第81〜90条",
+          "filename": "風営法_第81〜90条",
+          "size": 69844
+        },
+        {
+          "section": "第91〜100条",
+          "filename": "風営法_第91〜100条",
+          "size": 24449
+        }
+      ],
+      "lecture_files": [
+        "theme_025_型式検定の申請方法"
+      ],
+      "top_keywords": [
+        "型式検定関連",
+        "申請方法",
+        "手続",
+        "適約",
+        "認定若準",
+        "関連度",
+        "検定申請",
+        "型式検定",
+        "館力",
+        "遊技機取扱主任者"
+      ],
+      "search_keywords": [
+        "型式検定"
+      ]
+    },
+    "型式検定更新申請のタイミング": {
+      "category": "型式検定関連",
+      "problem_count": 4,
+      "legal_sections": [],
+      "lecture_files": [
+        "theme_026_型式検定更新申請のタイミング"
+      ],
+      "top_keywords": [
+        "型式検定関連",
+        "更新時期",
+        "一定",
+        "更新",
+        "申請",
+        "条一",
+        "関連度",
+        "販売薬者",
+        "型式検定更新申請",
+        "登録制度"
+      ],
+      "search_keywords": [
+        "申請"
+      ]
+    },
+    "時間帯別営業制限": {
+      "category": "遊技機管理",
+      "problem_count": 20,
+      "legal_sections": [],
+      "lecture_files": [
+        "theme_032_時間帯別営業制限"
+      ],
+      "top_keywords": [
+        "遮法",
+        "時間帯別営業制限",
+        "営業時間",
+        "低周小型",
+        "曳響",
+        "関連度",
+        "誤作動",
+        "電波",
+        "時間帯",
+        "電子回路又"
+      ],
+      "search_keywords": [
+        "営業時間",
+        "遊技機"
+      ]
+    },
+    "景品の種類制限": {
+      "category": "景品規制",
+      "problem_count": 59,
+      "legal_sections": [],
+      "lecture_files": [
+        "theme_033_景品の種類制限"
+      ],
+      "top_keywords": [
+        "入党",
+        "広告又",
+        "表示",
+        "関連度",
+        "景品",
+        "宣伝",
+        "親抽対象",
+        "以下",
+        "洪撤委",
+        "種類制限"
+      ],
+      "search_keywords": [
+        "景品",
+        "景品規制"
+      ]
+    },
+    "遊技機型式検定は3年有効": {
+      "category": "型式検定関連",
+      "problem_count": 54,
+      "legal_sections": [
+        {
+          "section": "第41〜50条",
+          "filename": "風営法_第41〜50条",
+          "size": 93331
+        },
+        {
+          "section": "第51〜60条",
+          "filename": "風営法_第51〜60条",
+          "size": 91453
+        },
+        {
+          "section": "第61〜70条",
+          "filename": "風営法_第61〜70条",
+          "size": 154481
+        },
+        {
+          "section": "第71〜80条",
+          "filename": "風営法_第71〜80条",
+          "size": 39890
+        },
+        {
+          "section": "第81〜90条",
+          "filename": "風営法_第81〜90条",
+          "size": 69844
+        },
+        {
+          "section": "第91〜100条",
+          "filename": "風営法_第91〜100条",
+          "size": 24449
+        }
+      ],
+      "lecture_files": [
+        "theme_040_遊技機型式検定は3年有効"
+      ],
+      "top_keywords": [
+        "型式検定関連",
+        "規定",
+        "型式",
+        "有効期間",
+        "検定期間",
+        "関連度",
+        "年有効",
+        "書類",
+        "保証副等",
+        "当訪販売又"
+      ],
+      "search_keywords": [
+        "遊技機"
+      ]
+    }
+  },
+  "search_index": {
+    "keyword_to_themes": {
+      "不正改造": [
+        "不正改造の防止"
+      ],
+      "不正行為": [
+        "不正行為の罰則"
+      ],
+      "罰則": [
+        "不正行為の罰則"
+      ],
+      "遊技機": [
+        "不正防止対策要綱",
+        "時間帯別営業制限",
+        "遊技機型式検定は3年有効"
+      ],
+      "営業時間": [
+        "営業停止命令",
+        "営業停止命令の内容",
+        "営業禁止時間",
+        "時間帯別営業制限"
+      ],
+      "営業停止": [
+        "営業停止命令"
+      ],
+      "取消": [
+        "営業停止命令の内容",
+        "営業許可の取消し要件"
+      ],
+      "検定": [
+        "営業許可と型式検定の違い"
+      ],
+      "営業許可": [
+        "営業許可と型式検定の違い",
+        "営業許可の取消し要件",
+        "営業許可の行政手続き",
+        "営業許可は無期限有効"
+      ],
+      "型式検定": [
+        "営業許可と型式検定の違い",
+        "型式検定と中古機の関係",
+        "型式検定の申請方法"
+      ],
+      "中古遊技機": [
+        "型式検定と中古機の関係"
+      ],
+      "中古機": [
+        "型式検定と中古機の関係"
+      ],
+      "申請": [
+        "型式検定更新申請のタイミング"
+      ],
+      "景品": [
+        "景品の種類制限"
+      ],
+      "景品規制": [
+        "景品の種類制限"
+      ]
+    },
+    "compound_words": [
+      "不正検出",
+      "外部端子",
+      "IC",
+      "営業停止",
+      "取消",
+      "リサイクル",
+      "型式検定",
+      "中古機",
+      "製造者",
+      "ROM",
+      "不正改造",
+      "景品規制",
+      "申請者",
+      "営業時間",
+      "端子板",
+      "違反",
+      "申請書",
+      "中古",
+      "中古遊技機",
+      "リサイクル推進",
+      "かしめ",
+      "セキュリティ",
+      "保守",
+      "遊技機",
+      "罰則",
+      "景品",
+      "取り消し",
+      "営業所",
+      "検定機器",
+      "製造番号",
+      "申請",
+      "廃止",
+      "保守管理",
+      "営業許可",
+      "チップ",
+      "基板ケース",
+      "型式試験",
+      "検定",
+      "廃機回収",
+      "不正行為",
+      "点検",
+      "行政処分",
+      "基板",
+      "景品交換",
+      "セキュリティアップデート",
+      "営業禁止"
+    ]
+  },
+  "problems": {
+    "1": {
+      "theme": "営業停止命令",
+      "category": "営業時間・規制",
+      "keyword_match_score": 5,
+      "problem_text_preview": "営業許可を受けた者が営業所の名称を変更した場合、10日以内に都道府県公安委員会に届出をしなければならない。"
+    },
+    "2": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には施設要件を満たす必要がある。"
+    },
+    "3": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業許可証は営業所の見やすい場所に掲示する必要がある。"
+    },
+    "4": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定に合格した遊技機は、型式検定標票を表示しなければならない。"
+    },
+    "5": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 2,
+      "problem_text_preview": "パチンコ営業において、一般景品の最高額は1万円である。"
+    },
+    "6": {
+      "theme": "営業禁止時間",
+      "category": "営業時間・規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業時間の制限は社会秩序維持のために設けられている。"
+    },
+    "7": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 6,
+      "problem_text_preview": "遊技機のセキュリティは施錠機構で確保される。"
+    },
+    "8": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は営業開始の30日前から可能である。"
+    },
+    "9": {
+      "theme": "営業禁止時間",
+      "category": "営業時間・規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業禁止区域での営業許可申請は受理されない。"
+    },
+    "10": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は転貸できない。"
+    },
+    "11": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請に営業計画書が必要である。"
+    },
+    "12": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の構造・設備は法定基準を満たす必要がある。"
+    },
+    "13": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可の有効期限は5年である。"
+    },
+    "14": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定の申請は指定検査機関に行う。"
+    },
+    "15": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品の種類と金額は法律で定められている。"
+    },
+    "16": {
+      "theme": "営業禁止時間",
+      "category": "営業時間・規制",
+      "keyword_match_score": 8,
+      "problem_text_preview": "営業禁止時間帯における営業は禁止されている。"
+    },
+    "18": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は譲渡できない。"
+    },
+    "19": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は禁治産者には付与されない。"
+    },
+    "20": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は違反が続く場合に取り消されることがある。"
+    },
+    "21": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は営業開始の60日前から可能である。"
+    },
+    "22": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可取得後の営業者変更は届出が必要である。"
+    },
+    "23": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業許可は同一人物が複数の営業所で取得可能である。"
+    },
+    "24": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定更新申請は有効期限の30日前から可能である。"
+    },
+    "27": {
+      "theme": "不正改造の防止",
+      "category": "不正対策",
+      "keyword_match_score": 4,
+      "problem_text_preview": "遊技機の不正改造は厳しく禁止されている。"
+    },
+    "32": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には主任者資格が必要である。"
+    },
+    "33": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の最小面積は法令で定められている。"
+    },
+    "34": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定の申請は都道府県に行う。"
+    },
+    "35": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 2,
+      "problem_text_preview": "景品の最高額は50000円である。"
+    },
+    "37": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 6,
+      "problem_text_preview": "遊技機のセキュリティは型式検定で確保される。"
+    },
+    "38": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所基準を満たす地域での営業許可申請は可能である。"
+    },
+    "39": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可の有効期限は3年である。"
+    },
+    "41": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には身分証明書が必要である。"
+    },
+    "43": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可取得後の施設変更は届出が必要である。"
+    },
+    "44": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "遊技機の型式検定は3年ごとに更新が必要である。"
+    },
+    "45": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 2,
+      "problem_text_preview": "景品の最高額は20000円である。"
+    },
+    "49": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者が変更される場合は新規許可申請が必要である。"
+    },
+    "50": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には住民票が必要である。"
+    },
+    "58": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請に配置図が必要である。"
+    },
+    "59": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業許可は同一人物が複数の営業所で申請可能である。"
+    },
+    "74": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "遊技機の型式検定は5年ごとに更新が必要である。"
+    },
+    "76": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品額は厳格に制限されない。"
+    },
+    "77": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 6,
+      "problem_text_preview": "景品は全ての種類が支給可能である。"
+    },
+    "78": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機の検定は新台と同じ基準である。"
+    },
+    "79": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機は新台と同じ検定基準で合格する。"
+    },
+    "80": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品支給は何度でも上限金額まで支給可能である。"
+    },
+    "81": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業許可申請に必要な書類は絶対に変わらない。"
+    },
+    "83": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は違反の場合、必ず取り消される。"
+    },
+    "84": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "型式検定の有効期限は絶対5年である。"
+    },
+    "85": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定更新は一度も延期できない。"
+    },
+    "87": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でも自由にできる。"
+    },
+    "88": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定の有効期限は絶対3年である。"
+    },
+    "91": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "許可申請書の記載事項は厳格に変更不可である。"
+    },
+    "93": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定合格機は必ず営利に使用できる。"
+    },
+    "94": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は特定の不動産のみで有効である。"
+    },
+    "97": {
+      "theme": "不正行為の罰則",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "景品規制違反はどのような場合でも同じ罰則である。"
+    },
+    "98": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は必ず営業廃止に至る。"
+    },
+    "99": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定標票は絶対に変更できない。"
+    },
+    "103": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は申請者全員に付与される。"
+    },
+    "107": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は常に無期限である。"
+    },
+    "111": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請はどんな遊技機でも可能である。"
+    },
+    "113": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定は一度合格すれば永遠に有効である。"
+    },
+    "115": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は必ず届出が必須である。"
+    },
+    "119": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請は全ての遊技機で可能である。"
+    },
+    "124": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でもいつでもできる。"
+    },
+    "127": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の位置変更は無断で実施した場合、自動的に取り消される。"
+    },
+    "130": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "全ての景品種類が支給可能である。"
+    },
+    "134": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は絶対に届出が必須である。"
+    },
+    "135": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は絶対に営業廃止に至る。"
+    },
+    "138": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は決して譲渡できない。"
+    },
+    "145": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は絶対に譲渡できない。"
+    },
+    "152": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は絶対に無期限である。"
+    },
+    "155": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の構造は厳密に基準を満たす必要がある。"
+    },
+    "226": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可と認定機関の指定は異なる有効期限を持つ。"
+    },
+    "227": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "営業許可と景品規制は異なる条文で管理される。"
+    },
+    "228": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "甲県での営業許可は乙県での許可と異なる。"
+    },
+    "230": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "金銭景品と物品景品の支給額上限は異なる。"
+    },
+    "232": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "営業許可と景品規制は異なる法令で管理される。"
+    },
+    "233": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令と営業廃止は期間が異なる。"
+    },
+    "234": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "営業許可と景品規制は異なる期限で管理される。"
+    },
+    "239": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可と型式検定は異なる有効期限を持つ。"
+    },
+    "244": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令と営業廃止は目的が異なる。"
+    },
+    "252": {
+      "theme": "型式検定更新申請のタイミング",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可申請と更新申請は必要書類が異なる。"
+    },
+    "254": {
+      "theme": "型式検定更新申請のタイミング",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可申請と更新申請は手数料が異なる。"
+    },
+    "257": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定は営業許可と異なり、更新申請が必要である。"
+    },
+    "270": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "景品の最高額と営業所の位置は異なる基準である。"
+    },
+    "276": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業許可と営業所基準確認の順序は基準確認が先である。"
+    },
+    "277": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可と型式検定の申請順序は許可が先である。"
+    },
+    "279": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可と型式検定の申請順序は検定が先である。"
+    },
+    "316": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定更新申請は有効期限の60日前から受付される。"
+    },
+    "317": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定合格から5年で更新申請の対象となる。"
+    },
+    "318": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "型式検定合格から3年で更新申請の対象となる。"
+    },
+    "319": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の変更届は変更後に提出する必要がある。"
+    },
+    "321": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可申請から許可交付までは通常30日程度を要する。"
+    },
+    "322": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可申請から許可交付までは通常60日程度を要する。"
+    },
+    "323": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の変更届は実施前に提出する必要がある。"
+    },
+    "333": {
+      "theme": "型式検定更新申請のタイミング",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業開始から3年後に許可更新申請が必要である。"
+    },
+    "346": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可申請から許可交付までは通常90日程度を要する。"
+    },
+    "349": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定更新申請は有効期限の30日前から受付される。"
+    },
+    "350": {
+      "theme": "型式検定更新申請のタイミング",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業開始から5年後に許可更新申請が必要である。"
+    },
+    "366": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "Bが許可期間中に違反行為をして営業停止命令を受けた場合、営業再開には新許可申請が必要。"
+    },
+    "367": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "Aが営業許可を取得し、営業所の位置を変更したが届出をしていない場合、不正営業になる。"
+    },
+    "368": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "Cが型式検定期間中に機械を無断で改造した場合、認定が取り消される。"
+    },
+    "370": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "Dが法定上限を超える景品を支給した場合、罰金に処せられる。"
+    },
+    "390": {
+      "theme": "営業停止命令",
+      "category": "営業時間・規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "Dが法定上限を超える景品を支給した場合、営業停止がある。"
+    },
+    "416": {
+      "theme": "営業許可の取消し要件",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "複数の規制違反がある場合、営業許可の取り消しが可能である。"
+    },
+    "417": {
+      "theme": "営業停止命令",
+      "category": "営業時間・規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "複数の規制違反がある場合、営業停止が可能である。"
+    },
+    "418": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業許可違反と景品規制違反を同時に犯した場合、より重い罰則が適用される。"
+    },
+    "421": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可違反と型式検定違反を同時に犯した場合、より重い罰則が適用される。"
+    },
+    "441": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "型式検定の有効期限は5年である。"
+    },
+    "442": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定の有効期限は3年である。"
+    },
+    "443": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所は学校から最低100m以上離れる必要がある。"
+    },
+    "445": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品の最高支給額は20000円である。"
+    },
+    "447": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品の最高支給額は10000円である。"
+    },
+    "448": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所は学校から最低200m以上離れる必要がある。"
+    },
+    "460": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所は学校から最低500m以上離れる必要がある。"
+    },
+    "463": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可の有効期限は正確に3年である。"
+    },
+    "466": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所基準が厳格に定められているのは利用客保護のためである。"
+    },
+    "467": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所基準が厳格に定められているのは不正防止のためである。"
+    },
+    "472": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定が必須とされるのは機械の安全確保のためである。"
+    },
+    "481": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業所が実際に稼働していない場合でも、許可の有効期限は進行中である。"
+    },
+    "482": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業所が実際に稼働していない場合でも、許可の有効期限はカウントされる。"
+    },
+    "483": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "実務では営業許可と型式検定の更新は同時に行う場合が多いが、法制上は独立している。"
+    },
+    "491": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 7,
+      "problem_text_preview": "最近の法改正で申請書類の規定が緩和された。"
+    },
+    "496": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可取得後、営業所の変更→型式検定の更新→景品規制の遵守の流れで、最初に対応すべきは営業許可の変更届である。"
+    },
+    "497": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "新店舗開設時は営業許可申請が営業所の設営より先である。"
+    },
+    "500": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "新店舗開設時は営業許可申請が機械導入より先である。"
+    },
+    "501": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "許可の有効期間中は変更事項の届出が必要である。"
+    },
+    "502": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には施設要件を満たすことが必要である。"
+    },
+    "503": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業許可は営業所の見やすい場所に掲示する必要がある。"
+    },
+    "504": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定合格機は型式検定標票を表示する。"
+    },
+    "505": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 2,
+      "problem_text_preview": "景品の最高額は10000円である。"
+    },
+    "506": {
+      "theme": "営業禁止時間",
+      "category": "営業時間・規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業時間の制限は社会秩序維持のために設けられている。"
+    },
+    "507": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 6,
+      "problem_text_preview": "遊技機のセキュリティは施錠機構で確保される。"
+    },
+    "508": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は営業開始の30日前から可能である。"
+    },
+    "509": {
+      "theme": "営業禁止時間",
+      "category": "営業時間・規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業禁止区域での営業許可申請は受理されない。"
+    },
+    "510": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は転貸することができない。"
+    },
+    "511": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請に営業計画書が必要である。"
+    },
+    "512": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の構造・設備は法定基準を満たす必要がある。"
+    },
+    "513": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可の有効期限は5年である。"
+    },
+    "514": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定の申請は指定検査機関に行う。"
+    },
+    "515": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品の種類と金額は法律で定められている。"
+    },
+    "516": {
+      "theme": "営業禁止時間",
+      "category": "営業時間・規制",
+      "keyword_match_score": 8,
+      "problem_text_preview": "営業禁止時間帯における営業は禁止されている。"
+    },
+    "517": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は譲渡することができない。"
+    },
+    "518": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は禁治産者には付与されない。"
+    },
+    "519": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は違反が続く場合に取り消されることがある。"
+    },
+    "520": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可申請は営業開始の60日前から可能である。"
+    },
+    "521": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可取得後の営業者変更は届出が必要である。"
+    },
+    "522": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業許可は同一人物が複数の営業所で取得可能である。"
+    },
+    "523": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定更新申請は有効期限の30日前から可能である。"
+    },
+    "524": {
+      "theme": "不正改造の防止",
+      "category": "不正対策",
+      "keyword_match_score": 4,
+      "problem_text_preview": "遊技機の不正改造は厳しく禁止されている。"
+    },
+    "525": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には主任者資格が必要である。"
+    },
+    "526": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の最小面積は法令で定められている。"
+    },
+    "527": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定の申請は都道府県に行う。"
+    },
+    "528": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 2,
+      "problem_text_preview": "景品の最高額は50000円である。"
+    },
+    "529": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 6,
+      "problem_text_preview": "遊技機のセキュリティは型式検定で確保される。"
+    },
+    "530": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所基準を満たす地域での営業許可申請は可能である。"
+    },
+    "531": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可の有効期限は3年である。"
+    },
+    "532": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には身分証明書が必要である。"
+    },
+    "533": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可取得後の施設変更は届出が必要である。"
+    },
+    "534": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "遊技機の型式検定は3年ごとに更新が必要である。"
+    },
+    "535": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 2,
+      "problem_text_preview": "景品の最高額は20000円である。"
+    },
+    "536": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者が変更される場合は新規許可申請が必要である。"
+    },
+    "537": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には住民票が必要である。"
+    },
+    "538": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請に配置図が必要である。"
+    },
+    "539": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "許可は同一人物が複数の営業所で申請可能である。"
+    },
+    "540": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "遊技機の型式検定は5年ごとに更新が必要である。"
+    },
+    "541": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品額は厳格に制限されない。"
+    },
+    "542": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 6,
+      "problem_text_preview": "景品は全ての種類が支給可能である。"
+    },
+    "543": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機の検定は新台と同一基準である。"
+    },
+    "544": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機は新台と同じ検定基準で合格する。"
+    },
+    "545": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品支給は何度でも上限金額まで支給可能である。"
+    },
+    "546": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業許可申請に必要な書類は絶対に変わらない。"
+    },
+    "547": {
+      "theme": "営業許可の取消し要件",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業許可は違反の場合、必ず取り消しになる。"
+    },
+    "548": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "型式検定の有効期限は絶対5年である。"
+    },
+    "549": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定更新は一度も延期できない。"
+    },
+    "550": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でも自由にできる。"
+    },
+    "551": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定の有効期限は絶対3年である。"
+    },
+    "552": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "許可申請書の記載事項は厳格に変更不可である。"
+    },
+    "553": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定合格機は必ず営利に使用できる。"
+    },
+    "554": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は特定の不動産のみで有効である。"
+    },
+    "555": {
+      "theme": "不正行為の罰則",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "景品規制違反はどのような場合でも同一罰則である。"
+    },
+    "556": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は必ず営業廃止に至る。"
+    },
+    "557": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定標票は絶対に変更できない。"
+    },
+    "558": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は申請者全員に付与される。"
+    },
+    "559": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は常に無期限である。"
+    },
+    "560": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請はどんな遊技機でも可能である。"
+    },
+    "561": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定は一度合格すれば永遠に有効である。"
+    },
+    "562": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は必ず届出が必須である。"
+    },
+    "563": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請は全ての遊技機で可能である。"
+    },
+    "564": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でもいつでもできる。"
+    },
+    "565": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の位置変更を無断で実施した場合、自動的に取り消される。"
+    },
+    "566": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "全ての景品種類が支給可能である。"
+    },
+    "567": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は絶対に届出が必須である。"
+    },
+    "568": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は絶対に営業廃止に至る。"
+    },
+    "569": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は決して譲渡できない。"
+    },
+    "570": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は絶対に譲渡できない。"
+    },
+    "571": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は絶対に無期限である。"
+    },
+    "572": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の構造は厳密に基準を満たす必要がある。"
+    },
+    "573": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可の有効期間中は変更事項の届出が必要である。"
+    },
+    "574": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には施設要件を満たすことが必要である。"
+    },
+    "575": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業許可は営業所の見やすい場所に掲示する必要がある。"
+    },
+    "576": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定合格機は型式検定標票を表示する。"
+    },
+    "577": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 2,
+      "problem_text_preview": "景品の最高額は10000円である。"
+    },
+    "578": {
+      "theme": "営業禁止時間",
+      "category": "営業時間・規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業時間の制限は社会秩序維持のために設けられている。"
+    },
+    "579": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 6,
+      "problem_text_preview": "遊技機のセキュリティは施錠機構で確保される。"
+    },
+    "580": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は営業開始の30日前から可能である。"
+    },
+    "581": {
+      "theme": "営業禁止時間",
+      "category": "営業時間・規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業禁止区域での許可申請は受理されない。"
+    },
+    "582": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は転貸できない。"
+    },
+    "583": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請に営業計画書が必要である。"
+    },
+    "584": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の構造・設備は法定基準を満たす必要がある。"
+    },
+    "585": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可の有効期限は5年である。"
+    },
+    "586": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定の申請は指定検査機関に行う。"
+    },
+    "587": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品の種類と金額は法律で定められている。"
+    },
+    "588": {
+      "theme": "営業禁止時間",
+      "category": "営業時間・規制",
+      "keyword_match_score": 8,
+      "problem_text_preview": "営業禁止時間帯における営業は禁止されている。"
+    },
+    "589": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は譲渡できない。"
+    },
+    "590": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は禁治産者には付与されない。"
+    },
+    "591": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は違反が続く場合に取り消されることがある。"
+    },
+    "592": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は営業開始の60日前から可能である。"
+    },
+    "593": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可取得後の営業者変更は届出が必要である。"
+    },
+    "594": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業許可は同一人物が複数の営業所で取得可能である。"
+    },
+    "595": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定更新申請は有効期限の30日前から可能である。"
+    },
+    "596": {
+      "theme": "不正改造の防止",
+      "category": "不正対策",
+      "keyword_match_score": 4,
+      "problem_text_preview": "遊技機の不正改造は厳しく禁止されている。"
+    },
+    "597": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可申請には主任者資格が必要である。"
+    },
+    "598": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の最小面積は法令で定められている。"
+    },
+    "599": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定の申請は都道府県に行う。"
+    },
+    "600": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 2,
+      "problem_text_preview": "景品の最高額は50000円である。"
+    },
+    "601": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 6,
+      "problem_text_preview": "遊技機のセキュリティは型式検定で確保される。"
+    },
+    "602": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所基準を満たす地域での営業許可申請は可能である。"
+    },
+    "603": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可の有効期限は3年である。"
+    },
+    "604": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には身分証明書が必要である。"
+    },
+    "605": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可取得後の施設変更は届出が必要である。"
+    },
+    "606": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "遊技機の型式検定は3年ごとに更新が必要である。"
+    },
+    "607": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 2,
+      "problem_text_preview": "景品の最高額は20000円である。"
+    },
+    "608": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者が変更される場合は新規許可申請が必要である。"
+    },
+    "609": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には住民票が必要である。"
+    },
+    "610": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請に配置図が必要である。"
+    },
+    "611": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業許可は同一人物が複数の営業所で申請可能である。"
+    },
+    "612": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "遊技機の型式検定は5年ごとに更新が必要である。"
+    },
+    "613": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品額は厳格に制限されない。"
+    },
+    "614": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 6,
+      "problem_text_preview": "景品は全ての種類が支給可能である。"
+    },
+    "615": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機の検定は新台と同一基準である。"
+    },
+    "616": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機は新台と同じ検定基準で合格する。"
+    },
+    "617": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品支給は何度でも上限金額まで支給可能である。"
+    },
+    "618": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業許可申請に必要な書類は絶対に変わらない。"
+    },
+    "619": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は違反の場合、必ず取り消される。"
+    },
+    "620": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "型式検定の有効期限は絶対5年である。"
+    },
+    "621": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定更新は一度も延期できない。"
+    },
+    "622": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でも自由にできる。"
+    },
+    "623": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定の有効期限は絶対3年である。"
+    },
+    "624": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "許可申請書の記載事項は厳格に変更不可である。"
+    },
+    "625": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定合格機は必ず営利に使用できる。"
+    },
+    "626": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は特定の不動産のみで有効である。"
+    },
+    "627": {
+      "theme": "不正行為の罰則",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "景品規制違反はどのような場合でも同一罰則である。"
+    },
+    "628": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は必ず営業廃止に至る。"
+    },
+    "629": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定標票は絶対に変更できない。"
+    },
+    "630": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は申請者全員に付与される。"
+    },
+    "631": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は常に無期限である。"
+    },
+    "632": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請はどんな遊技機でも可能である。"
+    },
+    "633": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定は一度合格すれば永遠に有効である。"
+    },
+    "634": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は必ず届出が必須である。"
+    },
+    "635": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請は全ての遊技機で可能である。"
+    },
+    "636": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でもいつでもできる。"
+    },
+    "637": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の位置変更は無断で実施した場合、自動的に取り消される。"
+    },
+    "638": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "全ての景品種類が支給可能である。"
+    },
+    "639": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は絶対に届出が必須である。"
+    },
+    "640": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は絶対に営業廃止に至る。"
+    },
+    "641": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は決して譲渡できない。"
+    },
+    "642": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は絶対に譲渡できない。"
+    },
+    "643": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は絶対に無期限である。"
+    },
+    "644": {
+      "theme": "不正防止対策要綱",
+      "category": "不正対策",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業地の構造は厳密に基準を満たす必要がある。"
+    },
+    "645": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "許可の有効期間中は変更事項の届出が必要である。"
+    },
+    "646": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には施設要件を満たすことが必要である。"
+    },
+    "647": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業許可は営業所の見やすい場所に掲示する必要がある。"
+    },
+    "648": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定合格機は型式検定標票を表示する。"
+    },
+    "649": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 2,
+      "problem_text_preview": "景品の最高額は10000円である。"
+    },
+    "650": {
+      "theme": "営業禁止時間",
+      "category": "営業時間・規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業時間の制限は社会秩序維持のために設けられている。"
+    },
+    "651": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 6,
+      "problem_text_preview": "遊技機のセキュリティは施錠機構で確保される。"
+    },
+    "652": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は営業開始の30日前から可能である。"
+    },
+    "653": {
+      "theme": "営業禁止時間",
+      "category": "営業時間・規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業禁止区域での営業許可申請は受理されない。"
+    },
+    "654": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は転貸することができない。"
+    },
+    "655": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可申請に営業計画書が必要である。"
+    },
+    "656": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の構造・設備は法定基準を満たす必要がある。"
+    },
+    "657": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可の有効期限は5年である。"
+    },
+    "658": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定の申請は指定検査機関に行う。"
+    },
+    "659": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品の種類と金額は法律で定められている。"
+    },
+    "660": {
+      "theme": "営業禁止時間",
+      "category": "営業時間・規制",
+      "keyword_match_score": 8,
+      "problem_text_preview": "営業禁止時間帯における営業は禁止されている。"
+    },
+    "661": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は譲渡できない。"
+    },
+    "662": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は禁治産者には付与されない。"
+    },
+    "663": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は違反が続く場合に取り消されることがある。"
+    },
+    "664": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は営業開始の60日前から可能である。"
+    },
+    "665": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可取得後の営業者変更は届出が必要である。"
+    },
+    "666": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "許可は同一人物が複数の営業所で取得可能である。"
+    },
+    "667": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定更新申請は有効期限の30日前から可能である。"
+    },
+    "668": {
+      "theme": "不正改造の防止",
+      "category": "不正対策",
+      "keyword_match_score": 4,
+      "problem_text_preview": "遊技機の不正改造は厳しく禁止されている。"
+    },
+    "669": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には主任者資格が必要である。"
+    },
+    "670": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業地の最小面積は法令で定められている。"
+    },
+    "671": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定の申請は都道府県に行う。"
+    },
+    "672": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 2,
+      "problem_text_preview": "景品の最高額は50000円である。"
+    },
+    "673": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 6,
+      "problem_text_preview": "遊技機のセキュリティは型式検定で確保される。"
+    },
+    "674": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所基準を満たす地域での営業許可申請は可能である。"
+    },
+    "675": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "営業許可の有効期限は3年である。"
+    },
+    "676": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には身分証明書が必要である。"
+    },
+    "677": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "許可取得後の施設変更は届出が必要である。"
+    },
+    "678": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "遊技機の型式検定は3年ごとに更新が必要である。"
+    },
+    "679": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 2,
+      "problem_text_preview": "景品の最高額は20000円である。"
+    },
+    "680": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者が変更される場合は新規許可申請が必要である。"
+    },
+    "681": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請には住民票が必要である。"
+    },
+    "682": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請に配置図が必要である。"
+    },
+    "683": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業許可は同一人物が複数の営業所で申請可能である。"
+    },
+    "684": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "遊技機の型式検定は5年ごとに更新が必要である。"
+    },
+    "685": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品額は厳格に制限されない。"
+    },
+    "686": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 6,
+      "problem_text_preview": "景品は全ての種類が支給可能である。"
+    },
+    "687": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機の検定は新台と同じ基準である。"
+    },
+    "688": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機は新台と同じ検定基準で合格する。"
+    },
+    "689": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品支給は何度でも上限金額まで支給可能である。"
+    },
+    "690": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業許可申請に必要な書類は絶対に変わらない。"
+    },
+    "691": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は違反の場合、必ず取り消される。"
+    },
+    "692": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "型式検定の有効期限は絶対5年間である。"
+    },
+    "693": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定更新は一度も延期できない。"
+    },
+    "694": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でも自由にできる。"
+    },
+    "695": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定の有効期限は絶対3年である。"
+    },
+    "696": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "許可申請書の記載事項は厳格に変更不可である。"
+    },
+    "697": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定合格機は必ず営利に使用できる。"
+    },
+    "698": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は特定の不動産のみで有効である。"
+    },
+    "699": {
+      "theme": "不正行為の罰則",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "景品規制違反はどのような場合でも同じ罰則である。"
+    },
+    "700": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は必ず営業廃止に至る。"
+    },
+    "701": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定標票は絶対に変更できない。"
+    },
+    "702": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は申請者全員に付与される。"
+    },
+    "703": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は常に無期限である。"
+    },
+    "704": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請はどんな遊技機でも可能である。"
+    },
+    "705": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定は一度合格すれば永遠に有効である。"
+    },
+    "706": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は必ず届出が必要である。"
+    },
+    "707": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請は全ての遊技機で可能である。"
+    },
+    "708": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でもいつでもできる。"
+    },
+    "709": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の位置変更は無断で実施した場合、自動的に取り消される。"
+    },
+    "710": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "全ての景品種類が支給可能である。"
+    },
+    "711": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は絶対に届出が必要である。"
+    },
+    "712": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は絶対に営業廃止に至る。"
+    },
+    "713": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は決して譲渡できない。"
+    },
+    "714": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は絶対に譲渡できない。"
+    },
+    "715": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は絶対に無期限である。"
+    },
+    "716": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の構造は厳密に基準を満たす必要がある。"
+    },
+    "717": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品額は厳格に制限されない。"
+    },
+    "718": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 6,
+      "problem_text_preview": "景品は全ての種類が支給可能である。"
+    },
+    "719": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機の検定は新台と同一基準である。"
+    },
+    "720": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機は新台と同じ検定基準で合格する。"
+    },
+    "721": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品支給は何度でも上限金額まで支給可能である。"
+    },
+    "722": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業許可申請に必要な書類は常に変わらない。"
+    },
+    "723": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は違反の場合、常に取り消される。"
+    },
+    "724": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "型式検定の有効期限は絶対5年である。"
+    },
+    "725": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定更新は一度も延期できない。"
+    },
+    "726": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でも自由にできる。"
+    },
+    "727": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定の有効期限は絶対3年である。"
+    },
+    "728": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "許可申請書の記載事項は厳格に変更不可である。"
+    },
+    "729": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定合格機は決して営利に使用できる。"
+    },
+    "730": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は特定の不動産のみで有効である。"
+    },
+    "731": {
+      "theme": "不正行為の罰則",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "景品規制違反はどのような場合でも同一罰則である。"
+    },
+    "732": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は常に営業廃止に至る。"
+    },
+    "733": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定標票は常に変更できない。"
+    },
+    "734": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は申請者全員に付与される。"
+    },
+    "735": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は決して無期限である。"
+    },
+    "736": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請はどんな遊技機でも可能である。"
+    },
+    "737": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定は一度合格すれば永遠に有効である。"
+    },
+    "738": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は絶対に届出が必須である。"
+    },
+    "739": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請は全ての遊技機で可能である。"
+    },
+    "740": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でもいつでもできる。"
+    },
+    "741": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の位置変更は無断で実施した場合、自動的に取り消される。"
+    },
+    "742": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "全ての景品種類が支給可能である。"
+    },
+    "743": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は決して届出が必須である。"
+    },
+    "744": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は必ず営業廃止に至る。"
+    },
+    "745": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は必ず譲渡できない。"
+    },
+    "746": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は常に譲渡できない。"
+    },
+    "747": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は決して無期限である。"
+    },
+    "748": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の構造は厳密に基準を満たす必要がある。"
+    },
+    "749": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品額は厳格に制限されない。"
+    },
+    "750": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 6,
+      "problem_text_preview": "景品は全ての種類が支給可能である。"
+    },
+    "751": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機の検定は新台と同一基準である。"
+    },
+    "752": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機は新台と同じ検定基準で合格する。"
+    },
+    "753": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品支給は何度でも上限金額まで支給可能である。"
+    },
+    "754": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業許可申請に必要な書類は決して変わらない。"
+    },
+    "755": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は違反の場合、決して取り消になる。"
+    },
+    "756": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "型式検定の有効期限は絶対5年である。"
+    },
+    "757": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定更新は一度も延期できない。"
+    },
+    "758": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でも自由にできる。"
+    },
+    "759": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定の有効期限は絶対3年である。"
+    },
+    "760": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "許可申請書の記載事項は厳格に変更不可である。"
+    },
+    "761": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定合格機は常に営利に使用できる。"
+    },
+    "762": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は特定の不動産のみで有効である。"
+    },
+    "763": {
+      "theme": "不正行為の罰則",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "景品規制違反はどのような場合でも同一罰則である。"
+    },
+    "764": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は常に営業廃止に至る。"
+    },
+    "765": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定標票は必ず変更できない。"
+    },
+    "766": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は申請者全員に付与される。"
+    },
+    "767": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は必ず無期限である。"
+    },
+    "768": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請はどんな遊技機でも可能である。"
+    },
+    "769": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定は一度合格すれば永遠に有効である。"
+    },
+    "770": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は絶対に届出が必須である。"
+    },
+    "771": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請は全ての遊技機で可能である。"
+    },
+    "772": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でもいつでもできる。"
+    },
+    "773": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の位置変更は無断で実施した場合、自動的に取り消される。"
+    },
+    "774": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "全ての景品種類が支給可能である。"
+    },
+    "775": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は必ず届出が必須である。"
+    },
+    "776": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は必ず営業廃止に至る。"
+    },
+    "777": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品額は厳格に制限されない。"
+    },
+    "778": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 6,
+      "problem_text_preview": "景品は全ての種類が支給可能である。"
+    },
+    "779": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機の検定は新台と同一基準である。"
+    },
+    "780": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機は新台と同じ検定基準で合格する。"
+    },
+    "781": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品支給は何度でも上限金額まで支給可能である。"
+    },
+    "782": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業許可申請に必要な書類は決して変わらない。"
+    },
+    "783": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は違反の場合、常に取り消される。"
+    },
+    "784": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "型式検定の有効期限は絶対5年である。"
+    },
+    "785": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定更新は一度も延期できない。"
+    },
+    "786": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でも自由にできる。"
+    },
+    "787": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定の有効期限は絶対3年である。"
+    },
+    "788": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "許可申請書の記載事項は厳格に変更不可である。"
+    },
+    "789": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定合格機は常に営利に使用できる。"
+    },
+    "790": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は特定の不動産のみで有効である。"
+    },
+    "791": {
+      "theme": "不正行為の罰則",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "景品規制違反はどのような場合でも同一罰則である。"
+    },
+    "792": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は絶対に営業廃止に至る。"
+    },
+    "793": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定標票は常に変更できない。"
+    },
+    "794": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は申請者全員に付与される。"
+    },
+    "795": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は絶対に無期限である。"
+    },
+    "796": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請はどんな遊技機でも可能である。"
+    },
+    "797": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定は一度合格すれば永遠に有効である。"
+    },
+    "798": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は常に届出が必須である。"
+    },
+    "799": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請は全ての遊技機で可能である。"
+    },
+    "800": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でもいつでもできる。"
+    },
+    "801": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の位置変更は無断で実施した場合、自動的に取り消される。"
+    },
+    "802": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "全ての景品種類が支給可能である。"
+    },
+    "803": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は常に届出が必須である。"
+    },
+    "804": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は必ず営業廃止に至る。"
+    },
+    "805": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は必ず譲渡できない。"
+    },
+    "806": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は決して譲渡できない。"
+    },
+    "807": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は常に無期限である。"
+    },
+    "808": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の構造は厳密に基準を満たす必要がある。"
+    },
+    "809": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品額は厳格に制限されない。"
+    },
+    "810": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 6,
+      "problem_text_preview": "景品は全ての種類が支給可能である。"
+    },
+    "811": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機の検定は新台と同一基準である。"
+    },
+    "812": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機は新台と同じ検定基準で合格する。"
+    },
+    "813": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品支給は何度でも上限金額まで支給可能である。"
+    },
+    "814": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業許可申請に必要な書類は常に変わらない。"
+    },
+    "815": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は違反の場合、絶対に取り消になる。"
+    },
+    "816": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "型式検定の有効期限は絶対5年である。"
+    },
+    "817": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定更新は一度も延期できない。"
+    },
+    "818": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でも自由にできる。"
+    },
+    "819": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定の有効期限は絶対3年である。"
+    },
+    "820": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "許可申請書の記載事項は厳格に変更不可である。"
+    },
+    "821": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定合格機は常に営利に使用できる。"
+    },
+    "822": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は特定の不動産のみで有効である。"
+    },
+    "823": {
+      "theme": "不正行為の罰則",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "景品規制違反はどのような場合でも同一罰則である。"
+    },
+    "824": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は決して営業廃止に至る。"
+    },
+    "825": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定標票は必ず変更できない。"
+    },
+    "826": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は申請者全員に付与される。"
+    },
+    "827": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は必ず無期限である。"
+    },
+    "828": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請はどんな遊技機でも可能である。"
+    },
+    "829": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定は一度合格すれば永遠に有効である。"
+    },
+    "830": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は絶対に届出が必須である。"
+    },
+    "831": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請は全ての遊技機で可能である。"
+    },
+    "832": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でもいつでもできる。"
+    },
+    "833": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の位置変更は無断で実施した場合、自動的に取り消される。"
+    },
+    "834": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "全ての景品種類が支給可能である。"
+    },
+    "835": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は決して届出が必須である。"
+    },
+    "836": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は必ず営業廃止に至る。"
+    },
+    "837": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品額は厳格に制限されない。"
+    },
+    "838": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 6,
+      "problem_text_preview": "景品は全ての種類が支給可能である。"
+    },
+    "839": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機の検定は新台と同一基準である。"
+    },
+    "840": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機は新台と同じ検定基準で合格する。"
+    },
+    "841": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品支給は何度でも上限金額まで支給可能である。"
+    },
+    "842": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業許可申請に必要な書類は決して変わらない。"
+    },
+    "843": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は違反の場合、決して取り消される。"
+    },
+    "844": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 8,
+      "problem_text_preview": "型式検定の有効期限は絶対5年である。"
+    },
+    "845": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定更新は一度も延期できない。"
+    },
+    "846": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でも自由にできる。"
+    },
+    "847": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 10,
+      "problem_text_preview": "型式検定の有効期限は絶対3年である。"
+    },
+    "848": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "許可申請書の記載事項は厳格に変更不可である。"
+    },
+    "849": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定合格機は常に営利に使用できる。"
+    },
+    "850": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は特定の不動産のみで有効である。"
+    },
+    "851": {
+      "theme": "不正行為の罰則",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "景品規制違反はどのような場合でも同一罰則である。"
+    },
+    "852": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は決して営業廃止に至る。"
+    },
+    "853": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "型式検定標票は常に変更できない。"
+    },
+    "854": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は申請者全員に付与される。"
+    },
+    "855": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は必ず無期限である。"
+    },
+    "856": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請はどんな遊技機でも可能である。"
+    },
+    "857": {
+      "theme": "遊技機型式検定は3年有効",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定は一度合格すれば永遠に有効である。"
+    },
+    "858": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は決して届出が必須である。"
+    },
+    "859": {
+      "theme": "型式検定の申請方法",
+      "category": "型式検定関連",
+      "keyword_match_score": 6,
+      "problem_text_preview": "型式検定申請は全ての遊技機で可能である。"
+    },
+    "860": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可申請は誰でもいつでもできる。"
+    },
+    "861": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の位置変更は無断で実施した場合、自動的に取り消される。"
+    },
+    "862": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "全ての景品種類が支給可能である。"
+    },
+    "863": {
+      "theme": "時間帯別営業制限",
+      "category": "遊技機管理",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業者の変更は決して届出が必須である。"
+    },
+    "864": {
+      "theme": "営業停止命令の内容",
+      "category": "営業時間・規制",
+      "keyword_match_score": 10,
+      "problem_text_preview": "営業停止命令は必ず営業廃止に至る。"
+    },
+    "865": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は絶対に譲渡できない。"
+    },
+    "866": {
+      "theme": "営業許可と型式検定の違い",
+      "category": "営業許可関連",
+      "keyword_match_score": 2,
+      "problem_text_preview": "営業許可は決して譲渡できない。"
+    },
+    "867": {
+      "theme": "営業許可は無期限有効",
+      "category": "営業許可関連",
+      "keyword_match_score": 9,
+      "problem_text_preview": "営業許可の有効期限は決して無期限である。"
+    },
+    "868": {
+      "theme": "セキュリティ確保",
+      "category": "不正対策",
+      "keyword_match_score": 3,
+      "problem_text_preview": "営業所の構造は厳密に基準を満たす必要がある。"
+    },
+    "869": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品額は厳格に制限されない。"
+    },
+    "870": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 6,
+      "problem_text_preview": "景品は全ての種類が支給可能である。"
+    },
+    "871": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機の検定は新台と同一基準である。"
+    },
+    "872": {
+      "theme": "型式検定と中古機の関係",
+      "category": "型式検定関連",
+      "keyword_match_score": 5,
+      "problem_text_preview": "中古機は新台と同じ検定基準で合格する。"
+    },
+    "873": {
+      "theme": "景品の種類制限",
+      "category": "景品規制",
+      "keyword_match_score": 4,
+      "problem_text_preview": "景品支給は何度でも上限金額まで支給可能である。"
+    },
+    "874": {
+      "theme": "営業許可の行政手続き",
+      "category": "営業許可関連",
+      "keyword_match_score": 4,
+      "problem_text_preview": "営業許可申請に必要な書類は決して変わらない。"
+    }
+  },
+  "statistics": {
+    "themes_with_sources": 17,
+    "problems_by_theme": {
+      "セキュリティ確保": 57,
+      "不正改造の防止": 4,
+      "不正行為の罰則": 9,
+      "不正防止対策要綱": 1,
+      "営業停止命令": 3,
+      "営業停止命令の内容": 21,
+      "営業禁止時間": 12,
+      "営業許可と型式検定の違い": 157,
+      "営業許可の取消し要件": 2,
+      "営業許可の行政手続き": 20,
+      "営業許可は無期限有効": 31,
+      "型式検定と中古機の関係": 20,
+      "型式検定の申請方法": 26,
+      "型式検定更新申請のタイミング": 4,
+      "時間帯別営業制限": 20,
+      "景品の種類制限": 59,
+      "遊技機型式検定は3年有効": 54
+    },
+    "category_distribution": {
+      "型式検定関連": 104,
+      "不正対策": 71,
+      "遊技機管理": 20,
+      "営業許可関連": 210,
+      "営業時間・規制": 36,
+      "景品規制": 59
+    }
+  }
+}

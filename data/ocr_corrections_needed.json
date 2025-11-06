@@ -1,0 +1,78 @@
+{
+  "total_issues": 97,
+  "priority_summary": {
+    "HIGH": 2,
+    "MEDIUM": "40+",
+    "LOW": "50+"
+  },
+  "corrections": [
+    {
+      "page": 3,
+      "pdf": 1,
+      "page_num": 3,
+      "severity": "HIGH",
+      "original": "その池を遊技機内理員",
+      "correction": "その機能を遊技機管理員",
+      "note": "複数行の読み取り誤り。文脈から判断要"
+    },
+    {
+      "page": 1,
+      "pdf": 1,
+      "page_num": 1,
+      "severity": "HIGH",
+      "original": "健金な大飛娯楽",
+      "correction": "健全な大衆娯楽",
+      "note": "ユーザー確認済み"
+    },
+    {
+      "page": "複数 (1, 5, 14, 15, 18, 22, 26, 31, 32, 33, 40, 44, 57, 60, 63, 65, 113, 124, 125, 127, 143, 185, 194, 199, 213, 217, 218)",
+      "pdf": "1-3",
+      "severity": "MEDIUM",
+      "original": "ばぱちんこ",
+      "correction": "パチンコ",
+      "note": "重複表記として複数箇所に出現"
+    },
+    {
+      "page": 3,
+      "pdf": 1,
+      "page_num": 3,
+      "severity": "HIGH",
+      "original": "内理員",
+      "correction": "取扱主任者",
+      "note": "誤変換"
+    },
+    {
+      "page": "3, 11, 12",
+      "pdf": 1,
+      "severity": "MEDIUM",
+      "original": "稚認",
+      "correction": "確認",
+      "note": "法律用語の誤字"
+    },
+    {
+      "page": "5, 18",
+      "pdf": 1,
+      "severity": "MEDIUM",
+      "original": "親制",
+      "correction": "規制",
+      "note": "法律用語の誤字"
+    },
+    {
+      "page": 2,
+      "pdf": 1,
+      "page_num": 2,
+      "severity": "LOW",
+      "original": "事葉",
+      "correction": "業界",
+      "note": "誤字"
+    },
+    {
+      "pages_range": "8-220",
+      "severity": "MEDIUM",
+      "issue_type": "英数字混入",
+      "pattern": "半角英数が日本語に混入（例: gまん60, ogよ, mり, mを等）",
+      "frequency": "大量（37+件）",
+      "note": "テーブルや細かい数値が含まれる箇所で頻発。テーブルレイアウトの読み取り失敗が主因"
+    }
+  ]
+}

@@ -1,0 +1,503 @@
+【Batch 23 - 品質レビューリクエスト】
+
+対象: 主任者講習試験問題 441～460
+問題数: 20問
+
+【評価基準】
+1. 法的根拠の具体性 - 「風営法第X条の Y」のように条文が具体的であること
+2. 抽象的表現の有無 - 「一定の」「適切な」「所定の」などの表現がないこと  
+3. 問題文の長さ - 最低20文字以上であること
+4. 複数の解釈の可能性がないこと
+
+【指示】
+以下の20問について、一問ずつ以下の形式で評価してください：
+
+【問題ID X】
+- 評価: [✅ OK / ⚠️ 要改善 / ❌ 不合格]
+- 指摘事項: [該当する場合のみ記入]
+
+【問題データ】
+[
+  {
+    "problem_id": 453,
+    "theme_id": 2035,
+    "theme_name": "不正防止チェックリスト",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753087",
+    "pattern_id": 6,
+    "pattern_name": "シナリオ判定",
+    "difficulty": "★★★",
+    "problem_text": "営業者が不正防止チェックリストを含む状況で営業を継続する場合、風営法に定められた適切な措置により継続可能である。",
+    "correct_answer": "○",
+    "explanation": "不正防止チェックリストに関する状況でも、適切な対応と手続きにより営業継続が可能です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "定期的なチェックリストの実施が必須。"
+    }
+  },
+  {
+    "problem_id": 454,
+    "theme_id": 2035,
+    "theme_name": "不正防止チェックリスト",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753100",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_text": "不正防止チェックリストに関する型式検定の有効期限は3年である。",
+    "correct_answer": "○",
+    "explanation": "型式検定は3年ごとに更新申請が必要です。これは重要な数値です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "定期的なチェックリストの実施が必須。"
+    }
+  },
+  {
+    "problem_id": 455,
+    "theme_id": 2035,
+    "theme_name": "不正防止チェックリスト",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753110",
+    "pattern_id": 9,
+    "pattern_name": "理由理解",
+    "difficulty": "★★★",
+    "problem_text": "不正防止チェックリストという規制が存在するのは、遊技業の健全性確保と消費者保護のためであり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "すべての風営法の規制は、業界の健全性と消費者保護を目的としています。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "定期的なチェックリストの実施が必須。"
+    }
+  },
+  {
+    "problem_id": 456,
+    "theme_id": 2035,
+    "theme_name": "不正防止チェックリスト",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753118",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_text": "不正防止チェックリストについて、営業経験が長い者でも誤解しやすい領域がある。",
+    "correct_answer": "○",
+    "explanation": "不正防止チェックリストのような法律知識は、実務経験だけでは不十分で、正確な学習が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "定期的なチェックリストの実施が必須。"
+    }
+  },
+  {
+    "problem_id": 457,
+    "theme_id": 2036,
+    "theme_name": "不正行為の罰則",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753139",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_text": "不正行為の罰則は、法律で定められている重要な知識であり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "不正行為の罰則について正確に理解することは、営業管理の基本です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第33条以下",
+      "section": "（罰則）",
+      "detail": "遊技機の改造は重大な違反で罰則がある。"
+    }
+  },
+  {
+    "problem_id": 458,
+    "theme_id": 2036,
+    "theme_name": "不正行為の罰則",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753147",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "不正行為の罰則については、必ず毎年の報告が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "「必ず毎年」という表現は誤り。不正行為の罰則の手続きは状況に応じて異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第33条以下",
+      "section": "（罰則）",
+      "detail": "遊技機の改造は重大な違反で罰則がある。"
+    }
+  },
+  {
+    "problem_id": 459,
+    "theme_id": 2036,
+    "theme_name": "不正行為の罰則",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753154",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "不正行為の罰則は、営業許可と同じく無期限有効であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "不正行為の罰則と営業許可は異なる制度で、有効期限等も異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第33条以下",
+      "section": "（罰則）",
+      "detail": "遊技機の改造は重大な違反で罰則がある。"
+    }
+  },
+  {
+    "problem_id": 460,
+    "theme_id": 2036,
+    "theme_name": "不正行為の罰則",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753161",
+    "pattern_id": 4,
+    "pattern_name": "優先順位",
+    "difficulty": "★★",
+    "problem_text": "不正行為の罰則に関する対応が必要な場合、営業の継続可能性を判断基準に行動する。",
+    "correct_answer": "○",
+    "explanation": "不正行為の罰則は営業継続に関わるため、最優先で対応が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第33条以下",
+      "section": "（罰則）",
+      "detail": "遊技機の改造は重大な違反で罰則がある。"
+    }
+  },
+  {
+    "problem_id": 461,
+    "theme_id": 2036,
+    "theme_name": "不正行為の罰則",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753190",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_text": "不正行為の罰則に関する型式検定の有効期限は2年である。",
+    "correct_answer": "○",
+    "explanation": "型式検定は3年ごとに更新申請が必要です。これは重要な数値です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第33条以下",
+      "section": "（罰則）",
+      "detail": "遊技機の改造は重大な違反で罰則がある。"
+    }
+  },
+  {
+    "problem_id": 462,
+    "theme_id": 2036,
+    "theme_name": "不正行為の罰則",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753218",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_text": "不正行為の罰則について、営業経験が長い者でも誤解しやすい領域がある。",
+    "correct_answer": "○",
+    "explanation": "不正行為の罰則のような法律知識は、実務経験だけでは不十分で、正確な学習が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第33条以下",
+      "section": "（罰則）",
+      "detail": "遊技機の改造は重大な違反で罰則がある。"
+    }
+  },
+  {
+    "problem_id": 463,
+    "theme_id": 2037,
+    "theme_name": "不正防止対策要綱",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753272",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_text": "不正防止対策要綱は、法律で定められている重要な知識であり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "不正防止対策要綱について正確に理解することは、営業管理の基本です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正防止の要綱に従った対策が必要。"
+    }
+  },
+  {
+    "problem_id": 464,
+    "theme_id": 2037,
+    "theme_name": "不正防止対策要綱",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753280",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "不正防止対策要綱については、必ず毎年の記録保管が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "「必ず毎年」という表現は誤り。不正防止対策要綱の手続きは状況に応じて異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正防止の要綱に従った対策が必要。"
+    }
+  },
+  {
+    "problem_id": 465,
+    "theme_id": 2037,
+    "theme_name": "不正防止対策要綱",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753288",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "不正防止対策要綱は、営業許可と同じく無期限有効であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "不正防止対策要綱と営業許可は異なる制度で、有効期限等も異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正防止の要綱に従った対策が必要。"
+    }
+  },
+  {
+    "problem_id": 466,
+    "theme_id": 2037,
+    "theme_name": "不正防止対策要綱",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753324",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_text": "不正防止対策要綱に関する型式検定の有効期限は2年である。",
+    "correct_answer": "○",
+    "explanation": "型式検定は3年ごとに更新申請が必要です。これは重要な数値です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正防止の要綱に従った対策が必要。"
+    }
+  },
+  {
+    "problem_id": 467,
+    "theme_id": 2037,
+    "theme_name": "不正防止対策要綱",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753338",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_text": "不正防止対策要綱について、営業経験が長い者でも誤解しやすい領域がある。",
+    "correct_answer": "○",
+    "explanation": "不正防止対策要綱のような法律知識は、実務経験だけでは不十分で、正確な学習が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "不正防止の要綱に従った対策が必要。"
+    }
+  },
+  {
+    "problem_id": 468,
+    "theme_id": 2038,
+    "theme_name": "セキュリティアップデート",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753364",
+    "pattern_id": 1,
+    "pattern_name": "基本知識",
+    "difficulty": "★",
+    "problem_text": "セキュリティアップデートは、法律で定められている重要な知識であり、風営法により規定されている。",
+    "correct_answer": "○",
+    "explanation": "セキュリティアップデートについて正確に理解することは、営業管理の基本です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "セキュリティの継続的な強化が必要。"
+    }
+  },
+  {
+    "problem_id": 469,
+    "theme_id": 2038,
+    "theme_name": "セキュリティアップデート",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753371",
+    "pattern_id": 2,
+    "pattern_name": "ひっかけ",
+    "difficulty": "★★",
+    "problem_text": "セキュリティアップデートについては、必ず毎年の届出が義務付けられている。",
+    "correct_answer": "×",
+    "explanation": "「必ず毎年」という表現は誤り。セキュリティアップデートの手続きは状況に応じて異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "セキュリティの継続的な強化が必要。"
+    }
+  },
+  {
+    "problem_id": 470,
+    "theme_id": 2038,
+    "theme_name": "セキュリティアップデート",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753378",
+    "pattern_id": 3,
+    "pattern_name": "用語比較",
+    "difficulty": "★★",
+    "problem_text": "セキュリティアップデートは、営業許可と同じく無期限有効であり、風営法により規定されている。",
+    "correct_answer": "×",
+    "explanation": "セキュリティアップデートと営業許可は異なる制度で、有効期限等も異なります。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "セキュリティの継続的な強化が必要。"
+    }
+  },
+  {
+    "problem_id": 471,
+    "theme_id": 2038,
+    "theme_name": "セキュリティアップデート",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753412",
+    "pattern_id": 8,
+    "pattern_name": "数値正確性",
+    "difficulty": "★",
+    "problem_text": "セキュリティアップデートに関する型式検定の有効期限は3年である。",
+    "correct_answer": "○",
+    "explanation": "型式検定は3年ごとに更新申請が必要です。これは重要な数値です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "セキュリティの継続的な強化が必要。"
+    }
+  },
+  {
+    "problem_id": 472,
+    "theme_id": 2038,
+    "theme_name": "セキュリティアップデート",
+    "category": "不正対策",
+    "is_subtheme_based": true,
+    "problem_type": "true_false",
+    "format": "○×",
+    "source_pdf": 1,
+    "source_page": 0,
+    "generated_at": "2025-10-22T12:59:01.753424",
+    "pattern_id": 10,
+    "pattern_name": "経験陥阱",
+    "difficulty": "★★★",
+    "problem_text": "セキュリティアップデートについて、営業経験が長い者でも誤解しやすい領域がある。",
+    "correct_answer": "○",
+    "explanation": "セキュリティアップデートのような法律知識は、実務経験だけでは不十分で、正確な学習が必要です。",
+    "legal_reference": {
+      "law": "風営法",
+      "article": "第26条",
+      "section": "（遊技機の改造等の禁止）",
+      "detail": "セキュリティの継続的な強化が必要。"
+    }
+  }
+]
+
+よろしくお願いします。

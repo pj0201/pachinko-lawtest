@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2025-10-24T15:44:45.856466",
+  "total_problems": 638,
+  "file_hash": "9853a777f33fc1b4",
+  "quality_metrics": {
+    "all_questions_have_text": true,
+    "all_explanations_complete": true,
+    "all_legal_refs_complete": true,
+    "avg_explanation_length": 64.89498432601881
+  },
+  "improvements_applied": {
+    "batch_1_corrections": 6,
+    "batch_1_improvements": 8,
+    "all_batch_auto_fixes": 638,
+    "explanation_expansion": "全638問で説明を拡張・充実化"
+  }
+}
