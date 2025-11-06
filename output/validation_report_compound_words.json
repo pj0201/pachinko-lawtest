@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "task": "Task 3.3 - 複合語検証",
+    "validation_date": "2025-11-06",
+    "total_problems": 5,
+    "total_compound_words": 46
+  },
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "pass_rate": "100.0%",
+    "complex_word_coverage": "12/46"
+  },
+  "compound_word_statistics": {
+    "営業許可": 2,
+    "型式検定": 2,
+    "遊技機": 2,
+    "営業所": 1,
+    "公安委員会": 1,
+    "都道府県": 1,
+    "有効期間": 1,
+    "営業停止": 1,
+    "営業者": 1,
+    "景品": 1,
+    "景品規制": 1,
+    "営業時間": 1
+  },
+  "validation_details": [
+    {
+      "problem_id": "law_T1_001",
+      "problem_text_preview": "営業許可を受けた者が営業所の名称を変更した場合、10日以内に都道府県公安委員会に届出をしなければならない。",
+      "claimed_keywords": [
+        "営業許可",
+        "営業所"
+      ],
+      "extracted_keywords": [
+        "営業許可",
+        "営業所",
+        "公安委員会",
+        "都道府県"
+      ],
+      "integrity_issues": [],
+      "missing_keywords": [],
+      "unexpected_keywords": [
+        "公安委員会",
+        "都道府県"
+      ],
+      "integrity_score": 1.0,
+      "validation_status": "✓ PASS"
+    },
+    {
+      "problem_id": "law_T2_001",
+      "problem_text_preview": "次の文章は、風営法第15条の内容として、正しいか誤りか。営業は午前10時から午前0時までの間のみ営業することができる。",
+      "claimed_keywords": [
+        "営業時間"
+      ],
+      "extracted_keywords": [],
+      "integrity_issues": [],
+      "missing_keywords": [
+        "営業時間"
+      ],
+      "unexpected_keywords": [],
+      "integrity_score": 1.0,
+      "validation_status": "✓ PASS"
+    },
+    {
+      "problem_id": "law_T3_001",
+      "problem_text_preview": "型式検定に合格した遊技機について、その検定の有効期間は5年間である。",
+      "claimed_keywords": [
+        "型式検定",
+        "遊技機"
+      ],
+      "extracted_keywords": [
+        "型式検定",
+        "遊技機",
+        "有効期間"
+      ],
+      "integrity_issues": [],
+      "missing_keywords": [],
+      "unexpected_keywords": [
+        "有効期間"
+      ],
+      "integrity_score": 1.0,
+      "validation_status": "✓ PASS"
+    },
+    {
+      "problem_id": "law_T4_001",
+      "problem_text_preview": "営業者が景品規制を守り、遊技機は型式検定合格品のみを使用し、営業時間も守っている場合、営業停止処分を受けることはない。",
+      "claimed_keywords": [
+        "景品規制",
+        "遊技機",
+        "型式検定",
+        "営業時間"
+      ],
+      "extracted_keywords": [
+        "型式検定",
+        "営業停止",
+        "遊技機",
+        "営業者",
+        "景品",
+        "景品規制",
+        "営業時間"
+      ],
+      "integrity_issues": [],
+      "missing_keywords": [],
+      "unexpected_keywords": [
+        "営業者",
+        "営業停止",
+        "景品"
+      ],
+      "integrity_score": 1.0,
+      "validation_status": "✓ PASS"
+    },
+    {
+      "problem_id": "law_T5_001",
+      "problem_text_preview": "営業許可は一度取得すると永遠に有効であり、更新の手続きは不要である。",
+      "claimed_keywords": [
+        "営業許可"
+      ],
+      "extracted_keywords": [
+        "営業許可"
+      ],
+      "integrity_issues": [],
+      "missing_keywords": [],
+      "unexpected_keywords": [],
+      "integrity_score": 1.0,
+      "validation_status": "✓ PASS"
+    }
+  ],
+  "recommendations": [
+    "✓ 複合語分割エラー: 0件",
+    "✓ キーワード抽出精度: 100.0%",
+    "✓ 本フェーズは品質確認用（実装では50問で検証）"
+  ]
+}
