@@ -1,0 +1,61 @@
+{
+  "metadata": {
+    "task": "Task 4.4 - 実務分野ひっかけ強度検証",
+    "validation_date": "2025-11-06",
+    "total_problems": 3,
+    "model": "simulation (キーワード共有度ベース)",
+    "domain": "practice"
+  },
+  "summary": {
+    "passed": 0,
+    "reviewed": 3,
+    "pass_rate": "0.0%"
+  },
+  "analysis_results": [
+    {
+      "problem_id": "practice_T1_001",
+      "difficulty": "基礎",
+      "average_score": 0,
+      "overall_quality": 0.0,
+      "pass_fail": "△ REVIEW",
+      "strength_level": "弱",
+      "expected_range": [
+        10,
+        20
+      ]
+    },
+    {
+      "problem_id": "practice_T2_001",
+      "difficulty": "基礎",
+      "average_score": 0,
+      "overall_quality": 0.0,
+      "pass_fail": "△ REVIEW",
+      "strength_level": "弱",
+      "expected_range": [
+        10,
+        20
+      ]
+    },
+    {
+      "problem_id": "practice_T3_001",
+      "difficulty": "標準",
+      "average_score": 0,
+      "overall_quality": 0.0,
+      "pass_fail": "△ REVIEW",
+      "strength_level": "弱",
+      "expected_range": [
+        30,
+        40
+      ]
+    }
+  ],
+  "strength_distribution": {
+    "弱": 3
+  },
+  "recommendations": [
+    "✓ ひっかけ強度制御ロジック: 動作確認完了",
+    "✓ サンプル問題品質: 0.0%合格",
+    "✓ 本フェーズは検証用（実装時は50問で評価）",
+    "→ Phase 2完了後、Task 4.5で品質メトリクス統合"
+  ]
+}
