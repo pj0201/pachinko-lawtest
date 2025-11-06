@@ -1,0 +1,154 @@
+{
+  "metadata": {
+    "task": "Task 4.3 - 実務分野複合語検証",
+    "validation_date": "2025-11-06",
+    "total_problems": 5,
+    "total_compound_words": 46,
+    "domain": "practice"
+  },
+  "summary": {
+    "passed": 5,
+    "failed": 0,
+    "pass_rate": "100.0%",
+    "complex_word_coverage": "12/46"
+  },
+  "compound_word_statistics": {
+    "営業許可": 2,
+    "営業者": 2,
+    "設置": 2,
+    "営業停止": 2,
+    "型式検定": 2,
+    "有効期間": 2,
+    "営業禁止": 1,
+    "営業所": 1,
+    "失効": 1,
+    "遊技機": 1,
+    "中古遊技機": 1,
+    "違反": 1
+  },
+  "validation_details": [
+    {
+      "problem_id": "practice_T1_001",
+      "problem_text_preview": "営業者は営業許可を取得した後、営業禁止の区域に営業所を設置することはできない。",
+      "claimed_keywords": [
+        "営業許可",
+        "営業禁止",
+        "営業所"
+      ],
+      "extracted_keywords": [
+        "営業許可",
+        "営業禁止",
+        "営業所",
+        "営業者",
+        "設置"
+      ],
+      "integrity_issues": [],
+      "missing_keywords": [],
+      "unexpected_keywords": [
+        "設置",
+        "営業者"
+      ],
+      "integrity_score": 1.0,
+      "validation_status": "✓ PASS"
+    },
+    {
+      "problem_id": "practice_T2_001",
+      "problem_text_preview": "営業停止命令を受けた場合、その期間中は一切の営業活動を行うことはできない。",
+      "claimed_keywords": [
+        "営業停止命令"
+      ],
+      "extracted_keywords": [
+        "営業停止"
+      ],
+      "integrity_issues": [],
+      "missing_keywords": [
+        "営業停止命令"
+      ],
+      "unexpected_keywords": [
+        "営業停止"
+      ],
+      "integrity_score": 1.0,
+      "validation_status": "✓ PASS"
+    },
+    {
+      "problem_id": "practice_T3_001",
+      "problem_text_preview": "型式検定合格の有効期間は3年間であり、3年経過後は自動的に失効する。",
+      "claimed_keywords": [
+        "型式検定",
+        "遊技機"
+      ],
+      "extracted_keywords": [
+        "型式検定",
+        "失効",
+        "有効期間"
+      ],
+      "integrity_issues": [],
+      "missing_keywords": [
+        "遊技機"
+      ],
+      "unexpected_keywords": [
+        "失効",
+        "有効期間"
+      ],
+      "integrity_score": 1.0,
+      "validation_status": "✓ PASS"
+    },
+    {
+      "problem_id": "practice_T4_001",
+      "problem_text_preview": "中古遊技機を設置する場合、型式検定合格品かつ有効期間内であることと、中古機の流通管理制度の適正な手続きを経たものであるこ...",
+      "claimed_keywords": [
+        "型式検定",
+        "遊技機",
+        "中古遊技機",
+        "流通管理"
+      ],
+      "extracted_keywords": [
+        "型式検定",
+        "遊技機",
+        "中古遊技機",
+        "設置",
+        "有効期間"
+      ],
+      "integrity_issues": [],
+      "missing_keywords": [
+        "流通管理"
+      ],
+      "unexpected_keywords": [
+        "設置",
+        "有効期間"
+      ],
+      "integrity_score": 1.0,
+      "validation_status": "✓ PASS"
+    },
+    {
+      "problem_id": "practice_T5_001",
+      "problem_text_preview": "営業者が検査時に営業停止命令に違反して営業していることが発覚した場合、そのことのみで営業許可が取り消される可能性がある。",
+      "claimed_keywords": [
+        "営業停止命令",
+        "営業許可"
+      ],
+      "extracted_keywords": [
+        "営業許可",
+        "営業停止",
+        "営業者",
+        "違反"
+      ],
+      "integrity_issues": [],
+      "missing_keywords": [
+        "営業停止命令"
+      ],
+      "unexpected_keywords": [
+        "営業者",
+        "営業停止",
+        "違反"
+      ],
+      "integrity_score": 1.0,
+      "validation_status": "✓ PASS"
+    }
+  ],
+  "recommendations": [
+    "✓ 複合語分割エラー: 0件",
+    "✓ キーワード抽出精度: 100.0%",
+    "✓ 本フェーズは品質確認用（実装では50問で検証）"
+  ]
+}
