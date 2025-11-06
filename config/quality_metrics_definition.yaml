@@ -1,0 +1,421 @@
+# ================================================================
+# 品質評価メトリクス定義 v1.0
+# 試験問題の自動品質評価システム
+# ================================================================
+
+metadata:
+  version: "1.0"
+  created_date: "2025-11-06"
+  purpose: "Claude API + ひっかけ制御エンジンで生成した問題の品質を定量的に評価"
+  update_schedule: "Phase 3実装後に v1.1へ（実装結果に基づく調整）"
+
+# ================================================================
+# 総合品質スコア計算式
+# ================================================================
+
+overall_quality_formula:
+  description: "問題全体の品質を0.0～1.0のスコアで表現"
+  formula: |
+    総合品質スコア =
+      0.30 × 問題文の明確性 +
+      0.30 × ディストラクタの適切性 +
+      0.20 × 説明文の根拠性 +
+      0.20 × ひっかけ度の適切性
+
+  components:
+    - name: "問題文の明確性"
+      weight: 0.30
+      description: "問題が何を問うているか、判断が容易か"
+    - name: "ディストラクタの適切性"
+      weight: 0.30
+      description: "選択肢が難易度に対して適切か"
+    - name: "説明文の根拠性"
+      weight: 0.20
+      description: "解説が法律に基づき根拠が明記されているか"
+    - name: "ひっかけ度の適切性"
+      weight: 0.20
+      description: "難易度に対してひっかけ強度が適切か"
+
+  passing_criteria:
+    minimum_score: 0.70
+    description: "0.70以上が本番採用対象"
+    quality_tiers:
+      - score_range: [0.85, 1.0]
+        level: "優秀"
+        recommendation: "そのまま採用可（微調整不要）"
+      - score_range: [0.70, 0.85)
+        level: "良好"
+        recommendation: "採用可（軽微な調整推奨）"
+      - score_range: [0.50, 0.70)
+        level: "要改善"
+        recommendation: "改善後に再評価"
+      - score_range: [0.0, 0.50)
+        level: "不合格"
+        recommendation: "再生成推奨"
+
+# ================================================================
+# 評価項目1: 問題文の明確性 (Clarity)
+# ================================================================
+
+clarity_metrics:
+  description: "問題文が曖昧でなく、何を問うているか明確か"
+  score_range: [0.0, 1.0]
+
+  evaluation_criteria:
+    - criterion: "用語の正確性"
+      weight: 0.30
+      indicators:
+        - "複合語が正確に使用されているか（営業許可≠営業 許可）"
+        - "法律用語が正しく適用されているか"
+        - "存在しない造語・誤用がないか"
+      scoring:
+        - value: 1.0
+          condition: "全用語が正確（複合語分割なし）"
+        - value: 0.8
+          condition: "1つの軽微な誤用"
+        - value: 0.5
+          condition: "複数の誤用または複合語分割"
+        - value: 0.0
+          condition: "重大な誤用、重複分割"
+
+    - criterion: "文脈の一貫性"
+      weight: 0.30
+      indicators:
+        - "問題文が矛盾していないか"
+        - "時制が一貫しているか"
+        - "代名詞の指す対象が明確か"
+      scoring:
+        - value: 1.0
+          condition: "完全に一貫性がある"
+        - value: 0.8
+          condition: "軽微な違和感がある"
+        - value: 0.5
+          condition: "重大な矛盾がある"
+        - value: 0.0
+          condition: "理解不可能"
+
+    - criterion: "曖昧性の排除"
+      weight: 0.40
+      indicators:
+        - "複数の解釈が可能でないか"
+        - "前提条件が明示されているか"
+        - "特殊な状況設定が必要でないか"
+      scoring:
+        - value: 1.0
+          condition: "曖昧さがない、前提条件も明確"
+        - value: 0.8
+          condition: "若干の曖昧さだが理解可能"
+        - value: 0.5
+          condition: "複数解釈が可能"
+        - value: 0.0
+          condition: "理解が困難"
+
+  auto_evaluation_script:
+    method: "テキスト長、複合語チェック、形態素解析"
+    tools:
+      - "複合語辞書チェック"
+      - "MeCab / JUMAN++ 形態素解析"
+      - "KeyBERT キーワード抽出"
+
+# ================================================================
+# 評価項目2: ディストラクタの適切性 (Distractor Appropriateness)
+# ================================================================
+
+distractor_metrics:
+  description: "選択肢群が難易度に対して適切か、多様性があるか"
+  score_range: [0.0, 1.0]
+
+  evaluation_criteria:
+    - criterion: "ひっかけ強度の適合度"
+      weight: 0.50
+      depends_on: "distractor_control_logic.py の分析結果"
+      indicators:
+        - "難易度別推奨範囲内のスコア分布"
+        - "基礎: 10-20%, 標準: 30-40%, 応用: 40-50%"
+      scoring:
+        - value: 1.0
+          condition: "100%が推奨範囲内"
+        - value: 0.8
+          condition: "80%以上が推奨範囲内"
+        - value: 0.6
+          condition: "60%以上が推奨範囲内"
+        - value: 0.4
+          condition: "40%以上が推奨範囲内"
+        - value: 0.0
+          condition: "40%未満"
+
+    - criterion: "選択肢数と多様性"
+      weight: 0.30
+      indicators:
+        - "選択肢の数は適切か（○×で2択、複数選択なら3-5択）"
+        - "複数の強度レベルが含まれているか"
+        - "共有キーワードに偏っていないか"
+      scoring:
+        - value: 1.0
+          condition: "○×で2択、または3-5択で多様性あり"
+        - value: 0.7
+          condition: "数は適切だが多様性が低い"
+        - value: 0.4
+          condition: "選択肢数が適切でない"
+        - value: 0.0
+          condition: "選択肢が1個以下"
+
+    - criterion: "誤答の妥当性"
+      weight: 0.20
+      indicators:
+        - "ディストラクタが学習者にとって魅力的か"
+        - "単なる『明らかな誤り』でないか"
+        - "実務的なヒューマンエラーを反映しているか"
+      scoring:
+        - value: 1.0
+          condition: "全ディストラクタが妥当"
+        - value: 0.7
+          condition: "ほとんど妥当、1個が明らかな誤り"
+        - value: 0.4
+          condition: "複数が妥当性に欠ける"
+        - value: 0.0
+          condition: "全て明らかな誤り"
+
+# ================================================================
+# 評価項目3: 説明文の根拠性 (Explanation Credibility)
+# ================================================================
+
+explanation_metrics:
+  description: "解説が法律に基づいており、根拠が明記されているか"
+  score_range: [0.0, 1.0]
+
+  evaluation_criteria:
+    - criterion: "法律根拠の明確性"
+      weight: 0.50
+      indicators:
+        - "法律名・条文が明記されているか（例：風営法第9条）"
+        - "参考資料の引用があるか"
+        - "根拠が具体的か、一般的か"
+      scoring:
+        - value: 1.0
+          condition: "条文+条文名を明記"
+        - value: 0.8
+          condition: "条文番号は明記、条文名はなし"
+        - value: 0.6
+          condition: "参考資料の引用あるが、具体的でない"
+        - value: 0.3
+          condition: "一般的な説明のみ"
+        - value: 0.0
+          condition: "根拠なし"
+
+    - criterion: "説明文の正確性"
+      weight: 0.30
+      indicators:
+        - "説明内容が実際の法律と一致しているか"
+        - "誤った解釈が含まれていないか"
+        - "古い法律が引用されていないか"
+      scoring:
+        - value: 1.0
+          condition: "完全に正確"
+        - value: 0.8
+          condition: "基本的に正確、軽微な曖昧さ"
+        - value: 0.5
+          condition: "部分的に不正確"
+        - value: 0.0
+          condition: "重大な誤り"
+
+    - criterion: "説明の詳細度"
+      weight: 0.20
+      indicators:
+        - "説明文の文字数（目安: 150-250文字）"
+        - "必要な背景情報が含まれているか"
+        - "過度に冗長でないか"
+      scoring:
+        - value: 1.0
+          condition: "150-250文字、詳細で簡潔"
+        - value: 0.8
+          condition: "100-300文字、概ね適切"
+        - value: 0.6
+          condition: "50-100文字または300-500文字"
+        - value: 0.3
+          condition: "50文字以下または500文字以上"
+        - value: 0.0
+          condition: "説明なし"
+
+# ================================================================
+# 評価項目4: ひっかけ度の適切性 (Distractor Intensity Appropriateness)
+# ================================================================
+
+distractor_intensity_metrics:
+  description: "ひっかけの強度が問題の難易度に対して適切か"
+  score_range: [0.0, 1.0]
+
+  evaluation_criteria:
+    - criterion: "難易度との適合"
+      weight: 0.50
+      depends_on: "distractor_control_logic.py で計算した適合度"
+      scoring:
+        - value: 1.0
+          condition: "推奨範囲内に100%"
+        - value: 0.8
+          condition: "推奨範囲内に80%以上"
+        - value: 0.6
+          condition: "推奨範囲内に60%以上"
+        - value: 0.0
+          condition: "推奨範囲内に60%未満"
+
+    - criterion: "ひっかけの自然性"
+      weight: 0.30
+      indicators:
+        - "ひっかけが作為的・不自然でないか"
+        - "学習者が陥りやすいエラーを反映しているか"
+        - "法律理解の不足を効果的に検出するか"
+      scoring:
+        - value: 1.0
+          condition: "自然で効果的"
+        - value: 0.7
+          condition: "概ね自然"
+        - value: 0.4
+          condition: "やや作為的"
+        - value: 0.0
+          condition: "不自然で効果がない"
+
+    - criterion: "難易度レベルの一貫性"
+      weight: 0.20
+      indicators:
+        - "複数ディストラクタのひっかけ強度が一貫しているか"
+        - "強度のばらつきが大きすぎないか"
+      scoring:
+        - value: 1.0
+          condition: "ほぼ一貫"
+        - value: 0.7
+          condition: "概ね一貫"
+        - value: 0.4
+          condition: "ばらつきあり"
+        - value: 0.0
+          condition: "全く一貫性がない"
+
+# ================================================================
+# 自動評価スクリプトの仕様
+# ================================================================
+
+auto_evaluation_specification:
+  language: "Python 3.8+"
+  dependencies:
+    - "sentence-transformers (BERTScoreなし場合)"
+    - "mecab / JUMAN++ (形態素解析)"
+    - "numpy / scipy (統計計算)"
+
+  input_format:
+    - question_id: "問題ID"
+    - problem_text: "問題文"
+    - correct_answer: "正答肢"
+    - distractors: "ディストラクタリスト"
+    - difficulty: "難易度（basic/standard/advanced）"
+    - explanation: "解説文"
+    - legal_reference: "法律根拠"
+
+  output_format:
+    - clarity_score: "問題文の明確性 (0.0-1.0)"
+    - distractor_score: "ディストラクタの適切性 (0.0-1.0)"
+    - explanation_score: "説明文の根拠性 (0.0-1.0)"
+    - intensity_score: "ひっかけ度の適切性 (0.0-1.0)"
+    - overall_score: "総合品質スコア (0.0-1.0)"
+    - pass_fail: "合格/不合格"
+    - recommendations: "改善提案リスト"
+
+  evaluation_flow:
+    step_1: "複合語辞書でのチェック → clarity_score"
+    step_2: "distractor_control_logic で分析 → distractor_score, intensity_score"
+    step_3: "法律根拠の自動チェック → explanation_score"
+    step_4: "全項目を重み付け統合 → overall_score"
+    step_5: "推奨事項を自動生成"
+
+# ================================================================
+# 品質評価の運用フロー
+# ================================================================
+
+operation_flow:
+  phase: "Phase 2（プロトタイプ構築）での活用"
+
+  step_1_generation:
+    title: "問題生成"
+    description: "Claude API + compound_word_aware_prompt で問題を生成"
+    output: "raw_problems.json (品質チェック前)"
+
+  step_2_auto_evaluation:
+    title: "自動品質評価"
+    description: "quality_metrics_definition.py で各問題を評価"
+    threshold: "overall_score >= 0.70"
+    output: "evaluated_problems.json (評価結果付き)"
+
+  step_3_filtering:
+    title: "品質フィルタリング"
+    decision:
+      - "overall_score >= 0.85 → そのまま採用"
+      - "0.70 <= overall_score < 0.85 → 軽微調整推奨"
+      - "overall_score < 0.70 → 再生成"
+    output: "approved_problems.json, revision_needed.json"
+
+  step_4_manual_review:
+    title: "サンプル手動レビュー"
+    description: "自動評価の精度検証（50問の20%程度を手動確認）"
+    frequency: "各フェーズごと"
+
+  step_5_continuous_improvement:
+    title: "メトリクスの継続改善"
+    method: "実装結果 → メトリクス調整 → v1.1へ"
+    timing: "Phase 3開始時"
+
+# ================================================================
+# 品質評価ダッシュボード例
+# ================================================================
+
+dashboard_metrics:
+  display_items:
+    - "全体合格率 (overall_score >= 0.70 の割合)"
+    - "各評価項目の平均スコア (clarity, distractor, explanation, intensity)"
+    - "不合格理由の分析 (最多の改善点)"
+    - "難易度別の品質差 (基礎 vs 標準 vs 応用)"
+    - "ディストラクタ強度分布（実績 vs 推奨）"
+
+  example_dashboard_output: |
+    ═══════════════════════════════════════════════════════
+    【品質評価ダッシュボード】Phase 2 Week 3 結果
+    ═══════════════════════════════════════════════════════
+
+    📊 総体統計
+    - 生成数: 50問
+    - 合格数: 42問 (84.0%)
+    - 要改善: 5問 (10.0%)
+    - 不合格: 3問 (6.0%)
+
+    🔍 評価項目別平均スコア
+    - 問題文の明確性:     0.82 ✓
+    - ディストラクタの適切性: 0.76 ○
+    - 説明文の根拠性:     0.88 ✓
+    - ひっかけ度の適切性: 0.75 ○
+
+    ⚠️  最多の改善点
+    1. ディストラクタの強度が推奨範囲外 (5問)
+    2. 説明文が短すぎる (2問)
+    3. 複合語の分割エラー (0問) ✓
+
+    難易度別合格率
+    - 基礎: 90% (9/10)
+    - 標準: 85% (17/20)
+    - 応用: 76% (16/21)
+
+    ═══════════════════════════════════════════════════════
+
+# ================================================================
+# 今後の拡張予定（v1.1+）
+# ================================================================
+
+future_enhancements:
+  v1_1_planned:
+    - "実装結果データに基づくメトリクス調整"
+    - "生成器からのフィードバックループ統合"
+    - "人間レビューの結果を学習"
+    - "難易度別の重み付け最適化"
+
+  v2_0_vision:
+    - "複合知識問題への対応"
+    - "IRT（項目反応理論）の統合"
+    - "学習者データ（正答率）との連動"
+    - "動的な難易度調整"
