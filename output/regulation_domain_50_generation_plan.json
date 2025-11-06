@@ -1,0 +1,56 @@
+{
+  "metadata": {
+    "task": "Task 6.3 - 営業規制分野50問生成",
+    "domain": "regulation",
+    "total_problems": 50,
+    "phase": "Phase 2 Week 6",
+    "source_chunks": 10,
+    "source_tokens": 44806
+  },
+  "generation_plan": {
+    "domain": "regulation",
+    "total_problems": 50,
+    "templates": {
+      "T1": {
+        "count": 10,
+        "difficulty": "基礎",
+        "description": "基本知識"
+      },
+      "T2": {
+        "count": 10,
+        "difficulty": "標準",
+        "description": "条文直結"
+      },
+      "T3": {
+        "count": 10,
+        "difficulty": "応用",
+        "description": "ひっかけ"
+      },
+      "T4": {
+        "count": 10,
+        "difficulty": "標準",
+        "description": "複合条件"
+      },
+      "T5": {
+        "count": 10,
+        "difficulty": "応用",
+        "description": "実務判断"
+      }
+    }
+  },
+  "content_areas": [
+    "営業停止命令",
+    "営業禁止時間",
+    "営業許可",
+    "営業許可の取消し",
+    "営業許可の失効",
+    "営業許可の行政手続き",
+    "営業許可の有効期限"
+  ],
+  "key_concepts": [
+    "営業許可と営業停止命令の関係",
+    "営業禁止期間",
+    "行政処分の基準",
+    "営業実績と営業許可"
+  ]
+}
