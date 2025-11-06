@@ -1,0 +1,118 @@
+{
+  "metadata": {
+    "task": "Task 6.1 - 技術管理分野50問生成",
+    "domain": "technology",
+    "total_problems": 50,
+    "phase": "Phase 2 Week 6",
+    "completion_date": "2025-11-06",
+    "source_chunks": 8,
+    "source_tokens": 108177
+  },
+  "generation_plan": {
+    "domain": "technology",
+    "total_problems": 50,
+    "templates": {
+      "T1": {
+        "count": 10,
+        "difficulty": "基礎",
+        "description": "基本知識"
+      },
+      "T2": {
+        "count": 10,
+        "difficulty": "標準",
+        "description": "条文直結"
+      },
+      "T3": {
+        "count": 10,
+        "difficulty": "応用",
+        "description": "ひっかけ"
+      },
+      "T4": {
+        "count": 10,
+        "difficulty": "標準",
+        "description": "複合条件"
+      },
+      "T5": {
+        "count": 10,
+        "difficulty": "応用",
+        "description": "実務判断"
+      }
+    },
+    "difficulty_distribution": {
+      "基礎": 10,
+      "標準": 20,
+      "応用": 20
+    }
+  },
+  "system_prompt": "あなたは「遊技機取扱主任者試験」の高品質な問題生成AI です。\n\n【重要】複合語取扱い指示（46個の用語）:\n複合語は絶対に分割・変更してはいけません。以下の用語はそのままの形で使用してください：\n\n   1. 営業許可\n   2. 型式検定\n   3. 営業禁止\n   4. 営業停止\n   5. 不正改造\n   6. 遊技機\n   7. 営業所\n   8. 営業者\n   9. 景品\n  10. 景品規制\n  11. 景品交換\n  12. 営業時間\n  13. 不正行為\n  14. 取消\n  15. 取消し要件\n  16. 失効\n  17. 申請\n  18. 申請手続き\n  19. 申請書\n  20. 公安委員会\n  21. 都道府県\n  22. 主基板\n  23. 外部端子\n  24. 基板ケース\n  25. かしめ\n  26. セキュリティ\n  27. 中古遊技機\n  28. リサイクル\n  29. 廃棄物\n  30. 製造業者\n  31. 販売業者\n  32. 設置\n  33. 新台設置\n  34. 点検\n  35. 点検確認\n  36. 保守管理\n  37. 製造番号\n  38. 立入検査\n  39. 行政処分\n  40. 罰則\n  41. 違反\n  42. チップ\n  43. 有効期間\n  44. 無期限有効\n  45. 3年有効\n  46. リサイクル推進法\n\n【生成タスク】技術管理分野50問生成\n\n【問題構造】JSON形式:\n{\n  \"problem_id\": \"technology_T1_001\",\n  \"domain\": \"technology\",\n  \"template\": \"T1\",\n  \"difficulty\": \"基礎|標準|応用\",\n  \"question\": \"...\",\n  \"options\": {\"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\"},\n  \"correct_answer\": \"A|B|C|D\",\n  \"explanation\": \"...\",\n  \"source_theme\": \"theme_XXX\",\n  \"compound_words_used\": [\"複合語1\", \"複合語2\"]\n}\n\n【テンプレート別生成ガイド】\n\nT1 (基本知識): 型式検定、遊技機管理の基本概念\n  - 難易度: 基礎\n  - 特徴: 直接的で明確な答え\n  - 例: 「型式検定とは何か」「基板管理の原則」\n  - ひっかけ度: 10-20%\n\nT2 (条文直結): 風営法・関連法令の条文から直結\n  - 難易度: 標準\n  - 特徴: 条文を明記、根拠が明確\n  - 例: 「法令で定められた基準」「規則上の要件」\n  - ひっかけ度: 30-40%\n\nT3 (ひっかけ): 誤りやすいポイントを含む\n  - 難易度: 応用\n  - 特徴: 似た選択肢で判断を求める\n  - 例: 「〇〇は認められるが△△は認められない」\n  - ひっかけ度: 40-50%\n\nT4 (複合条件): 複数の条件を組み合わせた判定\n  - 難易度: 標準\n  - 特徴: AND/OR条件の判断が必要\n  - 例: 「AかつBの場合」「AまたはBの場合」\n  - ひっかけ度: 30-40%\n\nT5 (実務判断): 実務的なシナリオでの判断\n  - 難易度: 応用\n  - 特徴: 実際の状況に基づく判断\n  - 例: 「〇〇の場合、取扱主任者は何をすべきか」\n  - ひっかけ度: 40-50%\n\n【技術管理分野のコンテンツ】\n  - 型式検定の申請・更新・管理\n  - 遊技機の基板管理（かしめ、管理方法）\n  - 外部端子板の管理\n  - 故障機の対応手続き\n  - 旧機械の回収・廃棄\n  - 遊技機の保守管理・点検\n  - 新台設置手続き\n\n【生成原則】\n1. 複合語絶対保持: 指定の46個は分割・変更なし\n2. 根拠明確化: 条文・教材から必ず根拠を示す\n3. 選択肢多様化: A/B/C/Dそれぞれが選ばれる可能性あり\n4. ひっかけ適度化: テンプレート別に範囲内で制御\n5. 日本語自然性: すべて自然な日本語\n",
+  "chunk_summary": {
+    "categories": 2,
+    "total_chunks": 8,
+    "chunk_details": [
+      {
+        "chunk_id": "technology_type_certification_000",
+        "category": "type_certification",
+        "tokens": 9564
+      },
+      {
+        "chunk_id": "technology_type_certification_001",
+        "category": "type_certification",
+        "tokens": 11067
+      },
+      {
+        "chunk_id": "technology_gaming_machine_management_002",
+        "category": "gaming_machine_management",
+        "tokens": 27792
+      },
+      {
+        "chunk_id": "technology_gaming_machine_management_003",
+        "category": "gaming_machine_management",
+        "tokens": 7644
+      },
+      {
+        "chunk_id": "technology_gaming_machine_management_004",
+        "category": "gaming_machine_management",
+        "tokens": 2077
+      },
+      {
+        "chunk_id": "technology_gaming_machine_management_005",
+        "category": "gaming_machine_management",
+        "tokens": 16077
+      },
+      {
+        "chunk_id": "technology_gaming_machine_management_006",
+        "category": "gaming_machine_management",
+        "tokens": 4946
+      },
+      {
+        "chunk_id": "technology_gaming_machine_management_007",
+        "category": "gaming_machine_management",
+        "tokens": 29010
+      }
+    ]
+  },
+  "implementation_guide": {
+    "method": "Claude API (streaming)",
+    "batch_size": 10,
+    "template_order": [
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "T5"
+    ],
+    "quality_checks": [
+      "複合語検証",
+      "テキスト一貫性",
+      "ひっかけ度スコア",
+      "根拠性チェック"
+    ]
+  },
+  "next_steps": [
+    "Claude API実装でT1-T5各10問を生成",
+    "生成後の複合語検証実行",
+    "ひっかけ強度制御確認",
+    "品質メトリクス統合",
+    "Task 6.2へ（セキュリティ分野50問）"
+  ]
+}
