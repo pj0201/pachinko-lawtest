@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "python3 backend/api_server.py",
-    "postinstall": "pip3 install -r backend/requirements.txt || true"
+    "postinstall": "echo 'Python dependencies will be installed via nixpacks.toml' || true"
   },
   "dependencies": {
     "@capacitor/android": "^6.2.1",
