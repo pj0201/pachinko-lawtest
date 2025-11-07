@@ -4,7 +4,7 @@
 修正済み問題集（problems_final_500_complete.json）を提供
 """
 
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, send_from_directory
 from flask_cors import CORS
 import json
 import os
@@ -12,8 +12,9 @@ import random
 from pathlib import Path
 from auth_database import AuthDatabase
 
-# Flask アプリ初期化
-app = Flask(__name__)
+# Flask アプリ初期化（React dist フォルダを静的ファイルとして配信）
+dist_path = Path(__file__).parent.parent / "dist"
+app = Flask(__name__, static_folder=str(dist_path), static_url_path="")
 CORS(app)  # CORS 有効化
 
 # 問題集ファイルパス（150問○✕形式版）
@@ -39,6 +40,24 @@ def load_problems():
     except Exception as e:
         print(f"❌ 問題集の読み込みエラー: {e}")
         return False
+
+# ===== フロントエンド（React dist）配信 =====
+
+@app.route('/')
+def serve_index():
+    """React の index.html を返す"""
+    if dist_path.exists():
+        return send_from_directory(str(dist_path), 'index.html')
+    return jsonify({'error': 'Frontend not built'}), 404
+
+@app.route('/<path:filename>')
+def serve_static(filename):
+    """静的ファイル（assets等）を返す"""
+    if dist_path.exists():
+        file_path = dist_path / filename
+        if file_path.exists() and file_path.is_file():
+            return send_from_directory(str(dist_path), filename)
+    return serve_index()  # SPA: 見つからないパスは index.html へ
 
 # ===== API エンドポイント =====
 
