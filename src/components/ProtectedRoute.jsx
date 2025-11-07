@@ -13,8 +13,10 @@ export default function ProtectedRoute({ children }) {
   useEffect(() => {
     const verifySession = async () => {
       // ✅ 開発環境モード: パソコンでのテスト用
-      // .env.local の VITE_DEV_MODE=true で有効 (本番環境では false に変更)
-      const isDev = import.meta.env.VITE_DEV_MODE === 'true' &&
+      // 開発環境（import.meta.env.MODE === 'development'）且つ localhost のみ有効
+      // 本番環境（production）では常に セッション検証を実行
+      const isDev = import.meta.env.MODE === 'development' &&
+                    import.meta.env.VITE_DEV_MODE === 'true' &&
                     (window.location.hostname === 'localhost' ||
                      window.location.hostname === '127.0.0.1');
 

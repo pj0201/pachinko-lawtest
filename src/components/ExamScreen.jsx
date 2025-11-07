@@ -16,15 +16,6 @@ import {
 export function ExamScreen({ examMode, onExit }) {
   const navigate = useNavigate();
 
-  // ホーム画面に戻る（ブラウザバック対策：履歴を置き換え）
-  const handleExit = () => {
-    if (onExit) {
-      onExit();
-    } else {
-      navigate('/', { replace: true });
-    }
-  };
-
   const [problems, setProblems] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({}); // { problemId: true/false }
@@ -33,6 +24,28 @@ export function ExamScreen({ examMode, onExit }) {
   const [showResults, setShowResults] = useState(false);
   const [resultSaved, setResultSaved] = useState(false); // 成績保存済みフラグ
   const [difficultyLevel, setDifficultyLevel] = useState(null); // 難易度選択待ち
+
+  // ホーム画面に戻る（中断確認ダイアログ付き）
+  const handleExit = () => {
+    // 結果表示画面なら確認なしで戻る
+    if (showResults || resultSaved) {
+      if (onExit) {
+        onExit();
+      } else {
+        navigate('/', { replace: true });
+      }
+      return;
+    }
+
+    // 試験中なら確認ダイアログ
+    if (window.confirm('テストを中断しますか？\n途中結果は保存されません。')) {
+      if (onExit) {
+        onExit();
+      } else {
+        navigate('/', { replace: true });
+      }
+    }
+  };
 
   // 試験問題数を決定
   const totalQuestions = {
