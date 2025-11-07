@@ -126,12 +126,112 @@
   transition: width 0.5s ease;
 }
 
+.bar-fill.passed {
+  background: linear-gradient(90deg, #22c55e 0%, #16a34a 100%);
+}
+
+.bar-fill.failed {
+  background: linear-gradient(90deg, #f43f5e 0%, #be123c 100%);
+}
+
 .category-chart .percentage {
   font-size: 14px;
   font-weight: 700;
   color: #667eea;
   min-width: 45px;
   text-align: right;
+}
+
+.category-chart .percentage.passed {
+  color: #22c55e;
+  font-weight: 800;
+}
+
+.category-chart .percentage.failed {
+  color: #f43f5e;
+  font-weight: 800;
+}
+
+.category-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #666;
+}
+
+.attempt-count {
+  font-weight: 600;
+  color: #333;
+}
+
+.status {
+  font-size: 12px;
+  font-weight: 700;
+  margin-top: 6px;
+}
+
+.overall-stats {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #e0e7ff;
+}
+
+.overall-stats p {
+  margin: 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.positive-feedback {
+  color: #22c55e !important;
+  font-weight: 600;
+}
+
+.negative-feedback {
+  color: #f43f5e !important;
+  font-weight: 600;
+}
+
+.weak-categories-section {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-top: 16px;
+  border: 2px solid #fef3c7;
+}
+
+.weak-categories-section h4 {
+  font-size: 14px;
+  font-weight: 700;
+  color: #f59e0b;
+  margin-bottom: 12px;
+}
+
+.weak-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.weak-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #f3f4f6;
+  font-size: 13px;
+}
+
+.weak-list li:last-child {
+  border-bottom: none;
+}
+
+.weak-list .accuracy {
+  font-weight: 700;
+  color: #f43f5e;
 }
 
 .feedback {

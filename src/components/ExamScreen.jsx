@@ -12,6 +12,13 @@ import {
   recordQuestionPerformance,
   getAttemptStatistics
 } from '../utils/questionDistribution';
+import {
+  recordCategoryScore,
+  getCategoryScores,
+  getOverallScore,
+  generateCategoryReport,
+  getWeakCategories
+} from '../utils/categoryScoring';
 
 export function ExamScreen({ examMode, onExit }) {
   const navigate = useNavigate();
@@ -296,11 +303,20 @@ export function ExamScreen({ examMode, onExit }) {
    */
   function calculateScore() {
     let correct = 0;
+    const userId = localStorage.getItem('userId') || 'guest_' + Date.now();
+
+    // 各問題の採点とカテゴリ別スコア記録
     problems.forEach(problem => {
-      if (answers[problem.id] === problem.answer) {
+      const isCorrect = answers[problem.id] === problem.answer;
+      if (isCorrect) {
         correct++;
       }
+
+      // カテゴリ別採点を記録
+      // problem.problem_id が問題番号、カテゴリ判定はcategoryScoring.jsで行われる
+      recordCategoryScore(userId, problem.problem_id || parseInt(problem.id), isCorrect);
     });
+
     return {
       correct,
       total: problems.length,

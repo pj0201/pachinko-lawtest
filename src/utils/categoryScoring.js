@@ -6,7 +6,7 @@
  */
 
 /**
- * 4つの主要項目の定義
+ * 5つの主要項目の定義
  */
 const EXAM_CATEGORIES = {
   SYSTEM_AND_TEST: {
@@ -30,8 +30,14 @@ const EXAM_CATEGORIES = {
   SUPERVISOR_DUTIES: {
     id: 'supervisor_duties',
     name: '主任者実務と業界要綱',
-    problemRange: [[91, 120], [181, 230]],
+    problemRange: [[91, 120]],
     description: '取扱主任者の業務と実務スキル'
+  },
+  FINAL_PROBLEMS: {
+    id: 'final_problems',
+    name: '最終問題',
+    problemRange: [[181, 230]],
+    description: '総合的な試験対策問題'
   }
 };
 
@@ -139,7 +145,7 @@ function getOverallScore(userId) {
     overallAccuracy: totalAttempts > 0 ? (totalCorrect / totalAttempts * 100).toFixed(1) : 0,
     categories: categoryResults,
     passedCategories: categoryResults.filter(c => c.accuracy >= 80).length,
-    totalCategories: 4
+    totalCategories: Object.keys(EXAM_CATEGORIES).length
   };
 }
 
