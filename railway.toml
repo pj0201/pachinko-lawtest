@@ -1,6 +1,6 @@
 [build]
 builder = "NIXPACKS"
-buildCommand = "rm -rf node_modules/.cache backend/__pycache__ && npm ci && npm run build && pip3 install --break-system-packages -r backend/requirements.txt"
+buildCommand = "npm ci && npm run build && pip3 install --break-system-packages -r backend/requirements.txt"
 
 [deploy]
 startCommand = "python3 backend/api_server.py"
