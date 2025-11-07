@@ -323,10 +323,12 @@ if __name__ == '__main__':
     print(f"✅ ポート: 5000")
     print("=" * 80)
 
-    # Flask サーバー起動（ポート5000）
+    # Flask サーバー起動（ポートは環境変数から、デフォルト5000）
+    port = int(os.environ.get('PORT', 5000))
+    debug_mode = os.environ.get('FLASK_ENV', 'development') == 'development'
     app.run(
         host='0.0.0.0',
-        port=5000,
-        debug=True,
+        port=port,
+        debug=debug_mode,
         use_reloader=False
     )
