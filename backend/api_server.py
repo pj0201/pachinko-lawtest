@@ -10,16 +10,23 @@ import json
 import os
 import random
 from pathlib import Path
+from auth_database import AuthDatabase
 
 # Flask アプリ初期化
 app = Flask(__name__)
 CORS(app)  # CORS 有効化
 
-# 問題集ファイルパス
-PROBLEMS_FILE = Path(__file__).parent / "problems_final_500_complete.json"
+# 問題集ファイルパス（150問○✕形式版）
+PROBLEMS_FILE = Path(__file__).parent / "problems_150_yesno.json"
 
 # グローバル変数
 problems_data = []
+auth_db = None
+
+def init_auth_db():
+    """認証DB初期化"""
+    global auth_db
+    auth_db = AuthDatabase()
 
 def load_problems():
     """修正済み問題集を読み込む"""
@@ -43,6 +50,92 @@ def health_check():
         'message': 'API サーバーが起動しています',
         'problems_loaded': len(problems_data)
     })
+
+# ===== 認証エンドポイント =====
+
+@app.route('/api/auth/verify-invite', methods=['POST'])
+def verify_invite():
+    """招待URL検証"""
+    try:
+        data = request.get_json() or {}
+        token = data.get('token')
+
+        if not token:
+            return jsonify({
+                'valid': False,
+                'message': '招待トークンが指定されていません'
+            }), 400
+
+        result = auth_db.verify_invite_token(token)
+        return jsonify(result)
+
+    except Exception as e:
+        print(f"❌ 招待URL検証エラー: {e}")
+        return jsonify({
+            'valid': False,
+            'message': 'サーバーエラーが発生しました'
+        }), 500
+
+@app.route('/api/auth/register', methods=['POST'])
+def register():
+    """デバイス登録"""
+    try:
+        data = request.get_json() or {}
+        token = data.get('token')
+        device_id = data.get('device_id')
+        email = data.get('email')
+        password = data.get('password')
+
+        if not all([token, device_id, email, password]):
+            return jsonify({
+                'success': False,
+                'message': '必須フィールドが足りません'
+            }), 400
+
+        # デバイス登録（auth_dbに処理させる）
+        result = auth_db.register_device(token, device_id)
+
+        if result['success']:
+            # 登録成功時のレスポンス
+            return jsonify({
+                'success': True,
+                'session_token': result['session_token'],
+                'message': '登録が完了しました'
+            })
+        else:
+            # 登録失敗時のレスポンス
+            return jsonify(result), 400
+
+    except Exception as e:
+        print(f"❌ 登録エラー: {e}")
+        return jsonify({
+            'success': False,
+            'message': 'サーバーエラーが発生しました'
+        }), 500
+
+@app.route('/api/auth/verify-session', methods=['POST'])
+def verify_session():
+    """セッション検証"""
+    try:
+        data = request.get_json() or {}
+        session_token = data.get('session_token')
+        device_id = data.get('device_id')
+
+        if not session_token or not device_id:
+            return jsonify({
+                'valid': False,
+                'message': 'セッション情報が不足しています'
+            }), 400
+
+        result = auth_db.verify_session(session_token, device_id)
+        return jsonify(result)
+
+    except Exception as e:
+        print(f"❌ セッション検証エラー: {e}")
+        return jsonify({
+            'valid': False,
+            'message': 'サーバーエラーが発生しました'
+        }), 500
 
 @app.route('/api/problems/quiz', methods=['POST'])
 def get_quiz_problems():
@@ -214,18 +307,26 @@ if __name__ == '__main__':
         print("❌ 問題集の読み込みに失敗しました")
         exit(1)
 
+    # 認証DBを初期化
+    try:
+        init_auth_db()
+        print("✅ 認証データベース初期化成功")
+    except Exception as e:
+        print(f"❌ 認証データベース初期化失敗: {e}")
+        exit(1)
+
     print("=" * 80)
     print("【風営法理解度チェック - バックエンド API】")
     print("=" * 80)
     print(f"✅ 問題集: {PROBLEMS_FILE}")
     print(f"✅ 総問題数: {len(problems_data)}")
-    print(f"✅ ポート: 5001")
+    print(f"✅ ポート: 5000")
     print("=" * 80)
 
-    # Flask サーバー起動
+    # Flask サーバー起動（ポート5000）
     app.run(
         host='0.0.0.0',
-        port=5001,
+        port=5000,
         debug=True,
         use_reloader=False
     )

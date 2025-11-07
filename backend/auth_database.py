@@ -88,7 +88,7 @@ class AuthDatabase:
         with sqlite3.connect(self.db_path) as conn:
             # トークン検証
             cursor = conn.execute(
-                "SELECT is_used FROM invite_tokens WHERE token = ?",
+                "SELECT is_used, device_id FROM invite_tokens WHERE token = ?",
                 (token,)
             )
             row = cursor.fetchone()
@@ -96,11 +96,29 @@ class AuthDatabase:
             if not row:
                 return {"success": False, "message": "無効な招待URLです"}
 
-            if row[0]:  # is_used
-                return {
-                    "success": False,
-                    "message": "この招待URLは既に使用されています"
-                }
+            # ✅ 同じデバイスからの再アクセスなら許可（複数ブラウザ対応）
+            if row[0] and row[1]:  # 既に使用済み
+                if row[1] == device_id:
+                    # 同じデバイスからの再アクセス → セッション生成のみ
+                    session_token = str(uuid.uuid4())
+                    conn.execute(
+                        """INSERT INTO user_sessions
+                           (session_token, device_id, invite_token)
+                           VALUES (?, ?, ?)""",
+                        (session_token, device_id, token)
+                    )
+                    conn.commit()
+                    return {
+                        "success": True,
+                        "session_token": session_token,
+                        "message": "登録が完了しました"
+                    }
+                else:
+                    # 異なるデバイス → エラー
+                    return {
+                        "success": False,
+                        "message": "この招待URLは既に別のデバイスで使用されています"
+                    }
 
             # デバイス登録
             now = datetime.now().isoformat()

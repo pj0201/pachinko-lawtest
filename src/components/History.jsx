@@ -7,6 +7,12 @@ import { useState, useEffect } from 'react';
 import '../styles/history.css';
 
 export function History({ onExit }) {
+  // ホーム画面に戻る（ブラウザバック対策：履歴を置き換え）
+  const handleExit = () => {
+    if (onExit) {
+      onExit();
+    }
+  };
   const [history, setHistory] = useState([]);
   const [stats, setStats] = useState(null);
   const [selectedResult, setSelectedResult] = useState(null);
@@ -95,13 +101,13 @@ export function History({ onExit }) {
       <div className="history-container">
         <div className="history-header">
           <h1>📊 成績履歴</h1>
-          <button className="btn-close" onClick={onExit}>✕</button>
+          <button className="btn-close" onClick={handleExit}>✕</button>
         </div>
 
         <div className="history-empty">
           <p>成績履歴がまだありません</p>
           <p>チェックを実施して成績を記録しましょう</p>
-          <button className="btn btn-primary" onClick={onExit}>
+          <button className="btn btn-primary" onClick={handleExit}>
             ホームに戻る
           </button>
         </div>
@@ -114,7 +120,7 @@ export function History({ onExit }) {
       {/* ヘッダー */}
       <div className="history-header">
         <h1>📊 成績履歴</h1>
-        <button className="btn-close" onClick={onExit}>✕</button>
+        <button className="btn-close" onClick={handleExit}>✕</button>
       </div>
 
       <div className="history-content">
@@ -230,7 +236,7 @@ export function History({ onExit }) {
 
         {/* アクション */}
         <div className="history-actions">
-          <button className="btn btn-secondary" onClick={onExit}>
+          <button className="btn btn-secondary" onClick={handleExit}>
             ホームに戻る
           </button>
         </div>

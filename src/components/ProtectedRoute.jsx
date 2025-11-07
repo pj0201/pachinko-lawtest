@@ -39,7 +39,7 @@ export default function ProtectedRoute({ children }) {
         return;
       }
 
-      // 本番環境: 通常の認証チェック
+      // 本番環境: localStorage を優先（高速化）
       const sessionToken = localStorage.getItem('session_token');
       const deviceId = localStorage.getItem('device_id');
 
@@ -51,8 +51,14 @@ export default function ProtectedRoute({ children }) {
         return;
       }
 
+      // ✅ localStorage があれば即座にアクセス許可（UX向上）
+      console.log('✅ localStorage確認済み - アクセス許可（バックグラウンド検証実行）');
+      setIsValid(true);
+      setIsLoading(false);
+
+      // バックグラウンドで検証を実行（ユーザーはブロックされない）
       try {
-        const response = await fetch('http://localhost:5000/api/auth/verify-session', {
+        const response = await fetch('/api/auth/verify-session', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -63,22 +69,21 @@ export default function ProtectedRoute({ children }) {
 
         const data = await response.json();
 
-        if (data.valid) {
-          console.log('✅ セッション有効');
-          setIsValid(true);
-        } else {
-          console.log('❌ セッション無効:', data.message);
+        if (!data.valid) {
+          console.warn('⚠️ バックグラウンド検証でセッション無効を検出:', data.message);
           // 無効なセッション情報を削除
           localStorage.removeItem('session_token');
           localStorage.removeItem('device_id');
           localStorage.removeItem('user');
+          // 次のページ移動時に Register にリダイレクト
           setIsValid(false);
+        } else {
+          console.log('✅ バックグラウンド検証完了 - セッション有効');
         }
       } catch (err) {
-        console.error('❌ セッション検証エラー:', err);
-        setIsValid(false);
-      } finally {
-        setIsLoading(false);
+        console.warn('⚠️ バックグラウンド検証エラー（無視）:', err);
+        // バックグラウンド検証エラーは無視
+        // ユーザーはアクセス可能なままで、次の検証機会に確認
       }
     };
 

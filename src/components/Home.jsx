@@ -1,11 +1,30 @@
 /**
  * ホーム画面 - トップページ
+ * ✨ 修正版（2025-11-07）
  * モバイルファースト対応
+ * Router ベースのナビゲーション
  */
 
+import { useNavigate } from 'react-router-dom';
 import '../styles/home.css';
 
-export function Home({ user, onStartExam, onViewHistory }) {
+export function Home({ onLogout }) {
+  const navigate = useNavigate();
+
+  // localStorage からユーザー情報を取得
+  const user = JSON.parse(localStorage.getItem('user') || '{}');
+
+  // 問題集を解く
+  const handleStartExam = (mode) => {
+    // localStorage に モード情報を保存してから遷移
+    localStorage.setItem('examMode', mode);
+    navigate('/exam', { replace: false });
+  };
+
+  // 成績履歴を表示
+  const handleViewHistory = () => {
+    navigate('/history', { replace: false });
+  };
 
   return (
     <div className="home-container">
@@ -13,7 +32,7 @@ export function Home({ user, onStartExam, onViewHistory }) {
       <div className="home-header">
         <h1>🎰 風営法理解度チェック</h1>
         <p className="header-description">本アプリは風俗営業等の規制及び業務の適正化等に関する法律についての知識を学ぶアプリです</p>
-        <p className="user-info">ユーザー: {user.email}</p>
+        <p className="user-info">ユーザー: {user?.email || 'ゲスト'}</p>
       </div>
 
       {/* メインコンテンツ */}
@@ -47,14 +66,14 @@ export function Home({ user, onStartExam, onViewHistory }) {
 
         {/* チェック開始セクション */}
         <div className="mock-exam-section">
-          <h2>🧪 チェックを始める</h2>
+          <h2>🧪 問題集を解く</h2>
           <p className="section-subtitle">（次ページで難易度を選べます）</p>
 
           <div className="exam-options">
             {/* 10問テスト */}
             <button
               className="exam-option small"
-              onClick={() => onStartExam('small')}
+              onClick={() => handleStartExam('small')}
             >
               <div className="option-header">
                 <span className="label">練習用</span>
@@ -62,14 +81,13 @@ export function Home({ user, onStartExam, onViewHistory }) {
               </div>
               <div className="option-content">
                 <p className="num-questions">10問</p>
-                <p className="description">気軽に練習できます</p>
               </div>
             </button>
 
             {/* 30問テスト */}
             <button
               className="exam-option medium"
-              onClick={() => onStartExam('medium')}
+              onClick={() => handleStartExam('medium')}
             >
               <div className="option-header">
                 <span className="label">標準</span>
@@ -77,14 +95,13 @@ export function Home({ user, onStartExam, onViewHistory }) {
               </div>
               <div className="option-content">
                 <p className="num-questions">30問</p>
-                <p className="description">更新試験対応</p>
               </div>
             </button>
 
             {/* 50問テスト */}
             <button
               className="exam-option large"
-              onClick={() => onStartExam('large')}
+              onClick={() => handleStartExam('large')}
             >
               <div className="option-header">
                 <span className="label">本試験</span>
@@ -92,7 +109,6 @@ export function Home({ user, onStartExam, onViewHistory }) {
               </div>
               <div className="option-content">
                 <p className="num-questions">50問</p>
-                <p className="description">新規試験対応</p>
               </div>
             </button>
           </div>
@@ -100,16 +116,23 @@ export function Home({ user, onStartExam, onViewHistory }) {
 
         {/* 成績履歴 */}
         <div className="history-section">
-          <button className="history-link" onClick={onViewHistory}>
+          <button className="history-link" onClick={handleViewHistory}>
             📊 成績履歴を表示
           </button>
         </div>
 
       </div>
 
-      {/* フッター */}
+      {/* フッター＋ログアウト */}
       <div className="home-footer">
         <p>© 2025 風営法理解度チェックアプリ</p>
+        <button
+          className="logout-button"
+          onClick={onLogout}
+          title="セッション削除してログアウト"
+        >
+          ログアウト
+        </button>
       </div>
     </div>
   );

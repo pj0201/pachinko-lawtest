@@ -4,7 +4,7 @@
  */
 
 import { useState, useEffect } from 'react';
-import { useNavigate, useParams, useSearchParams } from 'react-router-dom';
+import { useNavigate, useParams, useSearchParams, Navigate } from 'react-router-dom';
 import FingerprintJS from '@fingerprintjs/fingerprintjs';
 import './Register.css';
 
@@ -14,11 +14,23 @@ export default function Register() {
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
   const [deviceId, setDeviceId] = useState('');
+  const [alreadyLoggedIn, setAlreadyLoggedIn] = useState(false);  // 既にログイン状態の場合
   const params = useParams();
   const [searchParams] = useSearchParams();
   const navigate = useNavigate();
   // トークンを URL パラメータまたはクエリパラメータから取得
   const token = params.token || searchParams.get('token');
+
+  // マウント時：既にセッションがあれば、ホーム画面にリダイレクト
+  useEffect(() => {
+    const sessionToken = localStorage.getItem('session_token');
+    const deviceId = localStorage.getItem('device_id');
+
+    if (sessionToken && deviceId) {
+      console.log('✅ セッション確認 - ホーム画面へリダイレクト');
+      setAlreadyLoggedIn(true);
+    }
+  }, []);
 
   useEffect(() => {
     // デバイスID取得
@@ -43,7 +55,7 @@ export default function Register() {
       return;
     }
 
-    fetch('http://localhost:5000/api/auth/verify-invite', {
+    fetch('/api/auth/verify-invite', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ token })
@@ -79,7 +91,7 @@ export default function Register() {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:5000/api/auth/register', {
+      const response = await fetch('/api/auth/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
@@ -105,8 +117,8 @@ export default function Register() {
 
         console.log('✅ 登録成功 - セッショントークン:', data.session_token);
 
-        // メイン画面へリダイレクト
-        navigate('/');
+        // メイン画面へリダイレクト（履歴を置き換え - ブラウザバックで戻れないように）
+        navigate('/', { replace: true });
       } else {
         setError(data.message || '登録に失敗しました');
       }
@@ -117,6 +129,11 @@ export default function Register() {
       setLoading(false);
     }
   };
+
+  // 既にログイン状態なら、ホーム画面にリダイレクト
+  if (alreadyLoggedIn) {
+    return <Navigate to="/" replace />;
+  }
 
   if (loading && !error) {
     return (

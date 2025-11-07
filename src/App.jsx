@@ -1,99 +1,113 @@
 /**
  * App.jsx - メインアプリケーション
- * 招待URL登録 → ログイン → ホーム → 模擬試験 → 成績 → 履歴 の遷移管理
+ * ✨ 修正版（2025-11-07）
+ *
+ * アーキテクチャ：
+ * - React Router ベースの遷移管理
+ * - state ベース遷移を廃止（混在によるバグを防止）
+ * - ブラウザバック対応：replace: true で履歴クリア
+ *
+ * フロー：
+ * 招待URL（/invite/:token） → デバイス登録（Register）
+ * → セッション確認（ProtectedRoute）
+ * → ホーム（/home） → 試験（/exam） → 履歴（/history）
  */
 
-import { useState } from 'react';
-import { Routes, Route, useNavigate } from 'react-router-dom';
+import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import './App.css';
 import Register from './pages/Register';
 import ProtectedRoute from './components/ProtectedRoute';
-import { Login } from './components/Login';
 import { Home } from './components/Home';
 import { ExamScreen } from './components/ExamScreen';
 import { History } from './components/History';
 
+/**
+ * MainApp - ProtectedRoute 内で実行される認証済みアプリ
+ * （状態管理は削除 → Router ベースに統一）
+ */
 function MainApp() {
-  const [currentPage, setCurrentPage] = useState('login');
-  const [user, setUser] = useState(null);
-  const [examMode, setExamMode] = useState(null); // 'small', 'medium', 'large'
   const navigate = useNavigate();
 
-  // ログイン処理
-  const handleLogin = (userData) => {
-    setUser(userData);
-    setCurrentPage('home');
-  };
-
-  // ログアウト処理
+  // ログアウト処理（セッションを完全にクリア）
   const handleLogout = () => {
     localStorage.removeItem('user');
     localStorage.removeItem('session_token');
     localStorage.removeItem('device_id');
-    setUser(null);
-    setCurrentPage('login');
-    navigate('/register');
-  };
 
-  // 模擬試験開始
-  const handleStartExam = (mode) => {
-    setExamMode(mode);
-    setCurrentPage('exam');
-  };
-
-  // 成績履歴表示
-  const handleViewHistory = () => {
-    setCurrentPage('history');
+    // 履歴をクリアして /register へ（ブラウザバック不可）
+    navigate('/register', { replace: true });
   };
 
   return (
-    <div className="app">
-      {/* ログインページ */}
-      {currentPage === 'login' && !user && (
-        <Login onLogin={handleLogin} />
-      )}
+    <Routes>
+      {/* ホーム */}
+      <Route
+        path="/"
+        element={
+          <Home
+            onLogout={handleLogout}
+          />
+        }
+      />
 
-      {/* ホームページ */}
-      {currentPage === 'home' && user && (
-        <Home
-          user={user}
-          onStartExam={handleStartExam}
-          onViewHistory={handleViewHistory}
-          onLogout={handleLogout}
-        />
-      )}
+      {/* 模擬試験画面 */}
+      <Route
+        path="/exam"
+        element={
+          <ExamScreen
+            onExit={() => navigate('/', { replace: true })}
+          />
+        }
+      />
 
-      {/* 模擬試験ページ */}
-      {currentPage === 'exam' && user && (
-        <ExamScreen
-          examMode={examMode}
-          onExit={() => setCurrentPage('home')}
-        />
-      )}
+      {/* 成績履歴画面 */}
+      <Route
+        path="/history"
+        element={
+          <History
+            onExit={() => navigate('/', { replace: true })}
+          />
+        }
+      />
 
-      {/* 成績履歴ページ */}
-      {currentPage === 'history' && user && (
-        <History
-          onExit={() => setCurrentPage('home')}
-        />
-      )}
-    </div>
+      {/* その他のパスは home にリダイレクト */}
+      <Route path="*" element={<Navigate to="/" replace />} />
+    </Routes>
   );
 }
 
+/**
+ * App - ルートコンポーネント
+ */
 function App() {
   return (
     <Routes>
-      {/* 招待URL登録ページ（公開） */}
+      {/*
+        ========================================
+        公開ルート（認証なし）
+        ========================================
+      */}
+      {/* 招待URL登録ページ */}
       <Route path="/invite/:token" element={<Register />} />
       <Route path="/register" element={<Register />} />
 
-      {/* メインアプリ（セッション検証必須） */}
-      <Route path="/*" element={
-        <ProtectedRoute>
-          <MainApp />
-        </ProtectedRoute>
-      } />
+      {/*
+        ========================================
+        保護ルート（セッション必須）
+        ========================================
+        ProtectedRoute で以下を確認：
+        1. localStorage に session_token と device_id があるか
+        2. ない場合は /register にリダイレクト（replace: true）
+        3. あれば MainApp を表示
+      */}
+      <Route
+        path="/*"
+        element={
+          <ProtectedRoute>
+            <MainApp />
+          </ProtectedRoute>
+        }
+      />
     </Routes>
   );
 }

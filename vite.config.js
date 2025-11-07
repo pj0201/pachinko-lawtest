@@ -15,5 +15,12 @@ export default defineConfig({
       '127.0.0.1'
     ],
     middlewareMode: false,
+    proxy: {
+      '/api': {
+        target: 'http://localhost:5000',
+        changeOrigin: true,
+        rewrite: (path) => path
+      }
+    }
   }
 })

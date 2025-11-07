@@ -4,6 +4,7 @@
  */
 
 import { useState, useEffect, useCallback } from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../styles/exam.css';
 import {
   selectSmartQuestions,
@@ -13,6 +14,17 @@ import {
 } from '../utils/questionDistribution';
 
 export function ExamScreen({ examMode, onExit }) {
+  const navigate = useNavigate();
+
+  // ホーム画面に戻る（ブラウザバック対策：履歴を置き換え）
+  const handleExit = () => {
+    if (onExit) {
+      onExit();
+    } else {
+      navigate('/', { replace: true });
+    }
+  };
+
   const [problems, setProblems] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({}); // { problemId: true/false }
@@ -40,9 +52,9 @@ export function ExamScreen({ examMode, onExit }) {
 
       setLoading(true);
 
-      // バックエンド API のベース URL
-      const API_BASE = 'http://localhost:5001';
-      console.log(`🌐 API_BASE: ${API_BASE}`);
+      // バックエンド API のベース URL（相対パスで、プロキシ経由でアクセス）
+      const API_BASE = '';  // 空文字列 = 相対パス（/api/...）
+      console.log(`🌐 API_BASE: ${API_BASE}（相対パス）`);
 
       // 難易度をバックエンド形式に変換（★/★★/★★★）
       const difficultyMap = {
@@ -346,7 +358,7 @@ export function ExamScreen({ examMode, onExit }) {
             </button>
           </div>
 
-          <button className="cancel-btn" onClick={onExit}>キャンセル</button>
+          <button className="cancel-btn" onClick={handleExit}>キャンセル</button>
         </div>
       </div>
     );
@@ -371,7 +383,7 @@ export function ExamScreen({ examMode, onExit }) {
         <div className="exam-error">
           <h2>⚠️ エラー</h2>
           <p>{error}</p>
-          <button onClick={() => onExit()}>ホームに戻る</button>
+          <button onClick={() => handleExit()}>ホームに戻る</button>
         </div>
       </div>
     );
@@ -384,7 +396,7 @@ export function ExamScreen({ examMode, onExit }) {
         <div className="exam-error">
           <h2>⚠️ 問題が見つかりません</h2>
           <p>問題データが利用できません</p>
-          <button onClick={() => onExit()}>ホームに戻る</button>
+          <button onClick={() => handleExit()}>ホームに戻る</button>
         </div>
       </div>
     );
@@ -477,7 +489,7 @@ export function ExamScreen({ examMode, onExit }) {
               <button className="btn btn-primary" onClick={handleRetry}>
                 もう一度解く
               </button>
-              <button className="btn btn-secondary" onClick={() => onExit()}>
+              <button className="btn btn-secondary" onClick={() => handleExit()}>
                 ホームに戻る
               </button>
             </div>
@@ -514,7 +526,7 @@ export function ExamScreen({ examMode, onExit }) {
           </p>
         </div>
 
-        <button className="btn-close" onClick={() => onExit()}>
+        <button className="btn-close" onClick={() => handleExit()}>
           ✕
         </button>
       </div>

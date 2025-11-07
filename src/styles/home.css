@@ -214,18 +214,22 @@
   align-items: center;
   margin-bottom: 8px;
   width: 100%;
+  white-space: nowrap;
+  flex-wrap: nowrap;
 }
 
 .option-header .label {
   font-weight: 600;
   color: var(--text-primary);
-  font-size: 14px;
+  font-size: 13px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  min-width: 60px;
+  text-align: left;
 }
 
 .option-header .badge {
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 700;
   padding: 6px 12px;
   background-color: var(--primary-gold);
@@ -233,13 +237,15 @@
   border-radius: 6px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  flex-shrink: 0;
+  white-space: nowrap;
 }
 
 .option-content {
   display: flex;
-  flex-direction: column;
-  gap: 6px;
-  align-items: flex-start;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
 }
 
 .option-content .num-questions {
@@ -247,12 +253,15 @@
   font-weight: 700;
   color: var(--primary-gold);
   margin: 0;
+  flex-shrink: 0;
 }
 
 .option-content .description {
   font-size: 12px;
   color: var(--text-tertiary);
   margin: 0;
+  white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* ===== 成績履歴 ===== */
@@ -342,9 +351,10 @@
   }
 
   .option-content {
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 8px;
   }
 }
 
@@ -375,15 +385,32 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap: 20px;
   }
 
   .option-content {
-    flex-direction: column;
-    gap: 4px;
-    align-items: flex-start;
+    flex-direction: row;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .option-header {
     margin-bottom: 0;
+    white-space: nowrap;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .option-header .label {
+    flex-shrink: 0;
+    font-size: 12px;
+    min-width: 50px;
+  }
+
+  .option-header .badge {
+    flex-shrink: 0;
+    font-size: 11px;
+    padding: 4px 8px;
   }
 }
