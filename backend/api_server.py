@@ -334,16 +334,16 @@ if __name__ == '__main__':
         print(f"❌ 認証データベース初期化失敗: {e}")
         exit(1)
 
+    # Flask サーバー起動（ポートは環境変数から、デフォルト5000）
+    port = int(os.environ.get('PORT', 5000))
+
     print("=" * 80)
     print("【風営法理解度チェック - バックエンド API】")
     print("=" * 80)
     print(f"✅ 問題集: {PROBLEMS_FILE}")
     print(f"✅ 総問題数: {len(problems_data)}")
-    print(f"✅ ポート: 5000")
+    print(f"✅ ポート: {port}")
     print("=" * 80)
-
-    # Flask サーバー起動（ポートは環境変数から、デフォルト5000）
-    port = int(os.environ.get('PORT', 5000))
     debug_mode = os.environ.get('FLASK_ENV', 'development') == 'development'
     app.run(
         host='0.0.0.0',
