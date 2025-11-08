@@ -34,8 +34,12 @@ const CATEGORY_NAMES = {
   'final_problems': '行政手続、構造基準及び罰則'
 };
 
-export function ExamScreen({ examMode, onExit }) {
+export function ExamScreen({ onExit }) {
   const navigate = useNavigate();
+
+  // 【修正】localStorage から examMode を取得（App.jsx で渡されないため）
+  const examMode = localStorage.getItem('examMode') || 'small';
+  console.log(`📋 ExamScreen 起動: examMode=${examMode}`);
 
   const [problems, setProblems] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
