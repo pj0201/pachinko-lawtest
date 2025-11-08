@@ -7,7 +7,6 @@ import { useState, useEffect, useCallback } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/exam.css';
 import {
-  selectSmartQuestions,
   recordQuestionAttempt,
   recordQuestionPerformance,
   getAttemptStatistics
@@ -132,19 +131,7 @@ export function ExamScreen({ examMode, onExit }) {
 
       console.log(`✅ バックエンドから ${allProblems.length} 問を取得しました`);
 
-      // 【スマート質問分配の適用】同一アカウント用の重複回避ロジック
-      console.log(`🧠 スマート質問分配を適用中...`);
-      const filteredProblems = selectSmartQuestions(
-        allProblems,
-        totalQuestions,
-        {
-          difficulty: difficultyLevel,
-          category: null,
-          excludeRecent: false
-        }
-      );
-      console.log(`✅ スマート分配後: ${filteredProblems.length} 問に絞り込まれました`);
-      allProblems = filteredProblems;
+      // ✅ バックエンドが要求数正確に返すため、selectSmartQuestions は不要（削減防止）
 
       // バックエンドのデータをフロントエンドの形式に変換
       console.log(`🔄 ${allProblems.length} 個の問題を変換開始...`);
