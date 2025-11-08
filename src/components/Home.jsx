@@ -30,7 +30,10 @@ export function Home() {
   // 問題集を解く
   const handleStartExam = (mode) => {
     // localStorage に モード情報を保存してから遷移
+    console.log(`🏠 Home.jsx: handleStartExam('${mode}') が呼ばれました`);
     localStorage.setItem('examMode', mode);
+    console.log(`💾 localStorage.setItem('examMode', '${mode}') を実行`);
+    console.log(`🔍 確認: localStorage.getItem('examMode') = '${localStorage.getItem('examMode')}'`);
     navigate('/exam', { replace: false });
   };
 

@@ -212,9 +212,83 @@ export function ExamScreen({ onExit }) {
       setProblems(convertedProblems);
       setError(null);
     } catch (err) {
-      console.error('❌ 問題ロードエラー:', err);
-      setError(err.message);
-      setProblems([]);
+      console.error('❌ API呼び出しエラー:', err.message);
+      console.log('⚠️ フォールバック：ローカル mock_problems.json を読み込みます...');
+
+      try {
+        // ローカル mock_problems.json から問題を取得
+        console.log('📁 ローカル mock_problems.json を読み込み中...');
+        const response = await fetch('/mock_problems.json');
+
+        if (!response.ok) {
+          throw new Error(`ローカルデータ読み込みエラー: ${response.status}`);
+        }
+
+        const mockData = await response.json();
+        let allProblems = mockData.problems || mockData || [];
+
+        console.log(`📁 ローカルデータから ${allProblems.length} 問を読み込みました`);
+
+        // 難易度をバックエンド形式に変換（★/★★/★★★）
+        const difficultyMap = {
+          'low': '★',
+          'medium': '★★',
+          'high': '★★★'
+        };
+        const selectedDifficulty = difficultyMap[difficultyLevel];
+
+        // 難易度でフィルタリング
+        const filtered = allProblems.filter(p => p.difficulty === selectedDifficulty);
+        console.log(`🔍 ${selectedDifficulty}レベルで ${filtered.length} 問をフィルタリング`);
+
+        // ランダムに指定数を選択
+        const shuffled = [...filtered].sort(() => Math.random() - 0.5);
+        const selected = shuffled.slice(0, totalQuestions);
+
+        console.log(`🎲 ランダム選択: ${selected.length} 問を選択`);
+
+        // フロントエンド形式に変換
+        const convertedProblems = selected.map((problem, index) => {
+          const difficultyConvertMap = {
+            '★': 'easy',
+            '★★': 'medium',
+            '★★★': 'hard',
+            '★★★★': 'hard'
+          };
+
+          const answer = problem.correct_answer === '○' || problem.correct_answer === true;
+          let lawReference = '';
+          if (problem.legal_reference) {
+            if (typeof problem.legal_reference === 'string') {
+              lawReference = problem.legal_reference;
+            } else if (typeof problem.legal_reference === 'object') {
+              const lr = problem.legal_reference;
+              lawReference = `${lr.law || ''} ${lr.article || ''} ${lr.section || ''}`.trim();
+            }
+          }
+
+          return {
+            id: problem.problem_id,
+            statement: problem.problem_text,
+            answer: answer,
+            explanation: problem.explanation || problem.basis,
+            category: problem.category,
+            difficulty: difficultyConvertMap[problem.difficulty] || 'medium',
+            lawReference: lawReference,
+            pattern: problem.pattern_name,
+            theme: problem.theme_name
+          };
+        });
+
+        setProblems(convertedProblems);
+        setError(null);
+        console.log(`✅ ローカルデータから ${convertedProblems.length} 問を読み込み完了（スタンドアロンモード）`);
+
+      } catch (fallbackErr) {
+        console.error('❌ フォールバックも失敗:', fallbackErr.message);
+        setError(`問題の読み込みに失敗しました: ${fallbackErr.message}`);
+        setProblems([]);
+      }
     } finally {
       setLoading(false);
     }
