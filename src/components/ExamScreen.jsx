@@ -214,7 +214,7 @@ export function ExamScreen({ examMode, onExit }) {
     } finally {
       setLoading(false);
     }
-  }, [difficultyLevel]);
+  }, [difficultyLevel, totalQuestions]);
 
   /**
    * 難易度が選択されたときに自動的に問題をロード
