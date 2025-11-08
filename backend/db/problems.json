@@ -2,9 +2,9 @@
   "metadata": {
     "title": "遊技機取扱主任者試験 総合模擬問題集",
     "version": "5.0（ユーザー修正版：全230問）",
-    "total_problems": 230,
+    "total_problems": 246,
     "total_count": 230,
-    "last_modified": "2025-11-08T14:05:00.000000",
+    "last_modified": "2025-11-08T16:00:00+09:00",
     "status": "✅ ユーザー修正版統合完了",
     "summary": "全230問のユーザー修正版問題集。すべての法令参照を正確に修正。"
   },
@@ -2076,6 +2076,150 @@
       "correct_answer": false,
       "answer_display": "✕",
       "basis": "5年間は許可を受けられない（風営法第4条第1項第7号）。",
+      "category": "administrative_procedures_and_penalties",
+      "difficulty": "★★★"
+    },
+    {
+      "problem_id": 231,
+      "statement": "遊技機取扱主任者の認定の取消し処分又は効力停止処分に異議がある場合、その処分があったことを知った日の翌日から起算して60日以内に、日遊協に対し異議の申立てをすることができる。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "規程第16条第1項。",
+      "category": "qualification_system",
+      "difficulty": "★★★"
+    },
+    {
+      "problem_id": 232,
+      "statement": "遊技機取扱主任者の所在が不明であり、認定取消し又は効力停止処分に関する事実を確認できない場合、日遊協が連絡先を通知すべき旨を公告し、その公告の日から60日以上当該通知がないときは、当該事実が判明したものとして処分をすることができる。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "規程第15条第2項。",
+      "category": "qualification_system",
+      "difficulty": "★★★"
+    },
+    {
+      "problem_id": 233,
+      "statement": "取扱主任者証の交付を受けた者が、遊技機取扱主任者の認定が取り消されたとき、主任者証が失効したとき、または再交付を受けた後で亡失した旧証を発見したときは、本人において確実に廃棄する場合を除き、速やかに日遊協に返納しなければならない。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "規程第17条第1号、第2号、第3号（ただし第1号は返納が必須）。",
+      "category": "qualification_system",
+      "difficulty": "★★★"
+    },
+    {
+      "problem_id": 234,
+      "statement": "取扱主任者証の有効期間の更新特例において、病気その他やむを得ない理由で更新時試験を受けることが困難である者は、その事由を付して申請し、当該事由が止んだ日から起算して6月以内に実施される更新時試験を受けることができる。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "規程第10条第1項。",
+      "category": "qualification_system",
+      "difficulty": "★★★"
+    },
+    {
+      "problem_id": 235,
+      "statement": "風俗営業者は、深夜における客の迷惑行為を防止するための措置が適切に講じられるようにするため、当該措置について、従業員に対する教育を行い、又は営業所の管理者に当該教育を行わせなければならない。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "風営法施行規則第27条第2項。",
+      "category": "business_regulation_and_obligations",
+      "difficulty": "★★"
+    },
+    {
+      "problem_id": 236,
+      "statement": "風営法第13条第4項に規定する苦情の処理に関する帳簿には、苦情を申し出た者の氏名及び連絡先、原因究明の結果、苦情に対する弁明の内容、改善措置、苦情処理を担当した者のすべてを記載する必要がある。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "風営法施行規則第28条第1項（第1号〜第5号）。",
+      "category": "business_regulation_and_obligations",
+      "difficulty": "★★"
+    },
+    {
+      "problem_id": 237,
+      "statement": "苦情の処理に関する帳簿の記載事項を電磁的方法により記録する場合、国家公安委員会が定める基準を確保するよう努めなければならない。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "風営法施行規則第29条第2項。",
+      "category": "business_regulation_and_obligations",
+      "difficulty": "★★★"
+    },
+    {
+      "problem_id": 238,
+      "statement": "風営法第14条に基づき営業所内の照度を測定する場合、その測定は、風俗営業の種別に応じた営業所の部分における水平面について計るものとする。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "風営法施行規則第30条。",
+      "category": "business_regulation_and_obligations",
+      "difficulty": "★★"
+    },
+    {
+      "problem_id": 239,
+      "statement": "法第7条第1項に基づく相続承認申請書には、申請者に係る府令第1条第4号に掲げる書類、申請者と被相続人との続柄を証明する書面、および申請者以外に相続人がいる場合はその同意書を添付しなければならない。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "風営法施行規則第13条第2項（第3号、第4号、第5号）。",
+      "category": "business_regulation_and_obligations",
+      "difficulty": "★★★"
+    },
+    {
+      "problem_id": 240,
+      "statement": "法第7条の2第1項に基づく法人の合併承認申請は、合併する法人の連名により、別記様式第7号の合併承認申請書を提出しなければならない。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "風営法施行規則第14条第1項、第2項（別記様式第7号）。",
+      "category": "business_regulation_and_obligations",
+      "difficulty": "★★★"
+    },
+    {
+      "problem_id": 241,
+      "statement": "特定遊興飲食店営業者が法第31条の23で準用する法第9条第3項第1号に係る変更届出をする際、当該変更が法人の名称、住所、代表者の氏名又は役員の氏名若しくは住所に係るものである場合は、変更があった日から20日以内に届出をしなければならない。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "風営法施行規則第88条第2項。",
+      "category": "business_regulation_and_obligations",
+      "difficulty": "★★★"
+    },
+    {
+      "problem_id": 242,
+      "statement": "特定遊興飲食店営業者が法第31条の23で準用する法第9条第3項第2号（軽微な変更）に係る届出をする場合、当該変更が照明設備、音響設備または防音設備に係るものであるときは、変更があった日から10日以内に届出をしなければならない。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "風営法施行規則第88条第2項（当該変更が照明設備、音響設備又は防音設備に係るものである場合にあっては、十日以内）。",
+      "category": "business_regulation_and_obligations",
+      "difficulty": "★★★"
+    },
+    {
+      "problem_id": 243,
+      "statement": "法第31条の23において準用する法第9条第5項の規定による特例特定遊興飲食店営業者に係る変更届出書を提出する場合、法人の名称変更や設備変更等の軽微な変更の区分に関わらず、変更があった日から10日以内に届出をしなければならないと読み替えられている。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "風営法施行規則第89条（前条第2項中「十日（...）以内」とあるのは、「十日以内」と読み替えるものとする。）。",
+      "category": "business_regulation_and_obligations",
+      "difficulty": "★★★"
+    },
+    {
+      "problem_id": 244,
+      "statement": "受験者の不正行為等が事後に判明したとき、日遊協は速やかに認定を取り消し、当該遊技機取扱主任者に対し、別記様式第3号の遊技機取扱主任者の認定の取消し通知書により通知するものとする。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "実施要領第9条第2項。",
+      "category": "administrative_procedures_and_penalties",
+      "difficulty": "★★★"
+    },
+    {
+      "problem_id": 245,
+      "statement": "異議申立てにより日遊協が処分を取り消し、又は変更したときは、当該処分を受けた者には別記様式第6号、関係団体には別記様式第7号の異議申立てに対する通知書により通知するものとする。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "実施要領第14条。",
+      "category": "administrative_procedures_and_penalties",
+      "difficulty": "★★★"
+    },
+    {
+      "problem_id": 246,
+      "statement": "講習、試験、再交付の申請、または記載事項の変更の届出をしようとする者は、規程第18条に定められた手数料を、日遊協が指定する納付方法により納付しなければならない。",
+      "correct_answer": true,
+      "answer_display": "〇",
+      "basis": "実施要領第15条。",
       "category": "administrative_procedures_and_penalties",
       "difficulty": "★★★"
     }
