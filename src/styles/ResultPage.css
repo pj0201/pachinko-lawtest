@@ -104,6 +104,9 @@
   font-weight: 600;
   color: #667eea;
   margin-bottom: 8px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .category-chart {

@@ -28,26 +28,12 @@ import { History } from './components/History';
 function MainApp() {
   const navigate = useNavigate();
 
-  // ログアウト処理（セッションを完全にクリア）
-  const handleLogout = () => {
-    localStorage.removeItem('user');
-    localStorage.removeItem('session_token');
-    localStorage.removeItem('device_id');
-
-    // 履歴をクリアして /register へ（ブラウザバック不可）
-    navigate('/register', { replace: true });
-  };
-
   return (
     <Routes>
       {/* ホーム */}
       <Route
         path="/"
-        element={
-          <Home
-            onLogout={handleLogout}
-          />
-        }
+        element={<Home />}
       />
 
       {/* 模擬試験画面 */}

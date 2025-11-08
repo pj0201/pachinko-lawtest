@@ -12,13 +12,19 @@ export default function ResultPage({ results, onReturnHome }) {
   const overallScore = getOverallScore(userId)
   const weakCategories = getWeakCategories(userId, 80)
 
-  // カテゴリ名マッピング
+  // カテゴリ名マッピング（2025-11-08 再構築版 + 古いID対応）
   const categoryNames = {
-    system_and_test: '制度・試験・資格認定',
-    business_law: '風営法規制と義務',
-    game_machine_standards: '遊技機規制基準',
-    supervisor_duties: '主任者実務と業界要綱',
-    final_problems: '最終問題'
+    qualification_system: '遊技機取扱主任者制度と資格維持',
+    game_machine_technical_standards: '遊技機規制技術基準（射幸性・技術）',
+    supervisor_duties_and_guidance: '主任者の実務、指導及び業界要綱',
+    business_regulation_and_obligations: '風俗営業の一般規制と義務',
+    administrative_procedures_and_penalties: '行政手続、構造基準及び罰則',
+    // 古いカテゴリID対応
+    system_and_test: '遊技機取扱主任者制度と資格維持',
+    business_law: '風俗営業の一般規制と義務',
+    game_machine_standards: '遊技機規制技術基準（射幸性・技術）',
+    supervisor_duties: '主任者の実務、指導及び業界要綱',
+    final_problems: '行政手続、構造基準及び罰則'
   }
 
   const categories = Object.keys(categoryScores)

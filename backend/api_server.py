@@ -10,6 +10,7 @@ import json
 import os
 import random
 from pathlib import Path
+from urllib.parse import unquote
 from auth_database import AuthDatabase
 
 # Flask アプリ初期化（React dist フォルダを静的ファイルとして配信）
@@ -17,8 +18,8 @@ dist_path = Path(__file__).parent.parent / "dist"
 app = Flask(__name__, static_folder=str(dist_path), static_url_path="")
 CORS(app)  # CORS 有効化
 
-# 問題集ファイルパス（150問○✕形式版）
-PROBLEMS_FILE = Path(__file__).parent / "problems_150_yesno.json"
+# 問題集ファイルパス（230問統合版）
+PROBLEMS_FILE = Path(__file__).parent / "db" / "problems.json"
 
 # グローバル変数
 problems_data = []
@@ -34,7 +35,14 @@ def load_problems():
     global problems_data
     try:
         with open(PROBLEMS_FILE, 'r', encoding='utf-8') as f:
-            problems_data = json.load(f)
+            data = json.load(f)
+
+        # ファイル形式判定：辞書形式の場合は problems キーから抽出
+        if isinstance(data, dict) and 'problems' in data:
+            problems_data = data['problems']
+        else:
+            problems_data = data
+
         print(f"✅ {len(problems_data)}問の問題集を読み込みました")
         return True
     except Exception as e:
@@ -42,6 +50,7 @@ def load_problems():
         return False
 
 # ===== フロントエンド（React dist）配信 =====
+# ※ SPA対応：APIにマッチしないすべてのリクエストに対して index.html を返す
 
 @app.route('/')
 def serve_index():
@@ -85,6 +94,13 @@ def verify_invite():
                 'message': '招待トークンが指定されていません'
             }), 400
 
+        # 開発者モード（token=dev）
+        if token == 'dev':
+            return jsonify({
+                'valid': True,
+                'message': '開発者モード有効'
+            })
+
         result = auth_db.verify_invite_token(token)
         return jsonify(result)
 
@@ -110,6 +126,17 @@ def register():
                 'success': False,
                 'message': '必須フィールドが足りません'
             }), 400
+
+        # 開発者モード（token=dev）
+        if token == 'dev':
+            import uuid
+            dev_session_token = f"dev_session_{uuid.uuid4().hex[:16]}"
+            print(f"🔧 開発者モード登録: {email} (session: {dev_session_token})")
+            return jsonify({
+                'success': True,
+                'session_token': dev_session_token,
+                'message': '開発者モードで登録されました'
+            })
 
         # デバイス登録（auth_dbに処理させる）
         result = auth_db.register_device(token, device_id)
@@ -146,6 +173,13 @@ def verify_session():
                 'message': 'セッション情報が不足しています'
             }), 400
 
+        # 開発者モード（dev_session_*）
+        if session_token.startswith('dev_session_'):
+            return jsonify({
+                'valid': True,
+                'message': '開発者モードセッション有効'
+            })
+
         result = auth_db.verify_session(session_token, device_id)
         return jsonify(result)
 
@@ -160,28 +194,7 @@ def verify_session():
 def get_quiz_problems():
     """
     模擬試験用の問題を取得
-
-    リクエスト:
-    {
-        "count": 10,  // 問題数
-        "difficulty": "★"  // 難易度（★, ★★, ★★★）
-    }
-
-    レスポンス:
-    {
-        "problems": [
-            {
-                "problem_id": 1,
-                "problem_text": "...",
-                "correct_answer": "○",
-                "explanation": "...",
-                "category": "営業許可",
-                "difficulty": "★",
-                "pattern_name": "基本知識",
-                ...
-            }
-        ]
-    }
+    フロントエンド形式に自動変換
     """
     try:
         data = request.get_json() or {}
@@ -197,20 +210,36 @@ def get_quiz_problems():
         if difficulty not in ['★', '★★', '★★★']:
             difficulty = '★★'
 
-        # 問題のフィルタリング
-        filtered = [p for p in problems_data if p.get('difficulty') == difficulty]
+        # 難易度でフィルタリング
+        filtered_problems = [p for p in problems_data if p.get('difficulty') == difficulty]
 
-        # フィルタ結果がない場合は全問題から選択
-        if not filtered:
-            filtered = problems_data
+        if len(filtered_problems) < count:
+            print(f"⚠️  {difficulty}レベルは{len(filtered_problems)}問しかありません（要求: {count}問）")
 
-        # ランダムに問題を選択
-        selected = random.sample(filtered, min(count, len(filtered)))
+        # 指定数だけランダムに選択
+        selected = random.sample(filtered_problems, min(count, len(filtered_problems)))
+
+        # フロントエンド形式に変換
+        converted_problems = []
+        for problem in selected:
+            converted = {
+                'problem_id': problem.get('problem_id'),
+                'problem_text': problem.get('statement'),  # statement → problem_text
+                'correct_answer': '○' if problem.get('correct_answer') else '×',
+                'explanation': problem.get('basis'),  # basis → explanation
+                'category': problem.get('category'),
+                'difficulty': problem.get('difficulty', difficulty),  # 実際の問題の難易度を使用
+                'pattern_name': problem.get('pattern_name', ''),
+                'theme_name': problem.get('theme_name', ''),
+                'legal_reference': problem.get('legal_reference', ''),
+                'answer_display': '〇' if problem.get('correct_answer') else '×'
+            }
+            converted_problems.append(converted)
 
         return jsonify({
             'status': 'success',
-            'problems': selected,
-            'count': len(selected)
+            'problems': converted_problems,
+            'count': len(converted_problems)
         })
 
     except Exception as e:
@@ -302,14 +331,39 @@ def get_problem(problem_id):
             'message': str(e)
         }), 500
 
+@app.route('/api/pdf/<path:filename>')
+def serve_pdf(filename):
+    """PDF ファイルを配信"""
+    try:
+        pdf_dir = Path(__file__).parent / "static" / "pdfs"
+
+        # セキュリティ: パストラバーサル攻撃を防ぐ
+        file_path = (pdf_dir / filename).resolve()
+        if not str(file_path).startswith(str(pdf_dir.resolve())):
+            return jsonify({
+                'status': 'error',
+                'message': 'Invalid file path'
+            }), 403
+
+        return send_from_directory(str(pdf_dir), filename, as_attachment=False, mimetype='application/pdf')
+    except Exception as e:
+        return jsonify({
+            'status': 'error',
+            'message': f'PDFが見つかりません: {str(e)}'
+        }), 404
+
 # ===== エラーハンドラ =====
 
 @app.errorhandler(404)
 def not_found(error):
-    return jsonify({
-        'status': 'error',
-        'message': 'エンドポイントが見つかりません'
-    }), 404
+    # API リクエストの場合は JSON エラーを返す
+    if request.path.startswith('/api/'):
+        return jsonify({
+            'status': 'error',
+            'message': 'API エンドポイントが見つかりません'
+        }), 404
+    # SPA対応：その他のパスは index.html を返す
+    return serve_index()
 
 @app.errorhandler(500)
 def internal_error(error):

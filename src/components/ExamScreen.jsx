@@ -20,6 +20,21 @@ import {
   getWeakCategories
 } from '../utils/categoryScoring';
 
+// カテゴリ名のマッピング（2025-11-08 再構築版 - 1行表示 + 古いID対応）
+const CATEGORY_NAMES = {
+  'qualification_system': '遊技機取扱主任者制度と資格維持',
+  'game_machine_technical_standards': '遊技機規制技術基準（射幸性・技術）',
+  'supervisor_duties_and_guidance': '主任者の実務、指導及び業界要綱',
+  'business_regulation_and_obligations': '風俗営業の一般規制と義務',
+  'administrative_procedures_and_penalties': '行政手続、構造基準及び罰則',
+  // 古いカテゴリIDも対応（ローカルストレージ互換性）
+  'system_and_test': '遊技機取扱主任者制度と資格維持',
+  'business_law': '風俗営業の一般規制と義務',
+  'game_machine_standards': '遊技機規制技術基準（射幸性・技術）',
+  'supervisor_duties': '主任者の実務、指導及び業界要綱',
+  'final_problems': '行政手続、構造基準及び罰則'
+};
+
 export function ExamScreen({ examMode, onExit }) {
   const navigate = useNavigate();
 
@@ -462,7 +477,7 @@ export function ExamScreen({ examMode, onExit }) {
                 {/* カテゴリ別集計 */}
                 {getCategoryStats(problems, answers).map(cat => (
                   <div key={cat.category} className="category-stat">
-                    <span className="cat-name">{cat.category}</span>
+                    <span className="cat-name">{CATEGORY_NAMES[cat.category] || cat.category}</span>
                     <span className="cat-score">
                       {cat.correct}/{cat.total} ({cat.percentage}%)
                     </span>
@@ -565,7 +580,7 @@ export function ExamScreen({ examMode, onExit }) {
           {/* 問題文 */}
           <div className="problem-header">
             <h2>問題 {currentIndex + 1}</h2>
-            <span className="problem-category">{currentProblem.category}</span>
+            <span className="problem-category">{CATEGORY_NAMES[currentProblem.category] || currentProblem.category}</span>
             <span className={`problem-difficulty difficulty-${currentProblem.difficulty}`}>
               {currentProblem.difficulty === 'easy' && '易'}
               {currentProblem.difficulty === 'medium' && '中'}

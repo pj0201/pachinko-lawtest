@@ -6,38 +6,43 @@
  */
 
 /**
- * 5つの主要項目の定義
+ * 5つの主要項目の定義（2025-11-08 再構築版）
  */
 const EXAM_CATEGORIES = {
-  SYSTEM_AND_TEST: {
-    id: 'system_and_test',
-    name: '制度・試験・資格認定',
+  QUALIFICATION_SYSTEM: {
+    id: 'qualification_system',
+    name: '遊技機取扱主任者制度と資格維持',
     problemRange: [1, 30],
-    description: '試験制度、資格認定、講習関連の規程'
+    description: '資格の維持、試験、講習、欠格事由など、主任者資格に関わる規定',
+    totalProblems: 30
   },
-  BUSINESS_LAW: {
-    id: 'business_law',
-    name: '風営法規制と義務',
-    problemRange: [[31, 60], [151, 180]],
-    description: '風営法に基づく営業者の義務と規制'
+  GAME_MACHINE_TECHNICAL_STANDARDS: {
+    id: 'game_machine_technical_standards',
+    name: '遊技機規制技術基準（射幸性・技術）',
+    problemRange: [[61, 90], [121, 150], [181, 190], [206, 206], [207, 207], [212, 212], [213, 213], [215, 215]],
+    description: '射幸性、技術基準、獲得枚数/球数などの専門的な技術知識',
+    totalProblems: 90
   },
-  GAME_MACHINE_STANDARDS: {
-    id: 'game_machine_standards',
-    name: '遊技機規制基準',
-    problemRange: [[61, 90], [121, 150]],
-    description: '遊技機の技術基準と射幸性基準'
+  SUPERVISOR_DUTIES_AND_GUIDANCE: {
+    id: 'supervisor_duties_and_guidance',
+    name: '主任者の実務、指導及び業界要綱',
+    problemRange: [[91, 120], [208, 208], [209, 209]],
+    description: '主任者の業務、書類確認、保守管理、指導監督義務',
+    totalProblems: 32
   },
-  SUPERVISOR_DUTIES: {
-    id: 'supervisor_duties',
-    name: '主任者実務と業界要綱',
-    problemRange: [[91, 120]],
-    description: '取扱主任者の業務と実務スキル'
+  BUSINESS_REGULATION_AND_OBLIGATIONS: {
+    id: 'business_regulation_and_obligations',
+    name: '風俗営業の一般規制と義務',
+    problemRange: [[31, 60], [151, 180], [220, 220], [226, 226], [227, 227]],
+    description: '風営法の総則、定義、遊技料金、禁止行為などの基本的な法的義務',
+    totalProblems: 63
   },
-  FINAL_PROBLEMS: {
-    id: 'final_problems',
-    name: '最終問題',
-    problemRange: [[181, 230]],
-    description: '総合的な試験対策問題'
+  ADMINISTRATIVE_PROCEDURES_AND_PENALTIES: {
+    id: 'administrative_procedures_and_penalties',
+    name: '行政手続、構造基準及び罰則',
+    problemRange: [[191, 192], [199, 200], [204, 205], [210, 211], [214, 214], [216, 217], [219, 219], [223, 225], [228, 229]],
+    description: '申請期限、構造基準、照度測定、帳簿細則、罰則',
+    totalProblems: 17
   }
 };
 
@@ -46,11 +51,17 @@ const EXAM_CATEGORIES = {
  */
 function getCategoryByProblemId(problemId) {
   for (const [key, category] of Object.entries(EXAM_CATEGORIES)) {
-    const ranges = Array.isArray(category.problemRange[0])
-      ? category.problemRange
-      : [category.problemRange];
+    // problemRange が単純な配列 [start, end] か複合範囲 [[start, end], ...] かを判定
+    let ranges;
+    if (Array.isArray(category.problemRange[0])) {
+      ranges = category.problemRange;
+    } else {
+      ranges = [category.problemRange];
+    }
 
-    for (const [start, end] of ranges) {
+    // 各範囲で問題IDをチェック
+    for (const range of ranges) {
+      const [start, end] = range;
       if (problemId >= start && problemId <= end) {
         return category;
       }

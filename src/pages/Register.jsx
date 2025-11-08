@@ -55,6 +55,13 @@ export default function Register() {
       return;
     }
 
+    // 開発者モード（token=dev）
+    if (token === 'dev') {
+      console.log('🔧 開発者モード有効');
+      setLoading(false);
+      return;
+    }
+
     fetch('/api/auth/verify-invite', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
@@ -189,7 +196,6 @@ export default function Register() {
         )}
 
         <p className="note">※ 招待URLは1台のデバイスのみ登録可能です</p>
-        <p className="note">※ アルファ版テスターとして選ばれたことに感謝します</p>
       </div>
     </div>
   );

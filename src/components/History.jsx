@@ -6,6 +6,36 @@
 import { useState, useEffect } from 'react';
 import '../styles/history.css';
 
+// カテゴリ名マッピング（2025-11-08 再構築版 + 古いID対応）
+const CATEGORY_NAMES = {
+  qualification_system: '遊技機取扱主任者制度と資格維持',
+  game_machine_technical_standards: '遊技機規制技術基準（射幸性・技術）',
+  supervisor_duties_and_guidance: '主任者の実務、指導及び業界要綱',
+  business_regulation_and_obligations: '風俗営業の一般規制と義務',
+  administrative_procedures_and_penalties: '行政手続、構造基準及び罰則',
+  // 古いカテゴリID対応
+  system_and_test: '遊技機取扱主任者制度と資格維持',
+  business_law: '風俗営業の一般規制と義務',
+  game_machine_standards: '遊技機規制技術基準（射幸性・技術）',
+  supervisor_duties: '主任者の実務、指導及び業界要綱',
+  final_problems: '行政手続、構造基準及び罰則'
+};
+
+// モバイル用短縮カテゴリ名（古いID対応）
+const SHORT_CATEGORY_NAMES = {
+  qualification_system: '主任者制度',
+  game_machine_technical_standards: '技術基準',
+  supervisor_duties_and_guidance: '実務指導',
+  business_regulation_and_obligations: '営業規制',
+  administrative_procedures_and_penalties: '行政手続',
+  // 古いカテゴリID対応
+  system_and_test: '主任者制度',
+  business_law: '営業規制',
+  game_machine_standards: '技術基準',
+  supervisor_duties: '実務指導',
+  final_problems: '行政手続'
+};
+
 export function History({ onExit }) {
   // ホーム画面に戻る（ブラウザバック対策：履歴を置き換え）
   const handleExit = () => {
@@ -127,7 +157,7 @@ export function History({ onExit }) {
         {/* 統計サマリー */}
         {stats && (
           <div className="history-summary">
-            <h2>📈 統計情報</h2>
+            <h2>📈 これまでの実績</h2>
 
             <div className="summary-grid">
               <div className="summary-card">
@@ -157,7 +187,10 @@ export function History({ onExit }) {
               <div className="category-list">
                 {stats.categoryStats.map(cat => (
                   <div key={cat.category} className="category-item">
-                    <div className="cat-name">{cat.category}</div>
+                    <div className="cat-name">
+                      <span className="full-name">{CATEGORY_NAMES[cat.category] || cat.category}</span>
+                      <span className="short-name">{SHORT_CATEGORY_NAMES[cat.category] || cat.category}</span>
+                    </div>
                     <div className="cat-bar">
                       <div
                         className="cat-fill"
@@ -221,7 +254,7 @@ export function History({ onExit }) {
                   <div className="detail-categories">
                     {result.categoryStats.map(cat => (
                       <div key={cat.category} className="detail-category">
-                        <span className="cat-name">{cat.category}</span>
+                        <span className="cat-name">{CATEGORY_NAMES[cat.category] || cat.category}</span>
                         <span className="cat-score">
                           {cat.correct}/{cat.total} ({cat.percentage}%)
                         </span>

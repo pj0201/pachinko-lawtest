@@ -127,6 +127,45 @@ app.get('/api/problems/count', (req, res) => {
   }
 });
 
+/**
+ * POST /api/problems/quiz
+ * 難易度指定で問題を取得（クイズモード用）
+ */
+app.post('/api/problems/quiz', (req, res) => {
+  try {
+    const { count = 10, difficulty } = req.body;
+    let problems = dbLoader.getAllProblems();
+
+    // 難易度でフィルタリング（難易度フィールドがある場合）
+    if (difficulty) {
+      problems = problems.filter(p => p.difficulty === difficulty);
+    }
+
+    // ランダムに指定数取得
+    const selected = [];
+    const used = new Set();
+    while (selected.length < Math.min(count, problems.length)) {
+      const randomIndex = Math.floor(Math.random() * problems.length);
+      if (!used.has(randomIndex)) {
+        selected.push(problems[randomIndex]);
+        used.add(randomIndex);
+      }
+    }
+
+    res.json({
+      status: 'success',
+      count: selected.length,
+      problems: selected
+    });
+  } catch (error) {
+    res.status(500).json({
+      status: 'error',
+      message: 'クイズ問題取得に失敗しました',
+      error: error.message
+    });
+  }
+});
+
 // ==================== ヘルスチェック ====================
 app.get('/health', (req, res) => {
   res.json({
