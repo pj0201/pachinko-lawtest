@@ -90,9 +90,9 @@ export function LawViewer3Stage() {
         {!selectedArticle && (
           <div>
             <p className="law-viewer-select-prompt">条を選択：</p>
-            {selectedChapter.articles.map((article) => (
+            {selectedChapter.articles.map((article, index) => (
               <button
-                key={article.articleNum}
+                key={`article-${article.articleNum}-${index}`}
                 className="law-viewer-button law-viewer-article-button"
                 onClick={() => handleSelectArticle(article)}
               >
