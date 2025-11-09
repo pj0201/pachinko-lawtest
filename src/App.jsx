@@ -16,7 +16,6 @@
 import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import './App.css';
 import Register from './pages/Register';
-import ProtectedRoute from './components/ProtectedRoute';
 import { Home } from './components/Home';
 import { ExamScreen } from './components/ExamScreen';
 import { History } from './components/History';
@@ -88,11 +87,7 @@ function App() {
       */}
       <Route
         path="/*"
-        element={
-          <ProtectedRoute>
-            <MainApp />
-          </ProtectedRoute>
-        }
+        element={<MainApp />}
       />
     </Routes>
   );
