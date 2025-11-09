@@ -180,6 +180,7 @@
   justify-content: center;
   align-items: flex-start;
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .exam-option {
@@ -428,5 +429,35 @@
     flex-shrink: 0;
     font-size: 11px;
     padding: 4px 8px;
+  }
+}
+
+/* ===== スマホ対応（画面幅 600px 以下） ===== */
+@media (max-width: 600px) {
+  .exam-options {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .exam-option {
+    min-width: unset;
+    width: 100%;
+    flex: none;
+  }
+
+  .option-header {
+    flex-wrap: wrap;
+  }
+
+  .option-content {
+    width: 100%;
+  }
+
+  .mock-exam-section {
+    padding: 16px;
+  }
+
+  .legal-section {
+    padding: 12px;
   }
 }
