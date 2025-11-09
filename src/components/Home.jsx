@@ -294,7 +294,7 @@ export function Home() {
 
         {/* 公式試験情報 */}
         <div className="exam-schedule">
-          <h3>📅 公式試験情報</h3>
+          <h3>📅 遊技機取扱主任者試験情報</h3>
           <a
             href="https://exam.nichiyukyo.or.jp/"
             target="_blank"
