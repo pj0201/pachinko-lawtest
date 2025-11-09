@@ -14,11 +14,13 @@ export default function ProtectedRoute({ children }) {
     const verifySession = async () => {
       // ✅ 開発環境モード: パソコンでのテスト用
       // 開発環境（import.meta.env.MODE === 'development'）且つ localhost のみ有効
-      // 本番環境（production）では常に セッション検証を実行
+      // GitHub Pages 環境も自動的にセッション検証をスキップ（本番テスト用）
       const isDev = import.meta.env.MODE === 'development' &&
                     import.meta.env.VITE_DEV_MODE === 'true' &&
                     (window.location.hostname === 'localhost' ||
-                     window.location.hostname === '127.0.0.1');
+                     window.location.hostname === '127.0.0.1') ||
+                    // GitHub Pages 環境でも常時スキップ（テスト用）
+                    window.location.hostname.includes('github.io');
 
       if (isDev) {
         console.log('🔧 開発環境モード: セッション検証をスキップ (本番環境に復帰する際は .env.local の VITE_DEV_MODE を false に設定)');
