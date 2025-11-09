@@ -27,3 +27,9 @@ dist-ssr
 .env
 .env.local
 backend/.env
+
+# PDF extraction outputs and checkpoints
+backend/data/
+checkpoints/
+pdf_extracted_*.json
+ocr_*.json
