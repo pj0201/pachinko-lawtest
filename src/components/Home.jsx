@@ -268,27 +268,19 @@ export function Home() {
             </div>
           )}
 
-          {/* 引用・出典情報 */}
+          {/* 法律参照情報 */}
           <div style={{
             marginTop: '12px',
-            padding: '6px 8px',
-            fontSize: '8px',
-            lineHeight: '1.4',
-            color: '#999',
-            display: 'flex',
-            flexWrap: 'wrap',
-            gap: '6px',
-            justifyContent: 'flex-start',
-            alignItems: 'center'
+            padding: '8px',
+            fontSize: '12px',
+            lineHeight: '1.6',
+            color: '#ccc',
+            backgroundColor: 'rgba(0,0,0,0.2)',
+            borderRadius: '6px'
           }}>
-            <span>データ出典：</span>
-            <a href="https://laws.e-gov.go.jp/" target="_blank" rel="noopener noreferrer" style={{ color: '#6db3f2', textDecoration: 'none', fontWeight: '500' }}>e-Gov</a>
-            <span>|</span>
-            <a href="https://laws.e-gov.go.jp/law/323AC0000000122" target="_blank" rel="noopener noreferrer" style={{ color: '#6db3f2', textDecoration: 'none', fontWeight: '500' }}>風営法</a>
-            <span>|</span>
-            <a href="https://laws.e-gov.go.jp/law/360M50400000001" target="_blank" rel="noopener noreferrer" style={{ color: '#6db3f2', textDecoration: 'none', fontWeight: '500' }}>施行規則</a>
-            <span>|</span>
-            <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer" style={{ color: '#6db3f2', textDecoration: 'none', fontWeight: '500' }}>CC BY 4.0</a>
+            <p style={{ margin: '0 0 6px 0', fontWeight: '500' }}>📋 法律参照</p>
+            <p style={{ margin: '0 0 4px 0' }}>本問題集は日本の<strong>風営法</strong>（昭和23年法律第122号）及び<strong>風営法施行規則</strong>（昭和63年自治省令第1号）に基づいて作成されています。</p>
+            <p style={{ margin: '0', fontSize: '11px', color: '#999' }}>データ出典：e-Gov法令検索 / ライセンス：CC BY 4.0</p>
           </div>
         </div>
 
