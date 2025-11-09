@@ -9,8 +9,7 @@ import FingerprintJS from '@fingerprintjs/fingerprintjs';
 import './Register.css';
 
 export default function Register() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [username, setUsername] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
   const [deviceId, setDeviceId] = useState('');
@@ -104,8 +103,8 @@ export default function Register() {
       return;
     }
 
-    if (!email || !password) {
-      setError('メールアドレスとパスワードを入力してください');
+    if (!username) {
+      setError('ユーザー名を入力してください');
       return;
     }
 
@@ -118,8 +117,7 @@ export default function Register() {
         body: JSON.stringify({
           token,
           device_id: deviceId,
-          email,
-          password
+          username
         })
       });
 
@@ -130,9 +128,10 @@ export default function Register() {
         localStorage.setItem('session_token', data.session_token);
         localStorage.setItem('device_id', deviceId);
 
-        // ユーザー情報も保存（既存のLogin互換性のため）
+        // ユーザー情報も保存
+        localStorage.setItem('username', username);
         localStorage.setItem('user', JSON.stringify({
-          email,
+          username,
           session_token: data.session_token
         }));
 
@@ -188,28 +187,15 @@ export default function Register() {
         {!error && (
           <form onSubmit={handleSubmit} className="register-form">
             <div className="form-group">
-              <label htmlFor="email">メールアドレス</label>
+              <label htmlFor="username">ユーザー名</label>
               <input
-                id="email"
+                id="username"
                 type="text"
-                placeholder="メールアドレス"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                placeholder="ユーザー名（例：テスト001）"
+                value={username}
+                onChange={(e) => setUsername(e.target.value)}
                 disabled={loading}
-                autoComplete="email"
-              />
-            </div>
-
-            <div className="form-group">
-              <label htmlFor="password">パスワード</label>
-              <input
-                id="password"
-                type="password"
-                placeholder="パスワード"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                disabled={loading}
-                autoComplete="current-password"
+                autoComplete="off"
               />
             </div>
 

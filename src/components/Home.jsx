@@ -15,8 +15,8 @@ export function Home() {
   const [showPdf1, setShowPdf1] = useState(false);
   const [showPdf2, setShowPdf2] = useState(false);
 
-  // localStorage からユーザー情報を取得
-  const user = JSON.parse(localStorage.getItem('user') || '{}');
+  // localStorage からユーザー名を取得
+  const username = localStorage.getItem('username') || 'ゲスト';
 
   // PDF ファイル名定義
   const PDF_FILES = {
@@ -48,7 +48,7 @@ export function Home() {
       <div className="home-header">
         <h1>🎰 風営法理解度チェック</h1>
         <p className="header-description">本アプリは風俗営業等の規制及び業務の適正化等に関する法律についての知識を学ぶアプリです</p>
-        <p className="user-info">ユーザー: {user?.email || 'ゲスト'}</p>
+        <p className="user-info">ユーザー: {username}</p>
       </div>
 
       {/* メインコンテンツ */}
