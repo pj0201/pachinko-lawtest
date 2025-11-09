@@ -168,7 +168,7 @@ export function ExamScreen({ onExit }) {
           id: problem.problem_id,
 
           // 2. 問題文
-          statement: problem.problem_text,
+          statement: problem.statement,
 
           // 3. 正答（boolean）
           answer: answer,
@@ -269,7 +269,7 @@ export function ExamScreen({ onExit }) {
 
           return {
             id: problem.problem_id,
-            statement: problem.problem_text,
+            statement: problem.statement,
             answer: answer,
             explanation: problem.explanation || problem.basis,
             category: problem.category,
