@@ -8,12 +8,19 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/home.css';
+import { WIND_BUSINESS_LAW, WIND_BUSINESS_REGULATION } from '../constants/lawDatabase';
+import { LawViewer3Stage } from './LawViewer3Stage';
 
 export function Home() {
   const navigate = useNavigate();
   const [showLegalDoc, setShowLegalDoc] = useState(false);
   const [showPdf1, setShowPdf1] = useState(false);
   const [showPdf2, setShowPdf2] = useState(false);
+
+  // 3段階UI用State
+  const [expandedLaw, setExpandedLaw] = useState(null); // どの法律を展開しているか('law' or 'regulation')
+  const [expandedChapter, setExpandedChapter] = useState(null); // どの章を展開しているか
+  const [expandedArticle, setExpandedArticle] = useState(null); // どの条を展開しているか
 
   // localStorage からユーザー名を取得
   const username = localStorage.getItem('username') || 'ゲスト';
