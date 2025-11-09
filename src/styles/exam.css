@@ -1,5 +1,5 @@
 /* ===========================
-   模擬試験画面 - ダークテーマ
+   問題出題画面 - ダークテーマ
    =========================== */
 
 .exam-container {
@@ -224,6 +224,9 @@
   line-height: 1.8;
   color: var(--text-primary);
   font-weight: 500;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 /* 回答ボタン */

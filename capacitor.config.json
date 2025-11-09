@@ -1,6 +1,6 @@
 {
   "appId": "com.patshinko.examapp",
-  "appName": "遊技機取扱主任者試験アプリ",
+  "appName": "風営法理解度チェック",
   "webDir": "dist",
   "server": {
     "androidScheme": "https"

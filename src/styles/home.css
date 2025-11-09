@@ -94,7 +94,7 @@
   transform: translateY(0);
 }
 
-/* ===== 試験日程 ===== */
+/* ===== 公式日程参考 ===== */
 .exam-schedule {
   padding-top: 24px;
   border-top: 1px solid var(--border-color);
@@ -141,7 +141,7 @@
   transform: scale(0.98);
 }
 
-/* ===== 模擬試験セクション ===== */
+/* ===== 学習モードセクション ===== */
 .mock-exam-section {
   background-color: var(--bg-secondary);
   border: 1px solid var(--border-color);

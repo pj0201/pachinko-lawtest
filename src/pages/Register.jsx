@@ -179,8 +179,8 @@ export default function Register() {
   return (
     <div className="register-container">
       <div className="register-card">
-        <h1>遊技機取扱主任者試験アプリ</h1>
-        <h2>アルファ版登録</h2>
+        <h1>風営法（パチンコ業界）理解度チェック</h1>
+        <h2>アカウント登録</h2>
 
         {error && <div className="error-message">{error}</div>}
 
