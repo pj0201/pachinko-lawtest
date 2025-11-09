@@ -292,6 +292,19 @@ export function Home() {
           </div>
         </div>
 
+        {/* 公式試験情報 */}
+        <div className="exam-schedule">
+          <h3>📅 公式試験情報</h3>
+          <a
+            href="https://exam.nichiyukyo.or.jp/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="official-link"
+          >
+            公式サイトで情報確認 →
+          </a>
+        </div>
+
         {/* チェック開始セクション */}
         <div className="mock-exam-section">
           <h2>🧪 問題集を解く</h2>
