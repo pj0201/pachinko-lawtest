@@ -292,19 +292,6 @@ export function Home() {
           </div>
         </div>
 
-        {/* 試験日程 */}
-        <div className="exam-schedule">
-          <h3>📅 遊技機取扱主任者試験日程</h3>
-          <a
-            href="https://exam.nichiyukyo.or.jp/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="official-link"
-          >
-            公式サイトで日程確認 →
-          </a>
-        </div>
-
         {/* チェック開始セクション */}
         <div className="mock-exam-section">
           <h2>🧪 問題集を解く</h2>
