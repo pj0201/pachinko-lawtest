@@ -62,23 +62,37 @@ export default function Register() {
       return;
     }
 
-    fetch('/api/auth/verify-invite', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ token })
-    })
-      .then(res => res.json())
-      .then(data => {
-        if (!data.valid) {
-          setError(data.message || '無効な招待URLです');
+    // テスト用トークン検証（ローカル）
+    const verifyTestToken = async () => {
+      try {
+        const response = await fetch('/test-tokens.json');
+        const testTokenData = await response.json();
+
+        // トークンが存在するか確認
+        if (!testTokenData.tokens[token]) {
+          setError('無効な招待URLです');
+          setLoading(false);
+          return;
         }
+
+        // 既に使用済みか確認
+        const usedTokens = JSON.parse(localStorage.getItem('used_tokens') || '[]');
+        if (usedTokens.includes(token)) {
+          setError('この招待URLは既に使用済みです');
+          setLoading(false);
+          return;
+        }
+
+        console.log(`✅ テスト用トークン有効: ${token}`);
         setLoading(false);
-      })
-      .catch(err => {
-        console.error('❌ トークン検証失敗:', err);
-        setError('サーバーへの接続に失敗しました');
+      } catch (err) {
+        console.error('❌ テスト用トークン検証失敗:', err);
+        setError('トークン検証に失敗しました');
         setLoading(false);
-      });
+      }
+    };
+
+    verifyTestToken();
   }, [token]);
 
   const handleSubmit = async (e) => {
@@ -121,6 +135,16 @@ export default function Register() {
           email,
           session_token: data.session_token
         }));
+
+        // テスト用トークン無効化（重要）
+        if (token && (token.startsWith('TEST_') || token.startsWith('ADMIN_'))) {
+          const usedTokens = JSON.parse(localStorage.getItem('used_tokens') || '[]');
+          if (!usedTokens.includes(token)) {
+            usedTokens.push(token);
+            localStorage.setItem('used_tokens', JSON.stringify(usedTokens));
+            console.log(`✅ トークン無効化: ${token}`);
+          }
+        }
 
         console.log('✅ 登録成功 - セッショントークン:', data.session_token);
 
