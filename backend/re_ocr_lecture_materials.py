@@ -34,9 +34,13 @@ logger = logging.getLogger(__name__)
 
 
 class LectureOCRReprocessor:
-    """講習テキスト再OCR処理エンジン"""
+    """講習テキスト再OCR処理エンジン（分割処理対応版）"""
 
-    def __init__(self):
+    def __init__(self, batch_size=10):
+        """
+        Args:
+            batch_size: 一度に処理するページ数（デフォルト: 10ページ）
+        """
         self.pdf_processor = PDFProcessor(max_workers=4)
         self.pdf_files = {
             1: "/mnt/c/Users/planj/Downloads/①.pdf",
@@ -46,6 +50,9 @@ class LectureOCRReprocessor:
         self.old_ocr_path = "/home/planj/patshinko-exam-app/data/ocr_results_corrected.json"
         self.timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         self.output_dir = Path("/home/planj/patshinko-exam-app/data")
+        self.batch_size = batch_size  # ページ分割サイズ
+        self.checkpoint_dir = self.output_dir / "checkpoints"
+        self.checkpoint_dir.mkdir(exist_ok=True)
 
     def load_old_ocr(self) -> List[Dict]:
         """現在のOCR結果をロード"""
@@ -56,13 +63,33 @@ class LectureOCRReprocessor:
             logger.error(f"旧OCRロード失敗: {e}")
             return []
 
-    def extract_pdf_to_dict(self, pdf_index: int) -> List[Dict]:
-        """PDFをページごとにテキスト抽出し、OCRフォーマットで返す"""
+    def extract_pdf_to_dict(self, pdf_index: int, start_page: int = None, end_page: int = None) -> List[Dict]:
+        """
+        PDFをページごとにテキスト抽出し、OCRフォーマットで返す（分割処理対応）
+
+        Args:
+            pdf_index: PDF番号
+            start_page: 開始ページ（Noneの場合は最初から）
+            end_page: 終了ページ（Noneの場合は最後まで）
+        """
         pdf_path = self.pdf_files[pdf_index]
-        logger.info(f"処理中: {pdf_path}")
+        page_range_str = f"ページ {start_page}-{end_page}" if start_page and end_page else "全ページ"
+        logger.info(f"処理中: {pdf_path} ({page_range_str})")
 
         try:
             pages_data = self.pdf_processor.extract_text_by_page(pdf_path)
+
+            # ページ範囲でフィルタリング
+            if start_page is not None or end_page is not None:
+                filtered_pages = []
+                for page_info in pages_data:
+                    page_num = page_info['page']
+                    if start_page is not None and page_num < start_page:
+                        continue
+                    if end_page is not None and page_num > end_page:
+                        continue
+                    filtered_pages.append(page_info)
+                pages_data = filtered_pages
 
             # OCRフォーマットに変換
             results = []
@@ -74,23 +101,109 @@ class LectureOCRReprocessor:
                     "page_number": page_info['page'],
                     "text": page_info['text'],
                     "timestamp": datetime.now().isoformat(),
-                    "extraction_method": "PyMuPDF_v2"
+                    "extraction_method": "PyMuPDF_v2_split"
                 }
                 results.append(result)
                 total_chars += char_count
 
-            logger.info(f"✅ PDF {pdf_index}: {len(results)}ページ抽出完了 (合計{total_chars:,}文字)")
+            logger.info(f"✅ PDF {pdf_index} {page_range_str}: {len(results)}ページ抽出完了 (合計{total_chars:,}文字)")
             return results
         except Exception as e:
-            logger.error(f"PDF {pdf_index} 処理エラー: {e}")
+            logger.error(f"❌ PDF {pdf_index} {page_range_str} 処理エラー: {e}")
             return []
 
-    def reprocess_all_pdfs(self) -> List[Dict]:
-        """全3つのPDFを再処理"""
+    def save_checkpoint(self, pdf_index: int, batch_num: int, results: List[Dict]):
+        """チェックポイントを保存"""
+        checkpoint_file = self.checkpoint_dir / f"checkpoint_pdf{pdf_index}_batch{batch_num}_{self.timestamp}.json"
+        try:
+            with open(checkpoint_file, 'w', encoding='utf-8') as f:
+                json.dump(results, f, ensure_ascii=False, indent=2)
+            logger.info(f"💾 チェックポイント保存: {checkpoint_file.name}")
+        except Exception as e:
+            logger.error(f"❌ チェックポイント保存エラー: {e}")
+
+    def load_checkpoints(self) -> List[Dict]:
+        """既存のチェックポイントをロード"""
         all_results = []
+        checkpoint_files = sorted(self.checkpoint_dir.glob(f"checkpoint_*_{self.timestamp}.json"))
+
+        for checkpoint_file in checkpoint_files:
+            try:
+                with open(checkpoint_file, 'r', encoding='utf-8') as f:
+                    results = json.load(f)
+                    all_results.extend(results)
+                logger.info(f"📂 チェックポイント読込: {checkpoint_file.name} ({len(results)}ページ)")
+            except Exception as e:
+                logger.error(f"❌ チェックポイント読込エラー ({checkpoint_file.name}): {e}")
+
+        return all_results
+
+    def get_pdf_page_count(self, pdf_index: int) -> int:
+        """PDFの総ページ数を取得"""
+        try:
+            pdf_path = self.pdf_files[pdf_index]
+            pages_data = self.pdf_processor.extract_text_by_page(pdf_path)
+            return len(pages_data)
+        except Exception as e:
+            logger.error(f"❌ PDF {pdf_index} ページ数取得エラー: {e}")
+            return 0
+
+    def reprocess_all_pdfs(self) -> List[Dict]:
+        """全3つのPDFを再処理（バッチ分割対応）"""
+        all_results = []
+
         for pdf_index in [1, 2, 3]:
-            results = self.extract_pdf_to_dict(pdf_index)
-            all_results.extend(results)
+            logger.info(f"\n{'='*60}")
+            logger.info(f"PDF {pdf_index} の処理を開始")
+            logger.info(f"{'='*60}")
+
+            try:
+                # PDF全体を取得してページ数を確認
+                full_results = self.extract_pdf_to_dict(pdf_index)
+                total_pages = len(full_results)
+                logger.info(f"📄 PDF {pdf_index} 総ページ数: {total_pages}")
+
+                # バッチ処理が必要かチェック
+                if total_pages <= self.batch_size:
+                    # ページ数が少ない場合は一度に処理
+                    logger.info(f"✅ PDF {pdf_index}: ページ数が少ないため一括処理")
+                    all_results.extend(full_results)
+                    # チェックポイント保存
+                    self.save_checkpoint(pdf_index, 1, full_results)
+                else:
+                    # バッチ分割処理
+                    num_batches = (total_pages + self.batch_size - 1) // self.batch_size
+                    logger.info(f"📦 PDF {pdf_index}: {num_batches}個のバッチに分割して処理")
+
+                    for batch_num in range(1, num_batches + 1):
+                        start_idx = (batch_num - 1) * self.batch_size
+                        end_idx = min(batch_num * self.batch_size, total_pages)
+
+                        # バッチを抽出
+                        batch_results = full_results[start_idx:end_idx]
+
+                        logger.info(f"  バッチ {batch_num}/{num_batches}: ページ {start_idx+1}-{end_idx} ({len(batch_results)}ページ)")
+
+                        all_results.extend(batch_results)
+
+                        # チェックポイント保存
+                        self.save_checkpoint(pdf_index, batch_num, batch_results)
+
+                        # 進捗表示
+                        progress = (batch_num / num_batches) * 100
+                        logger.info(f"  進捗: {progress:.1f}% 完了")
+
+                logger.info(f"✅ PDF {pdf_index} 処理完了: {total_pages}ページ")
+
+            except Exception as e:
+                logger.error(f"❌ PDF {pdf_index} 処理エラー: {e}")
+                logger.info(f"⚠️  PDF {pdf_index} をスキップして続行します")
+                continue
+
+        logger.info(f"\n{'='*60}")
+        logger.info(f"✅ 全PDF処理完了: 合計 {len(all_results)}ページ")
+        logger.info(f"{'='*60}\n")
+
         return all_results
 
     def calculate_text_hash(self, text: str) -> str:
@@ -456,7 +569,30 @@ class LectureOCRReprocessor:
 
 def main():
     """エントリーポイント"""
-    processor = LectureOCRReprocessor()
+    import argparse
+
+    parser = argparse.ArgumentParser(
+        description='遊技機取扱主任者 講習テキスト 再OCR処理（分割処理対応版）'
+    )
+    parser.add_argument(
+        '--batch-size',
+        type=int,
+        default=10,
+        help='一度に処理するページ数（デフォルト: 10ページ）'
+    )
+    parser.add_argument(
+        '--resume',
+        action='store_true',
+        help='チェックポイントから再開する'
+    )
+
+    args = parser.parse_args()
+
+    logger.info(f"バッチサイズ: {args.batch_size}ページ")
+    if args.resume:
+        logger.info("チェックポイントから再開モード")
+
+    processor = LectureOCRReprocessor(batch_size=args.batch_size)
     success = processor.run()
     return 0 if success else 1
 
