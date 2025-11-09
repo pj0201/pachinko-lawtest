@@ -58,6 +58,78 @@ export function Home() {
         <div className="legal-reference">
           <h3>📜 法律参照</h3>
 
+          {/* 風営法説明 */}
+          <button
+            className="legal-doc-toggle"
+            onClick={() => setShowPdf1(!showPdf1)}
+            style={{
+              marginBottom: '12px',
+              padding: '10px 16px',
+              backgroundColor: '#d4af37',
+              border: '1px solid #d4af37',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '14px',
+              width: '100%',
+              textAlign: 'left',
+              fontWeight: '600',
+              color: '#0a0a0a'
+            }}
+          >
+            📄 風俗営業等の規制及び業務の適正化等に関する法律 {showPdf1 ? '▼' : '▶'}
+          </button>
+
+          {showPdf1 && (
+            <div style={{
+              marginBottom: '16px',
+              padding: '12px',
+              backgroundColor: '#1a1a1a',
+              border: '1px solid #444',
+              borderRadius: '4px',
+              fontSize: '13px',
+              lineHeight: '1.6',
+              color: '#ccc'
+            }}>
+              <p style={{ margin: '0' }}>風営法は、昭和23年に制定された日本の基本的な風俗営業規制法です。パチンコ店を含む風俗営業の運営を規制するための法律的な枠組みを定めています。詳細はe-Gov法令検索サイトをご参照ください。</p>
+            </div>
+          )}
+
+          {/* 風営法施行規則説明 */}
+          <button
+            className="legal-doc-toggle"
+            onClick={() => setShowPdf2(!showPdf2)}
+            style={{
+              marginBottom: '12px',
+              padding: '10px 16px',
+              backgroundColor: '#d4af37',
+              border: '1px solid #d4af37',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '14px',
+              width: '100%',
+              textAlign: 'left',
+              fontWeight: '600',
+              color: '#0a0a0a'
+            }}
+          >
+            📄 風俗営業等の規制及び業務の適正化等に関する法律施行規則 {showPdf2 ? '▼' : '▶'}
+          </button>
+
+          {showPdf2 && (
+            <div style={{
+              marginBottom: '16px',
+              padding: '12px',
+              backgroundColor: '#1a1a1a',
+              border: '1px solid #444',
+              borderRadius: '4px',
+              fontSize: '13px',
+              lineHeight: '1.6',
+              color: '#ccc'
+            }}>
+              <p style={{ margin: '0' }}>風営法施行規則は、昭和63年に定められた自治省令（現在は警察庁）で、風営法を実際に運用するための具体的な基準・手続き・技術的要件を定めています。営業所の構造基準や設備の基準などが規定されています。</p>
+            </div>
+          )}
+
           <button
             className="legal-doc-toggle"
             onClick={() => setShowLegalDoc(!showLegalDoc)}
