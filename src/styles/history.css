@@ -178,6 +178,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  min-width: 0; /* Flexbox用の切り詰め有効化 */
 }
 
 .cat-bar {

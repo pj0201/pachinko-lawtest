@@ -1,0 +1,138 @@
+/* ===========================
+   法律ビューア3段階UI - ダークテーマ
+   =========================== */
+
+.law-viewer-container {
+  margin-top: 12px;
+  padding: 12px;
+  background-color: #1a1a1a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #ccc;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.law-viewer-header {
+  margin: 0 0 10px 0;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.law-viewer-button {
+  margin-bottom: 8px;
+  padding: 10px 12px;
+  background-color: #d4af37;
+  border: 1px solid #d4af37;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  width: 100%;
+  text-align: left;
+  font-weight: 600;
+  color: #0a0a0a;
+  transition: all 0.3s ease;
+}
+
+.law-viewer-button:hover {
+  background-color: #e5c158;
+  border-color: #e5c158;
+  transform: translateX(4px);
+}
+
+.law-viewer-button:active {
+  transform: scale(0.98);
+}
+
+.law-viewer-back-button {
+  background-color: #666;
+  border-color: #666;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.law-viewer-back-button:hover {
+  background-color: #777;
+  border-color: #777;
+  transform: translateX(-4px);
+}
+
+.law-viewer-article-button {
+  background-color: #444;
+  border-color: #444;
+  color: #d4af37;
+}
+
+.law-viewer-article-button:hover {
+  background-color: #555;
+  border-color: #555;
+}
+
+.law-viewer-title {
+  margin: 0 0 10px 0;
+  color: #d4af37;
+  font-weight: bold;
+}
+
+.law-viewer-select-prompt {
+  margin: 0 0 8px 0;
+  color: #ccc;
+  font-size: 12px;
+}
+
+.law-viewer-article-content h4 {
+  color: #d4af37;
+  margin: 0 0 10px 0;
+}
+
+.law-viewer-article-text {
+  color: #ffffff;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+}
+
+.law-viewer-back-to-list {
+  background-color: #444;
+  border-color: #444;
+  margin-top: 12px;
+  color: #d4af37;
+}
+
+.law-viewer-back-to-list:hover {
+  background-color: #555;
+  border-color: #555;
+}
+
+/* スクロールバーのスタイル（Webkit系ブラウザ） */
+.law-viewer-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.law-viewer-container::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.law-viewer-container::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.law-viewer-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 480px) {
+  .law-viewer-container {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .law-viewer-button {
+    padding: 8px 10px;
+    font-size: 12px;
+  }
+}

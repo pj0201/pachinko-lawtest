@@ -5,6 +5,7 @@
 
 import { useState } from 'react';
 import { WIND_BUSINESS_LAW, WIND_BUSINESS_REGULATION } from '../constants/lawDatabase';
+import '../styles/lawViewer.css';
 
 export function LawViewer3Stage() {
   const [stage, setStage] = useState(0); // 0=法律選択, 1=章立て, 2=条文
@@ -39,42 +40,15 @@ export function LawViewer3Stage() {
     }
   };
 
-  const containerStyle = {
-    marginTop: '12px',
-    padding: '12px',
-    backgroundColor: '#1a1a1a',
-    border: '1px solid #444',
-    borderRadius: '4px',
-    fontSize: '13px',
-    lineHeight: '1.8',
-    color: '#ccc',
-    maxHeight: '600px',
-    overflowY: 'auto'
-  };
-
-  const buttonStyle = {
-    marginBottom: '8px',
-    padding: '10px 12px',
-    backgroundColor: '#d4af37',
-    border: '1px solid #d4af37',
-    borderRadius: '4px',
-    cursor: 'pointer',
-    fontSize: '13px',
-    width: '100%',
-    textAlign: 'left',
-    fontWeight: '600',
-    color: '#0a0a0a'
-  };
-
   // 第1段階：法律選択
   if (stage === 0) {
     return (
-      <div style={containerStyle}>
-        <p style={{ margin: '0 0 10px 0', color: '#d4af37', fontWeight: 'bold' }}>📋 法律を選択してください</p>
-        <button style={buttonStyle} onClick={() => handleSelectLaw(WIND_BUSINESS_LAW)}>
+      <div className="law-viewer-container">
+        <p className="law-viewer-header">📋 法律を選択してください</p>
+        <button className="law-viewer-button" onClick={() => handleSelectLaw(WIND_BUSINESS_LAW)}>
           風営法（法律）{' '} →
         </button>
-        <button style={buttonStyle} onClick={() => handleSelectLaw(WIND_BUSINESS_REGULATION)}>
+        <button className="law-viewer-button" onClick={() => handleSelectLaw(WIND_BUSINESS_REGULATION)}>
           風営法施行規則 →
         </button>
       </div>
@@ -84,15 +58,15 @@ export function LawViewer3Stage() {
   // 第2段階：章立て
   if (stage === 1 && selectedLaw) {
     return (
-      <div style={containerStyle}>
-        <button style={{ ...buttonStyle, backgroundColor: '#666', marginBottom: '12px' }} onClick={handleBack}>
+      <div className="law-viewer-container">
+        <button className="law-viewer-button law-viewer-back-button" onClick={handleBack}>
           ← 戻る
         </button>
-        <p style={{ margin: '0 0 10px 0', color: '#d4af37', fontWeight: 'bold' }}>{selectedLaw.name}</p>
+        <p className="law-viewer-title">{selectedLaw.name}</p>
         {selectedLaw.chapters.map((chapter) => (
           <button
             key={chapter.chapterNum}
-            style={buttonStyle}
+            className="law-viewer-button"
             onClick={() => handleSelectChapter(chapter)}
           >
             第{chapter.chapterNum}章：{chapter.chapterName} →
@@ -105,21 +79,21 @@ export function LawViewer3Stage() {
   // 第3段階：条文
   if (stage === 2 && selectedChapter) {
     return (
-      <div style={containerStyle}>
-        <button style={{ ...buttonStyle, backgroundColor: '#666', marginBottom: '12px' }} onClick={handleBack}>
+      <div className="law-viewer-container">
+        <button className="law-viewer-button law-viewer-back-button" onClick={handleBack}>
           ← 戻る
         </button>
-        <p style={{ margin: '0 0 10px 0', color: '#d4af37', fontWeight: 'bold' }}>
+        <p className="law-viewer-title">
           第{selectedChapter.chapterNum}章：{selectedChapter.chapterName}
         </p>
 
         {!selectedArticle && (
           <div>
-            <p style={{ margin: '0 0 8px 0', color: '#ccc', fontSize: '12px' }}>条を選択：</p>
+            <p className="law-viewer-select-prompt">条を選択：</p>
             {selectedChapter.articles.map((article) => (
               <button
                 key={article.articleNum}
-                style={{ ...buttonStyle, backgroundColor: '#444' }}
+                className="law-viewer-button law-viewer-article-button"
                 onClick={() => handleSelectArticle(article)}
               >
                 第{article.articleNum}条：{article.title}
@@ -129,15 +103,15 @@ export function LawViewer3Stage() {
         )}
 
         {selectedArticle && (
-          <div>
-            <h4 style={{ color: '#d4af37', margin: '0 0 10px 0' }}>
+          <div className="law-viewer-article-content">
+            <h4>
               第{selectedArticle.articleNum}条：{selectedArticle.title}
             </h4>
-            <p style={{ color: '#ffffff', whiteSpace: 'pre-wrap', wordWrap: 'break-word', margin: 0 }}>
+            <p className="law-viewer-article-text">
               {selectedArticle.text}
             </p>
             <button
-              style={{ ...buttonStyle, backgroundColor: '#444', marginTop: '12px' }}
+              className="law-viewer-button law-viewer-back-to-list"
               onClick={() => setSelectedArticle(null)}
             >
               条一覧に戻る
