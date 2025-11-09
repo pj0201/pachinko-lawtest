@@ -67,28 +67,12 @@ function MainApp() {
 function App() {
   return (
     <Routes>
-      {/*
-        ========================================
-        公開ルート（認証なし）
-        ========================================
-      */}
-      {/* 招待URL登録ページ */}
+      {/* デフォルト：MainApp（認証なしで直接アクセス可能） */}
+      <Route path="/*" element={<MainApp />} />
+
+      {/* 招待URL登録ページ（参考用） */}
       <Route path="/invite/:token" element={<Register />} />
       <Route path="/register" element={<Register />} />
-
-      {/*
-        ========================================
-        保護ルート（セッション必須）
-        ========================================
-        ProtectedRoute で以下を確認：
-        1. localStorage に session_token と device_id があるか
-        2. ない場合は /register にリダイレクト（replace: true）
-        3. あれば MainApp を表示
-      */}
-      <Route
-        path="/*"
-        element={<MainApp />}
-      />
     </Routes>
   );
 }
