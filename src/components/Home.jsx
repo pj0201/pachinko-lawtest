@@ -53,7 +53,7 @@ export function Home() {
     <div className="home-container">
       {/* ヘッダー */}
       <div className="home-header">
-        <h1>🎰 風営法理解度チェック</h1>
+        <h1>🎰 パチンコ業界風営法理解度チェック</h1>
         <p className="header-description">本アプリは風俗営業等の規制及び業務の適正化等に関する法律についての知識を学ぶアプリです</p>
         <p className="user-info">ユーザー: {username}</p>
       </div>
@@ -63,7 +63,85 @@ export function Home() {
 
         {/* 法律参照 */}
         <div className="legal-reference">
-          <h3>📜 法律参照</h3>
+          <h3>📜 資料参照</h3>
+
+          {/* 風営法説明 */}
+          <button
+            className="legal-doc-toggle"
+            onClick={() => setShowPdf1(!showPdf1)}
+            style={{
+              marginBottom: '12px',
+              padding: '10px 16px',
+              backgroundColor: '#d4af37',
+              border: '1px solid #d4af37',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '14px',
+              width: '100%',
+              textAlign: 'left',
+              fontWeight: '600',
+              color: '#0a0a0a'
+            }}
+          >
+            📄 風俗営業等の規制及び業務の適正化等に関する法律 {showPdf1 ? '▼' : '▶'}
+          </button>
+
+          {showPdf1 && (
+            <div style={{
+              marginBottom: '16px',
+              padding: '12px',
+              backgroundColor: '#1a1a1a',
+              border: '1px solid #444',
+              borderRadius: '4px',
+              fontSize: '13px',
+              lineHeight: '1.8',
+              color: '#ccc'
+            }}>
+              <h5 style={{ color: '#d4af37', margin: '0 0 10px 0', fontSize: '12px', fontWeight: 'bold' }}>📜 法律の目的・前文</h5>
+              <p style={{ margin: '0 0 8px 0', color: '#ffffff' }}>この法律は、風俗営業や特定遊興飲食店営業（パチンコ屋を含む）の営業を規制し、善良の風俗と清浄な生活環境を保持するとともに、少年の健全な育成に障害を及ぼす行為を防止することを目的とします。</p>
+              <p style={{ margin: '0 0 8px 0', color: '#ffffff' }}>昭和23年（1948年）に制定された本法は、戦後の風俗営業に関する最高位の法律として、パチンコ屋、キャバレー、ダンスホール、ゲームセンターなど、様々な風俗営業の基本的な枠組みを定めています。</p>
+              <p style={{ margin: '0', color: '#999', fontSize: '12px' }}>➡️ 役割：「何を、なぜ、どのような権限で規制するか」という根本的な原則を定める最高位の法令</p>
+            </div>
+          )}
+
+          {/* 風営法施行規則説明 */}
+          <button
+            className="legal-doc-toggle"
+            onClick={() => setShowPdf2(!showPdf2)}
+            style={{
+              marginBottom: '12px',
+              padding: '10px 16px',
+              backgroundColor: '#d4af37',
+              border: '1px solid #d4af37',
+              borderRadius: '4px',
+              cursor: 'pointer',
+              fontSize: '14px',
+              width: '100%',
+              textAlign: 'left',
+              fontWeight: '600',
+              color: '#0a0a0a'
+            }}
+          >
+            📄 風俗営業等の規制及び業務の適正化等に関する法律施行規則 {showPdf2 ? '▼' : '▶'}
+          </button>
+
+          {showPdf2 && (
+            <div style={{
+              marginBottom: '16px',
+              padding: '12px',
+              backgroundColor: '#1a1a1a',
+              border: '1px solid #444',
+              borderRadius: '4px',
+              fontSize: '13px',
+              lineHeight: '1.8',
+              color: '#ccc'
+            }}>
+              <h5 style={{ color: '#d4af37', margin: '0 0 10px 0', fontSize: '12px', fontWeight: 'bold' }}>📜 規則の目的・前文</h5>
+              <p style={{ margin: '0 0 8px 0', color: '#ffffff' }}>この規則は、風営法を実行するために必要な詳細な基準、手続き、技術的要件を定める命令書（自治省令→警察庁令）です。風営法という大枠の法律を、実際の営業現場でどのように運用するかを具体的に規定します。</p>
+              <p style={{ margin: '0 0 8px 0', color: '#ffffff' }}>昭和63年（1988年）に制定された本規則は、営業所の建築基準、営業時間、遊技機の性能基準、危機管理などの細かい要件を定めています。パチンコ屋の経営者や主任者が実際に守るべき具体的なルールが記載されており、主任者試験ではこれらの数値基準や手順が重要な出題範囲となります。</p>
+              <p style={{ margin: '0', color: '#999', fontSize: '12px' }}>➡️ 役割：「法律の規定を具体的にどう実現するか」という運用上のルール・数値基準を定める実務的な法令</p>
+            </div>
+          )}
 
           {/* 3段階法律ビューア */}
           <LawViewer3Stage />
@@ -78,7 +156,7 @@ export function Home() {
             backgroundColor: 'rgba(0,0,0,0.2)',
             borderRadius: '6px'
           }}>
-            <p style={{ margin: '0 0 6px 0', fontWeight: '500' }}>📋 法律参照</p>
+            <p style={{ margin: '0 0 6px 0', fontWeight: '500' }}>📋 資料参照</p>
             <p style={{ margin: '0 0 4px 0' }}>本問題集は日本の<strong>風営法</strong>（昭和23年法律第122号）及び<strong>風営法施行規則</strong>（昭和63年自治省令第1号）に基づいて作成されています。</p>
             <p style={{ margin: '0', fontSize: '11px', color: '#999' }}>データ出典：e-Gov法令検索 / ライセンス：CC BY 4.0</p>
           </div>
