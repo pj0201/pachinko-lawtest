@@ -118,10 +118,9 @@ def register():
         data = request.get_json() or {}
         token = data.get('token')
         device_id = data.get('device_id')
-        email = data.get('email')
-        password = data.get('password')
+        username = data.get('username')
 
-        if not all([token, device_id, email, password]):
+        if not all([token, device_id, username]):
             return jsonify({
                 'success': False,
                 'message': '必須フィールドが足りません'
@@ -131,7 +130,7 @@ def register():
         if token == 'dev':
             import uuid
             dev_session_token = f"dev_session_{uuid.uuid4().hex[:16]}"
-            print(f"🔧 開発者モード登録: {email} (session: {dev_session_token})")
+            print(f"🔧 開発者モード登録: {username} (session: {dev_session_token})")
             return jsonify({
                 'success': True,
                 'session_token': dev_session_token,
@@ -143,6 +142,7 @@ def register():
 
         if result['success']:
             # 登録成功時のレスポンス
+            print(f"✅ ユーザー登録成功: {username} (device: {device_id[:8]}...)")
             return jsonify({
                 'success': True,
                 'session_token': result['session_token'],
