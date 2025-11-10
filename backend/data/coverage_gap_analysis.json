@@ -1,0 +1,299 @@
+{
+  "metadata": {
+    "analysis_date": "2025-11-10T07:38:55.746565",
+    "total_problems": 638,
+    "total_lecture_chunks": 542,
+    "total_ocr_pages": 220
+  },
+  "statistics": {
+    "source_topics_count": 50,
+    "problem_topics_count": 24,
+    "coverage_gaps_count": 124
+  },
+  "top_source_topics": {
+    "認定": 106,
+    "風俗営業": 82,
+    "基板": 66,
+    "製造業者": 63,
+    "メダル": 49,
+    "中古遊技機": 47,
+    "販売業者": 46,
+    "遊技機取扱主任者": 46,
+    "第4条": 46,
+    "第2条": 44,
+    "第9条": 41,
+    "第11条": 40,
+    "第10条": 40,
+    "第7条": 40,
+    "検査": 38,
+    "第15条": 35,
+    "第13条": 35,
+    "第3条": 34,
+    "第20条": 32,
+    "第5条": 32
+  },
+  "top_problem_topics": {
+    "風営法": 317,
+    "型式検定": 107,
+    "営業許": 95,
+    "景品": 78,
+    "営業時": 58,
+    "中古遊技機": 54,
+    "営業停": 32,
+    "保守管理": 26,
+    "リサイクル": 25,
+    "基板": 22,
+    "ケース": 21,
+    "タイミング": 19,
+    "セキュリティ": 16,
+    "不正改": 14,
+    "リサイクルプロセス": 10,
+    "罰則": 6,
+    "チップ": 6,
+    "不正行": 6,
+    "チェックリスト": 6,
+    "パターン": 5
+  },
+  "coverage_gaps": [
+    {
+      "topic": "第23条",
+      "source_frequency": 9,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第41条",
+      "source_frequency": 5,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "保証書",
+      "source_frequency": 22,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第11条",
+      "source_frequency": 40,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "製造業者",
+      "source_frequency": 63,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第14条",
+      "source_frequency": 32,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第31条",
+      "source_frequency": 16,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第6条",
+      "source_frequency": 22,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "コネクタ",
+      "source_frequency": 6,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第49条",
+      "source_frequency": 8,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "ユニット",
+      "source_frequency": 7,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "インターネット",
+      "source_frequency": 6,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第27条",
+      "source_frequency": 7,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第1条",
+      "source_frequency": 19,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第18条",
+      "source_frequency": 11,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "認定",
+      "source_frequency": 106,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第8条",
+      "source_frequency": 29,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第33条",
+      "source_frequency": 10,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第12条",
+      "source_frequency": 26,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "ホッパー",
+      "source_frequency": 5,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "パチンコ",
+      "source_frequency": 23,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第10条",
+      "source_frequency": 40,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第7条",
+      "source_frequency": 40,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "販売業者",
+      "source_frequency": 46,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "有効期間",
+      "source_frequency": 18,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第26条",
+      "source_frequency": 12,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "システム",
+      "source_frequency": 12,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第63条",
+      "source_frequency": 8,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第16条",
+      "source_frequency": 19,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    },
+    {
+      "topic": "第32条",
+      "source_frequency": 10,
+      "problem_frequency": 0,
+      "gap_ratio": Infinity,
+      "status": "not_covered"
+    }
+  ],
+  "recommendations": [
+    {
+      "priority": "high",
+      "category": "未カバートピック",
+      "count": 76,
+      "description": "76個のトピックがソース資料に存在するが、試験問題で全く扱われていません。",
+      "action": "これらのトピックに関する問題を新規作成することを推奨します。",
+      "examples": [
+        "第23条",
+        "第41条",
+        "保証書",
+        "第11条",
+        "製造業者"
+      ]
+    },
+    {
+      "priority": "medium",
+      "category": "低カバレッジトピック",
+      "count": 48,
+      "description": "48個のトピックがソース資料で頻出するが、試験問題での出現頻度が低いです。",
+      "action": "これらのトピックに関する問題を追加することを推奨します。",
+      "examples": [
+        "認定",
+        "風俗営業",
+        "製造業者",
+        "メダル",
+        "販売業者"
+      ]
+    }
+  ]
+}
