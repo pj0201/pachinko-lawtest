@@ -72,7 +72,7 @@ def main():
         # フッター情報
         f.write("\n" + "=" * 70 + "\n")
         f.write("※ 各URLは1台のデバイスのみ登録可能です\n")
-        f.write("※ ログイン認証: メールアドレス=987、パスワード=987\n")
+        f.write("※ 登録方法: 招待URLにアクセスし、ユーザー名を入力\n")
         f.write("=" * 70 + "\n")
 
     print()
@@ -95,7 +95,8 @@ def main():
     print("📌 次のステップ:")
     print("  1. invite_urls_*.txt ファイルをテスターに配布")
     print("  2. テスターに各URLにアクセスしてもらう")
-    print("  3. メールアドレス「987」、パスワード「987」で登録")
+    print("  3. ユーザー名を入力して登録（例：テスター001）")
+    print("  4. 本番環境URLへの置換: sed -i 's|http://localhost:5173|https://YOUR-DOMAIN.com|g' invite_urls_*.txt")
     print()
 
 if __name__ == "__main__":
