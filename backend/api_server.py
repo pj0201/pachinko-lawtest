@@ -113,14 +113,15 @@ def verify_invite():
 
 @app.route('/api/auth/register', methods=['POST'])
 def register():
-    """デバイス登録"""
+    """デバイス登録（新規）"""
     try:
         data = request.get_json() or {}
         token = data.get('token')
         device_id = data.get('device_id')
+        email = data.get('email')
         username = data.get('username')
 
-        if not all([token, device_id, username]):
+        if not all([token, device_id, email, username]):
             return jsonify({
                 'success': False,
                 'message': '必須フィールドが足りません'
@@ -130,22 +131,26 @@ def register():
         if token == 'dev':
             import uuid
             dev_session_token = f"dev_session_{uuid.uuid4().hex[:16]}"
-            print(f"🔧 開発者モード登録: {username} (session: {dev_session_token})")
+            print(f"🔧 開発者モード登録: {email} / {username} (session: {dev_session_token})")
             return jsonify({
                 'success': True,
                 'session_token': dev_session_token,
+                'email': email,
+                'username': username,
                 'message': '開発者モードで登録されました'
             })
 
         # デバイス登録（auth_dbに処理させる）
-        result = auth_db.register_device(token, device_id)
+        result = auth_db.register_device(token, device_id, email, username)
 
         if result['success']:
             # 登録成功時のレスポンス
-            print(f"✅ ユーザー登録成功: {username} (device: {device_id[:8]}...)")
+            print(f"✅ ユーザー登録成功: {email} / {username} (device: {device_id[:8]}...)")
             return jsonify({
                 'success': True,
                 'session_token': result['session_token'],
+                'email': result['email'],
+                'username': result['username'],
                 'message': '登録が完了しました'
             })
         else:
@@ -154,6 +159,37 @@ def register():
 
     except Exception as e:
         print(f"❌ 登録エラー: {e}")
+        return jsonify({
+            'success': False,
+            'message': 'サーバーエラーが発生しました'
+        }), 500
+
+@app.route('/api/auth/login', methods=['POST'])
+def login():
+    """再ログイン（メールアドレス + ユーザー名）"""
+    try:
+        data = request.get_json() or {}
+        email = data.get('email')
+        username = data.get('username')
+        device_id = data.get('device_id')
+
+        if not all([email, username, device_id]):
+            return jsonify({
+                'success': False,
+                'message': '必須フィールドが足りません'
+            }), 400
+
+        # 認証処理
+        result = auth_db.login_with_credentials(email, username, device_id)
+
+        if result['success']:
+            print(f"✅ ログイン成功: {email} / {username} (device: {device_id[:8]}...)")
+            return jsonify(result)
+        else:
+            return jsonify(result), 401
+
+    except Exception as e:
+        print(f"❌ ログインエラー: {e}")
         return jsonify({
             'success': False,
             'message': 'サーバーエラーが発生しました'

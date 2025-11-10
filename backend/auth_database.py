@@ -29,6 +29,8 @@ class AuthDatabase:
                     token TEXT UNIQUE NOT NULL,
                     is_used BOOLEAN DEFAULT 0,
                     device_id TEXT,
+                    email TEXT,
+                    username TEXT,
                     registered_at DATETIME,
                     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
                 )
@@ -83,12 +85,12 @@ class AuthDatabase:
 
             return {"valid": True, "message": "有効な招待URLです"}
 
-    def register_device(self, token: str, device_id: str) -> Dict:
+    def register_device(self, token: str, device_id: str, email: str = None, username: str = None) -> Dict:
         """デバイス登録"""
         with sqlite3.connect(self.db_path) as conn:
             # トークン検証
             cursor = conn.execute(
-                "SELECT is_used, device_id FROM invite_tokens WHERE token = ?",
+                "SELECT is_used, device_id, email, username FROM invite_tokens WHERE token = ?",
                 (token,)
             )
             row = cursor.fetchone()
@@ -111,6 +113,8 @@ class AuthDatabase:
                     return {
                         "success": True,
                         "session_token": session_token,
+                        "email": row[2],
+                        "username": row[3],
                         "message": "登録が完了しました"
                     }
                 else:
@@ -124,9 +128,9 @@ class AuthDatabase:
             now = datetime.now().isoformat()
             conn.execute(
                 """UPDATE invite_tokens
-                   SET is_used = 1, device_id = ?, registered_at = ?
+                   SET is_used = 1, device_id = ?, email = ?, username = ?, registered_at = ?
                    WHERE token = ?""",
-                (device_id, now, token)
+                (device_id, email, username, now, token)
             )
 
             # セッション作成
@@ -143,6 +147,8 @@ class AuthDatabase:
             return {
                 "success": True,
                 "session_token": session_token,
+                "email": email,
+                "username": username,
                 "message": "登録が完了しました"
             }
 
@@ -190,6 +196,48 @@ class AuthDatabase:
             if row:
                 return dict(row)
             return None
+
+    def login_with_credentials(self, email: str, username: str, device_id: str) -> Dict:
+        """メールアドレスとユーザー名でログイン認証"""
+        with sqlite3.connect(self.db_path) as conn:
+            conn.row_factory = sqlite3.Row
+            cursor = conn.execute(
+                """SELECT token, device_id FROM invite_tokens
+                   WHERE email = ? AND username = ? AND is_used = 1""",
+                (email, username)
+            )
+            row = cursor.fetchone()
+
+            if not row:
+                return {
+                    "success": False,
+                    "message": "メールアドレスまたはユーザー名が正しくありません"
+                }
+
+            # デバイスIDの確認（登録したデバイスと同じか）
+            if row['device_id'] != device_id:
+                return {
+                    "success": False,
+                    "message": "このアカウントは別のデバイスで登録されています"
+                }
+
+            # 新しいセッショントークンを生成
+            session_token = str(uuid.uuid4())
+            conn.execute(
+                """INSERT INTO user_sessions
+                   (session_token, device_id, invite_token)
+                   VALUES (?, ?, ?)""",
+                (session_token, device_id, row['token'])
+            )
+            conn.commit()
+
+            return {
+                "success": True,
+                "session_token": session_token,
+                "email": email,
+                "username": username,
+                "message": "ログインしました"
+            }
 
     def get_stats(self) -> Dict:
         """統計情報取得"""
