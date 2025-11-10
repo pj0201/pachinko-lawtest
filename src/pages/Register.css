@@ -112,6 +112,28 @@
   text-align: center;
 }
 
+.important-notice {
+  margin-top: 25px;
+  padding: 15px;
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  border-radius: 8px;
+}
+
+.warning-text {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #d9534f;
+  margin: 0 0 10px 0;
+  text-align: center;
+}
+
+.important-notice .note {
+  margin-top: 5px;
+  color: #856404;
+  font-size: 0.85rem;
+}
+
 .loading {
   text-align: center;
   padding: 40px;

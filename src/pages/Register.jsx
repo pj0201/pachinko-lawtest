@@ -9,6 +9,7 @@ import FingerprintJS from '@fingerprintjs/fingerprintjs';
 import './Register.css';
 
 export default function Register() {
+  const [email, setEmail] = useState('');
   const [username, setUsername] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
@@ -103,6 +104,11 @@ export default function Register() {
       return;
     }
 
+    if (!email) {
+      setError('メールアドレスを入力してください');
+      return;
+    }
+
     if (!username) {
       setError('ユーザー名を入力してください');
       return;
@@ -117,6 +123,7 @@ export default function Register() {
         body: JSON.stringify({
           token,
           device_id: deviceId,
+          email,
           username
         })
       });
@@ -129,9 +136,11 @@ export default function Register() {
         localStorage.setItem('device_id', deviceId);
 
         // ユーザー情報も保存
-        localStorage.setItem('username', username);
+        localStorage.setItem('email', data.email);
+        localStorage.setItem('username', data.username);
         localStorage.setItem('user', JSON.stringify({
-          username,
+          email: data.email,
+          username: data.username,
           session_token: data.session_token
         }));
 
@@ -187,15 +196,30 @@ export default function Register() {
         {!error && (
           <form onSubmit={handleSubmit} className="register-form">
             <div className="form-group">
+              <label htmlFor="email">メールアドレス</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="example@example.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                disabled={loading}
+                autoComplete="email"
+                required
+              />
+            </div>
+
+            <div className="form-group">
               <label htmlFor="username">ユーザー名</label>
               <input
                 id="username"
                 type="text"
-                placeholder="ユーザー名（例：テスト001）"
+                placeholder="ユーザー名（例：テスター001）"
                 value={username}
                 onChange={(e) => setUsername(e.target.value)}
                 disabled={loading}
                 autoComplete="off"
+                required
               />
             </div>
 
@@ -205,7 +229,11 @@ export default function Register() {
           </form>
         )}
 
-        <p className="note">※ 招待URLは1台のデバイスのみ登録可能です</p>
+        <div className="important-notice">
+          <p className="warning-text">⚠️ 重要：メールアドレスとユーザー名は必ずメモしてください</p>
+          <p className="note">※ 再ログイン時に必要になります</p>
+          <p className="note">※ 招待URLは1台のデバイスのみ登録可能です</p>
+        </div>
       </div>
     </div>
   );

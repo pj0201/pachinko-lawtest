@@ -16,6 +16,7 @@
 import { Routes, Route, Navigate, useNavigate } from 'react-router-dom';
 import './App.css';
 import Register from './pages/Register';
+import Login from './pages/Login';
 import { Home } from './components/Home';
 import { ExamScreen } from './components/ExamScreen';
 import { History } from './components/History';
@@ -70,9 +71,12 @@ function App() {
       {/* デフォルト：MainApp（認証なしで直接アクセス可能） */}
       <Route path="/*" element={<MainApp />} />
 
-      {/* 招待URL登録ページ（参考用） */}
+      {/* 招待URL登録ページ */}
       <Route path="/invite/:token" element={<Register />} />
       <Route path="/register" element={<Register />} />
+
+      {/* ログインページ */}
+      <Route path="/login" element={<Login />} />
     </Routes>
   );
 }
