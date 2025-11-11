@@ -12,27 +12,10 @@
     "postinstall": "echo 'Python dependencies will be installed via nixpacks.toml' || true"
   },
   "dependencies": {
-    "@capacitor/android": "^6.2.1",
-    "@capacitor/cli": "^6.2.1",
-    "@capacitor/core": "^6.2.1",
-    "@capacitor/ios": "^6.2.1",
-    "@chroma-core/default-embed": "^0.1.8",
     "@fingerprintjs/fingerprintjs": "^4.6.2",
-    "axios": "^1.12.2",
-    "chroma-js": "^3.1.2",
-    "chromadb": "^3.0.17",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.3",
-    "express": "^4.18.0",
-    "multer": "^1.4.5-lts.1",
-    "natural": "^8.1.0",
-    "openai": "^6.5.0",
-    "pdf-parse": "^1.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^7.9.4",
-    "string-similarity": "^4.0.4",
-    "tiny-segmenter": "^0.2.0"
+    "react-router-dom": "^7.9.4"
   },
   "devDependencies": {
     "@eslint/js": "^9.36.0",
