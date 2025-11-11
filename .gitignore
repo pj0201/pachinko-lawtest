@@ -27,3 +27,8 @@ dist-ssr
 .env
 .env.local
 backend/.env
+
+# Temporary/generated files from law database extraction
+extracted_law.json
+enforcement_regulations_extracted.json
+law_database.json
