@@ -62,9 +62,9 @@ export function Home() {
       {/* メインコンテンツ */}
       <div className="home-content">
 
-        {/* 法律参照 */}
+        {/* 関連法律 */}
         <div className="legal-reference">
-          <h3>📜 法律参照</h3>
+          <h3>📜 関連法律</h3>
 
           {/* 3段階法律ビューア */}
           <LawViewer3Stage />
