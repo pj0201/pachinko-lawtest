@@ -2,6 +2,12 @@
 """
 風営法理解度チェック - バックエンド API サーバー
 修正済み問題集（problems_final_500_complete.json）を提供
+
+✨ セキュリティ強化版:
+- レート制限（ブルートフォース対策）
+- セキュリティヘッダー（XSS、クリックジャッキング対策）
+- 入力検証・サニタイゼーション
+- 本番環境での開発者モード無効化
 """
 
 from flask import Flask, request, jsonify, send_from_directory
@@ -12,6 +18,10 @@ import random
 from pathlib import Path
 from urllib.parse import unquote
 from auth_database import AuthDatabase
+from security_middleware import (
+    init_security, rate_limit, sanitize_input,
+    log_security_event, is_production
+)
 
 # Flask アプリ初期化（React dist フォルダを静的ファイルとして配信）
 dist_path = Path(__file__).parent.parent / "dist"
@@ -82,20 +92,32 @@ def health_check():
 # ===== 認証エンドポイント =====
 
 @app.route('/api/auth/verify-invite', methods=['POST'])
+@rate_limit(max_requests=10, window_seconds=60)  # 1分間に10回まで
 def verify_invite():
     """招待URL検証"""
     try:
         data = request.get_json() or {}
+
+        # 入力検証
+        data = sanitize_input(data, ['token'])
         token = data.get('token')
 
         if not token:
+            log_security_event('verify_invite_failed', {'reason': 'no_token'})
             return jsonify({
                 'valid': False,
                 'message': '招待トークンが指定されていません'
             }), 400
 
-        # 開発者モード（token=dev）
+        # 開発者モード（token=dev）- 本番環境では無効化
         if token == 'dev':
+            if is_production():
+                log_security_event('dev_mode_blocked', {'reason': 'production'})
+                return jsonify({
+                    'valid': False,
+                    'message': '無効なトークンです'
+                }), 403
+
             return jsonify({
                 'valid': True,
                 'message': '開発者モード有効'
@@ -106,29 +128,42 @@ def verify_invite():
 
     except Exception as e:
         print(f"❌ 招待URL検証エラー: {e}")
+        log_security_event('verify_invite_error', {'error': str(e)})
         return jsonify({
             'valid': False,
             'message': 'サーバーエラーが発生しました'
         }), 500
 
 @app.route('/api/auth/register', methods=['POST'])
+@rate_limit(max_requests=5, window_seconds=300)  # 5分間に5回まで（厳しめ）
 def register():
     """デバイス登録"""
     try:
         data = request.get_json() or {}
+
+        # 入力検証
+        data = sanitize_input(data, ['token', 'device_id', 'email', 'password'])
         token = data.get('token')
         device_id = data.get('device_id')
         email = data.get('email')
         password = data.get('password')
 
         if not all([token, device_id, email, password]):
+            log_security_event('register_failed', {'reason': 'missing_fields'})
             return jsonify({
                 'success': False,
                 'message': '必須フィールドが足りません'
             }), 400
 
-        # 開発者モード（token=dev）
+        # 開発者モード（token=dev）- 本番環境では無効化
         if token == 'dev':
+            if is_production():
+                log_security_event('dev_mode_blocked', {'reason': 'production', 'action': 'register'})
+                return jsonify({
+                    'success': False,
+                    'message': '無効なトークンです'
+                }), 403
+
             import uuid
             dev_session_token = f"dev_session_{uuid.uuid4().hex[:16]}"
             print(f"🔧 開発者モード登録: {email} (session: {dev_session_token})")
@@ -142,6 +177,7 @@ def register():
         result = auth_db.register_device(token, device_id)
 
         if result['success']:
+            log_security_event('register_success', {'device_id': device_id[:8] + '...'})
             # 登録成功時のレスポンス
             return jsonify({
                 'success': True,
@@ -149,11 +185,13 @@ def register():
                 'message': '登録が完了しました'
             })
         else:
+            log_security_event('register_failed', {'reason': result.get('message', 'unknown')})
             # 登録失敗時のレスポンス
             return jsonify(result), 400
 
     except Exception as e:
         print(f"❌ 登録エラー: {e}")
+        log_security_event('register_error', {'error': str(e)})
         return jsonify({
             'success': False,
             'message': 'サーバーエラーが発生しました'
@@ -375,6 +413,10 @@ def internal_error(error):
 # ===== メイン処理 =====
 
 if __name__ == '__main__':
+    # セキュリティ機能を初期化
+    print("🔒 セキュリティ機能を初期化中...")
+    init_security(app)
+
     # 問題集を読み込み
     if not load_problems():
         print("❌ 問題集の読み込みに失敗しました")
@@ -397,6 +439,7 @@ if __name__ == '__main__':
     print(f"✅ 問題集: {PROBLEMS_FILE}")
     print(f"✅ 総問題数: {len(problems_data)}")
     print(f"✅ ポート: {port}")
+    print(f"🔒 セキュリティ: {'本番モード（開発者機能無効）' if is_production() else '開発モード'}")
     print("=" * 80)
     debug_mode = os.environ.get('FLASK_ENV', 'development') == 'development'
     app.run(
