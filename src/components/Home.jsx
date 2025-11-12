@@ -88,7 +88,7 @@ export function Home() {
         <div className="exam-schedule">
           <h3>📅 遊技機取扱主任者試験情報</h3>
           <p style={{ margin: '0 0 12px 0', fontSize: '13px', lineHeight: '1.6' }}>
-            業界団体が実施する資格制度。詳細は公式サイトをご確認ください。
+            日遊協が実施する資格制度。詳細は公式サイトをご確認ください。
           </p>
           <a
             href="https://exam.nichiyukyo.or.jp/"
