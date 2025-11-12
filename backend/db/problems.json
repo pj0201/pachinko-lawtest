@@ -1,12 +1,12 @@
 {
   "metadata": {
     "title": "遊技機取扱主任者試験 総合模擬問題集",
-    "version": "6.0（風営法・施行規則ソース版）",
-    "total_problems": 211,
-    "total_count": 211,
-    "last_modified": "2025-11-12T14:00:00+09:00",
-    "status": "✅ 風営法・施行規則以外のソースから作成された問題を削除",
-    "summary": "風営法・施行規則をソースとする211問。業界団体規程のみをソースとする問題を削除。"
+    "version": "7.0（風営法・施行規則完全版）",
+    "total_problems": 194,
+    "total_count": 194,
+    "last_modified": "2025-11-12T15:30:00+09:00",
+    "status": "✅ 主任者制度の問題を完全削除完了（メタデータクリーンアップ済み）",
+    "summary": "風営法・施行規則のみをソースとする194問。主任者制度関連の問題をすべて削除。"
   },
   "problems": [
     {
@@ -33,15 +33,6 @@
       "correct_answer": true,
       "answer_display": "〇",
       "basis": "規程第5条第1項第3号（風営法第20条第10項準用による違反行為の日から5年を経過しない者は欠格）[会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★"
-    },
-    {
-      "problem_id": 8,
-      "statement": "主任者証の記載事項に変更が生じたときは、当該変更の日から起算して60日以内に日遊協に届け出なければならない。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "30日以内に届け出なければならない（規程第13条第1項）[会話履歴 (詳細記述なし)].",
       "category": "qualification_system",
       "difficulty": "★"
     },
@@ -73,47 +64,11 @@
       "difficulty": "★★"
     },
     {
-      "problem_id": 16,
-      "statement": "試験中の不正行為が事後に判明した場合、日遊協は認定を取り消す処分を行うことができるが、その通知は関係団体のみに行えばよい。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "主任者本人及び関係団体双方に通知が必要（実施要領第13条）[会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 20,
-      "statement": "日遊協は、主任者証を交付したとき、処分を行ったときは、警察庁及び都道府県公安委員会に報告しなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "認定及び処分に関する通知・報告義務（規程による）。",
-      "category": "qualification_system",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 21,
-      "statement": "取扱主任者証の記載事項に変更が生じたときは、当該変更の日から起算して30日以内に、日遊協に届け出て、取扱主任者証に変更事項の記載を受けなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第13条第1項 [会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★"
-    },
-    {
       "problem_id": 26,
       "statement": "検定規則第11条第2項の規定により検定を取り消された者（法人の場合は当時の役員であった者）は、当該取消しの日から起算して3年間は受験申請ができない。",
       "correct_answer": false,
       "answer_display": "✕",
       "basis": "5年間は申請できない（規程第5条第1項第5号）[会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 27,
-      "statement": "認定を取り消された者は、速やかに取扱主任者証を日遊協に返納しなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第16条第1項 [会話履歴 (詳細記述なし)].",
       "category": "qualification_system",
       "difficulty": "★★★"
     },
@@ -671,7 +626,7 @@
       "statement": "遊技機の認定又は検定に必要な試験の実施に関する事務（試験事務）は、国家公安委員会が指定する一般社団法人または一般財団法人に行わせることができる。",
       "correct_answer": true,
       "answer_display": "〇",
-      "basis": "風営法第20条第5項。 #### IV. 主任者の実務と業界要綱（問題 91 〜 120）",
+      "basis": "風営法第20条第5項。",
       "category": "game_machine_technical_standards",
       "difficulty": "★★"
     },
@@ -694,29 +649,11 @@
       "difficulty": "★★"
     },
     {
-      "problem_id": 99,
-      "statement": "主任者は、中古遊技機流通健全化要綱の規定に基づき、中古遊技機が風営法第20条第2項の認定を受けた型式に属することを確認する義務を負う。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第11条第8号（要綱に基づく業務）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★"
-    },
-    {
       "problem_id": 107,
       "statement": "営業所における業務の一部が委託される場合、管理者は当該委託に係る契約の内容、業務の履行状況その他の事項の点検の実施及びその記録の記載について管理しなければならない。",
       "correct_answer": true,
       "answer_display": "〇",
       "basis": "管理者の業務（風営法施行規則第38条第12号）。",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 109,
-      "statement": "主任者が認定を取り消された場合、主任者証を確実に廃棄すれば、日遊協への返納義務はない。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "速やかに日遊協に返納しなければならない（規程第16条第1項）[会話履歴 (詳細記述なし)].",
       "category": "game_machine_technical_standards",
       "difficulty": "★★★"
     },
@@ -744,33 +681,6 @@
       "correct_answer": false,
       "answer_display": "✕",
       "basis": "作成、実施、記録の管理が必要である（風営法施行規則第38条第1号）。",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 117,
-      "statement": "主任者の業務は、リサイクルなどの適正な処理のみで、不正遊技機、遊技機の不正使用等の不正行為の通報及び排除は含まれない。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "不正遊技機、遊技機の不正使用等の不正行為の通報及び排除は主任者の業務に含まれる（規程第11条第4号）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 118,
-      "statement": "取扱主任者証の交付を受けた者が亡失、滅失、汚損、又は破損したときは、日遊協に事由を付して、速やかに再交付を申請しなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第14条第1項 [会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 119,
-      "statement": "遊技機製造業者から業務委託を受けた点検、修理等の業務について、主任者はその業務が法令および技術規格に適合するよう監督しなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第11条第8号 [会話履歴 (詳細記述なし)].",
       "category": "game_machine_technical_standards",
       "difficulty": "★★★"
     },
@@ -1459,15 +1369,6 @@
       "difficulty": "★★"
     },
     {
-      "problem_id": 196,
-      "statement": "遊技機取扱主任者の認定の取消し処分は、規程第11条の第1号から第6号及び第8号に掲げる業務を適正に行わないことが判明したときに行われる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第15条第1項第9号 [会話履歴 (詳細記述なし)].",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★"
-    },
-    {
       "problem_id": 197,
       "statement": "風営法第2条第1項第5号の営業に係る遊技設備のうち、ルーレット台、トランプ及びトランプ台は、国家公安委員会規則で定める遊技設備に含まれない。",
       "correct_answer": false,
@@ -1576,15 +1477,6 @@
       "difficulty": "★★★"
     },
     {
-      "problem_id": 209,
-      "statement": "遊技機取扱主任者の業務には、遊技機の増設、交替その他の変更及び遊技機の保守管理に関することが含まれる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第11条第3号 [会話履歴 (詳細記述なし)].",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★★"
-    },
-    {
       "problem_id": 210,
       "statement": "営業所の管理者が作成する「苦情の処理に関する帳簿」は、最終記載日から3年間保存しなければならない。",
       "correct_answer": true,
@@ -1653,15 +1545,6 @@
       "correct_answer": true,
       "answer_display": "〇",
       "basis": "許可証の返納は、通知を受けた日から10日以内に所轄警察署長を経由して行う（風営法施行規則第18条、法第7条第6項を準用する風営法施行規則第86条）。",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 218,
-      "statement": "遊技機取扱主任者証の記載事項の変更届出は、日遊協ウェブサイトから日遊協に申請しなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "実施要領第11条 [会話履歴 (詳細記述なし)].",
       "category": "administrative_procedures_and_penalties",
       "difficulty": "★★★"
     },
@@ -1774,33 +1657,6 @@
       "difficulty": "★★★"
     },
     {
-      "problem_id": 231,
-      "statement": "遊技機取扱主任者の認定の取消し処分又は効力停止処分に異議がある場合、その処分があったことを知った日の翌日から起算して60日以内に、日遊協に対し異議の申立てをすることができる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第16条第1項。",
-      "category": "qualification_system",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 232,
-      "statement": "遊技機取扱主任者の所在が不明であり、認定取消し又は効力停止処分に関する事実を確認できない場合、日遊協が連絡先を通知すべき旨を公告し、その公告の日から60日以上当該通知がないときは、当該事実が判明したものとして処分をすることができる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第15条第2項。",
-      "category": "qualification_system",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 233,
-      "statement": "取扱主任者証の交付を受けた者が、遊技機取扱主任者の認定が取り消されたとき、主任者証が失効したとき、または再交付を受けた後で亡失した旧証を発見したときは、本人において確実に廃棄する場合を除き、速やかに日遊協に返納しなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第17条第1号、第2号、第3号（ただし第1号は返納が必須）。",
-      "category": "qualification_system",
-      "difficulty": "★★★"
-    },
-    {
       "problem_id": 235,
       "statement": "風俗営業者は、深夜における客の迷惑行為を防止するための措置が適切に講じられるようにするため、当該措置について、従業員に対する教育を行い、又は営業所の管理者に当該教育を行わせなければならない。",
       "correct_answer": true,
@@ -1879,15 +1735,6 @@
       "answer_display": "〇",
       "basis": "風営法施行規則第89条（前条第2項中「十日（...）以内」とあるのは、「十日以内」と読み替えるものとする。）。",
       "category": "business_regulation_and_obligations",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 244,
-      "statement": "受験者の不正行為等が事後に判明したとき、日遊協は速やかに認定を取り消し、当該遊技機取扱主任者に対し、別記様式第3号の遊技機取扱主任者の認定の取消し通知書により通知するものとする。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "実施要領第9条第2項。",
-      "category": "administrative_procedures_and_penalties",
       "difficulty": "★★★"
     },
     {
