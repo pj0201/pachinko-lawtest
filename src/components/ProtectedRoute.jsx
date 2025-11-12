@@ -12,15 +12,15 @@ export default function ProtectedRoute({ children }) {
 
   useEffect(() => {
     const verifySession = async () => {
-      // ✅ GitHub Pages 環境：常に認証スキップ（テスト用）
-      const isDev = window.location.hostname.includes('github.io') ||
-                    (import.meta.env.MODE === 'development' &&
-                     import.meta.env.VITE_DEV_MODE === 'true' &&
-                     (window.location.hostname === 'localhost' ||
-                      window.location.hostname === '127.0.0.1'));
+      // 開発モードチェック（環境変数で厳密に管理）
+      const isDev = import.meta.env.MODE === 'development' &&
+                    import.meta.env.VITE_DEV_MODE === 'true' &&
+                    (window.location.hostname === 'localhost' ||
+                     window.location.hostname === '127.0.0.1');
 
       if (isDev) {
-        console.log('🔧 開発環境モード: セッション検証をスキップ (本番環境に復帰する際は .env.local の VITE_DEV_MODE を false に設定)');
+        console.log('🔧 開発環境モード: セッション検証をスキップ');
+        console.warn('⚠️ 本番環境では .env の VITE_DEV_MODE を false に設定してください');
 
         // テスト用ダミーセッション作成
         if (!localStorage.getItem('session_token')) {
@@ -76,15 +76,30 @@ export default function ProtectedRoute({ children }) {
           localStorage.removeItem('session_token');
           localStorage.removeItem('device_id');
           localStorage.removeItem('user');
-          // 次のページ移動時に Register にリダイレクト
+          localStorage.removeItem('verify_fail_count');
+          // 即座に登録ページへリダイレクト
           setIsValid(false);
         } else {
           console.log('✅ バックグラウンド検証完了 - セッション有効');
+          // 検証成功時はfail_countをリセット
+          localStorage.removeItem('verify_fail_count');
         }
       } catch (err) {
-        console.warn('⚠️ バックグラウンド検証エラー（無視）:', err);
-        // バックグラウンド検証エラーは無視
-        // ユーザーはアクセス可能なままで、次の検証機会に確認
+        console.error('❌ バックグラウンド検証エラー:', err);
+        // ネットワークエラーの場合は一定回数まで許容するが、
+        // セキュリティを優先して3回連続失敗でログアウト
+        const failCount = parseInt(localStorage.getItem('verify_fail_count') || '0');
+        if (failCount >= 2) {
+          console.error('🔒 セッション検証が3回連続で失敗したため、ログアウトします');
+          localStorage.removeItem('session_token');
+          localStorage.removeItem('device_id');
+          localStorage.removeItem('user');
+          localStorage.removeItem('verify_fail_count');
+          setIsValid(false);
+        } else {
+          localStorage.setItem('verify_fail_count', String(failCount + 1));
+          console.warn(`⚠️ セッション検証失敗 (${failCount + 1}/3回目) - 次回も失敗するとログアウトされます`);
+        }
       }
     };
 
