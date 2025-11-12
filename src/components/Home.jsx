@@ -8,7 +8,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import '../styles/home.css';
-import { WIND_BUSINESS_LAW, WIND_BUSINESS_REGULATION } from '../constants/lawDatabase';
 import { LawViewer3Stage } from './LawViewer3Stage';
 
 export function Home() {

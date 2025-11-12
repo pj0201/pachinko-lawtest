@@ -1,10 +1,10 @@
 /**
  * 法律ビューア（3段階UI）
  * 第1段階：法律選択 → 第2段階：章立て → 第3段階：条文全文
+ * ✨ 最適化版：法律データを動的ロードしてバンドルサイズを削減
  */
 
-import { useState } from 'react';
-import { WIND_BUSINESS_LAW, WIND_BUSINESS_REGULATION } from '../constants/lawDatabase';
+import { useState, useEffect } from 'react';
 
 export function LawViewer3Stage() {
   const [stage, setStage] = useState(0); // 0=法律選択, 1=章立て, 2=条文
@@ -12,11 +12,64 @@ export function LawViewer3Stage() {
   const [selectedChapter, setSelectedChapter] = useState(null);
   const [selectedArticle, setSelectedArticle] = useState(null);
 
-  const handleSelectLaw = (law) => {
-    setSelectedLaw(law);
-    setSelectedChapter(null);
-    setSelectedArticle(null);
-    setStage(1);
+  // 法律データのキャッシュ（ロード済みのものはメモリに保持）
+  const [lawDataCache, setLawDataCache] = useState({
+    windBusinessLaw: null,
+    enforcementRegulations: null
+  });
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
+
+  /**
+   * 法律データを動的にロード
+   * @param {string} lawType - 'windBusinessLaw' または 'enforcementRegulations'
+   */
+  const loadLawData = async (lawType) => {
+    // 既にキャッシュされていれば返す
+    if (lawDataCache[lawType]) {
+      return lawDataCache[lawType];
+    }
+
+    setLoading(true);
+    setError(null);
+
+    try {
+      const fileName = lawType === 'windBusinessLaw'
+        ? 'windBusinessLaw.json'
+        : 'enforcementRegulations.json';
+
+      const response = await fetch(`/data/${fileName}`);
+
+      if (!response.ok) {
+        throw new Error(`法律データの読み込みに失敗しました: ${response.status}`);
+      }
+
+      const data = await response.json();
+
+      // キャッシュに保存
+      setLawDataCache(prev => ({
+        ...prev,
+        [lawType]: data
+      }));
+
+      return data;
+    } catch (err) {
+      setError(err.message);
+      console.error('法律データ読み込みエラー:', err);
+      return null;
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  const handleSelectLaw = async (lawType) => {
+    const lawData = await loadLawData(lawType);
+    if (lawData) {
+      setSelectedLaw(lawData);
+      setSelectedChapter(null);
+      setSelectedArticle(null);
+      setStage(1);
+    }
   };
 
   const handleSelectChapter = (chapter) => {
@@ -71,12 +124,35 @@ export function LawViewer3Stage() {
     return (
       <div style={containerStyle}>
         <p style={{ margin: '0 0 10px 0', color: '#d4af37', fontWeight: 'bold' }}>📋 法律を選択してください</p>
-        <button style={buttonStyle} onClick={() => handleSelectLaw(WIND_BUSINESS_LAW)}>
-          風営法（法律）{' '} →
-        </button>
-        <button style={buttonStyle} onClick={() => handleSelectLaw(WIND_BUSINESS_REGULATION)}>
-          風営法施行規則 →
-        </button>
+
+        {error && (
+          <div style={{ padding: '10px', backgroundColor: '#ffebee', color: '#c62828', borderRadius: '4px', marginBottom: '10px', fontSize: '12px' }}>
+            ⚠️ {error}
+          </div>
+        )}
+
+        {loading ? (
+          <div style={{ textAlign: 'center', padding: '20px', color: '#d4af37' }}>
+            読み込み中...
+          </div>
+        ) : (
+          <>
+            <button
+              style={buttonStyle}
+              onClick={() => handleSelectLaw('windBusinessLaw')}
+              disabled={loading}
+            >
+              風営法（法律）{' '} →
+            </button>
+            <button
+              style={buttonStyle}
+              onClick={() => handleSelectLaw('enforcementRegulations')}
+              disabled={loading}
+            >
+              風営法施行規則 →
+            </button>
+          </>
+        )}
       </div>
     );
   }

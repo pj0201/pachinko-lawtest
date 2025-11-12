@@ -1,6 +1,17 @@
 /**
- * 主任者試験アプリ バックエンドサーバー
- * PDF OCR処理エンドポイント提供
+ * 主任者試験アプリ バックエンドサーバー（Express）
+ *
+ * 【役割】
+ * - PDF OCR処理エンドポイント提供 (/api/pdf-ocr)
+ * - データベース操作エンドポイント (/api/db)
+ * - ログ取得エンドポイント (/api/logs)
+ *
+ * 【注意】
+ * - 問題取得API (/api/problems) は Flask (port 5000) が担当
+ * - このサーバーの問題取得APIは開発用として残していますが、
+ *   本番環境では vite.config.js のプロキシ設定により Flask に転送されます
+ *
+ * ポート: 3001
  */
 
 import express from 'express';

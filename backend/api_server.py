@@ -1,7 +1,18 @@
 #!/usr/bin/env python3
 """
-風営法理解度チェック - バックエンド API サーバー
-修正済み問題集（problems_final_500_complete.json）を提供
+風営法理解度チェック - バックエンド API サーバー（Flask）
+
+【役割】
+- フロントエンド（React）の配信
+- 問題取得API提供 (/api/problems/*)
+- 認証API提供 (/api/auth/*)
+- PDF配信 (/api/pdf/*)
+
+【注意】
+- OCR処理、データベース操作、ログ取得は Express (port 3001) が担当
+- 本番環境では、vite.config.js のプロキシ設定により適切に振り分けられます
+
+ポート: 5000
 """
 
 from flask import Flask, request, jsonify, send_from_directory

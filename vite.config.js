@@ -17,6 +17,37 @@ export default defineConfig({
     ],
     middlewareMode: false,
     proxy: {
+      // ========================================
+      // バックエンドAPIプロキシ設定（優先度順）
+      // ========================================
+
+      // 1. OCR処理 → Express (port 3001)
+      '/api/ocr': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        rewrite: (path) => path
+      },
+      '/api/pdf-ocr': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        rewrite: (path) => path
+      },
+
+      // 2. データベース操作 → Express (port 3001)
+      '/api/db': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        rewrite: (path) => path
+      },
+
+      // 3. ログ取得 → Express (port 3001)
+      '/api/logs': {
+        target: 'http://localhost:3001',
+        changeOrigin: true,
+        rewrite: (path) => path
+      },
+
+      // 4. その他すべてのAPI（問題取得、認証等） → Flask (port 5000)
       '/api': {
         target: 'http://localhost:5000',
         changeOrigin: true,
