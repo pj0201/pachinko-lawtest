@@ -1,56 +1,20 @@
 {
   "metadata": {
     "title": "遊技機取扱主任者試験 総合模擬問題集",
-    "version": "5.0（ユーザー修正版：全230問）",
-    "total_problems": 246,
-    "total_count": 230,
-    "last_modified": "2025-11-08T16:00:00+09:00",
-    "status": "✅ ユーザー修正版統合完了",
-    "summary": "全230問のユーザー修正版問題集。すべての法令参照を正確に修正。"
+    "version": "6.0（風営法・施行規則ソース版）",
+    "total_problems": 211,
+    "total_count": 211,
+    "last_modified": "2025-11-12T14:00:00+09:00",
+    "status": "✅ 風営法・施行規則以外のソースから作成された問題を削除",
+    "summary": "風営法・施行規則をソースとする211問。業界団体規程のみをソースとする問題を削除。"
   },
   "problems": [
-    {
-      "problem_id": 1,
-      "statement": "新規試験の出題数は50問、正誤択一式で、正解率が80パーセント以上の者を合格者とする。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "新規試験の出題数、形式、合格基準に関する事項 [要領, 会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★"
-    },
-    {
-      "problem_id": 2,
-      "statement": "新規試験の受験資格は、当該試験の実施の日から起算して1年以内に実施された講習を受講した者に限られる。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "受験資格の期間は6か月以内である（規程による）。",
-      "category": "qualification_system",
-      "difficulty": "★"
-    },
     {
       "problem_id": 3,
       "statement": "講習の講師は、人格及び識見に優れ、遊技機の点検及び取扱い等に関する高度な知識及び技能を有する者に日遊協が委嘱する。",
       "correct_answer": true,
       "answer_display": "〇",
       "basis": "講師の要件（高度な知識及び技能を有する者）[規程, 会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★"
-    },
-    {
-      "problem_id": 4,
-      "statement": "遊技機取扱主任者証の有効期間が満了したときは、主任者としての認定はその効力を失う。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第10条第5項 [会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★"
-    },
-    {
-      "problem_id": 5,
-      "statement": "取扱主任者証の有効期間の更新を受けようとする者は、有効期間満了日の6か月前から満了日までの間に更新時試験に合格しなければならない。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "有効期間満了日の1年前から満了日までの間に申請が必要（規程第10条第1項、要領第10条第1項）。",
       "category": "qualification_system",
       "difficulty": "★"
     },
@@ -80,42 +44,6 @@
       "basis": "30日以内に届け出なければならない（規程第13条第1項）[会話履歴 (詳細記述なし)].",
       "category": "qualification_system",
       "difficulty": "★"
-    },
-    {
-      "problem_id": 9,
-      "statement": "新規講習の「不正の実際及び不正行為の防止」の講習時間は40分である。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "新規講習の科目時間 [要領, 会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★"
-    },
-    {
-      "problem_id": 10,
-      "statement": "試験問題の作成、採点及び合否の決定は、原則として都道府県公安委員会が行う。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "日遊協が作成、採点、合否の決定を行う [規程, 会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 11,
-      "statement": "更新時講習の科目は、遊技産業の健全化等及び関係法令（70分）、不正の実際及び不正行為の防止（60分）、遊技機の取扱い（実務）（100分）等である。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "更新時講習の科目時間 [要領, 会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 12,
-      "statement": "更新時試験の出題数は50問、正誤択一式で、試験時間は60分である。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "更新時試験の出題数は30問、正解率80%以上で合格（要領第4条第2項）。",
-      "category": "qualification_system",
-      "difficulty": "★★"
     },
     {
       "problem_id": 13,
@@ -154,33 +82,6 @@
       "difficulty": "★★"
     },
     {
-      "problem_id": 17,
-      "statement": "取扱主任者証の有効期間の更新特例を利用できるのは、更新を連続して5回目以降希望する者に限る。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "連続して7回目以降の更新に試験免除の特例が適用される（規程第10条第3項、要領第10条第2項）。",
-      "category": "qualification_system",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 18,
-      "statement": "取扱主任者証の再交付を受けようとする者は、亡失、滅失、汚損、又は破損した場合、事由を付して速やかに日遊協に申請しなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第14条第1項 [会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 19,
-      "statement": "講習手数料は12,590円、新規試験手数料は8,800円（いずれも消費税込み）と定められている。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "（具体的な手数料金額は要領・規程に規定されていない。日遊協が別途定める）",
-      "category": "qualification_system",
-      "difficulty": "★★"
-    },
-    {
       "problem_id": 20,
       "statement": "日遊協は、主任者証を交付したとき、処分を行ったときは、警察庁及び都道府県公安委員会に報告しなければならない。",
       "correct_answer": true,
@@ -197,42 +98,6 @@
       "basis": "規程第13条第1項 [会話履歴 (詳細記述なし)].",
       "category": "qualification_system",
       "difficulty": "★★"
-    },
-    {
-      "problem_id": 22,
-      "statement": "新規講習の「制度及び関係法令」の時間は40分である。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "新規講習の「制度及び関係法令」科目は60分（要領第2条）。",
-      "category": "qualification_system",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 23,
-      "statement": "更新時講習の「遊技産業の健全化等及び関係法令」の時間は70分である。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "更新時講習の科目時間 [要領, 会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 24,
-      "statement": "更新時試験の方法・時間は、試験方法等の説明（10分）と正誤択一式の試験（40分）である。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "更新時試験の実施方法 [要領, 会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 25,
-      "statement": "取扱主任者証の有効期間は、更新時試験に合格した場合、当該更新前の有効期間満了日の翌日から起算して3年を経過する日までとされる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第10条第4項 [会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★★"
     },
     {
       "problem_id": 26,
@@ -359,15 +224,6 @@
       "basis": "風営法第18条。",
       "category": "business_regulation_and_obligations",
       "difficulty": "★"
-    },
-    {
-      "problem_id": 40,
-      "statement": "遊技機取扱主任者は、遊技機の認定申請書に添付する書類のうち、遊技機の明細書等を作成する業務に携わる義務を負う。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "主任者の業務（規程第11条第2号）[会話履歴 (詳細記述なし)].",
-      "category": "business_regulation_and_obligations",
-      "difficulty": "★★"
     },
     {
       "problem_id": 41,
@@ -820,60 +676,6 @@
       "difficulty": "★★"
     },
     {
-      "problem_id": 91,
-      "statement": "遊技機取扱主任者の業務には、営業所における遊技機の増設、交替その他の変更及び遊技機の保守管理に関することが含まれる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "主任者の業務（規程第11条第3号）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 92,
-      "statement": "主任者は、遊技機の納入又は受領に伴う書類等の確認において、中古遊技機取扱業務実施要領の規定に基づく実務を行う。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第11条第8号（要綱・実施要領に基づく業務）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 93,
-      "statement": "主任者は、遊技機の保守管理に関して、従事する者の指導及び監督を行う義務を負う。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "主任者の業務（規程第11条第6号）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 94,
-      "statement": "主任者が遊技機の取扱業務に関し、関係者から主任者証の提示を求められた際、提示しなければならないのは主任者証のコピーでよい。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "取扱主任者証を提示しなければならない（規程第12条）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 95,
-      "statement": "営業の許可申請書の作成は、主任者の業務であるが、遊技機の認定申請書の作成は主任者の業務に含まれない。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "遊技機の認定申請書に添付する書類作成は主任者の業務に含まれる（規程第11条第2号）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 96,
-      "statement": "遊技機製造業者の業務委託に関する規程に基づく業務とは、製造業者から委託された点検、修理等の業務が法令に適合するよう監督することを含む。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第11条第8号（要綱・実施要領に基づく業務）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★"
-    },
-    {
       "problem_id": 97,
       "statement": "遊技機の変更承認申請書を提出する場合、当該変更事項に係る府令第1条第11号に掲げる書類を添付する必要がある。",
       "correct_answer": true,
@@ -901,83 +703,11 @@
       "difficulty": "★★"
     },
     {
-      "problem_id": 100,
-      "statement": "主任者の業務は、遊技機の保守管理に関連する業者との連携を適正に行うことを含む。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "主任者の業務（規程第11条第7号）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 101,
-      "statement": "遊技機取扱主任者が行うべき業務には、営業所における遊技機の納入又は受領に伴い、書類等（検定証、認定証等）の確認を行う義務を負う。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "主任者の業務（規程第11条第1号）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 102,
-      "statement": "遊技機取扱主任者の業務は、遊技機の保守管理だけでなく、増設、交替その他の変更に関することも含む。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "主任者の業務（規程第11条第3号）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 103,
-      "statement": "遊技機製造業者の業務委託に関する規程に基づく業務は、遊技機取扱主任者が行うこととされた業務の一つである。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第11条第8号（要綱・実施要領に基づく業務）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 104,
-      "statement": "営業所の管理者は、遊技機取扱主任者に、中古遊技機流通健全化要綱に基づく業務を適正に行わせなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "管理者は主任者に規程第11条に定める業務を適正に行わせる義務がある（風営法施行規則第38条に規定される管理者の業務全般に基づく）。",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 105,
-      "statement": "主任者は、中古遊技機流通健全化要綱に基づき、中古遊技機の納入時に、主要部品の封印確認や不正な部品の有無確認などの詳細な点検手順を実施する。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第11条第8号（要綱に基づく実務）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 106,
-      "statement": "遊技機の認定申請に関わる業務の実施要領に基づく業務では、主任者は遊技機風営法施行規則第8条の射幸性基準に適合していることを証明する明細書等の作成または確認を行う。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "主任者の業務（規程第11条第2号）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
       "problem_id": 107,
       "statement": "営業所における業務の一部が委託される場合、管理者は当該委託に係る契約の内容、業務の履行状況その他の事項の点検の実施及びその記録の記載について管理しなければならない。",
       "correct_answer": true,
       "answer_display": "〇",
       "basis": "管理者の業務（風営法施行規則第38条第12号）。",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 108,
-      "statement": "主任者は、不正遊技機の通報及び排除に関し、関連する業者との連携を行う義務を負う。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "主任者の業務（規程第11条第4号、第7号）[会話履歴 (詳細記述なし)].",
       "category": "game_machine_technical_standards",
       "difficulty": "★★★"
     },
@@ -996,42 +726,6 @@
       "correct_answer": true,
       "answer_display": "〇",
       "basis": "風営法第9条第1項。",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 111,
-      "statement": "遊技機取扱主任者が行うべき業務には、営業所における遊技機の納入又は受領に伴う書類等（検定証、認定証等）の真正性の確認が含まれる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "主任者の業務（規程第11条第1号）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 112,
-      "statement": "主任者は、遊技機の保守管理において、遊技機が射幸心基準に適合している状態を維持するための点検を指導監督しなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第11条第3号, 6号、及び風営法施行規則第38条第3号（管理者の監督義務）。",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 113,
-      "statement": "中古遊技機流通健全化要綱の規定に基づく業務は、遊技機が健全な流通経路をたどったことを確認する手続きが含まれる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第11条第8号（要綱に基づく業務）[会話履歴 (詳細記述なし)].",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 114,
-      "statement": "主任者の業務には、上記業務に従事する者に対する指導及び監督が含まれる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "主任者の業務（規程第11条第6号）[会話履歴 (詳細記述なし)].",
       "category": "game_machine_technical_standards",
       "difficulty": "★★★"
     },
@@ -2103,15 +1797,6 @@
       "correct_answer": true,
       "answer_display": "〇",
       "basis": "規程第17条第1号、第2号、第3号（ただし第1号は返納が必須）。",
-      "category": "qualification_system",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 234,
-      "statement": "取扱主任者証の有効期間の更新特例において、病気その他やむを得ない理由で更新時試験を受けることが困難である者は、その事由を付して申請し、当該事由が止んだ日から起算して6月以内に実施される更新時試験を受けることができる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第10条第1項。",
       "category": "qualification_system",
       "difficulty": "★★★"
     },
