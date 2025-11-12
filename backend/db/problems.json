@@ -2,11 +2,11 @@
   "metadata": {
     "title": "遊技機取扱主任者試験 総合模擬問題集",
     "version": "8.2（最適化版統合 - 638問完全版）",
-    "total_problems": 638,
-    "total_count": 638,
-    "last_modified": "2025-11-12T21:32:34+09:00",
-    "status": "✅ 最適化済み178問と追加460問を統合完了",
-    "summary": "176問は最適化済み版、462問はバックアップから変換。風営法・施行規則を完全カバー。"
+    "total_problems": 632,
+    "total_count": 632,
+    "last_modified": "2025-11-12T17:00:00+09:00",
+    "status": "✅ ぱちんこ業界以外の風俗営業問題を削除完了",
+    "summary": "ぱちんこ業界（第4号営業）に特化した632問。他業種の問題を削除。"
   },
   "problems": [
     {
@@ -1828,38 +1828,11 @@
       "difficulty": "★★★"
     },
     {
-      "problem_id": 212,
-      "statement": "風営法第2条第1項第5号の営業の遊技設備のうち、テレビゲーム機は、遊技の結果が記号等で表示される機能を有する場合でも、射幸心をそそるおそれがないことが明らかであれば、規則で定める遊技設備から除外される。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "風営法施行規則第3条第2号。",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★★"
-    },
-    {
       "problem_id": 213,
       "statement": "ぱちんこ屋の営業所内の照度を計る場合、遊技設備の前面または上面における垂直面について計らなければならない。",
       "correct_answer": false,
       "answer_display": "✕",
       "basis": "水平面について計らなければならない（風営法施行規則第30条）。",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 214,
-      "statement": "風営法第2条第1項第1号に掲げる営業（キャバレー等）の客室は、客室の数が一室のみである場合は、客室の床面積に関する基準が適用されない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "客室の数が一室のみである場合は、客室の床面積の基準は適用されない（風営法施行規則第7条第1号ただし書）。",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 215,
-      "statement": "風営法第2条第1項第5号に規定される「国家公安委員会規則で定める遊技設備」には、スロットマシン、テレビゲーム機、ルーレット台、トランプ及びトランプ台が含まれる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "風営法施行規則第3条各号。",
       "category": "administrative_procedures_and_penalties",
       "difficulty": "★★★"
     },
@@ -1914,15 +1887,6 @@
       "correct_answer": true,
       "answer_display": "〇",
       "basis": "欠格事由となる罪には、刑法第174条（強制わいせつ）や売春防止法第2章の罪が含まれる（風営法第4条第1項第2号ロ、ニ）。",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 222,
-      "statement": "風営法第2条第1項第2号に掲げる営業（低照度飲食営業）は、営業所内の照度を10ルクス以下として営むものである。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "営業所内の照度を10ルクス以下として営むもの（風営法第2条第1項第2号）。",
       "category": "administrative_procedures_and_penalties",
       "difficulty": "★★★"
     },
@@ -2085,24 +2049,6 @@
       "correct_answer": true,
       "answer_display": "〇",
       "basis": "風営法施行規則第14条第1項、第2項（別記様式第7号）。",
-      "category": "business_regulation_and_obligations",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 241,
-      "statement": "特定遊興飲食店営業者が法第31条の23で準用する法第9条第3項第1号に係る変更届出をする際、当該変更が法人の名称、住所、代表者の氏名又は役員の氏名若しくは住所に係るものである場合は、変更があった日から20日以内に届出をしなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "風営法施行規則第88条第2項。",
-      "category": "business_regulation_and_obligations",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 242,
-      "statement": "特定遊興飲食店営業者が法第31条の23で準用する法第9条第3項第2号（軽微な変更）に係る届出をする場合、当該変更が照明設備、音響設備または防音設備に係るものであるときは、変更があった日から10日以内に届出をしなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "風営法施行規則第88条第2項（当該変更が照明設備、音響設備又は防音設備に係るものである場合にあっては、十日以内）。",
       "category": "business_regulation_and_obligations",
       "difficulty": "★★★"
     },
