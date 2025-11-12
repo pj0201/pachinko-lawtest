@@ -27,3 +27,10 @@ dist-ssr
 .env
 .env.local
 backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
