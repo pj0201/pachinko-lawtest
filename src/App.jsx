@@ -19,6 +19,7 @@ import Register from './pages/Register';
 import { Home } from './components/Home';
 import { ExamScreen } from './components/ExamScreen';
 import { History } from './components/History';
+import { DevDashboard } from './components/DevDashboard';
 
 /**
  * MainApp - ProtectedRoute 内で実行される認証済みアプリ
@@ -67,6 +68,9 @@ function MainApp() {
 function App() {
   return (
     <Routes>
+      {/* 開発者ダッシュボード（729393でログイン） */}
+      <Route path="/dev" element={<DevDashboard />} />
+
       {/* デフォルト：MainApp（認証なしで直接アクセス可能） */}
       <Route path="/*" element={<MainApp />} />
 

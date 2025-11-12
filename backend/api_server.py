@@ -21,6 +21,7 @@ from auth_database import AuthDatabase
 from security_middleware import (
     init_security, rate_limit, sanitize_input, is_production
 )
+from device_detector import detect_device_type
 
 # Flask アプリ初期化（React dist フォルダを静的ファイルとして配信）
 dist_path = Path(__file__).parent.parent / "dist"
@@ -167,15 +168,26 @@ def register():
                 'message': '開発者モードで登録されました'
             })
 
+        # ✨ デバイス種類を自動判別
+        user_agent = request.headers.get('User-Agent', '')
+        device_type = detect_device_type(user_agent)
+
         # デバイス登録（auth_dbに処理させる）
-        result = auth_db.register_device(token, device_id)
+        result = auth_db.register_device(
+            token=token,
+            device_id=device_id,
+            email=email,
+            device_type=device_type,
+            user_agent=user_agent
+        )
 
         if result['success']:
             # 登録成功時のレスポンス
             return jsonify({
                 'success': True,
                 'session_token': result['session_token'],
-                'message': '登録が完了しました'
+                'message': '登録が完了しました',
+                'device_type': device_type  # デバイス種類も返す
             })
         else:
             # 登録失敗時のレスポンス
@@ -218,6 +230,114 @@ def verify_session():
             'valid': False,
             'message': 'サーバーエラーが発生しました'
         }), 500
+
+# ===== 開発者向けエンドポイント =====
+
+@app.route('/api/dev/login', methods=['POST'])
+@rate_limit(max_requests=10, window_seconds=60)
+def dev_login():
+    """
+    開発者ログイン
+    メールアドレス: 729393 で開発者ダッシュボードにアクセス
+    """
+    try:
+        data = request.get_json() or {}
+        email = data.get('email')
+        password = data.get('password')
+
+        if not email or not password:
+            return jsonify({
+                'success': False,
+                'message': 'メールアドレスとパスワードが必要です'
+            }), 400
+
+        # 開発者認証（メアド: 729393）
+        if email == "729393" and password == "729393":
+            import uuid
+            dev_token = f"dev_admin_{uuid.uuid4().hex[:16]}"
+            return jsonify({
+                'success': True,
+                'dev_token': dev_token,
+                'message': '開発者としてログインしました'
+            })
+        else:
+            return jsonify({
+                'success': False,
+                'message': '無効な認証情報です'
+            }), 401
+
+    except Exception as e:
+        print(f"❌ 開発者ログインエラー: {e}")
+        return jsonify({
+            'success': False,
+            'message': 'サーバーエラーが発生しました'
+        }), 500
+
+@app.route('/api/dev/users', methods=['GET'])
+@rate_limit(max_requests=100, window_seconds=60)
+def dev_get_users():
+    """
+    ユーザー一覧取得（開発者向け）
+    """
+    try:
+        # 開発者トークン検証
+        dev_token = request.headers.get('X-Dev-Token')
+        if not dev_token or not dev_token.startswith('dev_admin_'):
+            return jsonify({
+                'error': '認証が必要です'
+            }), 401
+
+        # ページネーション
+        limit = int(request.args.get('limit', 100))
+        offset = int(request.args.get('offset', 0))
+
+        users = auth_db.get_all_users(limit=limit, offset=offset)
+
+        return jsonify({
+            'success': True,
+            'users': users,
+            'count': len(users)
+        })
+
+    except Exception as e:
+        print(f"❌ ユーザー一覧取得エラー: {e}")
+        return jsonify({
+            'error': 'サーバーエラーが発生しました',
+            'message': str(e)
+        }), 500
+
+@app.route('/api/dev/stats', methods=['GET'])
+@rate_limit(max_requests=100, window_seconds=60)
+def dev_get_stats():
+    """
+    統計情報取得（開発者向け）
+    """
+    try:
+        # 開発者トークン検証
+        dev_token = request.headers.get('X-Dev-Token')
+        if not dev_token or not dev_token.startswith('dev_admin_'):
+            return jsonify({
+                'error': '認証が必要です'
+            }), 401
+
+        # 統計情報取得
+        stats = auth_db.get_stats()
+        device_stats = auth_db.get_device_type_stats()
+
+        return jsonify({
+            'success': True,
+            'stats': stats,
+            'device_stats': device_stats
+        })
+
+    except Exception as e:
+        print(f"❌ 統計情報取得エラー: {e}")
+        return jsonify({
+            'error': 'サーバーエラーが発生しました',
+            'message': str(e)
+        }), 500
+
+# ===== 問題取得エンドポイント =====
 
 @app.route('/api/problems/quiz', methods=['POST'])
 def get_quiz_problems():

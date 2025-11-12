@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """
 アルファ版招待URL限定配布システム - データベース管理
+✨ ユーザー情報管理機能追加（メール、デバイス種類）
 """
 
 import sqlite3
@@ -46,6 +47,19 @@ class AuthDatabase:
                 )
             """)
 
+            # ✨ ユーザー情報テーブル（新規）
+            conn.execute("""
+                CREATE TABLE IF NOT EXISTS users (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    device_id TEXT UNIQUE NOT NULL,
+                    email TEXT,
+                    device_type TEXT,
+                    user_agent TEXT,
+                    registered_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+                    last_login DATETIME
+                )
+            """)
+
             conn.commit()
 
     def generate_invite_tokens(self, count: int = 1) -> List[str]:
@@ -83,8 +97,18 @@ class AuthDatabase:
 
             return {"valid": True, "message": "有効な招待URLです"}
 
-    def register_device(self, token: str, device_id: str) -> Dict:
-        """デバイス登録"""
+    def register_device(self, token: str, device_id: str, email: str = None,
+                       device_type: str = None, user_agent: str = None) -> Dict:
+        """
+        デバイス登録（拡張版）
+
+        Args:
+            token: 招待トークン
+            device_id: デバイスID
+            email: メールアドレス
+            device_type: デバイス種類（Android/iPhone/PC）
+            user_agent: User-Agent文字列
+        """
         with sqlite3.connect(self.db_path) as conn:
             # トークン検証
             cursor = conn.execute(
@@ -129,6 +153,14 @@ class AuthDatabase:
                 (device_id, now, token)
             )
 
+            # ✨ ユーザー情報を保存
+            conn.execute(
+                """INSERT OR REPLACE INTO users
+                   (device_id, email, device_type, user_agent, registered_at)
+                   VALUES (?, ?, ?, ?, ?)""",
+                (device_id, email, device_type, user_agent, now)
+            )
+
             # セッション作成
             session_token = str(uuid.uuid4())
             conn.execute(
@@ -170,6 +202,13 @@ class AuthDatabase:
                 "UPDATE user_sessions SET last_access = ? WHERE id = ?",
                 (now, row['id'])
             )
+
+            # ✨ ユーザーの最終ログイン時刻も更新
+            conn.execute(
+                "UPDATE users SET last_login = ? WHERE device_id = ?",
+                (now, device_id)
+            )
+
             conn.commit()
 
             return {"valid": True, "message": "有効なセッションです"}
@@ -204,12 +243,84 @@ class AuthDatabase:
             cursor = conn.execute("SELECT COUNT(*) FROM user_sessions")
             session_count = cursor.fetchone()[0]
 
+            # ユーザー統計
+            cursor = conn.execute("SELECT COUNT(*) FROM users")
+            user_count = cursor.fetchone()[0]
+
             return {
                 "total_tokens": token_stats[0] or 0,
                 "used_tokens": token_stats[1] or 0,
                 "available_tokens": (token_stats[0] or 0) - (token_stats[1] or 0),
-                "active_sessions": session_count
+                "active_sessions": session_count,
+                "total_users": user_count
             }
+
+    # ===== 開発者向け機能 =====
+
+    def get_all_users(self, limit: int = 100, offset: int = 0) -> List[Dict]:
+        """
+        全ユーザー一覧を取得（開発者ダッシュボード用）
+
+        Args:
+            limit: 取得件数
+            offset: オフセット
+
+        Returns:
+            ユーザー情報のリスト
+        """
+        with sqlite3.connect(self.db_path) as conn:
+            conn.row_factory = sqlite3.Row
+            cursor = conn.execute(
+                """SELECT
+                    u.id,
+                    u.device_id,
+                    u.email,
+                    u.device_type,
+                    u.registered_at,
+                    u.last_login,
+                    COUNT(s.id) as session_count
+                FROM users u
+                LEFT JOIN user_sessions s ON u.device_id = s.device_id
+                GROUP BY u.id
+                ORDER BY u.registered_at DESC
+                LIMIT ? OFFSET ?""",
+                (limit, offset)
+            )
+            rows = cursor.fetchall()
+
+            return [dict(row) for row in rows]
+
+    def get_user_by_email(self, email: str) -> Optional[Dict]:
+        """メールアドレスでユーザー検索"""
+        with sqlite3.connect(self.db_path) as conn:
+            conn.row_factory = sqlite3.Row
+            cursor = conn.execute(
+                "SELECT * FROM users WHERE email = ?",
+                (email,)
+            )
+            row = cursor.fetchone()
+
+            if row:
+                return dict(row)
+            return None
+
+    def get_device_type_stats(self) -> Dict:
+        """デバイス種類別の統計"""
+        with sqlite3.connect(self.db_path) as conn:
+            cursor = conn.execute(
+                """SELECT device_type, COUNT(*) as count
+                   FROM users
+                   WHERE device_type IS NOT NULL
+                   GROUP BY device_type"""
+            )
+            rows = cursor.fetchall()
+
+            stats = {"Android": 0, "iPhone": 0, "PC": 0, "Unknown": 0}
+            for row in rows:
+                device_type = row[0] or "Unknown"
+                stats[device_type] = row[1]
+
+            return stats
 
 
 if __name__ == "__main__":
