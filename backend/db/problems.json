@@ -23,7 +23,7 @@
       "statement": "新規試験の受験資格は、当該試験の実施の日から起算して1年以内に実施された講習を受講した者に限られる。",
       "correct_answer": false,
       "answer_display": "✕",
-      "basis": "受験資格は6か月以内である [会話履歴 (詳細記述なし)].",
+      "basis": "受験資格の期間は6か月以内である（規程による）。",
       "category": "qualification_system",
       "difficulty": "★"
     },
@@ -50,7 +50,7 @@
       "statement": "取扱主任者証の有効期間の更新を受けようとする者は、有効期間満了日の6か月前から満了日までの間に更新時試験に合格しなければならない。",
       "correct_answer": false,
       "answer_display": "✕",
-      "basis": "有効期間満了日の1年前から満了日までの間に申請が必要 [会話履歴 (詳細記述なし)].",
+      "basis": "有効期間満了日の1年前から満了日までの間に申請が必要（規程第10条第1項、要領第10条第1項）。",
       "category": "qualification_system",
       "difficulty": "★"
     },
@@ -113,7 +113,7 @@
       "statement": "更新時試験の出題数は50問、正誤択一式で、試験時間は60分である。",
       "correct_answer": false,
       "answer_display": "✕",
-      "basis": "更新時試験の出題数は30問である [会話履歴 (詳細記述なし)].",
+      "basis": "更新時試験の出題数は30問、正解率80%以上で合格（要領第4条第2項）。",
       "category": "qualification_system",
       "difficulty": "★★"
     },
@@ -158,7 +158,7 @@
       "statement": "取扱主任者証の有効期間の更新特例を利用できるのは、更新を連続して5回目以降希望する者に限る。",
       "correct_answer": false,
       "answer_display": "✕",
-      "basis": "連続して7回目以降の更新に特例が適用される [会話履歴 (詳細記述なし)].",
+      "basis": "連続して7回目以降の更新に試験免除の特例が適用される（規程第10条第3項、要領第10条第2項）。",
       "category": "qualification_system",
       "difficulty": "★★"
     },
@@ -176,7 +176,7 @@
       "statement": "講習手数料は12,590円、新規試験手数料は8,800円（いずれも消費税込み）と定められている。",
       "correct_answer": false,
       "answer_display": "✕",
-      "basis": "（具体的な金額に関する規定はソースにない）",
+      "basis": "（具体的な手数料金額は要領・規程に規定されていない。日遊協が別途定める）",
       "category": "qualification_system",
       "difficulty": "★★"
     },
@@ -185,7 +185,7 @@
       "statement": "日遊協は、主任者証を交付したとき、処分を行ったときは、警察庁及び都道府県公安委員会に報告しなければならない。",
       "correct_answer": true,
       "answer_display": "〇",
-      "basis": "（認定及び処分に関する通知・報告義務）",
+      "basis": "認定及び処分に関する通知・報告義務（規程による）。",
       "category": "qualification_system",
       "difficulty": "★★"
     },
@@ -203,7 +203,7 @@
       "statement": "新規講習の「制度及び関係法令」の時間は40分である。",
       "correct_answer": false,
       "answer_display": "✕",
-      "basis": "60分である [会話履歴 (詳細記述なし)].",
+      "basis": "新規講習の「制度及び関係法令」科目は60分（要領第2条）。",
       "category": "qualification_system",
       "difficulty": "★★★"
     },
@@ -266,7 +266,7 @@
       "statement": "認定の取消し処分又は効力停止処分に異議がある場合、処分を知った日の翌日から起算して90日以内に日遊協に対し異議申立てをすることができる。",
       "correct_answer": false,
       "answer_display": "✕",
-      "basis": "（異議申立ての期間に関する具体的な規定はソースにない）",
+      "basis": "（異議申立ての期間に関する具体的な規定は要領・規程にない）",
       "category": "qualification_system",
       "difficulty": "★★★"
     },
