@@ -1,12 +1,12 @@
 {
   "metadata": {
     "title": "遊技機取扱主任者試験 総合模擬問題集",
-    "version": "8.2（最適化版統合 - 638問完全版）",
-    "total_problems": 632,
-    "total_count": 632,
-    "last_modified": "2025-11-12T17:00:00+09:00",
-    "status": "✅ ぱちんこ業界以外の風俗営業問題を削除完了",
-    "summary": "ぱちんこ業界（第4号営業）に特化した632問。他業種の問題を削除。"
+    "version": "8.3（ぱちんこ業界特化版 - 626問）",
+    "total_problems": 626,
+    "total_count": 626,
+    "last_modified": "2025-11-12T21:58:44+09:00",
+    "status": "✅ 他業種問題の削除と営業種別の修正完了",
+    "summary": "ぱちんこ業界（第4号営業）に特化した626問。他業種6問削除、営業種別誤記2問修正。"
   },
   "problems": [
     {
@@ -479,7 +479,7 @@
     },
     {
       "problem_id": 53,
-      "statement": "風営法第2条第1項第5号の営業（スロットマシン等）を営む者は、遊技球等を客に営業所外に持ち出させても、客のために保管したことを表示する書面を発行しなければ、法令に違反しない。",
+      "statement": "風営法第2条第1項第4号の営業（スロットマシン等）を営む者は、遊技球等を客に営業所外に持ち出させても、客のために保管したことを表示する書面を発行しなければ、法令に違反しない。",
       "correct_answer": false,
       "answer_display": "✕",
       "basis": "風営法第23条第3項により、第23条第1項第3号（持ち出し）および第4号（保管書面発行）が準用され禁止されている。",
@@ -1289,7 +1289,7 @@
     },
     {
       "problem_id": 152,
-      "statement": "風営法第2条第1項第5号の営業（スロットマシン等）を営む者は、遊技球等を客に営業所外に持ち出させる行為が禁止されていない。",
+      "statement": "風営法第2条第1項第4号の営業（スロットマシン等）を営む者は、遊技球等を客に営業所外に持ち出させる行為が禁止されていない。",
       "correct_answer": false,
       "answer_display": "✕",
       "basis": "風営法第23条第3項により、遊技球等を客に営業所外に持ち出させる行為（第1項第3号）が準用され禁止されている。",
@@ -1693,29 +1693,11 @@
       "difficulty": "★"
     },
     {
-      "problem_id": 197,
-      "statement": "風営法第2条第1項第5号の営業に係る遊技設備のうち、ルーレット台、トランプ及びトランプ台は、国家公安委員会規則で定める遊技設備に含まれない。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "ルーレット台、トランプ及びトランプ台は規則で定める遊技設備に含まれる（風営法施行規則第3条第5号）。",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★"
-    },
-    {
       "problem_id": 198,
       "statement": "遊技機の認定等を受けない遊技機がある場合の許可・承認に係る手数料の徴収標準は、認定の事務に係る手数料の額を勘案して政令で定める額を標準として、条例を定めなければならない。",
       "correct_answer": true,
       "answer_display": "〇",
       "basis": "風営法第43条。",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 199,
-      "statement": "風営法第23条第1項第1号又は第2号の規定に違反し、現金又は有価証券を賞品として提供したり、賞品を買い取ったりした場合、違反行為をした者は1年以下の拘禁刑若しくは100万円以下の罰金に処される。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "6月以下の拘禁刑若しくは100万円以下の罰金に処される（風営法第53条第3号）。",
       "category": "administrative_procedures_and_penalties",
       "difficulty": "★★"
     },
@@ -1752,24 +1734,6 @@
       "correct_answer": true,
       "answer_display": "〇",
       "basis": "許可申請書（別記様式第1号）に記載事項あり [風営法施行規則]。",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 204,
-      "statement": "風営法第31条の23において準用する風営法第9条第3項第1号に係る届出書（法人の名称等変更）の提出は、変更があった日から20日以内に行わなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "法人の名称、住所、役員の氏名等の変更は、変更があった日から**20日以内**（風営法施行規則第88条第2項）。",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 205,
-      "statement": "風営法第31条の23において準用する風営法第9条第3項第2号に係る届出書の提出は、当該変更が照明設備、音響設備または防音設備に係るものである場合を除き、変更があった日から1月以内に行わなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "軽微な変更届出（照明設備等を除く）は変更があった日から**1月以内**（風営法施行規則第88条第2項）。",
       "category": "administrative_procedures_and_penalties",
       "difficulty": "★★"
     },
@@ -1927,15 +1891,6 @@
       "difficulty": "★★★"
     },
     {
-      "problem_id": 227,
-      "statement": "風営法第23条第1項第1号又は第2号の規定に違反し、現金又は有価証券を賞品として提供したり、賞品を買い取ったりした場合、違反行為をした者は1年以下の拘禁刑若しくは100万円以下の罰金に処される。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "6月以下の拘禁刑若しくは100万円以下の罰金に処される（風営法第53条第3号）。",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★★"
-    },
-    {
       "problem_id": 228,
       "statement": "遊技球等を客に営業所外に持ち出させた場合（風営法第23条第1項第3号）の違反行為に対する罰則は、100万円以下の罰金に処せられる。",
       "correct_answer": false,
@@ -2049,15 +2004,6 @@
       "correct_answer": true,
       "answer_display": "〇",
       "basis": "風営法施行規則第14条第1項、第2項（別記様式第7号）。",
-      "category": "business_regulation_and_obligations",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 243,
-      "statement": "法第31条の23において準用する法第9条第5項の規定による特例特定遊興飲食店営業者に係る変更届出書を提出する場合、法人の名称変更や設備変更等の軽微な変更の区分に関わらず、変更があった日から10日以内に届出をしなければならないと読み替えられている。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "風営法施行規則第89条（前条第2項中「十日（...）以内」とあるのは、「十日以内」と読み替えるものとする。）。",
       "category": "business_regulation_and_obligations",
       "difficulty": "★★★"
     },
