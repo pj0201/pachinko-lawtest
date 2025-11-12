@@ -2,103 +2,13 @@
   "metadata": {
     "title": "遊技機取扱主任者試験 総合模擬問題集",
     "version": "7.0（風営法・施行規則完全版）",
-    "total_problems": 194,
-    "total_count": 194,
-    "last_modified": "2025-11-12T15:30:00+09:00",
-    "status": "✅ 主任者制度の問題を完全削除完了（メタデータクリーンアップ済み）",
-    "summary": "風営法・施行規則のみをソースとする194問。主任者制度関連の問題をすべて削除。"
+    "total_problems": 178,
+    "total_count": 178,
+    "last_modified": "2025-11-12T16:00:00+09:00",
+    "status": "✅ 協会規程・要領を参照する問題をすべて削除完了",
+    "summary": "風営法・施行規則のみをソースとする178問。協会規程・要領を含む問題を完全削除。"
   },
   "problems": [
-    {
-      "problem_id": 3,
-      "statement": "講習の講師は、人格及び識見に優れ、遊技機の点検及び取扱い等に関する高度な知識及び技能を有する者に日遊協が委嘱する。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "講師の要件（高度な知識及び技能を有する者）[規程, 会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★"
-    },
-    {
-      "problem_id": 6,
-      "statement": "偽りその他不正の手段により試験に合格したことが判明した場合、日遊協は認定を取り消すことはできないが、6月を超えない範囲で効力を停止できる。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "偽りその他不正の手段による合格は認定取消し事由（規程第15条第1項第1号）[会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★"
-    },
-    {
-      "problem_id": 7,
-      "statement": "風営法第20条第10項において準用する風営法第9条第1項の規定に違反して都道府県公安委員会の承認を受けずに遊技機の増設、交替その他の変更をした者で、当該行為の日から起算して5年を経過しない者は、受験申請ができない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第5条第1項第3号（風営法第20条第10項準用による違反行為の日から5年を経過しない者は欠格）[会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★"
-    },
-    {
-      "problem_id": 13,
-      "statement": "講習又は試験を受けようとする者は、風営法第4条第1項第1号から第7号の2までのいずれかに該当する場合でも、申請することができる。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "風営法第4条第1項第1号から第7号の2までの欠格事由に該当する者は申請できない（規程第5条第1項第2号）[会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 14,
-      "statement": "偽りその他不正の手段により風営法第20条第10項において準用する風営法第9条第1項の承認を受けた者で、当該行為の日から起算して3年を経過しない者は、申請ができない。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "当該行為の日から起算して5年を経過しない者は申請できない（規程第5条第1項第4号）[会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 15,
-      "statement": "認定の取消し又は効力停止処分は、規程第11条の第1号から第6号及び第8号に掲げる業務を適正に行わないことが判明したときに行われる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第15条第1項第9号 [会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 26,
-      "statement": "検定規則第11条第2項の規定により検定を取り消された者（法人の場合は当時の役員であった者）は、当該取消しの日から起算して3年間は受験申請ができない。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "5年間は申請できない（規程第5条第1項第5号）[会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 28,
-      "statement": "講習又は試験を受けようとする者は、日遊協ウェブサイトから日遊協に申請しなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "実施要領第10条、第12条 [会話履歴 (詳細記述なし)].",
-      "category": "qualification_system",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 29,
-      "statement": "認定の取消し処分又は効力停止処分に異議がある場合、処分を知った日の翌日から起算して90日以内に日遊協に対し異議申立てをすることができる。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "（異議申立ての期間に関する具体的な規定は要領・規程にない）",
-      "category": "qualification_system",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 30,
-      "statement": "認定を取り消された者で、当該取消しの日から起算して3年を経過しない者は、受験申請ができない。",
-      "correct_answer": false,
-      "answer_display": "✕",
-      "basis": "5年を経過しない者は申請できない（規程第5条第1項第6号）[会話履歴 (詳細記述なし)]. #### II. 風俗営業の一般規制と義務（問題 31 〜 60）",
-      "category": "qualification_system",
-      "difficulty": "★★★"
-    },
     {
       "problem_id": 31,
       "statement": "風俗営業等の規制及び業務の適正化等に関する法律の目的は、遊技機製造業者の業務の適正化を促進することである。",
@@ -194,7 +104,7 @@
       "statement": "風俗営業を営む者は、許可証又は認定証を営業所の見やすい場所に掲示しなければならない。",
       "correct_answer": true,
       "answer_display": "〇",
-      "basis": "（法令上の義務。許可証の掲示は法第5条第3項、認定証の掲示は法第20条第6項に規定）",
+      "basis": "許可証の掲示は風営法第5条第3項、認定証の掲示は風営法第20条第6項に規定。",
       "category": "business_regulation_and_obligations",
       "difficulty": "★★"
     },
@@ -663,15 +573,6 @@
       "correct_answer": true,
       "answer_display": "〇",
       "basis": "風営法第9条第1項。",
-      "category": "game_machine_technical_standards",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 115,
-      "statement": "遊技機の認定申請に関わる業務の実施要領に基づく業務では、遊技機の型式が公安委員会の検定を受けた型式に属することを確認する義務がある。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第11条第8号（要綱に基づく実務）[会話履歴 (詳細記述なし)].",
       "category": "game_machine_technical_standards",
       "difficulty": "★★★"
     },
@@ -1342,33 +1243,6 @@
       "difficulty": "★★"
     },
     {
-      "problem_id": 193,
-      "statement": "講習の講師は、遊技機の点検及び取扱い等に関する高度な知識及び技能を有する者に日遊協が委嘱するものとする。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "講習は必要な知識及び技能について行う（規程第3条）。",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 194,
-      "statement": "偽りその他不正の手段により試験に合格したことは、認定の取消しまたは効力停止処分事由となる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "規程第15条第1項第1号 [会話履歴 (詳細記述なし)].",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★"
-    },
-    {
-      "problem_id": 195,
-      "statement": "試験中の不正行為があった場合、日遊協は当該受験者を会場から退場させることができる。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "日遊協は試験を実施し、適切な措置をとる権限がある（規程第4条）[会話履歴 (詳細記述なし)].",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★"
-    },
-    {
       "problem_id": 197,
       "statement": "風営法第2条第1項第5号の営業に係る遊技設備のうち、ルーレット台、トランプ及びトランプ台は、国家公安委員会規則で定める遊技設備に含まれない。",
       "correct_answer": false,
@@ -1735,24 +1609,6 @@
       "answer_display": "〇",
       "basis": "風営法施行規則第89条（前条第2項中「十日（...）以内」とあるのは、「十日以内」と読み替えるものとする。）。",
       "category": "business_regulation_and_obligations",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 245,
-      "statement": "異議申立てにより日遊協が処分を取り消し、又は変更したときは、当該処分を受けた者には別記様式第6号、関係団体には別記様式第7号の異議申立てに対する通知書により通知するものとする。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "実施要領第14条。",
-      "category": "administrative_procedures_and_penalties",
-      "difficulty": "★★★"
-    },
-    {
-      "problem_id": 246,
-      "statement": "講習、試験、再交付の申請、または記載事項の変更の届出をしようとする者は、規程第18条に定められた手数料を、日遊協が指定する納付方法により納付しなければならない。",
-      "correct_answer": true,
-      "answer_display": "〇",
-      "basis": "実施要領第15条。",
-      "category": "administrative_procedures_and_penalties",
       "difficulty": "★★★"
     }
   ]
