@@ -88,12 +88,7 @@ export function Home() {
         <div className="exam-schedule">
           <h3>📅 遊技機取扱主任者試験情報</h3>
           <p style={{ margin: '0 0 12px 0', fontSize: '13px', lineHeight: '1.6' }}>
-            <strong>遊技機取扱主任者</strong>は、業界団体が実施する資格制度です。
-            遊技機の適切な管理・運用に関する知識を問う講習・試験があります。
-            詳細は実施団体の公式サイトをご確認ください。
-          </p>
-          <p style={{ margin: '0 0 8px 0', fontSize: '12px', color: '#666' }}>
-            ※ 本問題集は風営法・施行規則を対象としており、業界団体の自主規程に基づく主任者制度は対象外です。
+            業界団体が実施する資格制度。詳細は公式サイトをご確認ください。
           </p>
           <a
             href="https://exam.nichiyukyo.or.jp/"
