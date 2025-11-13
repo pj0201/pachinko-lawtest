@@ -85,7 +85,7 @@ export function Home() {
         </div>
 
         {/* 公式試験情報 */}
-        <div className="exam-schedule">
+        <div className="exam-schedule" style={{ textAlign: 'center' }}>
           <h3>📅 遊技機取扱主任者試験情報</h3>
           <p style={{ margin: '0 0 12px 0', fontSize: '13px', lineHeight: '1.6' }}>
             日遊協が実施する資格制度。詳細は公式サイトをご確認ください。
