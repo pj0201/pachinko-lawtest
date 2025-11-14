@@ -56,34 +56,21 @@ export default function Register() {
 
     initFingerprint();
 
-    // トークン検証（サーバーレス）
-    const validateToken = async () => {
-      if (!token) {
-        setError('招待URLが無効です。正しいURLからアクセスしてください。');
-        setLoading(false);
-        return;
-      }
-
-      // 使用済みトークンをチェック
-      const usedTokens = JSON.parse(localStorage.getItem('used_tokens') || '[]');
-      if (usedTokens.includes(token)) {
-        setError('この招待URLは既に使用されています。');
-        setLoading(false);
-        return;
-      }
-
-      // トークンフォーマットチェック
-      if (!token.startsWith('TEST_') && !token.startsWith('ADMIN_')) {
-        setError('無効な招待URLです。');
-        setLoading(false);
-        return;
-      }
-
-      console.log('✅ トークン検証成功:', token);
+    // トークン基本チェック（API呼び出し前）
+    if (!token) {
+      setError('招待URLが無効です。正しいURLからアクセスしてください。');
       setLoading(false);
-    };
+      return;
+    }
 
-    validateToken();
+    // トークンフォーマットチェック
+    if (!token.startsWith('TEST_') && !token.startsWith('ADMIN_')) {
+      setError('無効な招待URLです。');
+      setLoading(false);
+      return;
+    }
+
+    setLoading(false);
   }, [token]);
 
   const handleSubmit = async (e) => {
@@ -110,47 +97,64 @@ export default function Register() {
       return;
     }
 
-    // 再度、使用済みトークンをチェック
-    const usedTokens = JSON.parse(localStorage.getItem('used_tokens') || '[]');
-    if (usedTokens.includes(token)) {
-      setError('この招待URLは既に使用されています');
-      return;
-    }
-
     setLoading(true);
 
     try {
-      // トークンを使用済みにする（重要：登録前に実行）
-      usedTokens.push(token);
-      localStorage.setItem('used_tokens', JSON.stringify(usedTokens));
-      console.log('✅ トークン使用済み登録:', token);
+      // Vercel KV API でトークンとメールアドレスを検証
+      const validateResponse = await fetch('/api/validate-token', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token, email })
+      });
 
-      // サーバーレス化: localStorage に直接セッション情報を保存
-      const sessionToken = 'session_' + Date.now() + '_' + Math.random().toString(36).substring(2, 15);
+      const validateData = await validateResponse.json();
 
-      // セッショントークン保存
+      if (!validateResponse.ok || !validateData.valid) {
+        setError(validateData.error || '検証に失敗しました');
+        setLoading(false);
+        return;
+      }
+
+      // Vercel KV API でユーザー登録
+      const registerResponse = await fetch('/api/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          username,
+          token,
+          deviceId
+        })
+      });
+
+      const registerData = await registerResponse.json();
+
+      if (!registerResponse.ok || !registerData.success) {
+        setError(registerData.error || '登録に失敗しました');
+        setLoading(false);
+        return;
+      }
+
+      // セッション情報を localStorage に保存
+      const { sessionToken, user } = registerData;
       localStorage.setItem('session_token', sessionToken);
       localStorage.setItem('device_id', deviceId);
-
-      // ユーザー情報も保存（使用したトークンも記録）
-      localStorage.setItem('username', username);
-      localStorage.setItem('email', email);
+      localStorage.setItem('username', user.username);
+      localStorage.setItem('email', user.email);
       localStorage.setItem('invite_token', token);
       localStorage.setItem('user', JSON.stringify({
-        username,
-        email,
+        username: user.username,
+        email: user.email,
         invite_token: token,
         session_token: sessionToken,
-        registered_at: new Date().toISOString()
+        registered_at: user.registeredAt
       }));
 
-      console.log('✅ 登録成功（サーバーレス） - セッショントークン:', sessionToken);
-
-      // メイン画面へリダイレクト（履歴を置き換え - ブラウザバックで戻れないように）
+      // メイン画面へリダイレクト
       navigate('/', { replace: true });
     } catch (err) {
       console.error('❌ 登録エラー:', err);
-      setError('登録に失敗しました');
+      setError('サーバーとの通信に失敗しました');
     } finally {
       setLoading(false);
     }
