@@ -151,7 +151,7 @@ export default function Register() {
           </form>
         )}
 
-        <p className="note">※ 招待URLは1台のデバイスのみ登録可能です</p>
+        <p className="note">※ ユーザー名を入力してアプリを開始してください</p>
       </div>
     </div>
   );
