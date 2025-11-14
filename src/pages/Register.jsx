@@ -48,9 +48,34 @@ export default function Register() {
 
     initFingerprint();
 
-    // サーバーレスモード: トークン不要（常に有効）
-    console.log('✅ サーバーレスモード: 招待URL不要');
-    setLoading(false);
+    // トークン検証（サーバーレス）
+    const validateToken = async () => {
+      if (!token) {
+        setError('招待URLが無効です。正しいURLからアクセスしてください。');
+        setLoading(false);
+        return;
+      }
+
+      // 使用済みトークンをチェック
+      const usedTokens = JSON.parse(localStorage.getItem('used_tokens') || '[]');
+      if (usedTokens.includes(token)) {
+        setError('この招待URLは既に使用されています。');
+        setLoading(false);
+        return;
+      }
+
+      // トークンフォーマットチェック
+      if (!token.startsWith('TEST_') && !token.startsWith('ADMIN_')) {
+        setError('無効な招待URLです。');
+        setLoading(false);
+        return;
+      }
+
+      console.log('✅ トークン検証成功:', token);
+      setLoading(false);
+    };
+
+    validateToken();
   }, [token]);
 
   const handleSubmit = async (e) => {
@@ -72,9 +97,26 @@ export default function Register() {
       return;
     }
 
+    if (!token) {
+      setError('招待URLが無効です');
+      return;
+    }
+
+    // 再度、使用済みトークンをチェック
+    const usedTokens = JSON.parse(localStorage.getItem('used_tokens') || '[]');
+    if (usedTokens.includes(token)) {
+      setError('この招待URLは既に使用されています');
+      return;
+    }
+
     setLoading(true);
 
     try {
+      // トークンを使用済みにする（重要：登録前に実行）
+      usedTokens.push(token);
+      localStorage.setItem('used_tokens', JSON.stringify(usedTokens));
+      console.log('✅ トークン使用済み登録:', token);
+
       // サーバーレス化: localStorage に直接セッション情報を保存
       const sessionToken = 'session_' + Date.now() + '_' + Math.random().toString(36).substring(2, 15);
 
@@ -82,12 +124,14 @@ export default function Register() {
       localStorage.setItem('session_token', sessionToken);
       localStorage.setItem('device_id', deviceId);
 
-      // ユーザー情報も保存
+      // ユーザー情報も保存（使用したトークンも記録）
       localStorage.setItem('username', username);
       localStorage.setItem('email', email);
+      localStorage.setItem('invite_token', token);
       localStorage.setItem('user', JSON.stringify({
         username,
         email,
+        invite_token: token,
         session_token: sessionToken,
         registered_at: new Date().toISOString()
       }));
@@ -162,7 +206,7 @@ export default function Register() {
           </form>
         )}
 
-        <p className="note">※ ユーザー名とメールアドレスを入力してアプリを開始してください</p>
+        <p className="note">※ 招待URLは1回のみ使用可能です。ユーザー名とメールアドレスを入力してください。</p>
       </div>
     </div>
   );
