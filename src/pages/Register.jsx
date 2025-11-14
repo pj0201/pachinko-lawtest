@@ -92,16 +92,6 @@ export default function Register() {
         registered_at: new Date().toISOString()
       }));
 
-      // テスト用トークン無効化（重要）
-      if (token && (token.startsWith('TEST_') || token.startsWith('ADMIN_'))) {
-        const usedTokens = JSON.parse(localStorage.getItem('used_tokens') || '[]');
-        if (!usedTokens.includes(token)) {
-          usedTokens.push(token);
-          localStorage.setItem('used_tokens', JSON.stringify(usedTokens));
-          console.log(`✅ トークン無効化: ${token}`);
-        }
-      }
-
       console.log('✅ 登録成功（サーバーレス） - セッショントークン:', sessionToken);
 
       // メイン画面へリダイレクト（履歴を置き換え - ブラウザバックで戻れないように）
