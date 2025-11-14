@@ -6,6 +6,7 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams, useSearchParams, Navigate } from 'react-router-dom';
 import FingerprintJS from '@fingerprintjs/fingerprintjs';
+import { checkDeviceRestriction } from '../utils/deviceCheck';
 import './Register.css';
 
 export default function Register() {
@@ -21,13 +22,20 @@ export default function Register() {
   // トークンを URL パラメータまたはクエリパラメータから取得
   const token = params.token || searchParams.get('token');
 
-  // マウント時：既にセッションがあれば、ホーム画面にリダイレクト
+  // マウント時：デバイス制限チェック
   useEffect(() => {
+    const deviceCheck = checkDeviceRestriction();
+    if (!deviceCheck.allowed) {
+      setError(deviceCheck.message);
+      setLoading(false);
+      return;
+    }
+
+    // 既にセッションがあれば、ホーム画面にリダイレクト
     const sessionToken = localStorage.getItem('session_token');
     const deviceId = localStorage.getItem('device_id');
 
     if (sessionToken && deviceId) {
-      console.log('✅ セッション確認 - ホーム画面へリダイレクト');
       setAlreadyLoggedIn(true);
     }
   }, []);

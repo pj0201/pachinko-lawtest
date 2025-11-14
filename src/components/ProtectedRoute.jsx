@@ -5,13 +5,24 @@
 
 import { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
+import { checkDeviceRestriction } from '../utils/deviceCheck';
 
 export default function ProtectedRoute({ children }) {
   const [isValid, setIsValid] = useState(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [deviceError, setDeviceError] = useState('');
 
   useEffect(() => {
     const verifySession = async () => {
+      // デバイス制限チェック
+      const deviceCheck = checkDeviceRestriction();
+      if (!deviceCheck.allowed) {
+        setDeviceError(deviceCheck.message);
+        setIsValid(false);
+        setIsLoading(false);
+        return;
+      }
+
       // サーバーレスモード: 常に開発モード（認証スキップ）
       const isDev = true;
 
@@ -77,6 +88,30 @@ export default function ProtectedRoute({ children }) {
   }
 
   if (!isValid) {
+    // デバイス制限エラーの場合は専用画面を表示
+    if (deviceError) {
+      return (
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          minHeight: '100vh',
+          background: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+          color: 'white',
+          padding: '20px',
+          textAlign: 'center',
+          fontFamily: 'system-ui, -apple-system, sans-serif'
+        }}>
+          <div>
+            <h1 style={{ fontSize: '2rem', marginBottom: '1rem' }}>❌ アクセス制限</h1>
+            <p style={{ fontSize: '1.2rem', whiteSpace: 'pre-line', lineHeight: '1.8' }}>
+              {deviceError}
+            </p>
+          </div>
+        </div>
+      );
+    }
+
     return <Navigate to="/register" replace />;
   }
 
