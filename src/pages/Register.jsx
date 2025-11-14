@@ -10,6 +10,7 @@ import './Register.css';
 
 export default function Register() {
   const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
   const [deviceId, setDeviceId] = useState('');
@@ -66,6 +67,11 @@ export default function Register() {
       return;
     }
 
+    if (!email) {
+      setError('メールアドレスを入力してください');
+      return;
+    }
+
     setLoading(true);
 
     try {
@@ -78,8 +84,10 @@ export default function Register() {
 
       // ユーザー情報も保存
       localStorage.setItem('username', username);
+      localStorage.setItem('email', email);
       localStorage.setItem('user', JSON.stringify({
         username,
+        email,
         session_token: sessionToken,
         registered_at: new Date().toISOString()
       }));
@@ -145,13 +153,26 @@ export default function Register() {
               />
             </div>
 
+            <div className="form-group">
+              <label htmlFor="email">メールアドレス</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="メールアドレス（例：test@example.com）"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                disabled={loading}
+                autoComplete="email"
+              />
+            </div>
+
             <button type="submit" disabled={loading} className="submit-button">
               {loading ? '登録中...' : '登録して始める'}
             </button>
           </form>
         )}
 
-        <p className="note">※ ユーザー名を入力してアプリを開始してください</p>
+        <p className="note">※ ユーザー名とメールアドレスを入力してアプリを開始してください</p>
       </div>
     </div>
   );
