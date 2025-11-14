@@ -12,11 +12,8 @@ export default function ProtectedRoute({ children }) {
 
   useEffect(() => {
     const verifySession = async () => {
-      // 開発モードチェック（環境変数で厳密に管理）
-      const isDev = import.meta.env.MODE === 'development' &&
-                    import.meta.env.VITE_DEV_MODE === 'true' &&
-                    (window.location.hostname === 'localhost' ||
-                     window.location.hostname === '127.0.0.1');
+      // サーバーレスモード: 常に開発モード（認証スキップ）
+      const isDev = true;
 
       if (isDev) {
         console.log('🔧 開発環境モード: セッション検証をスキップ');
