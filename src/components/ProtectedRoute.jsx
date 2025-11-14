@@ -52,55 +52,10 @@ export default function ProtectedRoute({ children }) {
         return;
       }
 
-      // ✅ localStorage があれば即座にアクセス許可（UX向上）
-      console.log('✅ localStorage確認済み - アクセス許可（バックグラウンド検証実行）');
+      // ✅ サーバーレス化: localStorage のみでセッション管理
+      console.log('✅ localStorage確認済み - アクセス許可（サーバーレスモード）');
       setIsValid(true);
       setIsLoading(false);
-
-      // バックグラウンドで検証を実行（ユーザーはブロックされない）
-      try {
-        const response = await fetch('/api/auth/verify-session', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({
-            session_token: sessionToken,
-            device_id: deviceId
-          })
-        });
-
-        const data = await response.json();
-
-        if (!data.valid) {
-          console.warn('⚠️ バックグラウンド検証でセッション無効を検出:', data.message);
-          // 無効なセッション情報を削除
-          localStorage.removeItem('session_token');
-          localStorage.removeItem('device_id');
-          localStorage.removeItem('user');
-          localStorage.removeItem('verify_fail_count');
-          // 即座に登録ページへリダイレクト
-          setIsValid(false);
-        } else {
-          console.log('✅ バックグラウンド検証完了 - セッション有効');
-          // 検証成功時はfail_countをリセット
-          localStorage.removeItem('verify_fail_count');
-        }
-      } catch (err) {
-        console.error('❌ バックグラウンド検証エラー:', err);
-        // ネットワークエラーの場合は一定回数まで許容するが、
-        // セキュリティを優先して3回連続失敗でログアウト
-        const failCount = parseInt(localStorage.getItem('verify_fail_count') || '0');
-        if (failCount >= 2) {
-          console.error('🔒 セッション検証が3回連続で失敗したため、ログアウトします');
-          localStorage.removeItem('session_token');
-          localStorage.removeItem('device_id');
-          localStorage.removeItem('user');
-          localStorage.removeItem('verify_fail_count');
-          setIsValid(false);
-        } else {
-          localStorage.setItem('verify_fail_count', String(failCount + 1));
-          console.warn(`⚠️ セッション検証失敗 (${failCount + 1}/3回目) - 次回も失敗するとログアウトされます`);
-        }
-      }
     };
 
     verifySession();
