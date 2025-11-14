@@ -47,51 +47,9 @@ export default function Register() {
 
     initFingerprint();
 
-    // トークン検証
-    if (!token) {
-      setError('招待URLが無効です');
-      setLoading(false);
-      return;
-    }
-
-    // 開発者モード（token=dev）
-    if (token === 'dev') {
-      console.log('🔧 開発者モード有効');
-      setLoading(false);
-      return;
-    }
-
-    // テスト用トークン検証（ローカル）
-    const verifyTestToken = async () => {
-      try {
-        const response = await fetch('/test-tokens.json');
-        const testTokenData = await response.json();
-
-        // トークンが存在するか確認
-        if (!testTokenData.tokens[token]) {
-          setError('無効な招待URLです');
-          setLoading(false);
-          return;
-        }
-
-        // 既に使用済みか確認
-        const usedTokens = JSON.parse(localStorage.getItem('used_tokens') || '[]');
-        if (usedTokens.includes(token)) {
-          setError('この招待URLは既に使用済みです');
-          setLoading(false);
-          return;
-        }
-
-        console.log(`✅ テスト用トークン有効: ${token}`);
-        setLoading(false);
-      } catch (err) {
-        console.error('❌ テスト用トークン検証失敗:', err);
-        setError('トークン検証に失敗しました');
-        setLoading(false);
-      }
-    };
-
-    verifyTestToken();
+    // サーバーレスモード: トークン不要（常に有効）
+    console.log('✅ サーバーレスモード: 招待URL不要');
+    setLoading(false);
   }, [token]);
 
   const handleSubmit = async (e) => {
@@ -158,7 +116,7 @@ export default function Register() {
       <div className="register-container">
         <div className="loading">
           <h2>読み込み中...</h2>
-          <p>招待URLを検証しています</p>
+          <p>初期化しています</p>
         </div>
       </div>
     );
