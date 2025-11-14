@@ -13,10 +13,23 @@ from pathlib import Path
 from urllib.parse import unquote
 from auth_database import AuthDatabase
 
+# 環境変数の読み込み
+DEV_MODE = os.getenv('DEV_MODE', 'false').lower() == 'true'
+ALLOWED_ORIGINS = os.getenv('ALLOWED_ORIGINS', 'http://localhost:3000,http://localhost:5173').split(',')
+
 # Flask アプリ初期化（React dist フォルダを静的ファイルとして配信）
 dist_path = Path(__file__).parent.parent / "dist"
 app = Flask(__name__, static_folder=str(dist_path), static_url_path="")
-CORS(app)  # CORS 有効化
+
+# CORS設定を厳格化
+if DEV_MODE:
+    # 開発環境: 指定されたオリジンのみ許可
+    CORS(app, origins=ALLOWED_ORIGINS, supports_credentials=True)
+    print(f"🔧 開発モード有効 - 許可オリジン: {ALLOWED_ORIGINS}")
+else:
+    # 本番環境: 厳格なCORS設定
+    CORS(app, origins=ALLOWED_ORIGINS, supports_credentials=True)
+    print(f"🔒 本番モード - 許可オリジン: {ALLOWED_ORIGINS}")
 
 # 問題集ファイルパス（230問統合版）
 PROBLEMS_FILE = Path(__file__).parent / "db" / "problems.json"
@@ -94,8 +107,9 @@ def verify_invite():
                 'message': '招待トークンが指定されていません'
             }), 400
 
-        # 開発者モード（token=dev）
-        if token == 'dev':
+        # 開発者モード（環境変数で管理）
+        if DEV_MODE and token == 'dev':
+            print("🔧 開発者モード: 招待トークン検証をスキップ")
             return jsonify({
                 'valid': True,
                 'message': '開発者モード有効'
@@ -105,10 +119,11 @@ def verify_invite():
         return jsonify(result)
 
     except Exception as e:
+        error_detail = str(e) if DEV_MODE else 'サーバーエラーが発生しました'
         print(f"❌ 招待URL検証エラー: {e}")
         return jsonify({
             'valid': False,
-            'message': 'サーバーエラーが発生しました'
+            'message': error_detail
         }), 500
 
 @app.route('/api/auth/register', methods=['POST'])
@@ -127,8 +142,8 @@ def register():
                 'message': '必須フィールドが足りません'
             }), 400
 
-        # 開発者モード（token=dev）
-        if token == 'dev':
+        # 開発者モード（環境変数で管理）
+        if DEV_MODE and token == 'dev':
             import uuid
             dev_session_token = f"dev_session_{uuid.uuid4().hex[:16]}"
             print(f"🔧 開発者モード登録: {email} (session: {dev_session_token})")
@@ -153,10 +168,11 @@ def register():
             return jsonify(result), 400
 
     except Exception as e:
+        error_detail = str(e) if DEV_MODE else 'サーバーエラーが発生しました'
         print(f"❌ 登録エラー: {e}")
         return jsonify({
             'success': False,
-            'message': 'サーバーエラーが発生しました'
+            'message': error_detail
         }), 500
 
 @app.route('/api/auth/verify-session', methods=['POST'])
@@ -173,8 +189,9 @@ def verify_session():
                 'message': 'セッション情報が不足しています'
             }), 400
 
-        # 開発者モード（dev_session_*）
-        if session_token.startswith('dev_session_'):
+        # 開発者モード（環境変数で管理）
+        if DEV_MODE and session_token.startswith('dev_session_'):
+            print(f"🔧 開発者モード: セッション検証をスキップ (session: {session_token[:20]}...)")
             return jsonify({
                 'valid': True,
                 'message': '開発者モードセッション有効'
@@ -184,10 +201,11 @@ def verify_session():
         return jsonify(result)
 
     except Exception as e:
+        error_detail = str(e) if DEV_MODE else 'サーバーエラーが発生しました'
         print(f"❌ セッション検証エラー: {e}")
         return jsonify({
             'valid': False,
-            'message': 'サーバーエラーが発生しました'
+            'message': error_detail
         }), 500
 
 @app.route('/api/problems/quiz', methods=['POST'])
