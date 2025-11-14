@@ -20,6 +20,15 @@ export default async function handler(req, res) {
       });
     }
 
+    // メールアドレスフォーマット検証
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return res.status(400).json({
+        error: '無効なメールアドレスです',
+        valid: false
+      });
+    }
+
     // トークンフォーマットチェック
     if (!token.startsWith('TEST_') && !token.startsWith('ADMIN_')) {
       return res.status(400).json({

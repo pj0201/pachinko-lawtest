@@ -23,47 +23,44 @@ export default function ProtectedRoute({ children }) {
         return;
       }
 
-      // サーバーレスモード: 常に開発モード（認証スキップ）
-      const isDev = true;
-
-      if (isDev) {
-        console.log('🔧 開発環境モード: セッション検証をスキップ');
-        console.warn('⚠️ 本番環境では .env の VITE_DEV_MODE を false に設定してください');
-
-        // テスト用ダミーセッション作成
-        if (!localStorage.getItem('session_token')) {
-          localStorage.setItem('session_token', 'dev-test-token-' + Date.now());
-          localStorage.setItem('device_id', 'dev-desktop-' + Date.now());
-          localStorage.setItem('user', JSON.stringify({
-            email: 'test@dev.local',
-            name: 'Test User',
-            loginTime: new Date().toISOString(),
-            isDev: true
-          }));
-          console.log('✅ テスト用セッション作成完了');
-        }
-
-        setIsValid(true);
-        setIsLoading(false);
-        return;
-      }
-
-      // 本番環境: localStorage を優先（高速化）
+      // localStorage からセッション情報取得
       const sessionToken = localStorage.getItem('session_token');
       const deviceId = localStorage.getItem('device_id');
 
       // セッション情報がない場合は即座に登録ページへ
       if (!sessionToken || !deviceId) {
-        console.log('⚠️ セッション情報なし - 登録ページへリダイレクト');
         setIsValid(false);
         setIsLoading(false);
         return;
       }
 
-      // ✅ サーバーレス化: localStorage のみでセッション管理
-      console.log('✅ localStorage確認済み - アクセス許可（サーバーレスモード）');
-      setIsValid(true);
-      setIsLoading(false);
+      try {
+        // Vercel KV API でセッション検証（デバイスIDバインディング含む）
+        const response = await fetch('/api/verify-session', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ sessionToken, deviceId })
+        });
+
+        const data = await response.json();
+
+        if (!response.ok || !data.valid) {
+          // 無効なセッションの場合、localStorage をクリア
+          localStorage.clear();
+          setIsValid(false);
+          setIsLoading(false);
+          return;
+        }
+
+        // セッション有効
+        setIsValid(true);
+        setIsLoading(false);
+      } catch (error) {
+        // ネットワークエラー等
+        localStorage.clear();
+        setIsValid(false);
+        setIsLoading(false);
+      }
     };
 
     verifySession();
