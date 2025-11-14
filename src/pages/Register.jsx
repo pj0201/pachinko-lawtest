@@ -111,50 +111,38 @@ export default function Register() {
     setLoading(true);
 
     try {
-      const response = await fetch('/api/auth/register', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({
-          token,
-          device_id: deviceId,
-          username
-        })
-      });
+      // サーバーレス化: localStorage に直接セッション情報を保存
+      const sessionToken = 'session_' + Date.now() + '_' + Math.random().toString(36).substring(2, 15);
 
-      const data = await response.json();
+      // セッショントークン保存
+      localStorage.setItem('session_token', sessionToken);
+      localStorage.setItem('device_id', deviceId);
 
-      if (data.success) {
-        // セッショントークン保存
-        localStorage.setItem('session_token', data.session_token);
-        localStorage.setItem('device_id', deviceId);
+      // ユーザー情報も保存
+      localStorage.setItem('username', username);
+      localStorage.setItem('user', JSON.stringify({
+        username,
+        session_token: sessionToken,
+        registered_at: new Date().toISOString()
+      }));
 
-        // ユーザー情報も保存
-        localStorage.setItem('username', username);
-        localStorage.setItem('user', JSON.stringify({
-          username,
-          session_token: data.session_token
-        }));
-
-        // テスト用トークン無効化（重要）
-        if (token && (token.startsWith('TEST_') || token.startsWith('ADMIN_'))) {
-          const usedTokens = JSON.parse(localStorage.getItem('used_tokens') || '[]');
-          if (!usedTokens.includes(token)) {
-            usedTokens.push(token);
-            localStorage.setItem('used_tokens', JSON.stringify(usedTokens));
-            console.log(`✅ トークン無効化: ${token}`);
-          }
+      // テスト用トークン無効化（重要）
+      if (token && (token.startsWith('TEST_') || token.startsWith('ADMIN_'))) {
+        const usedTokens = JSON.parse(localStorage.getItem('used_tokens') || '[]');
+        if (!usedTokens.includes(token)) {
+          usedTokens.push(token);
+          localStorage.setItem('used_tokens', JSON.stringify(usedTokens));
+          console.log(`✅ トークン無効化: ${token}`);
         }
-
-        console.log('✅ 登録成功 - セッショントークン:', data.session_token);
-
-        // メイン画面へリダイレクト（履歴を置き換え - ブラウザバックで戻れないように）
-        navigate('/', { replace: true });
-      } else {
-        setError(data.message || '登録に失敗しました');
       }
+
+      console.log('✅ 登録成功（サーバーレス） - セッショントークン:', sessionToken);
+
+      // メイン画面へリダイレクト（履歴を置き換え - ブラウザバックで戻れないように）
+      navigate('/', { replace: true });
     } catch (err) {
       console.error('❌ 登録エラー:', err);
-      setError('サーバーへの接続に失敗しました');
+      setError('登録に失敗しました');
     } finally {
       setLoading(false);
     }
