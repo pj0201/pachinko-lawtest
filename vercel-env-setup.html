@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vercel 環境変数 自動設定</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 { color: #667eea; margin-top: 0; }
+        .step {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .copy-box {
+            background: #2d3748;
+            color: #48bb78;
+            padding: 15px;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            position: relative;
+            cursor: pointer;
+            user-select: all;
+        }
+        .copy-box:hover {
+            background: #1a202c;
+        }
+        .copy-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        .copy-button:hover {
+            background: #5568d3;
+        }
+        .link-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 10px 5px;
+            font-size: 16px;
+        }
+        .link-button:hover {
+            background: #5568d3;
+        }
+        .success {
+            background: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .copied {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: #28a745;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: none;
+            z-index: 1000;
+        }
+        .env-name { color: #e74c3c; font-weight: bold; }
+        .env-value { color: #48bb78; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚀 Vercel 環境変数 自動設定</h1>
+
+        <div class="warning">
+            <strong>⚠️ 重要：</strong> この手順を完了しないとアプリが動作しません！
+        </div>
+
+        <div class="step">
+            <h2>手順1: Vercel Environment Variables ページを開く</h2>
+            <a href="https://vercel.com/pj0201/pachinko-lawtest/settings/environment-variables"
+               target="_blank"
+               class="link-button">
+                ⚙️ Environment Variables ページを開く
+            </a>
+        </div>
+
+        <div class="step">
+            <h2>手順2: 1つ目の環境変数を追加</h2>
+            <p><strong>Vercel のページで「Add」または「Create」ボタンをクリック</strong></p>
+
+            <h3>Key（キー名）:</h3>
+            <div class="copy-box" onclick="copyToClipboard('KV_REST_API_URL', this)">
+                <button class="copy-button">📋 コピー</button>
+                <span class="env-name">KV_REST_API_URL</span>
+            </div>
+
+            <h3>Value（値）:</h3>
+            <div class="copy-box" onclick="copyToClipboard('https://inspired-fowl-37610.upstash.io', this)">
+                <button class="copy-button">📋 コピー</button>
+                <span class="env-value">https://inspired-fowl-37610.upstash.io</span>
+            </div>
+
+            <h3>Environment:</h3>
+            <ul>
+                <li>✅ <strong>Production</strong> にチェック</li>
+                <li>✅ <strong>Preview</strong> にチェック</li>
+                <li>✅ <strong>Development</strong> にチェック</li>
+            </ul>
+
+            <p><strong>「Save」をクリック</strong></p>
+        </div>
+
+        <div class="step">
+            <h2>手順3: 2つ目の環境変数を追加</h2>
+            <p><strong>もう一度「Add」または「Create」ボタンをクリック</strong></p>
+
+            <h3>Key（キー名）:</h3>
+            <div class="copy-box" onclick="copyToClipboard('KV_REST_API_TOKEN', this)">
+                <button class="copy-button">📋 コピー</button>
+                <span class="env-name">KV_REST_API_TOKEN</span>
+            </div>
+
+            <h3>Value（値）:</h3>
+            <div class="copy-box" onclick="copyToClipboard('AZLqAAIncDIxNzViMGJhNWU0ODA0YzgxYTExYmQzNmUwOWU5OTAwZnAyMzc2MTA', this)">
+                <button class="copy-button">📋 コピー</button>
+                <span class="env-value">AZLqAAIncDIxNzViMGJhNWU0ODA0YzgxYTExYmQzNmUwOWU5OTAwZnAyMzc2MTA</span>
+            </div>
+
+            <h3>Environment:</h3>
+            <ul>
+                <li>✅ <strong>Production</strong> にチェック</li>
+                <li>✅ <strong>Preview</strong> にチェック</li>
+                <li>✅ <strong>Development</strong> にチェック</li>
+            </ul>
+
+            <p><strong>「Save」をクリック</strong></p>
+        </div>
+
+        <div class="success">
+            ✅ 環境変数が追加されました！次は再デプロイです。
+        </div>
+
+        <div class="step">
+            <h2>手順4: 再デプロイ</h2>
+            <a href="https://vercel.com/pj0201/pachinko-lawtest/deployments"
+               target="_blank"
+               class="link-button">
+                🚀 Deployments ページを開く
+            </a>
+
+            <h3>やること:</h3>
+            <ol>
+                <li>一番上のデプロイメント（最新）の右側にある <strong>...</strong>（3点メニュー）をクリック</li>
+                <li><strong>Redeploy</strong> を選択</li>
+                <li>確認ダイアログで <strong>Redeploy</strong> をクリック</li>
+            </ol>
+        </div>
+
+        <div class="success">
+            <h2>🎉 完了！</h2>
+            <p>1-2分待つとデプロイが完了し、アプリが正常に動作します。</p>
+        </div>
+    </div>
+
+    <div class="copied" id="copiedMessage">📋 コピーしました！</div>
+
+    <script>
+        function copyToClipboard(text, element) {
+            navigator.clipboard.writeText(text).then(() => {
+                const message = document.getElementById('copiedMessage');
+                message.style.display = 'block';
+
+                element.style.background = '#28a745';
+
+                setTimeout(() => {
+                    message.style.display = 'none';
+                    element.style.background = '#2d3748';
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>
