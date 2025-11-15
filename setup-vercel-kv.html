@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🚨 Vercel KV 緊急セットアップ手順</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+        }
+        h1 {
+            color: #e74c3c;
+            margin-top: 0;
+        }
+        .warning {
+            background: #fff3cd;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        .step {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+        .step h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .link-button {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin: 10px 0;
+            transition: background 0.3s;
+        }
+        .link-button:hover {
+            background: #5568d3;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+        }
+        .success {
+            background: #d4edda;
+            border-left: 5px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+        }
+        ul {
+            line-height: 1.8;
+        }
+        .screenshot {
+            background: #e9ecef;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🚨 Vercel KV 緊急セットアップ</h1>
+
+        <div class="warning">
+            <strong>⚠️ 重要：</strong> 現在デプロイ中のアプリはVercel KVが無いため全てのAPIがエラーになっています。<br>
+            すぐにセットアップしてください（所要時間: 3分）
+        </div>
+
+        <h2>手順</h2>
+
+        <div class="step">
+            <h3><span class="step-number">1</span>Vercel Storage ページを開く</h3>
+            <a href="https://vercel.com/pj0201/pachinko-lawtest/stores" target="_blank" class="link-button">
+                📦 Storage ページを開く
+            </a>
+            <p>上記のボタンをクリックして、Vercel の Storage ページを開いてください。</p>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-number">2</span>KV データベースを作成</h3>
+            <ul>
+                <li><strong>Create Database</strong> ボタンをクリック</li>
+                <li><strong>KV</strong> を選択（Redis のアイコン）</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-number">3</span>データベース設定</h3>
+            <ul>
+                <li><strong>Database Name:</strong> <code>pachinko-exam-kv</code> （任意の名前でOK）</li>
+                <li><strong>Region:</strong> <code>iad1</code> (Washington, D.C., USA) - デフォルトのままでOK</li>
+                <li><strong>Create</strong> ボタンをクリック</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-number">4</span>プロジェクトに接続</h3>
+            <ul>
+                <li>作成完了後、<strong>Connect to Project</strong> ボタンをクリック</li>
+                <li>プロジェクト: <code>pachinko-lawtest</code> を選択（既に選択されているはず）</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-number">5</span>環境変数を設定</h3>
+            <div class="screenshot">
+                Environment の選択画面が表示されます
+            </div>
+            <ul>
+                <li>✅ <strong>Production</strong> にチェック</li>
+                <li>✅ <strong>Preview</strong> にチェック</li>
+                <li>✅ <strong>Development</strong> にチェック（全部チェック）</li>
+            </ul>
+            <p><strong>Connect</strong> ボタンをクリック</p>
+        </div>
+
+        <div class="success">
+            ✅ これで環境変数が自動的に設定されました！<br>
+            次に、最新のデプロイメントに環境変数を反映させます。
+        </div>
+
+        <div class="step">
+            <h3><span class="step-number">6</span>デプロイメントページを開く</h3>
+            <a href="https://vercel.com/pj0201/pachinko-lawtest/deployments" target="_blank" class="link-button">
+                🚀 Deployments ページを開く
+            </a>
+        </div>
+
+        <div class="step">
+            <h3><span class="step-number">7</span>再デプロイ</h3>
+            <ul>
+                <li>最新のデプロイメント（一番上）の右側にある <strong>...</strong>（3点メニュー）をクリック</li>
+                <li><strong>Redeploy</strong> を選択</li>
+                <li>確認ダイアログが出たら <strong>Redeploy</strong> をクリック</li>
+            </ul>
+        </div>
+
+        <div class="success">
+            <h3>🎉 完了！</h3>
+            <p>再デプロイが完了したら（約1-2分）、アプリが正常に動作します。</p>
+            <ul>
+                <li>✅ メールアドレス重複チェック</li>
+                <li>✅ 招待URL使用済みチェック</li>
+                <li>✅ セッション検証</li>
+                <li>✅ デバイスバインディング</li>
+            </ul>
+        </div>
+
+        <h2>確認方法</h2>
+        <div class="step">
+            <h3>環境変数が設定されたか確認</h3>
+            <a href="https://vercel.com/pj0201/pachinko-lawtest/settings/environment-variables" target="_blank" class="link-button">
+                ⚙️ 環境変数を確認
+            </a>
+            <p>以下の環境変数が表示されていればOK:</p>
+            <ul>
+                <li><code>KV_REST_API_URL</code></li>
+                <li><code>KV_REST_API_TOKEN</code></li>
+                <li><code>KV_REST_API_READ_ONLY_TOKEN</code></li>
+                <li><code>KV_URL</code></li>
+            </ul>
+        </div>
+
+        <h2>トラブルシューティング</h2>
+        <div class="step">
+            <h3>問題: 環境変数が表示されない</h3>
+            <p><strong>解決策:</strong></p>
+            <ul>
+                <li>Storage ページに戻る</li>
+                <li>作成した KV データベースをクリック</li>
+                <li><strong>.env.local</strong> タブで環境変数を確認</li>
+                <li>手動でコピーして Settings → Environment Variables に追加</li>
+            </ul>
+        </div>
+
+        <div class="step">
+            <h3>問題: 再デプロイ後もエラーが出る</h3>
+            <p><strong>解決策:</strong></p>
+            <ul>
+                <li>デプロイログを確認（デプロイメントをクリック → Build Logs タブ）</li>
+                <li><code>KV_REST_API_URL is not defined</code> などのエラーがないか確認</li>
+                <li>環境変数が Production に設定されているか再確認</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
