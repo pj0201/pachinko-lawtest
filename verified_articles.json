@@ -1,0 +1,84 @@
+{
+  "description": "検証済み・ロック済み条文リスト - これらの条文は正確性が確認されており、誤修正を防ぐためにロックされています",
+  "verification_date": "2025-11-15",
+  "verification_source": "風営法_全条文.yaml (HTMLソース: 323AC0000000122_20250628_507AC0000000045.html)",
+  "verified_articles": [
+    {
+      "article_num": "一",
+      "article_num_kanji": "第一条",
+      "title": "目的",
+      "status": "verified_correct",
+      "verification_method": "YAML vs lawDatabase.js comparison",
+      "notes": "完全一致"
+    },
+    {
+      "article_num": "三",
+      "article_num_kanji": "第三条",
+      "title": "営業の許可",
+      "status": "verified_correct",
+      "verification_method": "YAML vs lawDatabase.js comparison",
+      "notes": "スペース表記の違いのみ（内容は同一）"
+    },
+    {
+      "article_num": "六",
+      "article_num_kanji": "第六条",
+      "title": "許可証等の掲示義務",
+      "status": "verified_correct",
+      "verification_method": "YAML vs lawDatabase.js comparison",
+      "notes": "完全一致"
+    },
+    {
+      "article_num": "十一",
+      "article_num_kanji": "第十一条",
+      "title": "名義貸しの禁止",
+      "status": "verified_correct",
+      "verification_method": "YAML vs lawDatabase.js comparison",
+      "notes": "完全一致"
+    },
+    {
+      "article_num": "十二",
+      "article_num_kanji": "第十二条",
+      "title": "構造及び設備の維持",
+      "status": "verified_correct",
+      "verification_method": "YAML vs lawDatabase.js comparison",
+      "notes": "完全一致"
+    },
+    {
+      "article_num": "十四",
+      "article_num_kanji": "第十四条",
+      "title": "照度の規制",
+      "status": "verified_correct",
+      "verification_method": "YAML vs lawDatabase.js comparison",
+      "notes": "完全一致"
+    },
+    {
+      "article_num": "十五",
+      "article_num_kanji": "第十五条",
+      "title": "騒音及び振動の規制",
+      "status": "verified_correct",
+      "verification_method": "YAML vs lawDatabase.js comparison",
+      "notes": "完全一致"
+    },
+    {
+      "article_num": "十六",
+      "article_num_kanji": "第十六条",
+      "title": "広告及び宣伝の規制",
+      "status": "verified_correct",
+      "verification_method": "YAML vs lawDatabase.js comparison",
+      "notes": "完全一致"
+    },
+    {
+      "article_num": "十七",
+      "article_num_kanji": "第十七条",
+      "title": "料金の表示",
+      "status": "verified_correct",
+      "verification_method": "YAML vs lawDatabase.js comparison",
+      "notes": "完全一致"
+    }
+  ],
+  "lock_policy": {
+    "purpose": "正しい内容を誤って修正して改悪になるのを防ぐ、何度も無駄な作業を行わないため",
+    "usage": "条文修正前に、このリストをチェックし、verified_correctステータスの条文は修正対象から除外する",
+    "update_policy": "新たに正確性が確認された条文は、このリストに追加すること"
+  }
+}
