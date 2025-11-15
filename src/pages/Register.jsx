@@ -6,10 +6,12 @@
 import { useState, useEffect } from 'react';
 import { useNavigate, useParams, useSearchParams, Navigate } from 'react-router-dom';
 import FingerprintJS from '@fingerprintjs/fingerprintjs';
+import { checkDeviceRestriction } from '../utils/deviceCheck';
 import './Register.css';
 
 export default function Register() {
   const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [error, setError] = useState('');
   const [loading, setLoading] = useState(true);
   const [deviceId, setDeviceId] = useState('');
@@ -20,13 +22,20 @@ export default function Register() {
   // トークンを URL パラメータまたはクエリパラメータから取得
   const token = params.token || searchParams.get('token');
 
-  // マウント時：既にセッションがあれば、ホーム画面にリダイレクト
+  // マウント時：デバイス制限チェック
   useEffect(() => {
+    const deviceCheck = checkDeviceRestriction();
+    if (!deviceCheck.allowed) {
+      setError(deviceCheck.message);
+      setLoading(false);
+      return;
+    }
+
+    // 既にセッションがあれば、ホーム画面にリダイレクト
     const sessionToken = localStorage.getItem('session_token');
     const deviceId = localStorage.getItem('device_id');
 
     if (sessionToken && deviceId) {
-      console.log('✅ セッション確認 - ホーム画面へリダイレクト');
       setAlreadyLoggedIn(true);
     }
   }, []);
@@ -47,8 +56,20 @@ export default function Register() {
 
     initFingerprint();
 
-    // サーバーレスモード: トークン不要（常に有効）
-    console.log('✅ サーバーレスモード: 招待URL不要');
+    // トークン基本チェック（API呼び出し前）
+    if (!token) {
+      setError('招待URLが無効です。正しいURLからアクセスしてください。');
+      setLoading(false);
+      return;
+    }
+
+    // トークンフォーマットチェック
+    if (!token.startsWith('TEST_') && !token.startsWith('ADMIN_')) {
+      setError('無効な招待URLです。');
+      setLoading(false);
+      return;
+    }
+
     setLoading(false);
   }, [token]);
 
@@ -66,41 +87,74 @@ export default function Register() {
       return;
     }
 
+    if (!email) {
+      setError('メールアドレスを入力してください');
+      return;
+    }
+
+    if (!token) {
+      setError('招待URLが無効です');
+      return;
+    }
+
     setLoading(true);
 
     try {
-      // サーバーレス化: localStorage に直接セッション情報を保存
-      const sessionToken = 'session_' + Date.now() + '_' + Math.random().toString(36).substring(2, 15);
+      // Vercel KV API でトークンとメールアドレスを検証
+      const validateResponse = await fetch('/api/validate-token', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ token, email })
+      });
 
-      // セッショントークン保存
-      localStorage.setItem('session_token', sessionToken);
-      localStorage.setItem('device_id', deviceId);
+      const validateData = await validateResponse.json();
 
-      // ユーザー情報も保存
-      localStorage.setItem('username', username);
-      localStorage.setItem('user', JSON.stringify({
-        username,
-        session_token: sessionToken,
-        registered_at: new Date().toISOString()
-      }));
-
-      // テスト用トークン無効化（重要）
-      if (token && (token.startsWith('TEST_') || token.startsWith('ADMIN_'))) {
-        const usedTokens = JSON.parse(localStorage.getItem('used_tokens') || '[]');
-        if (!usedTokens.includes(token)) {
-          usedTokens.push(token);
-          localStorage.setItem('used_tokens', JSON.stringify(usedTokens));
-          console.log(`✅ トークン無効化: ${token}`);
-        }
+      if (!validateResponse.ok || !validateData.valid) {
+        setError(validateData.error || '検証に失敗しました');
+        setLoading(false);
+        return;
       }
 
-      console.log('✅ 登録成功（サーバーレス） - セッショントークン:', sessionToken);
+      // Vercel KV API でユーザー登録
+      const registerResponse = await fetch('/api/register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          email,
+          username,
+          token,
+          deviceId
+        })
+      });
 
-      // メイン画面へリダイレクト（履歴を置き換え - ブラウザバックで戻れないように）
+      const registerData = await registerResponse.json();
+
+      if (!registerResponse.ok || !registerData.success) {
+        setError(registerData.error || '登録に失敗しました');
+        setLoading(false);
+        return;
+      }
+
+      // セッション情報を localStorage に保存
+      const { sessionToken, user } = registerData;
+      localStorage.setItem('session_token', sessionToken);
+      localStorage.setItem('device_id', deviceId);
+      localStorage.setItem('username', user.username);
+      localStorage.setItem('email', user.email);
+      localStorage.setItem('invite_token', token);
+      localStorage.setItem('user', JSON.stringify({
+        username: user.username,
+        email: user.email,
+        invite_token: token,
+        session_token: sessionToken,
+        registered_at: user.registeredAt
+      }));
+
+      // メイン画面へリダイレクト
       navigate('/', { replace: true });
     } catch (err) {
       console.error('❌ 登録エラー:', err);
-      setError('登録に失敗しました');
+      setError('サーバーとの通信に失敗しました');
     } finally {
       setLoading(false);
     }
@@ -145,13 +199,26 @@ export default function Register() {
               />
             </div>
 
+            <div className="form-group">
+              <label htmlFor="email">メールアドレス</label>
+              <input
+                id="email"
+                type="email"
+                placeholder="メールアドレス（例：test@example.com）"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                disabled={loading}
+                autoComplete="email"
+              />
+            </div>
+
             <button type="submit" disabled={loading} className="submit-button">
               {loading ? '登録中...' : '登録して始める'}
             </button>
           </form>
         )}
 
-        <p className="note">※ ユーザー名を入力してアプリを開始してください</p>
+        <p className="note">※ 招待URLは1回のみ使用可能です。ユーザー名とメールアドレスを入力してください。</p>
       </div>
     </div>
   );
