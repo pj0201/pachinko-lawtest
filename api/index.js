@@ -19,6 +19,12 @@ app.use(cors());
 app.use(express.json({ limit: '50mb' }));
 app.use(express.urlencoded({ limit: '50mb', extended: true }));
 
+// デバッグ用：全リクエストをログ
+app.use((req, res, next) => {
+  console.log(`[${new Date().toISOString()}] ${req.method} ${req.path} (originalUrl: ${req.originalUrl})`);
+  next();
+});
+
 // データディレクトリ（Vercel環境では相対パスを使用）
 const DATA_DIR = path.join(__dirname, '../backend/db');
 
