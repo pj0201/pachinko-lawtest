@@ -9,6 +9,7 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "start": "python3 backend/api_server.py",
+    "init-invites": "node scripts/init-invite-tokens.js",
     "postinstall": "echo 'Python dependencies will be installed via nixpacks.toml' || true"
   },
   "dependencies": {
