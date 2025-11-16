@@ -1,5 +1,6 @@
 /**
  * Vercelサーバーレス関数 - メインAPIエンドポイント
+ * Updated: 2025-11-16
  */
 
 import express from 'express';
