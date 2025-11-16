@@ -9,7 +9,7 @@ import path from 'path';
 import fs from 'fs';
 import { spawn } from 'child_process';
 import { fileURLToPath } from 'url';
-import * as databaseRoutes from './database_routes.js';
+import databaseRoutes from './database_routes.js';
 import * as dbLoader from './db-loader.js';
 
 const __filename = fileURLToPath(import.meta.url);

@@ -3,12 +3,16 @@
  * 問題管理、テスト結果、採点分析
  */
 
-const express = require('express');
-const router = express.Router();
-const path = require('path');
-const fs = require('fs');
-const { spawn } = require('child_process');
+import express from 'express';
+import path from 'path';
+import fs from 'fs';
+import { spawn } from 'child_process';
+import { fileURLToPath } from 'url';
 
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const router = express.Router();
 const DATA_DIR = path.join(__dirname, '../data');
 
 // ==================== ロギング ====================
@@ -339,4 +343,4 @@ router.get('/questions/random', (req, res) => {
   }
 });
 
-module.exports = router;
+export default router;
