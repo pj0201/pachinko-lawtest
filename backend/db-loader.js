@@ -29,7 +29,15 @@ function loadProblems() {
       return { problems: [], total_count: 0 };
     }
 
-    const data = JSON.parse(fs.readFileSync(PROBLEMS_FILE, 'utf-8'));
+    const rawData = JSON.parse(fs.readFileSync(PROBLEMS_FILE, 'utf-8'));
+
+    // データ構造を正規化（metadata.total_countまたはtotal_countをサポート）
+    const data = {
+      problems: rawData.problems || [],
+      total_count: rawData.total_count || (rawData.metadata && rawData.metadata.total_count) || 0,
+      metadata: rawData.metadata
+    };
+
     cachedProblems = data;
     console.log(`✅ 問題データ読み込み完了: ${data.total_count}問`);
     return data;
