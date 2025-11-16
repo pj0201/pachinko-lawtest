@@ -70,7 +70,7 @@ function loadProblems() {
 }
 
 // ==================== ヘルスチェック ====================
-app.get('/health', (req, res) => {
+app.get('/api/health', (req, res) => {
   const data = loadProblems();
   res.json({
     status: 'ok',
@@ -86,7 +86,7 @@ app.get('/health', (req, res) => {
 });
 
 // ==================== 問題データエンドポイント ====================
-app.get('/problems', (req, res) => {
+app.get('/api/problems', (req, res) => {
   try {
     const data = loadProblems();
     res.json({
@@ -104,7 +104,7 @@ app.get('/problems', (req, res) => {
   }
 });
 
-app.get('/problems/theme/:themeId', (req, res) => {
+app.get('/api/problems/theme/:themeId', (req, res) => {
   try {
     const themeId = parseInt(req.params.themeId);
     const data = loadProblems();
@@ -125,7 +125,7 @@ app.get('/problems/theme/:themeId', (req, res) => {
   }
 });
 
-app.get('/problems/category/:category', (req, res) => {
+app.get('/api/problems/category/:category', (req, res) => {
   try {
     const category = req.params.category;
     const data = loadProblems();
@@ -146,7 +146,7 @@ app.get('/problems/category/:category', (req, res) => {
   }
 });
 
-app.get('/problems/count', (req, res) => {
+app.get('/api/problems/count', (req, res) => {
   try {
     const data = loadProblems();
     res.json({
@@ -162,7 +162,7 @@ app.get('/problems/count', (req, res) => {
   }
 });
 
-app.post('/problems/quiz', (req, res) => {
+app.post('/api/problems/quiz', (req, res) => {
   try {
     const { count = 10, difficulty } = req.body;
     const data = loadProblems();
@@ -204,7 +204,7 @@ app.post('/problems/quiz', (req, res) => {
  * POST /api/admin/init-tokens
  * 招待トークンを一括登録（管理者用）
  */
-app.post('/admin/init-tokens', async (req, res) => {
+app.post('/api/admin/init-tokens', async (req, res) => {
   try {
     const tokens = [
       '039742a2-f799-4574-8530-a8e1d81960f1',
@@ -258,7 +258,7 @@ app.post('/admin/init-tokens', async (req, res) => {
  * GET /api/admin/check-kv
  * Vercel KVの接続確認
  */
-app.get('/admin/check-kv', async (req, res) => {
+app.get('/api/admin/check-kv', async (req, res) => {
   try {
     // テストキーで書き込み・読み込み
     const testKey = 'test:connection';
@@ -291,7 +291,7 @@ app.get('/admin/check-kv', async (req, res) => {
  * GET /api/admin/list-tokens
  * 登録済み招待トークン一覧を表示
  */
-app.get('/admin/list-tokens', async (req, res) => {
+app.get('/api/admin/list-tokens', async (req, res) => {
   try {
     const tokens = [
       '039742a2-f799-4574-8530-a8e1d81960f1',
@@ -338,7 +338,7 @@ app.get('/admin/list-tokens', async (req, res) => {
  * POST /api/validate-token
  * 招待トークンの検証
  */
-app.post('/validate-token', async (req, res) => {
+app.post('/api/validate-token', async (req, res) => {
   try {
     const { token, email } = req.body;
 
@@ -396,7 +396,7 @@ app.post('/validate-token', async (req, res) => {
  * POST /api/register
  * ユーザー登録
  */
-app.post('/register', async (req, res) => {
+app.post('/api/register', async (req, res) => {
   try {
     const { email, username, token, deviceId } = req.body;
 
