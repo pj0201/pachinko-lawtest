@@ -87,27 +87,24 @@ app.get('/api/health', (req, res) => {
 });
 
 // デバッグ用エンドポイント
-app.all('*', (req, res, next) => {
-  if (req.path === '/api/debug') {
-    return res.json({
-      debug: true,
-      request: {
-        path: req.path,
-        originalUrl: req.originalUrl,
-        baseUrl: req.baseUrl,
-        url: req.url,
-        method: req.method,
-        headers: req.headers
-      },
-      routes: app._router.stack
-        .filter(r => r.route)
-        .map(r => ({
-          path: r.route.path,
-          methods: Object.keys(r.route.methods)
-        }))
-    });
-  }
-  next();
+app.get('/api/debug', (req, res) => {
+  res.json({
+    debug: true,
+    request: {
+      path: req.path,
+      originalUrl: req.originalUrl,
+      baseUrl: req.baseUrl,
+      url: req.url,
+      method: req.method,
+      headers: req.headers
+    },
+    routes: app._router.stack
+      .filter(r => r.route)
+      .map(r => ({
+        path: r.route.path,
+        methods: Object.keys(r.route.methods)
+      }))
+  });
 });
 
 // ==================== 問題データエンドポイント ====================
