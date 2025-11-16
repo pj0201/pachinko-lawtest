@@ -190,6 +190,140 @@ app.post('/api/problems/quiz', (req, res) => {
 // ==================== 認証エンドポイント ====================
 
 /**
+ * POST /api/admin/init-tokens
+ * 招待トークンを一括登録（管理者用）
+ */
+app.post('/api/admin/init-tokens', async (req, res) => {
+  try {
+    const tokens = [
+      '039742a2-f799-4574-8530-a8e1d81960f1',
+      'cdfabd05-3fa5-4c49-87f0-a3a1aa03cdbb',
+      'd0b28ab3-44b6-45aa-897b-e72e0e0da116',
+      'babcd6fb-b8a8-46a8-b3a6-fc00966d07a3',
+      'b1b281a3-6b76-4659-9827-bf3a07b6c3ba',
+      '12f622c2-cbf4-4631-abb7-7336c841b198',
+      '3c756c94-0d98-4d8b-b466-17e99f1b3240',
+      '2b1d54e2-97a0-4900-a513-fab986540358',
+      'd47c9566-cabd-4d96-91d0-41afc10a59b6',
+      'c502c94a-3e4e-471e-9835-2f05018751e4'
+    ];
+
+    const results = [];
+
+    for (const token of tokens) {
+      try {
+        await kv.set(`invite:${token}`, {
+          token,
+          used: false,
+          createdAt: new Date().toISOString()
+        });
+        results.push({ token, status: 'success' });
+      } catch (error) {
+        results.push({ token, status: 'error', error: error.message });
+      }
+    }
+
+    log(`✅ 招待トークン初期化完了: ${results.filter(r => r.status === 'success').length}/${tokens.length}`, 'INFO');
+
+    res.json({
+      success: true,
+      message: '招待トークンを初期化しました',
+      total: tokens.length,
+      initialized: results.filter(r => r.status === 'success').length,
+      results
+    });
+
+  } catch (error) {
+    log(`招待トークン初期化エラー: ${error.message}`, 'ERROR');
+    res.status(500).json({
+      success: false,
+      error: 'トークン初期化に失敗しました',
+      details: error.message
+    });
+  }
+});
+
+/**
+ * GET /api/admin/check-kv
+ * Vercel KVの接続確認
+ */
+app.get('/api/admin/check-kv', async (req, res) => {
+  try {
+    // テストキーで書き込み・読み込み
+    const testKey = 'test:connection';
+    const testValue = { timestamp: new Date().toISOString() };
+
+    await kv.set(testKey, testValue);
+    const retrieved = await kv.get(testKey);
+    await kv.del(testKey);
+
+    res.json({
+      success: true,
+      message: 'Vercel KV接続成功',
+      test: {
+        written: testValue,
+        retrieved
+      }
+    });
+
+  } catch (error) {
+    log(`KV接続確認エラー: ${error.message}`, 'ERROR');
+    res.status(500).json({
+      success: false,
+      error: 'Vercel KVへの接続に失敗しました',
+      details: error.message
+    });
+  }
+});
+
+/**
+ * GET /api/admin/list-tokens
+ * 登録済み招待トークン一覧を表示
+ */
+app.get('/api/admin/list-tokens', async (req, res) => {
+  try {
+    const tokens = [
+      '039742a2-f799-4574-8530-a8e1d81960f1',
+      'cdfabd05-3fa5-4c49-87f0-a3a1aa03cdbb',
+      'd0b28ab3-44b6-45aa-897b-e72e0e0da116',
+      'babcd6fb-b8a8-46a8-b3a6-fc00966d07a3',
+      'b1b281a3-6b76-4659-9827-bf3a07b6c3ba',
+      '12f622c2-cbf4-4631-abb7-7336c841b198',
+      '3c756c94-0d98-4d8b-b466-17e99f1b3240',
+      '2b1d54e2-97a0-4900-a513-fab986540358',
+      'd47c9566-cabd-4d96-91d0-41afc10a59b6',
+      'c502c94a-3e4e-471e-9835-2f05018751e4'
+    ];
+
+    const results = [];
+
+    for (const token of tokens) {
+      const data = await kv.get(`invite:${token}`);
+      results.push({
+        token,
+        exists: !!data,
+        data: data || null
+      });
+    }
+
+    res.json({
+      success: true,
+      total: tokens.length,
+      registered: results.filter(r => r.exists).length,
+      tokens: results
+    });
+
+  } catch (error) {
+    log(`トークン一覧取得エラー: ${error.message}`, 'ERROR');
+    res.status(500).json({
+      success: false,
+      error: 'トークン一覧の取得に失敗しました',
+      details: error.message
+    });
+  }
+});
+
+/**
  * POST /api/validate-token
  * 招待トークンの検証
  */
