@@ -7,6 +7,7 @@ import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
+import { kv } from '@vercel/kv';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -182,6 +183,225 @@ app.post('/api/problems/quiz', (req, res) => {
       status: 'error',
       message: 'クイズ問題取得に失敗しました',
       error: error.message
+    });
+  }
+});
+
+// ==================== 認証・登録エンドポイント ====================
+
+/**
+ * トークン検証 API
+ * Vercel KV でトークンとメールアドレスの重複をチェック
+ */
+app.post('/api/validate-token', async (req, res) => {
+  try {
+    const { token, email } = req.body;
+
+    // 入力検証
+    if (!token || !email) {
+      return res.status(400).json({
+        error: 'トークンとメールアドレスが必要です',
+        valid: false
+      });
+    }
+
+    // メールアドレスフォーマット検証
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return res.status(400).json({
+        error: '無効なメールアドレスです',
+        valid: false
+      });
+    }
+
+    // トークンフォーマットチェック
+    if (!token.startsWith('TEST_') && !token.startsWith('ADMIN_')) {
+      return res.status(400).json({
+        error: '無効な招待URLです',
+        valid: false
+      });
+    }
+
+    // トークン使用済みチェック
+    const usedToken = await kv.get(`token:${token}`);
+    if (usedToken) {
+      return res.status(400).json({
+        error: 'この招待URLは既に使用されています',
+        valid: false
+      });
+    }
+
+    // メールアドレス重複チェック
+    const existingEmail = await kv.get(`email:${email}`);
+    if (existingEmail) {
+      return res.status(400).json({
+        error: 'このメールアドレスは既に登録されています',
+        valid: false
+      });
+    }
+
+    // 検証成功
+    return res.status(200).json({
+      valid: true,
+      message: 'トークンとメールアドレスは有効です'
+    });
+
+  } catch (error) {
+    log(`トークン検証エラー: ${error.message}`, 'ERROR');
+    return res.status(500).json({
+      error: 'サーバーエラーが発生しました',
+      valid: false
+    });
+  }
+});
+
+/**
+ * ユーザー登録 API
+ * Vercel KV でアカウントの独自性を担保
+ */
+app.post('/api/register', async (req, res) => {
+  try {
+    const { email, username, token, deviceId } = req.body;
+
+    // 入力検証
+    if (!email || !username || !token || !deviceId) {
+      return res.status(400).json({
+        error: '必須項目が入力されていません',
+        success: false
+      });
+    }
+
+    // メールアドレスフォーマット検証
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return res.status(400).json({
+        error: '無効なメールアドレスです',
+        success: false
+      });
+    }
+
+    // トークンフォーマットチェック
+    if (!token.startsWith('TEST_') && !token.startsWith('ADMIN_')) {
+      return res.status(400).json({
+        error: '無効な招待URLです',
+        success: false
+      });
+    }
+
+    // トークン使用済みチェック（二重チェック）
+    const usedToken = await kv.get(`token:${token}`);
+    if (usedToken) {
+      return res.status(400).json({
+        error: 'この招待URLは既に使用されています',
+        success: false
+      });
+    }
+
+    // メールアドレス重複チェック（二重チェック）
+    const existingEmail = await kv.get(`email:${email}`);
+    if (existingEmail) {
+      return res.status(400).json({
+        error: 'このメールアドレスは既に登録されています',
+        success: false
+      });
+    }
+
+    // セッショントークン生成
+    const sessionToken = 'session_' + Date.now() + '_' + Math.random().toString(36).substring(2, 15);
+
+    // ユーザーデータ
+    const userData = {
+      username,
+      email,
+      deviceId,
+      inviteToken: token,
+      sessionToken,
+      registeredAt: new Date().toISOString()
+    };
+
+    // KV に保存（永続化）
+    await Promise.all([
+      // メールアドレスをキーに保存（重複防止）
+      kv.set(`email:${email}`, userData),
+      // トークンを使用済みに（重複防止）
+      kv.set(`token:${token}`, {
+        usedBy: email,
+        usedAt: new Date().toISOString()
+      }),
+      // セッショントークンでも保存（ログイン検証用）
+      kv.set(`session:${sessionToken}`, userData)
+    ]);
+
+    log(`✅ ユーザー登録成功: ${email}`, 'INFO');
+
+    // 登録成功
+    return res.status(200).json({
+      success: true,
+      sessionToken,
+      user: {
+        username,
+        email,
+        registeredAt: userData.registeredAt
+      }
+    });
+
+  } catch (error) {
+    log(`登録エラー: ${error.message}`, 'ERROR');
+    return res.status(500).json({
+      error: 'サーバーエラーが発生しました',
+      success: false
+    });
+  }
+});
+
+/**
+ * セッション検証 API
+ * Vercel KV でセッションとデバイスIDを検証
+ */
+app.post('/api/verify-session', async (req, res) => {
+  try {
+    const { sessionToken, deviceId } = req.body;
+
+    if (!sessionToken || !deviceId) {
+      return res.status(400).json({
+        valid: false,
+        error: 'セッション情報が不足しています'
+      });
+    }
+
+    // KV からセッション情報を取得
+    const sessionData = await kv.get(`session:${sessionToken}`);
+
+    if (!sessionData) {
+      return res.status(401).json({
+        valid: false,
+        error: '無効なセッションです'
+      });
+    }
+
+    // デバイスIDチェック（アカウント流失防止）
+    if (sessionData.deviceId !== deviceId) {
+      return res.status(403).json({
+        valid: false,
+        error: 'このアカウントは別のデバイスで登録されています'
+      });
+    }
+
+    // セッション有効
+    return res.status(200).json({
+      valid: true,
+      user: {
+        username: sessionData.username,
+        email: sessionData.email,
+        registeredAt: sessionData.registeredAt
+      }
+    });
+
+  } catch (error) {
+    log(`セッション検証エラー: ${error.message}`, 'ERROR');
+    return res.status(500).json({
+      valid: false,
+      error: 'サーバーエラーが発生しました'
     });
   }
 });
