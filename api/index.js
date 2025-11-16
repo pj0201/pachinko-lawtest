@@ -8,16 +8,7 @@ import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
-
-// Vercel KV - 環境変数が設定されている場合のみimport
-let kv = null;
-try {
-  const kvModule = await import('@vercel/kv');
-  kv = kvModule.kv;
-  console.log('✅ Vercel KV imported successfully');
-} catch (error) {
-  console.warn('⚠️ Vercel KV not available:', error.message);
-}
+import { kv } from '@vercel/kv';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -84,11 +75,10 @@ app.get('/api/health', (req, res) => {
   const data = loadProblems();
   res.json({
     status: 'ok',
-    version: '2.1.0-kv-optional',
+    version: '3.0.0-toplevel-await-removed',
     timestamp: new Date().toISOString(),
     service: 'patshinko-exam-backend',
     problems_loaded: data.total_count,
-    kv_available: kv !== null,
     env_check: {
       KV_REST_API_URL: process.env.KV_REST_API_URL ? 'SET' : 'NOT SET',
       KV_REST_API_TOKEN: process.env.KV_REST_API_TOKEN ? 'SET' : 'NOT SET',
@@ -238,13 +228,6 @@ app.post('/api/problems/quiz', (req, res) => {
  * 招待トークンを一括登録（管理者用）
  */
 app.post('/api/admin/init-tokens', async (req, res) => {
-  if (!kv) {
-    return res.status(503).json({
-      success: false,
-      error: 'Vercel KVが設定されていません。環境変数を確認してください。'
-    });
-  }
-
   try {
     const tokens = [
       '039742a2-f799-4574-8530-a8e1d81960f1',
@@ -299,18 +282,6 @@ app.post('/api/admin/init-tokens', async (req, res) => {
  * Vercel KVの接続確認
  */
 app.get('/api/admin/check-kv', async (req, res) => {
-  if (!kv) {
-    return res.status(503).json({
-      success: false,
-      error: 'Vercel KVが設定されていません。環境変数を確認してください。',
-      env: {
-        KV_REST_API_URL: process.env.KV_REST_API_URL ? 'SET' : 'NOT SET',
-        KV_REST_API_TOKEN: process.env.KV_REST_API_TOKEN ? 'SET' : 'NOT SET',
-        KV_URL: process.env.KV_URL ? 'SET' : 'NOT SET'
-      }
-    });
-  }
-
   try {
     // テストキーで書き込み・読み込み
     const testKey = 'test:connection';
@@ -344,13 +315,6 @@ app.get('/api/admin/check-kv', async (req, res) => {
  * 登録済み招待トークン一覧を表示
  */
 app.get('/api/admin/list-tokens', async (req, res) => {
-  if (!kv) {
-    return res.status(503).json({
-      success: false,
-      error: 'Vercel KVが設定されていません。環境変数を確認してください。'
-    });
-  }
-
   try {
     const tokens = [
       '039742a2-f799-4574-8530-a8e1d81960f1',
@@ -398,13 +362,6 @@ app.get('/api/admin/list-tokens', async (req, res) => {
  * 招待トークンの検証
  */
 app.post('/api/validate-token', async (req, res) => {
-  if (!kv) {
-    return res.status(503).json({
-      valid: false,
-      error: 'Vercel KVが設定されていません。環境変数を確認してください。'
-    });
-  }
-
   try {
     const { token, email } = req.body;
 
@@ -463,13 +420,6 @@ app.post('/api/validate-token', async (req, res) => {
  * ユーザー登録
  */
 app.post('/api/register', async (req, res) => {
-  if (!kv) {
-    return res.status(503).json({
-      success: false,
-      error: 'Vercel KVが設定されていません。環境変数を確認してください。'
-    });
-  }
-
   try {
     const { email, username, token, deviceId } = req.body;
 
