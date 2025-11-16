@@ -70,7 +70,12 @@ app.get('/health', (req, res) => {
     status: 'ok',
     timestamp: new Date().toISOString(),
     service: 'patshinko-exam-backend',
-    problems_loaded: data.total_count
+    problems_loaded: data.total_count,
+    env_check: {
+      KV_REST_API_URL: process.env.KV_REST_API_URL ? 'SET' : 'NOT SET',
+      KV_REST_API_TOKEN: process.env.KV_REST_API_TOKEN ? 'SET' : 'NOT SET',
+      KV_URL: process.env.KV_URL ? 'SET' : 'NOT SET'
+    }
   });
 });
 
