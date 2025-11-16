@@ -12,12 +12,28 @@
       "notes": "完全一致"
     },
     {
+      "article_num": "二",
+      "article_num_kanji": "第二条",
+      "title": "用語の意義",
+      "status": "verified_correct",
+      "verification_method": "不正文字削除+YAML照合",
+      "notes": "不正文字「\\n2\\n」を削除"
+    },
+    {
       "article_num": "三",
       "article_num_kanji": "第三条",
       "title": "営業の許可",
       "status": "verified_correct",
       "verification_method": "YAML vs lawDatabase.js comparison",
       "notes": "スペース表記の違いのみ（内容は同一）"
+    },
+    {
+      "article_num": "四",
+      "article_num_kanji": "第四条",
+      "title": "許可の基準",
+      "status": "verified_correct",
+      "verification_method": "不正文字削除+YAML照合",
+      "notes": "不正文字「\\n3\\n」を削除"
     },
     {
       "article_num": "六",
@@ -74,6 +90,70 @@
       "status": "verified_correct",
       "verification_method": "YAML vs lawDatabase.js comparison",
       "notes": "完全一致"
+    },
+    {
+      "article_num": "十九",
+      "article_num_kanji": "第十九条",
+      "title": "遊技料金等の規制",
+      "status": "verified_correct",
+      "verification_method": "冒頭欠け修正+YAML照合",
+      "notes": "冒頭約70文字を追加"
+    },
+    {
+      "article_num": "二十",
+      "article_num_kanji": "第二十条",
+      "title": "遊技機の規制及び認定等",
+      "status": "verified_correct",
+      "verification_method": "冒頭欠け修正+YAML照合",
+      "notes": "冒頭約30文字を追加"
+    },
+    {
+      "article_num": "二十一",
+      "article_num_kanji": "第二十一条",
+      "title": "条例への委任",
+      "status": "verified_correct",
+      "verification_method": "冒頭欠け修正+YAML照合",
+      "notes": "冒頭約40文字を追加"
+    },
+    {
+      "article_num": "二十二",
+      "article_num_kanji": "第二十二条",
+      "title": "風俗営業を営む者の禁止行為等",
+      "status": "verified_correct",
+      "verification_method": "冒頭欠け修正+YAML照合",
+      "notes": "1項本文を追加"
+    },
+    {
+      "article_num": "二十四",
+      "article_num_kanji": "第二十四条",
+      "title": "営業所の管理者",
+      "status": "verified_correct",
+      "verification_method": "構文エラー修正+YAML照合",
+      "notes": "不正な引用符を削除"
+    },
+    {
+      "article_num": "二十七",
+      "article_num_kanji": "第二十七条",
+      "title": "営業等の届出",
+      "status": "verified_correct",
+      "verification_method": "不正文字削除+YAML照合",
+      "notes": "不正文字「\\n8\\n」「\\n３\\n」「\\n４\\n」を削除"
+    },
+    {
+      "article_num": "二十八",
+      "article_num_kanji": "第二十八条",
+      "title": "店舗型性風俗特殊営業の禁止区域等",
+      "status": "verified_correct",
+      "verification_method": "冒頭欠け修正+YAML照合",
+      "notes": "冒頭約70文字を追加"
+    },
+    {
+      "article_num": "三十",
+      "article_num_kanji": "第三十条",
+      "title": "営業の停止等",
+      "status": "verified_correct",
+      "verification_method": "冒頭欠け修正+不正文字削除+YAML照合",
+      "notes": "冒頭約400文字を追加、不正文字「\\n9\\n」を削除"
     }
   ],
   "lock_policy": {
