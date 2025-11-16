@@ -7,10 +7,16 @@ import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
-import { kv } from '@vercel/kv';
+import Redis from 'ioredis';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// Redis接続（REDIS_URLまたはKV_URLを使用）
+const redis = new Redis(process.env.REDIS_URL || process.env.KV_URL || {
+  host: 'localhost',
+  port: 6379
+});
 
 const app = express();
 
@@ -223,8 +229,8 @@ app.post('/api/validate-token', async (req, res) => {
     }
 
     // トークン使用済みチェック
-    const usedToken = await kv.get(`token:${token}`);
-    if (usedToken) {
+    const usedTokenStr = await redis.get(`token:${token}`);
+    if (usedTokenStr) {
       return res.status(400).json({
         error: 'この招待URLは既に使用されています',
         valid: false
@@ -232,8 +238,8 @@ app.post('/api/validate-token', async (req, res) => {
     }
 
     // メールアドレス重複チェック
-    const existingEmail = await kv.get(`email:${email}`);
-    if (existingEmail) {
+    const existingEmailStr = await redis.get(`email:${email}`);
+    if (existingEmailStr) {
       return res.status(400).json({
         error: 'このメールアドレスは既に登録されています',
         valid: false
@@ -289,8 +295,8 @@ app.post('/api/register', async (req, res) => {
     }
 
     // トークン使用済みチェック（二重チェック）
-    const usedToken = await kv.get(`token:${token}`);
-    if (usedToken) {
+    const usedTokenStr = await redis.get(`token:${token}`);
+    if (usedTokenStr) {
       return res.status(400).json({
         error: 'この招待URLは既に使用されています',
         success: false
@@ -298,8 +304,8 @@ app.post('/api/register', async (req, res) => {
     }
 
     // メールアドレス重複チェック（二重チェック）
-    const existingEmail = await kv.get(`email:${email}`);
-    if (existingEmail) {
+    const existingEmailStr = await redis.get(`email:${email}`);
+    if (existingEmailStr) {
       return res.status(400).json({
         error: 'このメールアドレスは既に登録されています',
         success: false
@@ -319,17 +325,17 @@ app.post('/api/register', async (req, res) => {
       registeredAt: new Date().toISOString()
     };
 
-    // KV に保存（永続化）
+    // Redis に保存（永続化）
     await Promise.all([
       // メールアドレスをキーに保存（重複防止）
-      kv.set(`email:${email}`, userData),
+      redis.set(`email:${email}`, JSON.stringify(userData)),
       // トークンを使用済みに（重複防止）
-      kv.set(`token:${token}`, {
+      redis.set(`token:${token}`, JSON.stringify({
         usedBy: email,
         usedAt: new Date().toISOString()
-      }),
+      })),
       // セッショントークンでも保存（ログイン検証用）
-      kv.set(`session:${sessionToken}`, userData)
+      redis.set(`session:${sessionToken}`, JSON.stringify(userData))
     ]);
 
     log(`✅ ユーザー登録成功: ${email}`, 'INFO');
@@ -369,15 +375,17 @@ app.post('/api/verify-session', async (req, res) => {
       });
     }
 
-    // KV からセッション情報を取得
-    const sessionData = await kv.get(`session:${sessionToken}`);
+    // Redis からセッション情報を取得
+    const sessionDataStr = await redis.get(`session:${sessionToken}`);
 
-    if (!sessionData) {
+    if (!sessionDataStr) {
       return res.status(401).json({
         valid: false,
         error: '無効なセッションです'
       });
     }
+
+    const sessionData = JSON.parse(sessionDataStr);
 
     // デバイスIDチェック（アカウント流失防止）
     if (sessionData.deviceId !== deviceId) {
