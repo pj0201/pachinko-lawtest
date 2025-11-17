@@ -518,4 +518,11 @@ app.use((err, req, res, next) => {
 });
 
 // Vercelサーバーレス関数としてエクスポート
-export default app;
+// Expressアプリをサーバーレス関数ハンドラーとしてラップ
+export default (req, res) => {
+  // Vercel環境でのパス正規化
+  if (req.url && !req.url.startsWith('/api')) {
+    req.url = '/api' + req.url;
+  }
+  return app(req, res);
+};
