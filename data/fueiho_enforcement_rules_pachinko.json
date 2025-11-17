@@ -1,0 +1,101 @@
+{
+  "law_name": "風俗営業等の規制及び業務の適正化等に関する法律施行規則",
+  "law_abbreviation": "風営法施行規則",
+  "target": "パチンコ主任者試験",
+  "chapters": [
+    {
+      "chapter_num": 1,
+      "chapter_name": "総則",
+      "articles": [
+        { "article_num": "1", "title": "許可申請書等の提出", "pachinko_relevant": true },
+        { "article_num": "2", "title": "（確認できませんが総則に含まれる規定）", "pachinko_relevant": true },
+        { "article_num": "3", "title": "国家公安委員会規則で定める遊技設備", "pachinko_relevant": true, "importance": "high" },
+        { "article_num": "4", "title": "国家公安委員会規則で定める状態", "pachinko_relevant": true },
+        { "article_num": "5", "title": "客の依頼を受ける方法", "pachinko_relevant": true }
+      ]
+    },
+    {
+      "chapter_num": 2,
+      "chapter_name": "風俗営業の許可の手続等",
+      "articles": [
+        { "article_num": "6", "title": "暴力的不法行為その他の罪に当たる行為", "pachinko_relevant": true },
+        { "article_num": "6の2", "title": "心身の故障により風俗営業の業務を適正に実施することができない者", "pachinko_relevant": true },
+        { "article_num": "7", "title": "構造及び設備の技術上の基準", "pachinko_relevant": true, "importance": "high" },
+        { "article_num": "8", "title": "著しく射幸心をそそるおそれのある遊技機の基準", "pachinko_relevant": true, "importance": "high" },
+        { "article_num": "9", "title": "風俗営業の許可申請の手続", "pachinko_relevant": true },
+        { "article_num": "10", "title": "許可証の交付", "pachinko_relevant": true },
+        { "article_num": "11", "title": "通知の方法", "pachinko_relevant": true },
+        { "article_num": "12", "title": "許可証の再交付の申請", "pachinko_relevant": true },
+        { "article_num": "13", "title": "風俗営業の相続の承認の申請", "pachinko_relevant": true },
+        { "article_num": "14", "title": "風俗営業者たる法人の合併の承認の申請", "pachinko_relevant": true },
+        { "article_num": "15", "title": "風俗営業者たる法人の分割の承認の申請", "pachinko_relevant": true },
+        { "article_num": "16", "title": "相続等の承認に関する通知", "pachinko_relevant": true },
+        { "article_num": "17", "title": "許可証の書換えの手続", "pachinko_relevant": true },
+        { "article_num": "18", "title": "許可証の返納", "pachinko_relevant": true },
+        { "article_num": "19", "title": "変更の承認の申請", "pachinko_relevant": true },
+        { "article_num": "20", "title": "軽微な変更等の届出等", "pachinko_relevant": true },
+        { "article_num": "21", "title": "（確認できませんが許可の手続等に含まれる規定）", "pachinko_relevant": true },
+        { "article_num": "22", "title": "（確認できませんが許可の手続等に含まれる規定）", "pachinko_relevant": true },
+        { "article_num": "23", "title": "許可証の返納の手続", "pachinko_relevant": true },
+        { "article_num": "24", "title": "特例風俗営業者の認定の基準", "pachinko_relevant": true },
+        { "article_num": "25", "title": "特例風俗営業者の認定申請の手続", "pachinko_relevant": true },
+        { "article_num": "26", "title": "認定証の交付等", "pachinko_relevant": true }
+      ]
+    },
+    {
+      "chapter_num": 3,
+      "chapter_name": "風俗営業の規制",
+      "articles": [
+        { "article_num": "27", "title": "深夜における客の迷惑行為を防止するための措置", "pachinko_relevant": true },
+        { "article_num": "28", "title": "苦情の処理に関する帳簿の備付け", "pachinko_relevant": true },
+        { "article_num": "29", "title": "電磁的方法による記録", "pachinko_relevant": true },
+        { "article_num": "30", "title": "風俗営業に係る営業所内の照度の測定方法", "pachinko_relevant": true },
+        { "article_num": "31", "title": "風俗営業に係る営業所内の照度の数値", "pachinko_relevant": true },
+        { "article_num": "32", "title": "騒音及び振動の測定方法", "pachinko_relevant": true },
+        { "article_num": "33", "title": "料金の表示方法", "pachinko_relevant": true },
+        { "article_num": "34", "title": "表示する料金の種類", "pachinko_relevant": true },
+        { "article_num": "35", "title": "営業所に立ち入つてはならない旨の表示方法", "pachinko_relevant": true },
+        { "article_num": "36", "title": "遊技料金等の基準", "pachinko_relevant": true, "importance": "high" },
+        { "article_num": "37", "title": "風俗営業に係る営業所の管理者の選任", "pachinko_relevant": true, "importance": "high" },
+        { "article_num": "37の2", "title": "心身の故障により管理者の業務を適正に実施することができない者", "pachinko_relevant": true },
+        { "article_num": "38", "title": "管理者の業務", "pachinko_relevant": true, "importance": "high" },
+        { "article_num": "39", "title": "管理者講習", "pachinko_relevant": true, "importance": "high" },
+        { "article_num": "40", "title": "管理者講習の通知等", "pachinko_relevant": true }
+      ]
+    },
+    {
+      "chapter_num": 4,
+      "chapter_name": "性風俗関連特殊営業等の規制",
+      "note": "パチンコ業界に直接関連しないため除外",
+      "pachinko_relevant": false
+    },
+    {
+      "chapter_num": 5,
+      "chapter_name": "雑則",
+      "articles": [
+        { "article_num": "106", "title": "従業者名簿の備付けの方法", "pachinko_relevant": true },
+        { "article_num": "107", "title": "電磁的方法による記録", "pachinko_relevant": true },
+        { "article_num": "108", "title": "確認の記録", "pachinko_relevant": true },
+        { "article_num": "109", "title": "国家公安委員会への報告事項", "pachinko_relevant": true },
+        { "article_num": "110", "title": "公安委員会への通報事項", "pachinko_relevant": true },
+        { "article_num": "111", "title": "（第五章の雑則に含まれる規定）", "pachinko_relevant": true },
+        { "article_num": "112", "title": "（第五章の雑則に含まれる規定）", "pachinko_relevant": true },
+        { "article_num": "113", "title": "（第五章の雑則に含まれる規定）", "pachinko_relevant": true }
+      ]
+    }
+  ],
+  "summary": {
+    "total_chapters": 5,
+    "pachinko_relevant_chapters": 4,
+    "excluded_chapters": ["第4章 性風俗関連特殊営業等の規制"],
+    "key_articles_for_pachinko": [
+      "第3条（遊技設備）",
+      "第7条（構造及び設備の技術上の基準）",
+      "第8条（遊技機の基準）",
+      "第36条（遊技料金等の基準）",
+      "第37条（管理者の選任）",
+      "第38条（管理者の業務）",
+      "第39条（管理者講習）"
+    ]
+  }
+}
