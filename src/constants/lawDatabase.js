@@ -86,7 +86,7 @@ export const WIND_BUSINESS_LAW =
         {
           "articleNum": "十一",
           "title": "名義貸しの禁止",
-          "text": ""
+          "text": "第三条第一項の許可を受けた者は、自己の名義をもつて、他人に風俗営業を営ませてはならない。"
         }
       ]
     },
@@ -97,7 +97,7 @@ export const WIND_BUSINESS_LAW =
         {
           "articleNum": "十二",
           "title": "構造及び設備の維持",
-          "text": ""
+          "text": "風俗営業者は、営業所の構造及び設備を、第四条第二項第一号の技術上の基準に適合するように維持しなければならない。"
         },
         {
           "articleNum": "十三",
