@@ -86,7 +86,7 @@ function loadProblems() {
 }
 
 // ==================== ヘルスチェック ====================
-app.get('/api/health', async (req, res) => {
+app.get('/health', async (req, res) => {
   const data = loadProblems();
   let redisStatus = 'disconnected';
   let redisError = null;
@@ -113,7 +113,7 @@ app.get('/api/health', async (req, res) => {
 });
 
 // ==================== 問題データエンドポイント ====================
-app.get('/api/problems', (req, res) => {
+app.get('/problems', (req, res) => {
   try {
     const data = loadProblems();
     res.json({
@@ -131,7 +131,7 @@ app.get('/api/problems', (req, res) => {
   }
 });
 
-app.get('/api/problems/theme/:themeId', (req, res) => {
+app.get('/problems/theme/:themeId', (req, res) => {
   try {
     const themeId = parseInt(req.params.themeId);
     const data = loadProblems();
@@ -152,7 +152,7 @@ app.get('/api/problems/theme/:themeId', (req, res) => {
   }
 });
 
-app.get('/api/problems/category/:category', (req, res) => {
+app.get('/problems/category/:category', (req, res) => {
   try {
     const category = req.params.category;
     const data = loadProblems();
@@ -173,7 +173,7 @@ app.get('/api/problems/category/:category', (req, res) => {
   }
 });
 
-app.get('/api/problems/count', (req, res) => {
+app.get('/problems/count', (req, res) => {
   try {
     const data = loadProblems();
     res.json({
@@ -189,7 +189,7 @@ app.get('/api/problems/count', (req, res) => {
   }
 });
 
-app.post('/api/problems/quiz', (req, res) => {
+app.post('/problems/quiz', (req, res) => {
   try {
     const { count = 10, difficulty } = req.body;
     const data = loadProblems();
@@ -231,7 +231,7 @@ app.post('/api/problems/quiz', (req, res) => {
  * トークン検証 API
  * Redis でトークンとメールアドレスの重複をチェック
  */
-app.post('/api/validate-token', async (req, res) => {
+app.post('/validate-token', async (req, res) => {
   try {
     const { token, email } = req.body;
     console.log('🔍 [API] validate-token リクエスト:', { token, email });
@@ -319,7 +319,7 @@ app.post('/api/validate-token', async (req, res) => {
  * ユーザー登録 API
  * Redis でアカウントの独自性を担保
  */
-app.post('/api/register', async (req, res) => {
+app.post('/register', async (req, res) => {
   try {
     const { email, username, token, deviceId } = req.body;
     console.log('🔍 [API] register リクエスト:', { email, username, token, deviceId });
@@ -442,7 +442,7 @@ app.post('/api/register', async (req, res) => {
  * セッション検証 API
  * Redis でセッションとデバイスIDを検証
  */
-app.post('/api/verify-session', async (req, res) => {
+app.post('/verify-session', async (req, res) => {
   try {
     const { sessionToken, deviceId } = req.body;
     console.log('🔍 [API] verify-session リクエスト:', { sessionToken, deviceId });
@@ -518,11 +518,4 @@ app.use((err, req, res, next) => {
 });
 
 // Vercelサーバーレス関数としてエクスポート
-// Expressアプリをサーバーレス関数ハンドラーとしてラップ
-export default (req, res) => {
-  // Vercel環境でのパス正規化
-  if (req.url && !req.url.startsWith('/api')) {
-    req.url = '/api' + req.url;
-  }
-  return app(req, res);
-};
+export default app;
