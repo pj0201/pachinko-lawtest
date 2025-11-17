@@ -105,6 +105,8 @@ export default function Register() {
     setLoading(true);
 
     try {
+      console.log('🔍 デバッグ: トークン送信', { token, email });
+
       // Vercel KV API でトークンとメールアドレスを検証
       const validateResponse = await fetch('/api/validate-token', {
         method: 'POST',
@@ -113,14 +115,17 @@ export default function Register() {
       });
 
       const validateData = await validateResponse.json();
+      console.log('🔍 デバッグ: validate-token レスポンス', validateData);
 
       if (!validateResponse.ok || !validateData.valid) {
+        console.error('❌ validate-token エラー:', validateData);
         setError(validateData.error || '検証に失敗しました');
         setLoading(false);
         return;
       }
 
       // Vercel KV API でユーザー登録
+      console.log('🔍 デバッグ: register送信', { email, username, token, deviceId });
       const registerResponse = await fetch('/api/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -133,8 +138,10 @@ export default function Register() {
       });
 
       const registerData = await registerResponse.json();
+      console.log('🔍 デバッグ: register レスポンス', registerData);
 
       if (!registerResponse.ok || !registerData.success) {
+        console.error('❌ register エラー:', registerData);
         setError(registerData.error || '登録に失敗しました');
         setLoading(false);
         return;

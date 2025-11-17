@@ -202,9 +202,11 @@ app.post('/api/problems/quiz', (req, res) => {
 app.post('/api/validate-token', async (req, res) => {
   try {
     const { token, email } = req.body;
+    console.log('🔍 [API] validate-token リクエスト:', { token, email });
 
     // 入力検証
     if (!token || !email) {
+      console.error('❌ [API] トークンまたはメールアドレスが欠落');
       return res.status(400).json({
         error: 'トークンとメールアドレスが必要です',
         valid: false
@@ -226,7 +228,10 @@ app.post('/api/validate-token', async (req, res) => {
       token.startsWith('ADMIN_') ||
       /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(token);
 
+    console.log('🔍 [API] トークン形式チェック:', { token, isValidFormat });
+
     if (!isValidFormat) {
+      console.error('❌ [API] 無効なトークン形式:', token);
       return res.status(400).json({
         error: '無効な招待URLです',
         valid: false
