@@ -63,18 +63,22 @@ export default function Register() {
       return;
     }
 
-    // トークンフォーマットチェック（TEST_、ADMIN_、またはUUID形式）
+    // トークンフォーマットチェック（TEST_, ADMIN_, UUID v4対応）
     const isValidFormat =
       token.startsWith('TEST_') ||
       token.startsWith('ADMIN_') ||
       /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(token);
 
+    console.log('🔍 [Frontend] トークンフォーマットチェック:', { token, isValidFormat });
+
     if (!isValidFormat) {
+      console.log('❌ [Frontend] 無効なトークンフォーマット:', token);
       setError('無効な招待URLです。');
       setLoading(false);
       return;
     }
 
+    console.log('✅ [Frontend] トークン有効:', token);
     setLoading(false);
   }, [token]);
 
@@ -105,7 +109,10 @@ export default function Register() {
     setLoading(true);
 
     try {
-      // Vercel KV API でトークンとメールアドレスを検証
+      console.log('🔍 [Frontend] 登録処理開始:', { token, email, username, deviceId });
+
+      // Redis API でトークンとメールアドレスを検証
+      console.log('🔍 [Frontend] validate-token 呼び出し');
       const validateResponse = await fetch('/api/validate-token', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -113,14 +120,19 @@ export default function Register() {
       });
 
       const validateData = await validateResponse.json();
+      console.log('🔍 [Frontend] validate-token レスポンス:', validateData);
 
       if (!validateResponse.ok || !validateData.valid) {
+        console.log('❌ [Frontend] トークン検証失敗:', validateData.error);
         setError(validateData.error || '検証に失敗しました');
         setLoading(false);
         return;
       }
 
-      // Vercel KV API でユーザー登録
+      console.log('✅ [Frontend] トークン検証成功');
+
+      // Redis API でユーザー登録
+      console.log('🔍 [Frontend] register 呼び出し');
       const registerResponse = await fetch('/api/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -133,12 +145,16 @@ export default function Register() {
       });
 
       const registerData = await registerResponse.json();
+      console.log('🔍 [Frontend] register レスポンス:', registerData);
 
       if (!registerResponse.ok || !registerData.success) {
+        console.log('❌ [Frontend] 登録失敗:', registerData.error);
         setError(registerData.error || '登録に失敗しました');
         setLoading(false);
         return;
       }
+
+      console.log('✅ [Frontend] 登録成功:', registerData);
 
       // セッション情報を localStorage に保存
       const { sessionToken, user } = registerData;

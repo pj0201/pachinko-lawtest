@@ -12,10 +12,19 @@ import Redis from 'ioredis';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Redis接続（REDIS_URLまたはKV_URLを使用）
+// Redis接続設定
 const redis = new Redis(process.env.REDIS_URL || process.env.KV_URL || {
   host: 'localhost',
   port: 6379
+});
+
+// Redis接続エラーハンドリング
+redis.on('error', (err) => {
+  console.error('❌ Redis接続エラー:', err.message);
+});
+
+redis.on('connect', () => {
+  console.log('✅ Redis接続成功');
 });
 
 const app = express();
@@ -70,13 +79,28 @@ function loadProblems() {
 }
 
 // ==================== ヘルスチェック ====================
-app.get('/api/health', (req, res) => {
+app.get('/api/health', async (req, res) => {
   const data = loadProblems();
+  let redisStatus = 'disconnected';
+  let redisError = null;
+
+  try {
+    await redis.ping();
+    redisStatus = 'connected';
+  } catch (err) {
+    redisError = err.message;
+  }
+
   res.json({
     status: 'ok',
     timestamp: new Date().toISOString(),
     service: 'patshinko-exam-backend',
-    problems_loaded: data.total_count
+    problems_loaded: data.total_count,
+    redis: {
+      status: redisStatus,
+      error: redisError,
+      url_configured: !!process.env.REDIS_URL || !!process.env.KV_URL
+    }
   });
 });
 
@@ -197,14 +221,16 @@ app.post('/api/problems/quiz', (req, res) => {
 
 /**
  * トークン検証 API
- * Vercel KV でトークンとメールアドレスの重複をチェック
+ * Redis でトークンとメールアドレスの重複をチェック
  */
 app.post('/api/validate-token', async (req, res) => {
   try {
     const { token, email } = req.body;
+    console.log('🔍 [API] validate-token リクエスト:', { token, email });
 
     // 入力検証
     if (!token || !email) {
+      console.log('❌ [API] 入力不足:', { token: !!token, email: !!email });
       return res.status(400).json({
         error: 'トークンとメールアドレスが必要です',
         valid: false
@@ -214,19 +240,23 @@ app.post('/api/validate-token', async (req, res) => {
     // メールアドレスフォーマット検証
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
+      console.log('❌ [API] 無効なメールアドレス:', email);
       return res.status(400).json({
         error: '無効なメールアドレスです',
         valid: false
       });
     }
 
-    // トークンフォーマットチェック（TEST_、ADMIN_、またはUUID形式）
+    // トークンフォーマットチェック（TEST_, ADMIN_, UUID v4対応）
     const isValidFormat =
       token.startsWith('TEST_') ||
       token.startsWith('ADMIN_') ||
       /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(token);
 
+    console.log('🔍 [API] トークンフォーマットチェック:', { token, isValidFormat });
+
     if (!isValidFormat) {
+      console.log('❌ [API] 無効なトークンフォーマット:', token);
       return res.status(400).json({
         error: '無効な招待URLです',
         valid: false
@@ -235,7 +265,11 @@ app.post('/api/validate-token', async (req, res) => {
 
     // トークン使用済みチェック
     const usedTokenStr = await redis.get(`token:${token}`);
-    if (usedTokenStr) {
+    const usedToken = usedTokenStr ? JSON.parse(usedTokenStr) : null;
+    console.log('🔍 [API] トークン使用済みチェック:', { token, usedToken });
+
+    if (usedToken) {
+      console.log('❌ [API] トークン使用済み:', token);
       return res.status(400).json({
         error: 'この招待URLは既に使用されています',
         valid: false
@@ -244,7 +278,11 @@ app.post('/api/validate-token', async (req, res) => {
 
     // メールアドレス重複チェック
     const existingEmailStr = await redis.get(`email:${email}`);
-    if (existingEmailStr) {
+    const existingEmail = existingEmailStr ? JSON.parse(existingEmailStr) : null;
+    console.log('🔍 [API] メールアドレス重複チェック:', { email, existingEmail });
+
+    if (existingEmail) {
+      console.log('❌ [API] メールアドレス登録済み:', email);
       return res.status(400).json({
         error: 'このメールアドレスは既に登録されています',
         valid: false
@@ -252,6 +290,7 @@ app.post('/api/validate-token', async (req, res) => {
     }
 
     // 検証成功
+    console.log('✅ [API] 検証成功:', { token, email });
     return res.status(200).json({
       valid: true,
       message: 'トークンとメールアドレスは有効です'
@@ -259,23 +298,27 @@ app.post('/api/validate-token', async (req, res) => {
 
   } catch (error) {
     log(`トークン検証エラー: ${error.message}`, 'ERROR');
+    console.error('❌ [API] validate-token エラー:', error);
     return res.status(500).json({
       error: 'サーバーエラーが発生しました',
-      valid: false
+      valid: false,
+      details: error.message
     });
   }
 });
 
 /**
  * ユーザー登録 API
- * Vercel KV でアカウントの独自性を担保
+ * Redis でアカウントの独自性を担保
  */
 app.post('/api/register', async (req, res) => {
   try {
     const { email, username, token, deviceId } = req.body;
+    console.log('🔍 [API] register リクエスト:', { email, username, token, deviceId });
 
     // 入力検証
     if (!email || !username || !token || !deviceId) {
+      console.log('❌ [API] 入力不足:', { email: !!email, username: !!username, token: !!token, deviceId: !!deviceId });
       return res.status(400).json({
         error: '必須項目が入力されていません',
         success: false
@@ -285,19 +328,23 @@ app.post('/api/register', async (req, res) => {
     // メールアドレスフォーマット検証
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
+      console.log('❌ [API] 無効なメールアドレス:', email);
       return res.status(400).json({
         error: '無効なメールアドレスです',
         success: false
       });
     }
 
-    // トークンフォーマットチェック（TEST_、ADMIN_、またはUUID形式）
+    // トークンフォーマットチェック（TEST_, ADMIN_, UUID v4対応）
     const isValidFormat =
       token.startsWith('TEST_') ||
       token.startsWith('ADMIN_') ||
       /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(token);
 
+    console.log('🔍 [API] トークンフォーマットチェック:', { token, isValidFormat });
+
     if (!isValidFormat) {
+      console.log('❌ [API] 無効なトークンフォーマット:', token);
       return res.status(400).json({
         error: '無効な招待URLです',
         success: false
@@ -306,7 +353,11 @@ app.post('/api/register', async (req, res) => {
 
     // トークン使用済みチェック（二重チェック）
     const usedTokenStr = await redis.get(`token:${token}`);
-    if (usedTokenStr) {
+    const usedToken = usedTokenStr ? JSON.parse(usedTokenStr) : null;
+    console.log('🔍 [API] トークン使用済みチェック:', { token, usedToken });
+
+    if (usedToken) {
+      console.log('❌ [API] トークン使用済み:', token);
       return res.status(400).json({
         error: 'この招待URLは既に使用されています',
         success: false
@@ -315,7 +366,11 @@ app.post('/api/register', async (req, res) => {
 
     // メールアドレス重複チェック（二重チェック）
     const existingEmailStr = await redis.get(`email:${email}`);
-    if (existingEmailStr) {
+    const existingEmail = existingEmailStr ? JSON.parse(existingEmailStr) : null;
+    console.log('🔍 [API] メールアドレス重複チェック:', { email, existingEmail });
+
+    if (existingEmail) {
+      console.log('❌ [API] メールアドレス登録済み:', email);
       return res.status(400).json({
         error: 'このメールアドレスは既に登録されています',
         success: false
@@ -335,6 +390,8 @@ app.post('/api/register', async (req, res) => {
       registeredAt: new Date().toISOString()
     };
 
+    console.log('🔍 [API] Redisに保存中:', { email, token, sessionToken });
+
     // Redis に保存（永続化）
     await Promise.all([
       // メールアドレスをキーに保存（重複防止）
@@ -349,6 +406,7 @@ app.post('/api/register', async (req, res) => {
     ]);
 
     log(`✅ ユーザー登録成功: ${email}`, 'INFO');
+    console.log('✅ [API] 登録成功:', { email, sessionToken });
 
     // 登録成功
     return res.status(200).json({
@@ -363,22 +421,26 @@ app.post('/api/register', async (req, res) => {
 
   } catch (error) {
     log(`登録エラー: ${error.message}`, 'ERROR');
+    console.error('❌ [API] register エラー:', error);
     return res.status(500).json({
       error: 'サーバーエラーが発生しました',
-      success: false
+      success: false,
+      details: error.message
     });
   }
 });
 
 /**
  * セッション検証 API
- * Vercel KV でセッションとデバイスIDを検証
+ * Redis でセッションとデバイスIDを検証
  */
 app.post('/api/verify-session', async (req, res) => {
   try {
     const { sessionToken, deviceId } = req.body;
+    console.log('🔍 [API] verify-session リクエスト:', { sessionToken, deviceId });
 
     if (!sessionToken || !deviceId) {
+      console.log('❌ [API] セッション情報不足:', { sessionToken: !!sessionToken, deviceId: !!deviceId });
       return res.status(400).json({
         valid: false,
         error: 'セッション情報が不足しています'
@@ -387,18 +449,20 @@ app.post('/api/verify-session', async (req, res) => {
 
     // Redis からセッション情報を取得
     const sessionDataStr = await redis.get(`session:${sessionToken}`);
+    const sessionData = sessionDataStr ? JSON.parse(sessionDataStr) : null;
+    console.log('🔍 [API] セッションデータ取得:', { sessionToken, sessionData });
 
-    if (!sessionDataStr) {
+    if (!sessionData) {
+      console.log('❌ [API] 無効なセッション:', sessionToken);
       return res.status(401).json({
         valid: false,
         error: '無効なセッションです'
       });
     }
 
-    const sessionData = JSON.parse(sessionDataStr);
-
     // デバイスIDチェック（アカウント流失防止）
     if (sessionData.deviceId !== deviceId) {
+      console.log('❌ [API] デバイスID不一致:', { expected: sessionData.deviceId, actual: deviceId });
       return res.status(403).json({
         valid: false,
         error: 'このアカウントは別のデバイスで登録されています'
@@ -406,6 +470,7 @@ app.post('/api/verify-session', async (req, res) => {
     }
 
     // セッション有効
+    console.log('✅ [API] セッション検証成功:', { sessionToken });
     return res.status(200).json({
       valid: true,
       user: {
@@ -417,9 +482,11 @@ app.post('/api/verify-session', async (req, res) => {
 
   } catch (error) {
     log(`セッション検証エラー: ${error.message}`, 'ERROR');
+    console.error('❌ [API] verify-session エラー:', error);
     return res.status(500).json({
       valid: false,
-      error: 'サーバーエラーが発生しました'
+      error: 'サーバーエラーが発生しました',
+      details: error.message
     });
   }
 });
