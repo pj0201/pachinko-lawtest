@@ -1,26 +1,7 @@
 /**
- * ユーザー登録API
+ * ユーザー登録API - Vercel KV版
  */
-import Redis from 'ioredis';
-
-// Redis接続を作成する関数
-function createRedisClient() {
-  return new Redis({
-    host: process.env.REDIS_HOST || 'redis-15687.c10.us-east-1-3.ec2.cloud.redislabs.com',
-    port: parseInt(process.env.REDIS_PORT || '15687'),
-    password: process.env.REDIS_PASSWORD,
-    tls: {
-      rejectUnauthorized: false
-    },
-    retryStrategy: (times) => {
-      if (times > 3) return null;
-      const delay = Math.min(times * 50, 2000);
-      return delay;
-    },
-    connectTimeout: 10000,
-    maxRetriesPerRequest: 3
-  });
-}
+import { kv } from '@vercel/kv';
 
 export default async function handler(req, res) {
   // CORS対応
@@ -35,8 +16,6 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed', success: false });
   }
-
-  let redis = null;
 
   try {
     const { email, username, token, deviceId } = req.body;
@@ -75,19 +54,12 @@ export default async function handler(req, res) {
       });
     }
 
-    // Redis接続
-    redis = createRedisClient();
-    await redis.ping();
-    console.log('✅ [API] Redis接続成功');
-
     // トークン使用済みチェック（二重チェック）
-    const usedTokenStr = await redis.get(`token:${token}`);
-    const usedToken = usedTokenStr ? JSON.parse(usedTokenStr) : null;
+    const usedToken = await kv.get(`token:${token}`);
     console.log('🔍 [API] トークン使用済みチェック:', { token, usedToken });
 
     if (usedToken) {
       console.log('❌ [API] トークン使用済み:', token);
-      await redis.quit();
       return res.status(400).json({
         error: 'この招待URLは既に使用されています',
         success: false
@@ -95,13 +67,11 @@ export default async function handler(req, res) {
     }
 
     // メールアドレス重複チェック（二重チェック）
-    const existingEmailStr = await redis.get(`email:${email}`);
-    const existingEmail = existingEmailStr ? JSON.parse(existingEmailStr) : null;
+    const existingEmail = await kv.get(`email:${email}`);
     console.log('🔍 [API] メールアドレス重複チェック:', { email, existingEmail });
 
     if (existingEmail) {
       console.log('❌ [API] メールアドレス登録済み:', email);
-      await redis.quit();
       return res.status(400).json({
         error: 'このメールアドレスは既に登録されています',
         success: false
@@ -121,20 +91,19 @@ export default async function handler(req, res) {
       registeredAt: new Date().toISOString()
     };
 
-    console.log('🔍 [API] Redis Cloudに保存中:', { email, token, sessionToken });
+    console.log('🔍 [API] Vercel KVに保存中:', { email, token, sessionToken });
 
-    // Redis Cloud に保存（永続化）
+    // Vercel KV に保存（永続化）
     await Promise.all([
-      redis.set(`email:${email}`, JSON.stringify(userData)),
-      redis.set(`token:${token}`, JSON.stringify({
+      kv.set(`email:${email}`, userData),
+      kv.set(`token:${token}`, {
         usedBy: email,
         usedAt: new Date().toISOString()
-      })),
-      redis.set(`session:${sessionToken}`, JSON.stringify(userData))
+      }),
+      kv.set(`session:${sessionToken}`, userData)
     ]);
 
     console.log('✅ [API] 登録成功:', { email, sessionToken });
-    await redis.quit();
 
     return res.status(200).json({
       success: true,
@@ -149,13 +118,6 @@ export default async function handler(req, res) {
 
   } catch (error) {
     console.error('❌ [API] register エラー:', error);
-    if (redis) {
-      try {
-        await redis.quit();
-      } catch (quitError) {
-        console.error('Redis quit error:', quitError);
-      }
-    }
     return res.status(500).json({
       error: 'サーバーエラーが発生しました',
       success: false,

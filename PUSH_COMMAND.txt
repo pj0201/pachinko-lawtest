@@ -1,0 +1,24 @@
+====================================
+🚨 今すぐ実行してください
+====================================
+
+cd /home/planj/patshinko-exam-app && git push origin main
+
+※ ユーザー名とパスワード（またはトークン）を入力
+
+====================================
+プッシュ成功後の確認
+====================================
+
+1. GitHubリポジトリで最新コミット確認
+   https://github.com/pj0201/pachinko-lawtest
+
+   最新コミット: "fix: API URL修正..."
+
+2. GitHub Actions でデプロイ確認（5分待つ）
+   https://github.com/pj0201/pachinko-lawtest/actions
+
+3. テスト開始
+   TEST_PLAN_10_ACCOUNTS.md を参照
+
+====================================
