@@ -7,6 +7,7 @@ import { useState, useEffect } from 'react';
 import { useNavigate, useParams, useSearchParams, Navigate } from 'react-router-dom';
 import FingerprintJS from '@fingerprintjs/fingerprintjs';
 import { checkDeviceRestriction } from '../utils/deviceCheck';
+import { apiEndpoints } from '../config/api';
 import './Register.css';
 
 export default function Register() {
@@ -113,7 +114,7 @@ export default function Register() {
 
       // Redis API でトークンとメールアドレスを検証
       console.log('🔍 [Frontend] validate-token 呼び出し');
-      const validateResponse = await fetch('/api/validate-token', {
+      const validateResponse = await fetch(apiEndpoints.validateToken, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ token, email })
@@ -133,7 +134,7 @@ export default function Register() {
 
       // Redis API でユーザー登録
       console.log('🔍 [Frontend] register 呼び出し');
-      const registerResponse = await fetch('/api/register', {
+      const registerResponse = await fetch(apiEndpoints.register, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
