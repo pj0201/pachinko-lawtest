@@ -70,13 +70,29 @@ function loadProblems() {
 }
 
 // ==================== ヘルスチェック ====================
-app.get('/api/health', (req, res) => {
+app.get('/api/health', async (req, res) => {
   const data = loadProblems();
+
+  // Redis接続チェック
+  let redisStatus = 'disconnected';
+  let redisError = null;
+  try {
+    await redis.ping();
+    redisStatus = 'connected';
+  } catch (err) {
+    redisError = err.message;
+  }
+
   res.json({
     status: 'ok',
     timestamp: new Date().toISOString(),
     service: 'patshinko-exam-backend',
-    problems_loaded: data.total_count
+    problems_loaded: data.total_count,
+    redis: {
+      status: redisStatus,
+      error: redisError,
+      url: process.env.REDIS_URL ? 'set' : 'not set'
+    }
   });
 });
 
