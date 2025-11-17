@@ -7,10 +7,32 @@ import cors from 'cors';
 import path from 'path';
 import fs from 'fs';
 import { fileURLToPath } from 'url';
-import { kv } from '@vercel/kv';
+import Redis from 'ioredis';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
+
+// Redis Cloud 接続設定
+const redis = new Redis({
+  host: process.env.REDIS_HOST || 'redis-15687.c10.us-east-1-3.ec2.cloud.redislabs.com',
+  port: parseInt(process.env.REDIS_PORT || '15687'),
+  password: process.env.REDIS_PASSWORD,
+  tls: {
+    rejectUnauthorized: false
+  },
+  retryStrategy: (times) => {
+    const delay = Math.min(times * 50, 2000);
+    return delay;
+  }
+});
+
+redis.on('connect', () => {
+  console.log('✅ Redis Cloud 接続成功');
+});
+
+redis.on('error', (err) => {
+  console.error('❌ Redis接続エラー:', err.message);
+});
 
 const app = express();
 
@@ -66,14 +88,14 @@ function loadProblems() {
 // ==================== ヘルスチェック ====================
 app.get('/api/health', async (req, res) => {
   const data = loadProblems();
-  let kvStatus = 'disconnected';
-  let kvError = null;
+  let redisStatus = 'disconnected';
+  let redisError = null;
 
   try {
-    await kv.ping();
-    kvStatus = 'connected';
+    await redis.ping();
+    redisStatus = 'connected';
   } catch (err) {
-    kvError = err.message;
+    redisError = err.message;
   }
 
   res.json({
@@ -81,10 +103,11 @@ app.get('/api/health', async (req, res) => {
     timestamp: new Date().toISOString(),
     service: 'pachinko-exam-backend',
     problems_loaded: data.total_count,
-    kv: {
-      status: kvStatus,
-      error: kvError,
-      configured: !!process.env.KV_REST_API_URL
+    redis: {
+      status: redisStatus,
+      error: redisError,
+      configured: !!process.env.REDIS_PASSWORD,
+      host: process.env.REDIS_HOST || 'redis-15687.c10.us-east-1-3.ec2.cloud.redislabs.com'
     }
   });
 });
@@ -249,7 +272,8 @@ app.post('/api/validate-token', async (req, res) => {
     }
 
     // トークン使用済みチェック
-    const usedToken = await kv.get(`token:${token}`);
+    const usedTokenStr = await redis.get(`token:${token}`);
+    const usedToken = usedTokenStr ? JSON.parse(usedTokenStr) : null;
     console.log('🔍 [API] トークン使用済みチェック:', { token, usedToken });
 
     if (usedToken) {
@@ -261,7 +285,8 @@ app.post('/api/validate-token', async (req, res) => {
     }
 
     // メールアドレス重複チェック
-    const existingEmail = await kv.get(`email:${email}`);
+    const existingEmailStr = await redis.get(`email:${email}`);
+    const existingEmail = existingEmailStr ? JSON.parse(existingEmailStr) : null;
     console.log('🔍 [API] メールアドレス重複チェック:', { email, existingEmail });
 
     if (existingEmail) {
@@ -335,7 +360,8 @@ app.post('/api/register', async (req, res) => {
     }
 
     // トークン使用済みチェック（二重チェック）
-    const usedToken = await kv.get(`token:${token}`);
+    const usedTokenStr = await redis.get(`token:${token}`);
+    const usedToken = usedTokenStr ? JSON.parse(usedTokenStr) : null;
     console.log('🔍 [API] トークン使用済みチェック:', { token, usedToken });
 
     if (usedToken) {
@@ -347,7 +373,8 @@ app.post('/api/register', async (req, res) => {
     }
 
     // メールアドレス重複チェック（二重チェック）
-    const existingEmail = await kv.get(`email:${email}`);
+    const existingEmailStr = await redis.get(`email:${email}`);
+    const existingEmail = existingEmailStr ? JSON.parse(existingEmailStr) : null;
     console.log('🔍 [API] メールアドレス重複チェック:', { email, existingEmail });
 
     if (existingEmail) {
@@ -371,19 +398,19 @@ app.post('/api/register', async (req, res) => {
       registeredAt: new Date().toISOString()
     };
 
-    console.log('🔍 [API] Vercel KVに保存中:', { email, token, sessionToken });
+    console.log('🔍 [API] Redis Cloudに保存中:', { email, token, sessionToken });
 
-    // Vercel KV に保存（永続化）
+    // Redis Cloud に保存（永続化）
     await Promise.all([
       // メールアドレスをキーに保存（重複防止）
-      kv.set(`email:${email}`, userData),
+      redis.set(`email:${email}`, JSON.stringify(userData)),
       // トークンを使用済みに（重複防止）
-      kv.set(`token:${token}`, {
+      redis.set(`token:${token}`, JSON.stringify({
         usedBy: email,
         usedAt: new Date().toISOString()
-      }),
+      })),
       // セッショントークンでも保存（ログイン検証用）
-      kv.set(`session:${sessionToken}`, userData)
+      redis.set(`session:${sessionToken}`, JSON.stringify(userData))
     ]);
 
     log(`✅ ユーザー登録成功: ${email}`, 'INFO');
@@ -428,8 +455,9 @@ app.post('/api/verify-session', async (req, res) => {
       });
     }
 
-    // Vercel KV からセッション情報を取得
-    const sessionData = await kv.get(`session:${sessionToken}`);
+    // Redis Cloud からセッション情報を取得
+    const sessionDataStr = await redis.get(`session:${sessionToken}`);
+    const sessionData = sessionDataStr ? JSON.parse(sessionDataStr) : null;
     console.log('🔍 [API] セッションデータ取得:', { sessionToken, sessionData });
 
     if (!sessionData) {
