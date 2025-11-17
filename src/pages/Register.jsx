@@ -63,8 +63,13 @@ export default function Register() {
       return;
     }
 
-    // トークンフォーマットチェック
-    if (!token.startsWith('TEST_') && !token.startsWith('ADMIN_')) {
+    // トークンフォーマットチェック（TEST_、ADMIN_、またはUUID形式）
+    const isValidFormat =
+      token.startsWith('TEST_') ||
+      token.startsWith('ADMIN_') ||
+      /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(token);
+
+    if (!isValidFormat) {
       setError('無効な招待URLです。');
       setLoading(false);
       return;
