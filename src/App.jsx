@@ -70,8 +70,9 @@ function App() {
       {/* デフォルト：MainApp（認証なしで直接アクセス可能） */}
       <Route path="/*" element={<MainApp />} />
 
-      {/* 招待URL登録ページ（参考用） */}
+      {/* 招待URL登録ページ */}
       <Route path="/invite/:token" element={<Register />} />
+      <Route path="/register/:token" element={<Register />} />
       <Route path="/register" element={<Register />} />
     </Routes>
   );

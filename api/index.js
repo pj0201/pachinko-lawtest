@@ -220,8 +220,13 @@ app.post('/api/validate-token', async (req, res) => {
       });
     }
 
-    // トークンフォーマットチェック
-    if (!token.startsWith('TEST_') && !token.startsWith('ADMIN_')) {
+    // トークンフォーマットチェック（TEST_、ADMIN_、またはUUID形式）
+    const isValidFormat =
+      token.startsWith('TEST_') ||
+      token.startsWith('ADMIN_') ||
+      /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(token);
+
+    if (!isValidFormat) {
       return res.status(400).json({
         error: '無効な招待URLです',
         valid: false
@@ -286,8 +291,13 @@ app.post('/api/register', async (req, res) => {
       });
     }
 
-    // トークンフォーマットチェック
-    if (!token.startsWith('TEST_') && !token.startsWith('ADMIN_')) {
+    // トークンフォーマットチェック（TEST_、ADMIN_、またはUUID形式）
+    const isValidFormat =
+      token.startsWith('TEST_') ||
+      token.startsWith('ADMIN_') ||
+      /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(token);
+
+    if (!isValidFormat) {
       return res.status(400).json({
         error: '無効な招待URLです',
         success: false
