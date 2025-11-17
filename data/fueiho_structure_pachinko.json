@@ -1,0 +1,116 @@
+{
+  "law_name": "風俗営業等の規制及び業務の適正化等に関する法律",
+  "law_abbreviation": "風営法",
+  "target": "パチンコ主任者試験",
+  "chapters": [
+    {
+      "chapter_num": 1,
+      "chapter_name": "総則",
+      "articles": [
+        { "article_num": "1", "title": "目的", "pachinko_relevant": true },
+        { "article_num": "2", "title": "用語の意義", "pachinko_relevant": true }
+      ]
+    },
+    {
+      "chapter_num": 2,
+      "chapter_name": "風俗営業の許可等",
+      "articles": [
+        { "article_num": "3", "title": "営業の許可", "pachinko_relevant": true },
+        { "article_num": "4", "title": "許可の基準", "pachinko_relevant": true },
+        { "article_num": "5", "title": "許可の手続及び許可証", "pachinko_relevant": true },
+        { "article_num": "6", "title": "許可証等の掲示義務", "pachinko_relevant": true },
+        { "article_num": "7", "title": "相続", "pachinko_relevant": true },
+        { "article_num": "7の2", "title": "法人の合併", "pachinko_relevant": true },
+        { "article_num": "7の3", "title": "法人の分割", "pachinko_relevant": true },
+        { "article_num": "8", "title": "許可の取消し", "pachinko_relevant": true },
+        { "article_num": "9", "title": "構造及び設備の変更等", "pachinko_relevant": true },
+        { "article_num": "10", "title": "許可証の返納等", "pachinko_relevant": true },
+        { "article_num": "10の2", "title": "特例風俗営業者の認定", "pachinko_relevant": true },
+        { "article_num": "11", "title": "名義貸しの禁止", "pachinko_relevant": true }
+      ]
+    },
+    {
+      "chapter_num": 3,
+      "chapter_name": "風俗営業者の遵守事項等",
+      "articles": [
+        { "article_num": "12", "title": "構造及び設備の維持", "pachinko_relevant": true },
+        { "article_num": "13", "title": "営業時間の制限等", "pachinko_relevant": true },
+        { "article_num": "14", "title": "照度の規制", "pachinko_relevant": true },
+        { "article_num": "15", "title": "騒音及び振動の規制", "pachinko_relevant": true },
+        { "article_num": "16", "title": "広告及び宣伝の規制", "pachinko_relevant": true },
+        { "article_num": "17", "title": "料金の表示", "pachinko_relevant": true },
+        { "article_num": "18", "title": "年少者の立入禁止の表示", "pachinko_relevant": true },
+        { "article_num": "18の2", "title": "接客従業者に対する拘束的行為の規制", "pachinko_relevant": true },
+        { "article_num": "18の3", "title": "客の正常な判断を著しく阻害する行為の規制", "pachinko_relevant": true },
+        { "article_num": "19", "title": "遊技料金等の規制", "pachinko_relevant": true, "importance": "high" },
+        { "article_num": "20", "title": "遊技機の規制及び認定等", "pachinko_relevant": true, "importance": "high" },
+        { "article_num": "21", "title": "条例への委任", "pachinko_relevant": true },
+        { "article_num": "22", "title": "風俗営業を営む者の禁止行為等", "pachinko_relevant": true },
+        { "article_num": "22の2", "title": "接待飲食営業を営む者の禁止行為", "pachinko_relevant": true },
+        { "article_num": "23", "title": "遊技場営業を営む者の禁止行為", "pachinko_relevant": true, "importance": "high" },
+        { "article_num": "24", "title": "営業所の管理者", "pachinko_relevant": true },
+        { "article_num": "25", "title": "指示", "pachinko_relevant": true },
+        { "article_num": "26", "title": "営業の停止等", "pachinko_relevant": true }
+      ]
+    },
+    {
+      "chapter_num": 4,
+      "chapter_name": "性風俗関連特殊営業等の規制",
+      "note": "パチンコ業界に直接関連しないため除外",
+      "pachinko_relevant": false
+    },
+    {
+      "chapter_num": 5,
+      "chapter_name": "監督",
+      "articles": [
+        { "article_num": "36", "title": "従業者名簿", "pachinko_relevant": true },
+        { "article_num": "36の2", "title": "接客従業者の生年月日等の確認", "pachinko_relevant": true },
+        { "article_num": "37", "title": "報告及び立入り", "pachinko_relevant": true }
+      ]
+    },
+    {
+      "chapter_num": 6,
+      "chapter_name": "雑則",
+      "articles": [
+        { "article_num": "38", "title": "少年指導委員", "pachinko_relevant": true },
+        { "article_num": "38の2", "title": "少年指導委員の立入り", "pachinko_relevant": true },
+        { "article_num": "38の3", "title": "少年指導委員に関する委任規定", "pachinko_relevant": true },
+        { "article_num": "38の4", "title": "風俗環境保全協議会", "pachinko_relevant": true },
+        { "article_num": "39", "title": "都道府県風俗環境浄化協会", "pachinko_relevant": true },
+        { "article_num": "40", "title": "全国風俗環境浄化協会", "pachinko_relevant": true },
+        { "article_num": "41", "title": "聴聞の特例", "pachinko_relevant": true },
+        { "article_num": "41の2", "title": "行政手続法の適用除外", "pachinko_relevant": true },
+        { "article_num": "41の3", "title": "国家公安委員会への報告等", "pachinko_relevant": true },
+        { "article_num": "42", "title": "飲食店営業等の停止の通知", "pachinko_relevant": true },
+        { "article_num": "43", "title": "手数料", "pachinko_relevant": true },
+        { "article_num": "44", "title": "風俗営業者の団体等", "pachinko_relevant": true },
+        { "article_num": "45", "title": "警察庁長官への権限の委任", "pachinko_relevant": true },
+        { "article_num": "46", "title": "方面公安委員会への権限の委任", "pachinko_relevant": true },
+        { "article_num": "47", "title": "経過措置", "pachinko_relevant": true },
+        { "article_num": "48", "title": "国家公安委員会規則への委任", "pachinko_relevant": true }
+      ]
+    },
+    {
+      "chapter_num": 7,
+      "chapter_name": "罰則",
+      "articles": [
+        { "article_num": "49", "title": "特定の重大な違反行為に対する罰則", "pachinko_relevant": true },
+        { "article_num": "50", "title": "特定の営業の届出違反・処分違反に対する罰則", "pachinko_relevant": true },
+        { "article_num": "51", "title": "構造設備変更違反、年少者雇用・立入禁止違反等に対する罰則", "pachinko_relevant": true },
+        { "article_num": "52", "title": "指定試験機関役員等の秘密保持義務違反等に対する罰則", "pachinko_relevant": true },
+        { "article_num": "53", "title": "客引き行為、賞品規制、性風俗関連特殊営業の無届営業等に対する罰則", "pachinko_relevant": true },
+        { "article_num": "54", "title": "従業者名簿不備、立入検査拒否、報告義務違反等に対する罰則", "pachinko_relevant": true },
+        { "article_num": "55", "title": "虚偽の申請・届出書類提出等に対する罰則", "pachinko_relevant": true },
+        { "article_num": "56", "title": "許可証等の掲示・返納義務違反等に対する罰則", "pachinko_relevant": true },
+        { "article_num": "57", "title": "両罰規定", "pachinko_relevant": true },
+        { "article_num": "58", "title": "過料", "pachinko_relevant": true }
+      ]
+    }
+  ],
+  "summary": {
+    "total_chapters": 7,
+    "pachinko_relevant_chapters": 6,
+    "excluded_chapters": ["第4章 性風俗関連特殊営業等の規制"],
+    "key_articles_for_pachinko": ["第19条", "第20条", "第23条"]
+  }
+}

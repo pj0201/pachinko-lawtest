@@ -12,19 +12,26 @@ import Redis from 'ioredis';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// Redis接続設定
-const redis = new Redis(process.env.REDIS_URL || process.env.KV_URL || {
-  host: 'localhost',
-  port: 6379
-});
-
-// Redis接続エラーハンドリング
-redis.on('error', (err) => {
-  console.error('❌ Redis接続エラー:', err.message);
+// Redis Cloud 接続設定
+const redis = new Redis({
+  host: process.env.REDIS_HOST || 'redis-15687.c10.us-east-1-3.ec2.cloud.redislabs.com',
+  port: parseInt(process.env.REDIS_PORT || '15687'),
+  password: process.env.REDIS_PASSWORD,
+  tls: {
+    rejectUnauthorized: false
+  },
+  retryStrategy: (times) => {
+    const delay = Math.min(times * 50, 2000);
+    return delay;
+  }
 });
 
 redis.on('connect', () => {
-  console.log('✅ Redis接続成功');
+  console.log('✅ Redis Cloud 接続成功');
+});
+
+redis.on('error', (err) => {
+  console.error('❌ Redis接続エラー:', err.message);
 });
 
 const app = express();
@@ -79,7 +86,7 @@ function loadProblems() {
 }
 
 // ==================== ヘルスチェック ====================
-app.get('/api/health', async (req, res) => {
+app.get('/health', async (req, res) => {
   const data = loadProblems();
   let redisStatus = 'disconnected';
   let redisError = null;
@@ -94,18 +101,19 @@ app.get('/api/health', async (req, res) => {
   res.json({
     status: 'ok',
     timestamp: new Date().toISOString(),
-    service: 'patshinko-exam-backend',
+    service: 'pachinko-exam-backend',
     problems_loaded: data.total_count,
     redis: {
       status: redisStatus,
       error: redisError,
-      url_configured: !!process.env.REDIS_URL || !!process.env.KV_URL
+      configured: !!process.env.REDIS_PASSWORD,
+      host: process.env.REDIS_HOST || 'redis-15687.c10.us-east-1-3.ec2.cloud.redislabs.com'
     }
   });
 });
 
 // ==================== 問題データエンドポイント ====================
-app.get('/api/problems', (req, res) => {
+app.get('/problems', (req, res) => {
   try {
     const data = loadProblems();
     res.json({
@@ -123,7 +131,7 @@ app.get('/api/problems', (req, res) => {
   }
 });
 
-app.get('/api/problems/theme/:themeId', (req, res) => {
+app.get('/problems/theme/:themeId', (req, res) => {
   try {
     const themeId = parseInt(req.params.themeId);
     const data = loadProblems();
@@ -144,7 +152,7 @@ app.get('/api/problems/theme/:themeId', (req, res) => {
   }
 });
 
-app.get('/api/problems/category/:category', (req, res) => {
+app.get('/problems/category/:category', (req, res) => {
   try {
     const category = req.params.category;
     const data = loadProblems();
@@ -165,7 +173,7 @@ app.get('/api/problems/category/:category', (req, res) => {
   }
 });
 
-app.get('/api/problems/count', (req, res) => {
+app.get('/problems/count', (req, res) => {
   try {
     const data = loadProblems();
     res.json({
@@ -181,7 +189,7 @@ app.get('/api/problems/count', (req, res) => {
   }
 });
 
-app.post('/api/problems/quiz', (req, res) => {
+app.post('/problems/quiz', (req, res) => {
   try {
     const { count = 10, difficulty } = req.body;
     const data = loadProblems();
@@ -223,7 +231,7 @@ app.post('/api/problems/quiz', (req, res) => {
  * トークン検証 API
  * Redis でトークンとメールアドレスの重複をチェック
  */
-app.post('/api/validate-token', async (req, res) => {
+app.post('/validate-token', async (req, res) => {
   try {
     const { token, email } = req.body;
     console.log('🔍 [API] validate-token リクエスト:', { token, email });
@@ -311,7 +319,7 @@ app.post('/api/validate-token', async (req, res) => {
  * ユーザー登録 API
  * Redis でアカウントの独自性を担保
  */
-app.post('/api/register', async (req, res) => {
+app.post('/register', async (req, res) => {
   try {
     const { email, username, token, deviceId } = req.body;
     console.log('🔍 [API] register リクエスト:', { email, username, token, deviceId });
@@ -390,9 +398,9 @@ app.post('/api/register', async (req, res) => {
       registeredAt: new Date().toISOString()
     };
 
-    console.log('🔍 [API] Redisに保存中:', { email, token, sessionToken });
+    console.log('🔍 [API] Redis Cloudに保存中:', { email, token, sessionToken });
 
-    // Redis に保存（永続化）
+    // Redis Cloud に保存（永続化）
     await Promise.all([
       // メールアドレスをキーに保存（重複防止）
       redis.set(`email:${email}`, JSON.stringify(userData)),
@@ -434,7 +442,7 @@ app.post('/api/register', async (req, res) => {
  * セッション検証 API
  * Redis でセッションとデバイスIDを検証
  */
-app.post('/api/verify-session', async (req, res) => {
+app.post('/verify-session', async (req, res) => {
   try {
     const { sessionToken, deviceId } = req.body;
     console.log('🔍 [API] verify-session リクエスト:', { sessionToken, deviceId });
@@ -447,7 +455,7 @@ app.post('/api/verify-session', async (req, res) => {
       });
     }
 
-    // Redis からセッション情報を取得
+    // Redis Cloud からセッション情報を取得
     const sessionDataStr = await redis.get(`session:${sessionToken}`);
     const sessionData = sessionDataStr ? JSON.parse(sessionDataStr) : null;
     console.log('🔍 [API] セッションデータ取得:', { sessionToken, sessionData });
