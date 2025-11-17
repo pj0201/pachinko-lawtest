@@ -3,23 +3,24 @@
  */
 import Redis from 'ioredis';
 
-// Redis Cloud 接続設定
-const redis = new Redis({
-  host: process.env.REDIS_HOST || 'redis-15687.c10.us-east-1-3.ec2.cloud.redislabs.com',
-  port: parseInt(process.env.REDIS_PORT || '15687'),
-  password: process.env.REDIS_PASSWORD,
-  tls: {
-    rejectUnauthorized: false
-  },
-  retryStrategy: (times) => {
-    const delay = Math.min(times * 50, 2000);
-    return delay;
-  }
-});
-
-redis.on('error', (err) => {
-  console.error('❌ Redis接続エラー:', err.message);
-});
+// Redis接続を作成する関数
+function createRedisClient() {
+  return new Redis({
+    host: process.env.REDIS_HOST || 'redis-15687.c10.us-east-1-3.ec2.cloud.redislabs.com',
+    port: parseInt(process.env.REDIS_PORT || '15687'),
+    password: process.env.REDIS_PASSWORD,
+    tls: {
+      rejectUnauthorized: false
+    },
+    retryStrategy: (times) => {
+      if (times > 3) return null; // 3回失敗したら諦める
+      const delay = Math.min(times * 50, 2000);
+      return delay;
+    },
+    connectTimeout: 10000,
+    maxRetriesPerRequest: 3
+  });
+}
 
 export default async function handler(req, res) {
   // CORS対応
@@ -34,6 +35,8 @@ export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed', valid: false });
   }
+
+  let redis = null;
 
   try {
     const { token, email } = req.body;
@@ -74,6 +77,11 @@ export default async function handler(req, res) {
       });
     }
 
+    // Redis接続
+    redis = createRedisClient();
+    await redis.ping(); // 接続確認
+    console.log('✅ [API] Redis接続成功');
+
     // トークン使用済みチェック
     const usedTokenStr = await redis.get(`token:${token}`);
     const usedToken = usedTokenStr ? JSON.parse(usedTokenStr) : null;
@@ -81,6 +89,7 @@ export default async function handler(req, res) {
 
     if (usedToken) {
       console.log('❌ [API] トークン使用済み:', token);
+      await redis.quit();
       return res.status(400).json({
         error: 'この招待URLは既に使用されています',
         valid: false
@@ -94,6 +103,7 @@ export default async function handler(req, res) {
 
     if (existingEmail) {
       console.log('❌ [API] メールアドレス登録済み:', email);
+      await redis.quit();
       return res.status(400).json({
         error: 'このメールアドレスは既に登録されています',
         valid: false
@@ -102,6 +112,7 @@ export default async function handler(req, res) {
 
     // 検証成功
     console.log('✅ [API] 検証成功:', { token, email });
+    await redis.quit();
     return res.status(200).json({
       valid: true,
       message: 'トークンとメールアドレスは有効です'
@@ -109,6 +120,13 @@ export default async function handler(req, res) {
 
   } catch (error) {
     console.error('❌ [API] validate-token エラー:', error);
+    if (redis) {
+      try {
+        await redis.quit();
+      } catch (quitError) {
+        console.error('Redis quit error:', quitError);
+      }
+    }
     return res.status(500).json({
       error: 'サーバーエラーが発生しました',
       valid: false,
