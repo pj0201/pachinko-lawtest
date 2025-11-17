@@ -6,6 +6,7 @@
 import { useEffect, useState } from 'react';
 import { Navigate } from 'react-router-dom';
 import { checkDeviceRestriction } from '../utils/deviceCheck';
+import { apiEndpoints } from '../config/api';
 
 export default function ProtectedRoute({ children }) {
   const [isValid, setIsValid] = useState(null);
@@ -36,7 +37,7 @@ export default function ProtectedRoute({ children }) {
 
       try {
         // Vercel KV API でセッション検証（デバイスIDバインディング含む）
-        const response = await fetch('/api/verify-session', {
+        const response = await fetch(apiEndpoints.verifySession, {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ sessionToken, deviceId })

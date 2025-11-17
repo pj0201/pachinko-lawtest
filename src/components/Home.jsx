@@ -10,6 +10,7 @@ import { useNavigate } from 'react-router-dom';
 import '../styles/home.css';
 import { WIND_BUSINESS_LAW, WIND_BUSINESS_REGULATION } from '../constants/lawDatabase';
 import { LawViewer3Stage } from './LawViewer3Stage';
+import { API_BASE_URL } from '../config/api';
 
 export function Home() {
   const navigate = useNavigate();
@@ -32,7 +33,7 @@ export function Home() {
   };
 
   // API URL ビルダー
-  const getPdfUrl = (filename) => `/api/pdf/${encodeURIComponent(filename)}`;
+  const getPdfUrl = (filename) => `${API_BASE_URL}/pdf/${encodeURIComponent(filename)}`;
 
   // 問題集を解く
   const handleStartExam = (mode) => {
