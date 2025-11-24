@@ -1,5 +1,11 @@
 {
   "version": 2,
+  "toolbar": {
+    "enabled": false
+  },
+  "comments": {
+    "enabled": false
+  },
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
